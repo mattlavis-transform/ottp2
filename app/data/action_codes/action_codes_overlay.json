@@ -1,0 +1,34 @@
+{
+    "action_code_overlays": [
+        {
+            "action_code": "01",
+            "overlay": "Apply duty: "
+        }
+    ],
+    "condition_code_overlays": [
+        {
+            "condition_code": "B",
+            "overlay": "Presentation of a certificate, licence or document",
+            "subtext_single": "You must meet this condition.",
+            "subtext_multiple": "You must meet one of these conditions."
+        },
+        {
+            "condition_code": "C",
+            "overlay": "Presentation of a certificate, licence or document",
+            "subtext_single": "You must meet this condition.",
+            "subtext_multiple": "You must meet one of these conditions."
+        },
+        {
+            "condition_code": "H",
+            "overlay": "Presentation of a certificate, licence or document",
+            "subtext_single": "You must meet this condition.",
+            "subtext_multiple": "You must meet one of these conditions."
+        },
+        {
+            "condition_code": "V",
+            "overlay": "Import price must be equal to or greater than the entry price",
+            "subtext_single": "This commodity is subject to the Entry Price System ('EPS'), which is a variable tariff mechanism applying to certain fruits and vegetables. Under the <abbr title='Entry Price System'>EPS</abbr>, a specific duty is charged in addition to the ad valorem duty, whenever the price at which the goods are imported is below a pre-determined entry price. The specific duty varies depending on the difference between the entry price and the import price of the goods.",
+            "subtext_multiple": "This commodity is subject to the Entry Price System ('EPS'), which is a variable tariff mechanism applying to certain fruits and vegetables. Under the <abbr title='Entry Price System'>EPS</abbr>, a specific duty is charged in addition to the ad valorem duty, whenever the price at which the goods are imported is below a pre-determined entry price. The specific duty varies depending on the difference between the entry price and the import price of the goods."
+        }
+    ]
+}

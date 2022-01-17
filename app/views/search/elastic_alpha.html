@@ -1,0 +1,65 @@
+            <table class="govuk-table">
+                {# <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Code</th>
+                        <th scope="col" class="govuk-table__header">Description</th>
+                    </tr>
+                </thead> #}
+                {% set latest_chapter = "" %}
+                {% set latest_heading = "" %}
+                <tbody class="govuk-table__body">
+                    {% for hit in hits.hits %}
+                        {% if hit.display == true %}
+                            {% if hit._source.chapter != latest_chapter %}
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell commodity-split">Chapter {{ hit._source.goods_nomenclature_item_id | substring(0, 2) | safe }}</td>
+                                    <td>{{ hit._source.hierarchy[hit._source.hierarchy | length - 1].description | safe }}</td>
+                                </tr>
+                            {% endif %}
+                            {% set latest_chapter = hit._source.hierarchy[0] %}
+                            
+                            <tr class="govuk-table__row {{ row_class }}">
+                                <td class="govuk-table__cell commodity-split">
+                                    {% if hit._source.class | lower == "commodity" %}
+                                        {% set link = "/commodities/" + hit._source.goods_nomenclature_item_id %}
+                                    {% else %}
+                                        {% set link = "/headings/" + hit._source.goods_nomenclature_item_id | substring(0, 4) %}
+                                    {% endif %}
+
+                                    <a href="{{ link }}">
+                                        {{ hit._source.goods_nomenclature_item_id | format_commodity_code2 | safe }}
+                                        {# {{ hit._source.goods_nomenclature_item_id | format_commodity_code2 | safe }} #}
+                                    </a>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <!--
+                                        {% if hit._source.ancestor_7 %}{{ hit._source.ancestor_7 }} - {% endif %}
+                                        {% if hit._source.ancestor_6 %}{{ hit._source.ancestor_6 }} - {% endif %}
+                                        {% if hit._source.ancestor_5 %}{{ hit._source.ancestor_5 }} - {% endif %}
+                                        {% if hit._source.ancestor_4 %}{{ hit._source.ancestor_4 }} - {% endif %}
+                                        {% if hit._source.ancestor_3 %}{{ hit._source.ancestor_3 }} - {% endif %}
+                                        {% if hit._source.ancestor_2 %}{{ hit._source.ancestor_2 }} - {% endif %}
+                                        {% if hit._source.ancestor_1 %}{{ hit._source.ancestor_1 }} - {% endif %}
+                                        {% if hit._source.ancestor_0 %}{{ hit._source.ancestor_0 }} - {% endif %}
+                                        //-->
+                                    {# {% if hit._source.chapter %}{{ hit._source.chapter }} - {% endif %} #}
+                                    {% if hit._source.heading %}{{ hit._source.heading }} - {% endif %}
+                                    <b>{{ hit._source.description | safe }}</b><br>
+                                    
+                                    <!-- Filter tags //-->
+                                    {% if hit._source.filter_animal_product_state %}
+                                        <span class="tag"><a href="">{{ hit._source.filter_animal_product_state }}</a></span>
+                                    {% endif %}
+
+                                    {% if hit._source.filter_animal_type %}
+                                        <span class="tag"><a href="">{{ hit._source.filter_animal_type }}</a></span>
+                                    {% endif %}
+
+                                    {# <p>
+                                        <b>{{ hit._source.friendly_name }}</b>
+                                    </p> #}
+                                </td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                </table>

@@ -1,0 +1,166 @@
+{
+    "animal_product_state": {
+        "display": "Animal state",
+        "level": "results"
+    },
+    "animal_purpose": {
+        "display": "Animal purpose",
+        "level": "results"
+    },
+    "animal_type": {
+        "display": "Animal type",
+        "level": "results"
+    },
+    "bone_state": {
+        "display": "Bone state",
+        "level": "results"
+    },
+    "bread_type": {
+        "display": "Bread type",
+        "level": "results"
+    },
+    "brix_value": {
+        "display": "Brix value",
+        "level": "results"
+    },
+    "cereal_state": {
+        "display": "Cereal state",
+        "level": "results"
+    },
+    "cheese_type": {
+        "display": "Cheese type",
+        "level": "results"
+    },
+    "cocoa_state": {
+        "display": "Cocoa state",
+        "level": "results"
+    },
+    "coffee_state": {
+        "display": "Coffe state",
+        "level": "results"
+    },
+    "dairy_form": {
+        "display": "Dairy form",
+        "level": "results"
+    },
+    "egg_purpose": {
+        "display": "Egg purpose",
+        "level": "results"
+    },
+    "egg_shell_state": {
+        "display": "Egg shell state",
+        "level": "results"
+    },
+    "fat_content": {
+        "display": "Fat content",
+        "level": "results"
+    },
+    "fish_classification": {
+        "display": "Fish classification",
+        "level": "results"
+    },
+    "fish_preparation": {
+        "display": "Fish preparation",
+        "level": "results"
+    },
+    "flour_source": {
+        "display": "Flour source",
+        "level": "results"
+    },
+    "fruit_spirit": {
+        "display": "Fruit spirit",
+        "level": "results"
+    },
+    "fruit_vegetable_state": {
+        "display": "Fruit and veg state",
+        "level": "results"
+    },
+    "fruit_vegetable_type": {
+        "display": "Vegentable type",
+        "level": "results"
+    },
+    "jam_ingredient": {
+        "display": "Jam ingredient",
+        "level": "results"
+    },
+    "jam_sugar_content": {
+        "display": "Sugar content",
+        "level": "results"
+    },
+    "juice_ingredient": {
+        "display": "Ingredient",
+        "level": "results"
+    },
+    "margarine_state": {
+        "display": "Margarine state",
+        "level": "results"
+    },
+    "milk_preparation": {
+        "display": "Milk preparation",
+        "level": "results"
+    },
+    "nut_state": {
+        "display": "Nut state",
+        "level": "results"
+    },
+    "oil_fat_source": {
+        "display": "Oil fat source",
+        "level": "results"
+    },
+    "pasta_state": {
+        "display": "Pasta state",
+        "level": "results"
+    },
+    "plant_state": {
+        "display": "Plant state",
+        "level": "results"
+    },
+    "sheep_type": {
+        "display": "Sheep type",
+        "level": "results"
+    },
+    "sugar_state": {
+        "display": "Sugar state",
+        "level": "results"
+    },
+    "yeast_state": {
+        "display": "Yeast state",
+        "level": "results"
+    },
+    "beverage_type": {
+        "display": "Beverage type",
+        "level": "results"
+    },
+    "wine_type": {
+        "display": "Wine type",
+        "level": "results"
+    },
+    "alcohol_volume": {
+        "display": "Alcohol volume",
+        "level": "results"
+    },
+    "wine_origin": {
+        "display": "Wine origin",
+        "level": "results"
+    },
+    "tobacco_type": {
+        "display": "Tobacco type",
+        "level": "results"
+    },
+    "clothing_gender": {
+        "display": "Clothing gender",
+        "level": "results"
+    },
+    "garment_type": {
+        "display": "Garment type",
+        "level": "results"
+    },
+    "garment_material": {
+        "display": "Garment material",
+        "level": "results"
+    },
+    "computer_type": {
+        "display": "Computer type",
+        "level": "results"
+    }
+}

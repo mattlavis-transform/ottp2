@@ -1,0 +1,3 @@
+### Subheading note
+
+1. For the purposes of subheadings 8802 11 to 8802 40, the expression 'unladen weight' means the weight of the machine in normal flying order, excluding the weight of the crew and of fuel and equipment other than permanently-fitted items of equipment.

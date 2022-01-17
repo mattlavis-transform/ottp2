@@ -1,0 +1,76 @@
+{# This is a basic update, just so that we can show Apdx 5a / 5b #}
+<!-- Start conditions //-->
+{% for measure in commodity.measures %}
+    {% if (measure.has_conditions == true) %}
+        <div id="measure_conditions_{{ measure.id }}" class="modal modal_commodity">
+            {% if measure.condition_content and measure.overwrite_measure_conditions %}
+                {{ measure.condition_content | safe }}
+            {% else %}
+                <h2 class="govuk-heading govuk-heading-m govuk-!-margin-top-0 govuk-!-margin-bottom-2">
+                    {{ measure.measure_type_description }} - {{ measure.geographical_area_description }}
+                </h2>
+
+                {# <!-- Show debug information //--> #}
+                <div class="debug">
+                    <dl>
+                        <dt>Measure SID</dt>
+                        <dd>{{ measure.id }}</dd>
+
+                        <dt>Condition class</dt>
+                        <dd>{{ measure.measure_condition_class }}</dd>
+
+                        <dt>Has document codes</dt>
+                        <dd>{{ measure.has_document_codes }}</dd>
+
+                        <dt>Display action column</dt>
+                        <dd>{{ measure.display_action_column }}</dd>
+
+                        <dt>Show CDS</dt>
+                        <dd>{{ context.show_cds }}</dd>
+
+                        <dt>Unique condition codes</dt>
+                        <dd>{{ measure.condition_code_count }}</dd>
+
+                        <dt>Has duplicate conditions</dt>
+                        <dd>{{ measure.has_duplicate_conditions }}</dd>
+                    </dl>
+                </div>
+
+                {# <!-- Start show date //--> #}
+                <p class="govuk-body--s govuk-!-margin-top-4 govuk-!-margin-bottom-4 calendar">
+                    {% if measure.effective_end_date %}
+                        From {{ measure.effective_start_date | format_date("DD MMM YYYY") }}
+                        to {{ measure.effective_end_date | format_date("DD MMM YYYY") }}
+                    {% else %}
+                        From {{ measure.effective_start_date | format_date("DD MMM YYYY") }}
+                    {% endif %}
+                </p>
+                {# <!-- End show date //--> #}
+
+                {% if measure.condition_code_count > 1 and measure.has_duplicate_conditions == false %}
+                    {% include "conditions/commodities_conditions_multitable.html" %}
+                {% else %}
+                    {% include "conditions/commodities_conditions_singletable.html" %}
+
+                {% endif %}
+
+                {% if measure.condition_content and measure.overwrite_measure_conditions == false %}
+                    {{ measure.condition_content | safe }}
+                {% endif %}
+            {% endif %}
+            {% if measure.has_document_codes %}
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>The instructions provided above are intended to aid completion of Data Element 2/3 in CDS and Box 44 in CHIEF.</li>
+                    <li>The guidance displayed above for the completion of declarations in CDS and CHIEF is derived from
+                    <a target="_blank" href="https://www.gov.uk/government/publications/data-element-23-documents-and-other-reference-codes-union-of-the-customs-declaration-service-cds">Appendix 5a codes (Union)</a>
+                    and
+                    <a target="_blank" href="https://www.gov.uk/guidance/data-element-23-documents-and-other-reference-codes-national-of-the-customs-declaration-service-cds">Appendix 5a (National codes)</a>
+                    and from
+                    <a target="_blank" href="https://www.gov.uk/government/publications/uk-trade-tariff-document-certificate-and-authorisation-codes-for-harmonised-declarations"> CHIEF: document, certificate and authorisation codes</a>.</li>
+                    <li>Document status code definitions are derived from <a href="https://www.gov.uk/guidance/data-element-23-document-status-codes-of-the-customs-declaration-service-cds"> Data Element 2/3: Document Status Codes of the Customs Declaration Service (CDS)</a>.</li>
+                </ul>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endfor %}
+<!-- End conditions //-->

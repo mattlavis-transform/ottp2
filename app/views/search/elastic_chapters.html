@@ -1,0 +1,18 @@
+{% if show_chapters %}
+    {% set count = 1 %}
+    <p>Your search term appeared in the following chapters:</p>
+    <div class="search_headings {{ heading_style }}">
+        {% for chapter in chapters %}
+            {% if count <= 12 %}
+                {% set link = "/elastic/" + context.search_term + "?filter[chapter]=" + chapter[0] %}
+                <div class="search_heading">
+                    <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Chapter {{ chapter[0] }}</h3>
+                    <p title="{{ chapter[2] }}">
+                        <a href="{{ link }}">{{ chapter[2] | highlight(context.search_term) | safe }}</a><br>({{ chapter[1] }})
+                </p>
+                </div>
+            {% endif %}
+            {% set count = count + 1 %}
+        {% endfor %}
+    </div>
+{% endif %}

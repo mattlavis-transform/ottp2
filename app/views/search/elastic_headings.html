@@ -1,0 +1,19 @@
+{% if show_headings %}
+    {% set count = 1 %}
+    <p>Your search term appeared in the following headings:</p>
+    <div class="search_headings {{ heading_style }}">
+        {% for search_heading in search_headings %}
+            {% if count <= 12 %}
+                {% set link = url + conjunction + "filter[heading]=" + search_heading.id %}
+
+                <div class="search_heading">
+                    <h3 class="govuk-heading-l govuk-!-margin-bottom-3">{{ search_heading.id }}</h3>
+                    <p title="{{ search_heading.description_full }}">
+                        <a href="{{ link }}">{{ search_heading.description | highlight(context.search_term) | safe }}</a><br>({{ search_heading.count }})
+                </p>
+                </div>
+            {% endif %}
+            {% set count = count + 1 %}
+        {% endfor %}
+    </div>
+{% endif %}

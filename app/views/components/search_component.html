@@ -1,0 +1,23 @@
+<div class="govuk-form-group feature-panel nhs-grey-5 govuk-!-margin-bottom-4">
+    <form action="/search_handler" accept-charset="UTF-8" method="get">
+        <h2 class="govuk-heading-m">Search for a commodity</h2>
+        <p>{{ context.serviceName }} helps you to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>find commodity codes for imports into or exports out of the UK</li>
+            <li>find the taxes and duties that apply to those imports</li>
+            <li>find out which certificates and licences apply to the import of your goods</li>
+        </ul>
+        <p>The first step is to find the commodity that you are importing or exporting.</p>
+        <label class="govuk-label govuk-label--s" for="search_term">Enter the name of the goods or a commodity code</label>
+        <div id="event-name-hint" class="govuk-hint">
+            Commodity codes are 10-digit numbers that classify goods so you can fill in declarations and other paperwork.
+            You must use the right commodity code.
+        </div>
+        <input class="govuk-input govuk-input--width-30" id="search_term" name="search_term" type="text" xplaceholder="Enter the name of the goods or a 10-digit commodity code">
+        {% set show_date_button = false %}
+        {% include "../components/date_component.html" %}
+
+        <button class="govuk-button" data-module="govuk-button">Search for a commodity</button>
+    </form>
+    <p>Alternatively, you can <a href="/browse">browse the goods classification</a> or <a href="/a-z-index/a">look for your product in the A-Z</a>.</p>
+</div>

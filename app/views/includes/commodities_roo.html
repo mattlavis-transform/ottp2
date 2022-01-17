@@ -1,0 +1,141 @@
+<div class="govuk-grid-row">
+    {% if commodity.country_name2.length > 0 %}
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m roo_heading">
+                Preferential rules of origin for trading with {{ commodity.country_name2 }}&nbsp;&nbsp;<img class="flag"
+                src="/public/images/flags/{{ data["country"] | lower }}.png" 
+                height="20" alt="{{commodity.country_name2 }}">
+            </h2>
+            {% if roo.valid_rules %}
+                <div class="govuk-inset-text">
+                    {% if roo.scheme_count > 1 %}
+                        <p>Your trade may qualify for preferential rates with {{ context.country_name }} through {{ roo.scheme_count }} agreements. Check the rules of origin applicable to each of these agreements.
+                        <ul class="govuk-list govuk-list--bullet">
+                                {% for scheme in roo.matching_schemes %}
+                                    <li>{{ scheme.title }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <p>In order to qualify for the lower or zero preferential tariff
+                        under the <strong>{{ roo.title }}</strong>, the product must originate in {{ roo.origin_text }} or {{ roo.partners }}.
+                        </p>
+                            <p>You do not need to apply for a preferential tariff (or comply with preferential rules of origin)
+                        if the MFN duty for your product is zero.</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Start product-specific rules //-->
+                    {% if roo.product_specific_rules %}
+                        {# <span class="govuk-caption-l">Kenya Trade Agreement</span> #}
+                        <h2 class="govuk-heading-m" id="psr">
+                        Product-specific rules for commodity {{ commodity.data.attributes.goods_nomenclature_item_id }}
+                        </h2>
+                        <p>If your product has been produced using any non-originating materials, the product has to fulfil the following product-specific rule to be considered originating in the EU or {{ roo.partners }}.</p>
+                        <p>If there are alternative rules, your product needs to comply with only one of them.</p>
+                        {{ roo["product_specific_rules"] | safe }}
+
+                        <!-- Start how to read / intro notes //-->
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary">
+                                <span class="govuk-details__summary-text">How to read rules of origin</span>
+                            </summary>
+
+                            <div class="govuk-details__text">
+                                {% include "includes/how-to-use-psr.html" %}
+                                <h2 class="govuk-heading-m">Introductory notes</h2>
+                                {{ roo["intro_text"] | safe }}
+                            </div>
+                        </details>
+                        <!-- End intro notes //-->
+
+                    {% endif %}
+                    <!-- End product-specific rules //-->
+
+                    <!-- Start proofs //-->
+                    {% if roo.proofs %}
+                        {# <span class="govuk-caption-l">Kenya Trade Agreement</span> #}
+                        <h2 id="proof" class="govuk-heading-m">Proving originating status and claiming preferential treatment</h2>
+
+                        <p>The customs authority of the importing party will grant preferential tariff treatment, based on a claim made by the importer, to goods that originate in the other party that meet the conditions of the Trade Agreement.</p>
+
+                        <p>A claim can be made if the importer has one of the following proofs of origin:</p>
+
+                        {% if roo.proofs %}
+                            <ul class="govuk-list govuk-list--bullet">
+                                {% for proof in roo.proofs %}
+                                    <li class="govuk-!-margin-bottom-6">
+                                        <a href="{{ proof.url }}">{{ proof.summary | safe }}</a>
+                                        {% if proof.subtext %}
+                                            <br>{{ proof.subtext | safe }}
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endif %}
+                    <!-- End proofs //-->
+
+                    {% if roo.scheme_count == 1 %}
+                        {# Only show this content if there is just one scheme in place, otherwise it takes up too much room #}
+                        <!-- Start FTA relationship //-->
+                        <h2 id="relationship" class="govuk-heading-m govuk-!-margin-top-9">Trading relationship with {{ commodity.country_name2 }}</h2>
+                        {{ roo["fta_intro"] | safe }}
+                        <!-- End FTA relationship //-->
+                    {% endif %}
+
+                {% else %}
+                    <div class="govuk-inset-text">
+                        <p>There is no preferential agreement in place with {{ commodity.country_name2 }}, therefore preferential rules of origin are not applicable.</p>
+                        <p>To view preferential rules of origin, select a country with which the UK has a trade agreement from the dropdown above.</p>
+                    </div>
+                {% endif %}
+                {# {% include "includes/commodities_roo_dummy.html" %} #}
+                <h3 class="govuk-heading-m govuk-!-margin-top-9">Non-preferential rules of origin</h3>
+                {# <p>Lorem ipsum dolor sit amet, aute ad nisi ex dolore do anim aute occaecat ex id laboris nisi magna amet ipsum dolore elit non exercitation adipisicing eiusmod amet aliquip voluptate consequat ad pariatur deserunt in dolore ea nostrud velit pariatur aliqua irure aute do ut consequat laborum ut occaecat deserunt proident dolor nisi nostrud officia</p> #}
+                <p>
+                    <a href="https://www.gov.uk/government/publications/reference-document-for-the-customs-origin-of-chargeable-goods-eu-exit-regulations-2020">Find out about the product-specific rules, to determine the origin of imports outside of a preferential agreement.</a>
+                </p>
+            </div>
+            <div class="govuk-grid-column-one-third">
+                <aside class="app-related-items noborder govuk-!-margin-top-2" role="complementary">
+                    <h2 class="govuk-heading-m" id="subsection-title">Related content</h2>
+                    <nav role="navigation" aria-labelledby="subsection-title">
+                        <ul class="govuk-list govuk-list-s">
+                            {% for link in roo.generic_links %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.text }}</a>
+                                </li>
+                            {% endfor %}
+                            {% for link in roo.links %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.text }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                    {# {% include "includes/commodities_roo_explainers.html" %} #}
+                </aside>
+            </div>
+        {% else %}
+            <!-- Start no country is selected //-->
+            <div class="govuk-grid-column-full">
+                <h2 class="govuk-heading-m">Preferential rules of origin</h2>
+                <p>To view rules of origin, select a country with which the UK has a trade agreement from the list above.</p>
+                <p>Find out more about preferential rules of origin:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>
+                        <a href="https://www.gov.uk/guidance/check-your-goods-meet-the-rules-of-origin">Check your goods meet the rules of origin</a>
+                    </li>
+                    <li>
+                        <a href="https://www.gov.uk/guidance/import-and-export-goods-using-preference-agreements">Pay less Customs Duty on goods from a country with a UK trade agreement</a>
+                    </li>
+                </ul>
+                <h3 class="govuk-heading-m govuk-!-margin-top-9">Non-preferential rules of origin</h3>
+                {# <p>Lorem ipsum dolor sit amet, aute ad nisi ex dolore do anim aute occaecat ex id laboris nisi magna amet ipsum dolore elit non exercitation adipisicing eiusmod amet aliquip voluptate consequat ad pariatur deserunt in dolore ea nostrud velit pariatur aliqua irure aute do ut consequat laborum ut occaecat deserunt proident dolor nisi nostrud officia</p> #}
+                <p>
+                    <a href="https://www.gov.uk/government/publications/reference-document-for-the-customs-origin-of-chargeable-goods-eu-exit-regulations-2020">Find out about the product-specific rules, to determine the origin of imports outside of a preferential agreement.</a>
+                </p>
+            </div>
+            <!-- End no country is selected //-->
+        {% endif %}
+    </div>

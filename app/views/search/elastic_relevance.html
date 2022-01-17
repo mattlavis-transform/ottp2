@@ -1,0 +1,53 @@
+<table class="govuk-table govuk-table--m govuk-!-margin-top-9">
+    <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Code</th>
+            <th scope="col" class="govuk-table__header">Description</th>
+        </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+        {% for hit in hits.hits %}
+            {% if hit.display == true %}
+                {% if hit._source.promoted_description %}
+                    {% set row_class = "featured" %}
+                {% else %}
+                    {% set row_class = "" %}
+                {% endif %}
+                <tr class="govuk-table__row {{ row_class }}">
+                    <td class="govuk-table__cell commodity-split">
+                        {# {{ hit._source.class | capitalize }} #}
+                        {% if hit._source.class | lower == "commodity" %}
+                            {% set link = "/commodities/" + hit._source.goods_nomenclature_item_id %}
+                        {% elif hit._source.class | lower == "intermediate" %}
+                            {% set link = "/intermediate/" + hit._source.goods_nomenclature_item_id | strip_zeros() + "/" + context.search_term %}
+                        {% elif hit._source.class | lower == "heading" %}
+                            {% set link = "/headings/" + hit._source.goods_nomenclature_item_id | substring(0, 4) %}
+                        {% else %}
+                            {% set link = "/chapters/" + hit._source.goods_nomenclature_item_id | substring(0, 2) %}
+                        {% endif %}
+
+                        <a href="{{ link }}">
+                            {{ hit._source.goods_nomenclature_item_id | format_commodity_code3(hit._source) | safe }}
+                            {# {{ hit._source.productline_suffix | safe }} #}
+                        </a>
+                    </td>
+                    <td class="govuk-table__cell">
+                        <span class="desc">
+
+                            {% if hit._source.ancestor_7 %}{{ hit._source.ancestor_7 | highlight(context.search_term) | safe }} <span class="arrow">▶</span> {% endif %}
+                            {% if hit._source.ancestor_6 %}{{ hit._source.ancestor_6 | highlight(context.search_term) | safe }} <span class="arrow">▶</span> {% endif %}
+                            {% if hit._source.ancestor_5 %}{{ hit._source.ancestor_5 | highlight(context.search_term) | safe }} <span class="arrow">▶</span> {% endif %}
+                            {% if hit._source.ancestor_4 %}{{ hit._source.ancestor_4 | highlight(context.search_term) | safe }} <span class="arrow">▶</span> {% endif %}
+                            {% if hit._source.ancestor_3 %}{{ hit._source.ancestor_3 | highlight(context.search_term) | safe }} <span class="arrow">▶</span> {% endif %}
+                            {% if hit._source.ancestor_2 %}{{ hit._source.ancestor_2 | highlight(context.search_term) | safe }} <span class="arrow">▶</span> {% endif %}
+                            {% if hit._source.ancestor_1 %}{{ hit._source.ancestor_1 | highlight(context.search_term) | safe }} <span class="arrow">▶</span> {% endif %}
+                            {% if hit._source.ancestor_0 %}{{ hit._source.ancestor_0 | highlight(context.search_term) | safe }} <span class="arrow">▶</span> {% endif %}
+
+                            <b>{{ hit._source.description | highlight(context.search_term) | safe }}</b>
+                            <i class="score">{{ hit._score }}</i>
+                        </span>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
