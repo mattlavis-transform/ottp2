@@ -1,4 +1,3 @@
-{# This is a basic update, just so that we can show Apdx 5a / 5b #}
 <!-- Start conditions //-->
 {% for measure in commodity.measures %}
     {% if (measure.has_conditions == true) %}
@@ -7,7 +6,7 @@
                 {{ measure.condition_content | safe }}
             {% else %}
                 <h2 class="govuk-heading govuk-heading-m govuk-!-margin-top-0 govuk-!-margin-bottom-2">
-                    {{ measure.measure_type_description }} - {{ measure.geographical_area_description }}
+                    {{ measure.measure_type_description }} for {{ measure.geographical_area_description }}
                 </h2>
 
                 {# <!-- Show debug information //--> #}
@@ -21,6 +20,12 @@
 
                         <dt>Has document codes</dt>
                         <dd>{{ measure.has_document_codes }}</dd>
+
+                        <dt>Has shared conditions</dt>
+                        <dd>{{ measure.has_shared_conditions }}</dd>
+
+                        <dt>Show condition code group titles</dt>
+                        <dd>{{ measure.show_condition_code_group_titles }}</dd>
 
                         <dt>Display action column</dt>
                         <dd>{{ measure.display_action_column }}</dd>
@@ -47,29 +52,29 @@
                 </p>
                 {# <!-- End show date //--> #}
 
-                {% if measure.condition_code_count > 1 and measure.has_duplicate_conditions == false %}
-                    {% include "conditions/commodities_conditions_multitable.html" %}
+                {% if measure.has_shared_conditions %}
+                    {% include "conditions/commodities_conditions_shared_conditions.html" %}
                 {% else %}
-                    {% include "conditions/commodities_conditions_singletable.html" %}
-
+                    {% include "conditions/commodities_conditions_no_shared_conditions.html" %}
                 {% endif %}
 
                 {% if measure.condition_content and measure.overwrite_measure_conditions == false %}
                     {{ measure.condition_content | safe }}
                 {% endif %}
             {% endif %}
-            {% if measure.has_document_codes %}
-                <ul class="govuk-list govuk-list--bullet">
-                    <li>The instructions provided above are intended to aid completion of Data Element 2/3 in CDS and Box 44 in CHIEF.</li>
-                    <li>The guidance displayed above for the completion of declarations in CDS and CHIEF is derived from
-                    <a target="_blank" href="https://www.gov.uk/government/publications/data-element-23-documents-and-other-reference-codes-union-of-the-customs-declaration-service-cds">Appendix 5a codes (Union)</a>
-                    and
-                    <a target="_blank" href="https://www.gov.uk/guidance/data-element-23-documents-and-other-reference-codes-national-of-the-customs-declaration-service-cds">Appendix 5a (National codes)</a>
-                    and from
-                    <a target="_blank" href="https://www.gov.uk/government/publications/uk-trade-tariff-document-certificate-and-authorisation-codes-for-harmonised-declarations"> CHIEF: document, certificate and authorisation codes</a>.</li>
-                    <li>Document status code definitions are derived from <a href="https://www.gov.uk/guidance/data-element-23-document-status-codes-of-the-customs-declaration-service-cds"> Data Element 2/3: Document Status Codes of the Customs Declaration Service (CDS)</a>.</li>
-                </ul>
+            {% if measure.has_shared_conditions == false %}
+                {% if measure.has_document_codes %}
+                    <details class="govuk-details govuk-!-margin-left-1 govuk-!-margin-top-2 govuk-!-margin-bottom-0" data-module="govuk-details">
+                        <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">Guidance for completing declarations</span>
+                        </summary>
+                        <div class="govuk-details__text">
+                            {% include "conditions/conditions_instructions.html" %}
+                        </div>
+                    </details>
+                {% endif %}
             {% endif %}
+            {# <p>Preferences</p> #}
         </div>
     {% endif %}
 {% endfor %}

@@ -7,6 +7,9 @@ class MeasureCondition {
     constructor(req, item) {
         this.action_codes_that_apply_duties = ['01', '02', '03', '11', '12', '13', '15', '27', '34']
         this.id = item["id"];
+        if (this.id == 1633480) {
+            var a = 1;
+        }
         this.action = item["attributes"]["action"];
         this.action_code = item["attributes"]["action_code"];
         this.condition = item["attributes"]["condition"];
@@ -37,7 +40,7 @@ class MeasureCondition {
         this.check_positivity();
         this.check_condition_class();
         this.get_appendix_5a();
-        this.overlay_action();
+        // this.overlay_action();
     }
 
     overlay_action() {
@@ -104,10 +107,10 @@ class MeasureCondition {
                     if (m != null) {
                         if (m.length > 2) {
                             if (m[2] == "Litre") {
-                                this.requirement = "<span class='threshold'>Volume threshold (ltr)</span><br>The volume of the imported goods does not exceed " + Math.round(m[1]) + " litres."
+                                this.requirement = "<span class='threshold'>Volume threshold (ltr)</span><br />The volume of the imported goods does not exceed " + Math.round(m[1]) + " litres."
                             }
                             else if (m[2] == "Kilogram") {
-                                this.requirement = "<span class='threshold'>Weight threshold (kg)</span><br>The weight of the imported goods does not exceed " + Math.round(m[1]) + " kilogrammes."
+                                this.requirement = "<span class='threshold'>Weight threshold (kg)</span><br />The weight of the imported goods does not exceed " + Math.round(m[1]) + " kilogrammes."
                             }
                         }
                     }
@@ -145,29 +148,30 @@ class MeasureCondition {
     }
 
     append_condition(mc) {
+        console.log("Appending a condition");
+
         var conjunction_string = " & ";
         if (this.condition_class == "certificate") {
             if (mc.condition_class == "certificate") {
                 this.requirement = "Provide both of these documents:<br><br><b>" + this.document_code + "</b> " + this.requirement;
-                this.requirement += "<br><br><span class='conjunction'>and</span><br><br><b>" + mc.document_code + "</b> " + _.lowerFirst(mc.requirement);
+                this.requirement += "<br><br><span class='conjunction'>and</span><br><br><b>" + mc.document_code + "</b> " + mc.requirement;
                 this.document_code += conjunction_string + mc.document_code;
             } else if (mc.condition_class == "exception") {
-                this.requirement += " <br><br><i>and</i><br><br> " + _.lowerFirst(mc.requirement);
+                this.requirement += " <br><br><i>and</span><br><br> " + mc.requirement;
                 this.document_code += conjunction_string + mc.document_code;
             } else if (mc.condition_class == "threshold") {
-                this.requirement += " <br><br><i>and</i><br><br> " + mc.requirement;
+                this.requirement += " <br><br><span class='conjunction'>and</span><br><br> " + mc.requirement;
             }
         }
         else if (this.condition_class == "exception") {
             if (mc.condition_class == "exception") {
-                this.requirement += " <br><br><i>and</i><br><br> " + mc.requirement;
+                this.requirement += " <br><br><span class='conjunction'>and</span><br><br> " + mc.requirement;
                 this.document_code += conjunction_string + mc.document_code;
             } else if (mc.condition_class == "threshold") {
                 if (this.requirement.toLowerCase().includes("your shipment")) {
                     mc.requirement = mc.requirement.replace(/your shipment/gsmi, "");
                 }
-                // this.requirement += " <br><br><i>and</i><br><br> " + _.lowerFirst(mc.requirement);
-                this.requirement += " <br><br><i>and</i><br><br> " + mc.requirement;
+                this.requirement += " <br><br><span class='conjunction'>and</span><br><br> " + mc.requirement;
             }
         }
     }
@@ -269,6 +273,15 @@ class MeasureCondition {
             this.status_code_descriptions.push(item);
         });
         var a = 1;
+    }
+
+    equates_to(mc) {
+        // Condition_duty_amount and document_code being the same shows that conditions are indentical
+        if ((this.document_code == mc.document_code) && (this.condition_duty_amount == mc.condition_duty_amount)) {
+            return (true);
+        } else {
+            return (false);
+        }
     }
 }
 module.exports = MeasureCondition

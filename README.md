@@ -13,3 +13,4 @@
 - 1704903000 = White chocolate - ceiling, also has multiple VAT rates
 - 1704907100 = Boiled sweets (check Iceland) - the most complex measures
 - 2206001000 = Piquette (type of wine) - has a minimum; also the MFN contains 2 units as well as 3 types of excise
+- 0208907000 = Frogs' legs

@@ -423,6 +423,10 @@ article.section_chapter_notes {
         }
     }
 
+    table {
+        margin-bottom: 0.5em;
+    }
+
 }
 
 .modal {
@@ -468,5 +472,24 @@ p.calendar {
 }
 
 .threshold {
-    font-weight: bold;
+    font-weight     : bold;
+    background-color: #f0f0f0;
+    color           : #333;
+    padding         : 2px 5px 4px 5px;
+    margin-bottom   : 0.25em;
+    display         : inline-block;
+}
+
+.xthreshold::before {
+    content: " -- "
+}
+
+.xthreshold::after {
+    content: "  "
+}
+
+.conjunction {
+    background-color: #666;
+    color           : #fff;
+    padding         : 0px 5px 2px 5px;
 }

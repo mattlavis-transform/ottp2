@@ -1,6 +1,22 @@
 {% include "conditions/how_to_read.html" %}
 {% set last_condition_code = "" %}
 {% set block_count = 1 %}
+{% set conditions_codes = {} %}
+
+{# <h1>Exposed conditions</h1>
+{% for ec in measure.exposed_conditions %}
+    {% if ec.condition_code in conditions_codes %}
+        Found {{ ec.condition_code }}
+    {% else %}
+        Not found {{ ec.condition_code }}
+    {% endif %}
+{% endfor %}
+
+<h1>Tally</h1>
+{% for cc in measure.condition_code_tally %}
+    {{ cc.condition_code }}{{ cc.condition_count }}
+{% endfor %} #}
+
 {% for mc in measure.exposed_conditions %}
     {% if last_condition_code != mc.condition_code %}
         {% if last_condition_code != "" %}
@@ -8,7 +24,14 @@
         </table>
     {% endif %}
     <h3 class="govuk-heading-s">{{ block_count }}. {{ mc.condition }}</h3>
-    <p>{{ mc.condition_subtext_multiple | safe }}</p>
+    
+    {# {{ mc.condition_code }} {{ measure.condition_code_tally[mc.condition_code] }} #}
+    {% if measure.condition_code_tally[mc.condition_code] == 1 %}
+        <p>{{ mc.condition_subtext_single | safe }}</p>
+    {% else %}
+        <p>{{ mc.condition_subtext_multiple | safe }}</p>
+    {% endif %}
+
     <table class="govuk-table govuk-table--m">
         <thead class="govuk-table__head">
             {% if mc.measure_condition_class == "eps" %}
@@ -42,7 +65,7 @@
                 <td class="govuk-table__cell">{{ mc.document_code | safe }}</td>
                 <td class="govuk-table__cell">
                     {{ mc.requirement | safe }}
-                    {% include "conditions/conditions_5a5b.html" %}
+                    {% include "conditions/conditions_no_shared_5a5b.html" %}
                 </td>
                 <td class="govuk-table__cell">
                     {{ mc.action }}
@@ -55,7 +78,7 @@
                 <td class="govuk-table__cell">{{ mc.document_code | safe }}</td>
                 <td class="govuk-table__cell">
                     {{ mc.requirement | safe }}
-                    {% include "conditions/conditions_5a5b.html" %}
+                    {% include "conditions/conditions_no_shared_5a5b.html" %}
                 </td>
             </tr>
         {% endif %}
