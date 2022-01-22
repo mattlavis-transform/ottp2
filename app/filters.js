@@ -198,22 +198,29 @@ module.exports = function (env) {
         }
     }
 
-    filters.format_and_trim_commodity_code = function (str) {
+    filters.format_and_trim_commodity_code = function (str, end_line = false) {
         var s = "";
+        end_line = true;
         if (typeof str !== 'undefined') {
-            s += "<span>" + str.substr(0, 4) + "</span>";
-            // 6-digit codes
-            if (str.substr(6, 4) == "0000") {
-                s += "<span>" + str.substr(4, 2) + "</span>";
-            }
-            // 8-digit codes
-            else if (str.substr(8, 2) == "00") {
-                s += "<span>" + str.substr(4, 4) + "</span>";
-            }
-            // 10-digit codes
-            else {
+            if (end_line) {
+                s += "<span>" + str.substr(0, 4) + "</span>";
                 s += "<span>" + str.substr(4, 4) + "</span>";
                 s += "<span>" + str.substr(8, 2) + "</span>";
+            } else {
+                s += "<span>" + str.substr(0, 4) + "</span>";
+                // 6-digit codes
+                if (str.substr(6, 4) == "0000") {
+                    s += "<span>" + str.substr(4, 2) + "</span>";
+                }
+                // 8-digit codes
+                else if (str.substr(8, 2) == "00") {
+                    s += "<span>" + str.substr(4, 4) + "</span>";
+                }
+                // 10-digit codes
+                else {
+                    s += "<span>" + str.substr(4, 4) + "</span>";
+                    s += "<span>" + str.substr(8, 2) + "</span>";
+                }
             }
 
             return s;

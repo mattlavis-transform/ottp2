@@ -40,6 +40,8 @@ class Commodity {
         this.vat = null;
         this.unit_values = null;
 
+        this.get_heading_class();
+
         this.quotas = [];
         this.mfns = [];
         this.vats = [];
@@ -82,14 +84,16 @@ class Commodity {
 
         this.customs_duties_measures = [];
 
+        this.format_commodity_code();
+    }
 
-        // Get the additional code (for Meursing calcs)
-        // if (req != null) {
-        //     this.meursing_code = req.session.data["meursing-code"];
-        // } else {
-        //     this.meursing_code = "";
-        // }
-
+    get_heading_class() {
+        if (this.number_indents <= 1) {
+            this.heading_class = " b";
+            // this.heading_class = "";
+        } else {
+            this.heading_class = "";
+        }
     }
 
     get_data(json, country = null, date = null) {
@@ -1215,6 +1219,7 @@ class Commodity {
     }
 
     format_commodity_code() {
+        this.heading_code = "";
         if (this.leaf != true) {
             if (this.formatted_commodity_code.substr(6, 4) == "0000") {
                 this.formatted_commodity_code = this.formatted_commodity_code.substr(0, 6);
@@ -1223,6 +1228,41 @@ class Commodity {
                 this.formatted_commodity_code = this.formatted_commodity_code.substr(0, 8);
             }
         }
+        this.fcc2();
+    }
+
+    fcc2() {
+        var s = "";
+        var empty_cell = "<span>&nbsp;&nbsp;</span>";
+        if (typeof this.goods_nomenclature_item_id !== 'undefined') {
+            if (this.leaf) {
+                s += "<span>" + this.goods_nomenclature_item_id.substr(0, 4) + "</span>";
+                s += "<span>" + this.goods_nomenclature_item_id.substr(4, 4) + "</span>";
+                s += "<span>" + this.goods_nomenclature_item_id.substr(8, 2) + "</span>";
+            } else {
+                if (this.productline_suffix != "80") {
+                    s = "";
+                } else {
+                    s += "<span>" + this.goods_nomenclature_item_id.substr(0, 4) + "</span>";
+                    // 6-digit codes
+                    if (this.goods_nomenclature_item_id.substr(6, 4) == "0000") {
+                        s += "<span>" + this.goods_nomenclature_item_id.substr(4, 2) + "&nbsp;&nbsp;</span>" + empty_cell;
+                    }
+                    // 8-digit codes
+                    else if (this.goods_nomenclature_item_id.substr(8, 2) == "00") {
+                        s += "<span>" + this.goods_nomenclature_item_id.substr(4, 4) + "</span>" + empty_cell;
+                    }
+                    // 10-digit codes
+                    else {
+                        s += "<span>" + this.goods_nomenclature_item_id.substr(4, 4) + "</span>";
+                        s += "<span>" + this.goods_nomenclature_item_id.substr(8, 2) + "</span>";
+                    }
+                }
+            }
+        } else {
+            s = "";
+        }
+        this.heading_code = s;
     }
 
 

@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $(".debug").hide();
-    
+
     $(document).keypress(function (event) {
         // alert('Handler for .keypress() called. - ' + event.charCode);
         if (event.charCode == 93) {

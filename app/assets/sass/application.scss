@@ -632,10 +632,6 @@ tbody {
     width: 75%;
 }
 
-.b {
-    font-weight: bold !important;
-}
-
 .govuk-list-s {
     font-size: 16px
 }
@@ -833,5 +829,6 @@ div.debug {
 @import "components/downloads";
 @import "components/search_button";
 @import "components/search_facets";
+@import "components/deque";
 
 // @import "bz";
