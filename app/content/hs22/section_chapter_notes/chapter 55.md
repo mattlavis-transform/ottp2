@@ -9,4 +9,5 @@
     d. synthetic filament tow only: the tow must be drawn, that is to say, be incapable of being stretched by more than 100% of its length;
     
     e. total measurement of tow more than 20 000 decitex.
+
     Tow of a length not exceeding 2 m is to be classified within heading 5503 or 5504.

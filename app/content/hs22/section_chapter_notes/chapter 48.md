@@ -212,4 +212,3 @@
 6. For the purposes of subheading 4805 30, 'sulphite wrapping paper' means machine-glazed paper, of which more than 40% by weight of the total fibre content consists of wood fibres obtained by the chemical sulphite process, having an ash content not exceeding 8% and having a Mullen burst index of not less than 1.47kPa.m2/g.
 
 7. For the purposes of subheading 4810 22, 'lightweight coated paper' means paper, coated on both sides, of a total weight not exceeding 72g/m2, with a coating weight not exceeding 15g/m2 per side, on a base of which not less than 50% by weight of the total fibre content consists of wood fibres obtained by a mechanical process.
-

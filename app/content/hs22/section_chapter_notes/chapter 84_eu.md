@@ -52,8 +52,9 @@
     
     c. by the automatic transfer of the workpiece to different unit heads (multi-station transfer machines).
 
+5. For the purposes of heading 8462, a ‘slitting line’ for flat products is a processing line composed of an uncoiler, a coil flattener, a slitter and a recoiler. A ‘cut-to-length line’ for flat products is a processing line composed of an uncoiler, a coil flattener, and a shear.
 
-5. (A) For the purposes of heading 8471, the expression 'automatic data-processing machines' means machines, capable of
+6. (A) For the purposes of heading 8471, the expression 'automatic data-processing machines' means machines, capable of
 
     (1) storing the processing program or programs and at least the data immediately necessary for the execution of the program;
     
@@ -92,17 +93,17 @@
     
     (E) Machines incorporating or working in conjunction with an automatic data-processing machine and performing a specific function other than data processing are to be classified in the headings appropriate to their respective functions or, failing that, in residual headings.
 
-6. Heading 8482 applies, inter alia, to polished steel balls, the maximum and minimum diameters of which do not differ from the nominal diameter by more than 1% or by more than 0.05 mm, whichever is less.
+7. Heading 8482 applies, inter alia, to polished steel balls, the maximum and minimum diameters of which do not differ from the nominal diameter by more than 1% or by more than 0.05 mm, whichever is less.
 
     Other steel balls are to be classified in heading 7326.
 
-7. A machine which is used for more than one purpose is, for the purposes of classification, to be treated as if its principal purpose were its sole purpose.
+8. A machine which is used for more than one purpose is, for the purposes of classification, to be treated as if its principal purpose were its sole purpose.
 
     Subject to note 2 to this chapter and note 3 to Section XVI, a machine the principal purpose of which is not described in any heading or for which no one purpose is the principal purpose is, unless the context otherwise requires, to be classified in heading 8479. Heading 8479 also covers machines for making rope or cable (for example, stranding, twisting or cabling machines) from metal wire, textile yarn or any other material or from a combination of such materials.
 
-8. For the purposes of heading 8470, the term 'pocket-size' applies only to machines the dimensions of which do not exceed 170 mm x 100 mm x 45 mm.
+9. For the purposes of heading 8470, the term 'pocket-size' applies only to machines the dimensions of which do not exceed 170 mm x 100 mm x 45 mm.
 
-9. (A) Notes 8(a) and 8(b) to Chapter 85 also apply with respect to the expressions 'semiconductor devices' and 'electronic integrated circuits', respectively, as used in this note and in heading 8486. However, for the purposes of this note and of heading 8486, the expression 'semiconductor devices' also covers photosensitive semiconductor devices and light emitting diodes.
+10. (A) Notes 8(a) and 8(b) to Chapter 85 also apply with respect to the expressions 'semiconductor devices' and 'electronic integrated circuits', respectively, as used in this note and in heading 8486. However, for the purposes of this note and of heading 8486, the expression 'semiconductor devices' also covers photosensitive semiconductor devices and light emitting diodes.
 
     (B) For the purposes of this note and of heading 8486, the expression 'manufacture of flat panel displays' covers the fabrication of substrates into a flat panel. It does not cover the manufacture of glass or the assembly of printed circuit boards or other electronic components onto the flat panel. The expression 'flat panel display' does not cover cathode-ray tube technology.
     
@@ -133,5 +134,3 @@
 1. For the purposes of subheadings 8407 10 and 8409 10, the expression 'aircraft engines' shall apply only to engines designed for fitting with an airscrew or rotor.
 
 2. Subheading 8471 70 30 shall also apply to CD-ROM drives, being storage units for automatic data processing machines, which consist of drive units designed for retrieving the signals from CD-ROMs, audio CDs and photo CDs and equipped with a jack for earphones, a volume-control button or a start/stop button.
-
-3. Code 8472 90 80 includes apparatus consisting of a bank note validator and cash boxes (so called ‘note float unit’). The bank note validator uses optical scanning technology to check the authenticity of bank notes according to predefined specifications. In addition to checking the authenticity of bank notes, it also carries out other functions such as sorting and distributing bank notes between different storage boxes and dispensing bank notes.

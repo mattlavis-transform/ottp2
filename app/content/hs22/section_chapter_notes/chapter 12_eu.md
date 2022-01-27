@@ -28,10 +28,3 @@
 ### Subheading note
 
 1. For the purposes of subheading 1205 10, the expression 'low erucic acid rape or colza seeds' means rape or colza seeds yielding a fixed oil which has an erucic acid content of less than 2% by weight and yielding a solid component which contains less than 30 micromoles of glucosinolates per gram.
-
-### Additional chapter note
-
-1. Oil seeds and oleaginous fruits shall be classified in the appropriate subheadings for seed or for sowing provided that:
-
-	- the goods comply with The Oil and Fibre Plant Seeds Regulations 1993 or
-	- it is established that the goods are actually intended for sowing.

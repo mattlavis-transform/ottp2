@@ -38,6 +38,8 @@
 
 4. For the purposes of heading 9406, the expression 'prefabricated buildings' means buildings which are finished in the factory or put up as elements, presented together, to be assembled on site, such as housing or worksite accommodation, offices, schools, shops, sheds, garages or similar buildings.
 
+    Prefabricated buildings include ‘modular building units’ of steel, normally presented in the size and shape of a standard shipping container, but substantially or completely pre-fitted internally. Such modular building units are normally designed to be assembled together to form permanent buildings.
+
 
 ### Additional chapter notes
 

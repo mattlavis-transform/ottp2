@@ -11,14 +11,16 @@
     (4) certified reference materials specified in note 2 below;
     
     (5) products specified in note 3(a) or 3(c) below;
-    
+
     b. mixtures of chemicals with foodstuffs or other substances with nutritive value, of a kind used in the preparation of human foodstuffs (generally, heading 2106).
+
+    c. products of heading 2404;
     
-    c. slag, ash and residues (including sludges, other than sewage sludge), containing metals, arsenic or their mixtures and meeting the requirements of note 3 (a) or 3(b) to Chapter 26 (heading 2620);
+    d. slag, ash and residues (including sludges, other than sewage sludge), containing metals, arsenic or their mixtures and meeting the requirements of note 3 (a) or 3(b) to Chapter 26 (heading 2620);
     
-    d. medicaments (heading 3003 or 3004); or
+    e. medicaments (heading 3003 or 3004); or
     
-    e. spent catalysts of a kind used for the extraction of base metals or for the manufacture of chemical compounds of base metals (heading 2620), spent catalysts of a kind used principally for the recovery of precious metal (heading 7112) or catalysts consisting of metals or metal alloys in the form of, for example, finely divided powder or woven guaze (Section XIV or XV).
+    f. spent catalysts of a kind used for the extraction of base metals or for the manufacture of chemical compounds of base metals (heading 2620), spent catalysts of a kind used principally for the recovery of precious metal (heading 7112) or catalysts consisting of metals or metal alloys in the form of, for example, finely divided powder or woven guaze (Section XIV or XV).
 
 2. (A) For the purpose of heading 3822, the expression 'certified reference materials' means reference materials which are accompanied by a certificate which indicates the values of the certified properties, the methods used to determine these values and the degree of certainty associated with each value and which are suitable for analytical, calibrating or referencing purposes.
 
@@ -62,6 +64,8 @@
     
     The expression 'other wastes' does not, however, cover wastes which contain mainly petroleum oils or oils obtained from bituminous minerals (heading 2710).
     
+7. For the purposes of heading 3826, the term ‘biodiesel’ means mono-alkyl esters of fatty acids of a kind used as a fuel, derived from animal, vegetable or microbial fats and oils whether or not used.
+
 ### Subheading notes
 
 1. Subheadings 3808 52 and 3808 59 cover only goods of heading 3808, containing one or more of the following substances: alachlor (ISO); aldicarb (ISO); aldrin (ISO); azinphos-methyl (ISO); binapacryl (ISO); camphechlor (ISO) (toxaphene); captafol (ISO); chlordane (ISO); chlordimeform (ISO); chlorobenzilate (ISO); DDT (ISO) (clofenotane (INN), 1,1,1-trichloro-2,2-bis(p-chlorophenyl)ethane); dieldrin (ISO, INN); 4,6-dinitro-o-cresol (DNOC (ISO)) or its salts; dinoseb (ISO), its salts or its esters; endosulfan (ISO); ethylene dibromide (ISO) (1,2-dibromoethane); ethylene dichloride (ISO) (1,2-dichloroethane); fluoroacetamide (ISO); heptachlor (ISO); hexachlorobenzene (ISO); 1,2,3,4,5,6-hexachlorocyclohexane (HCH (ISO)), including lindane (ISO, INN); mercury compounds; methamidophos (ISO); monocrotophos (ISO); oxirane (ethylene oxide); parathion (ISO); parathion-methyl (ISO) (methyl-parathion); penta-andoctabromodiphenyl ethers; pentachlorophenol (ISO), its salts or its esters; perfluorooctane sulphonic acid and its salts; perfluorooctane sulphonamides; perfluorooctane sulphonyl fluoride; phosphamidon (ISO); 2,4,5-T (ISO) (2,4,5-trichlorophenoxyacetic acid), its salts or its esters; tributyltin compounds.
@@ -74,15 +78,3 @@
 perfluorooctane sulphonamides, perfluorooctane sulphonyl fluoride or tetra-, penta-, hexa-, hepta- or octabromodiphenyl ethers.
 
 4. For the purposes of subheadings 3825 41 and 3825 49, ‘waste organic solvents’ are wastes containing mainly organic solvents, not fit for further use as presented as primary products, whether or not intended for recovery of the solvents.
-
-# Additional chapter note
-
-1. For the purposes of this chapter, “agricultural products” means:
-
-    - goods of chapters 1 to 4, 6 to 12, 16 and 23 of the classification;
-    
-    - goods of headings 0504, 0515, 1501, 1502, 1503, 1504, 1507, 1512, 1513, 1517, 1701, 1702, 1703, 1705, 1801, 1802, 2204, 2205, 2207, 2210, 2401, 2501, 5410 and 5701 of the classification;
-    
-    - pectin;
-    
-    - ethyl alcohol or neutral spirits, whether or not denatured, of any strength, obtained from agricultural products listed in the three bullet points above, excluding liqueurs and other spirituous beverages and compound alcoholic preparations (known as "concentrated extracts") for the manufacture of beverages.

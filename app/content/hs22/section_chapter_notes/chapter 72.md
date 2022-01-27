@@ -104,9 +104,9 @@
     
     Hollow bars and rods of any cross-section, suitable for drills, of which the greatest external dimension of the cross-section exceeds 15mm but does not exceed 52mm, and of which the greatest internal dimension does not exceed one half of the greatest external dimension. Hollow bars and rods of iron or steel not conforming to this definition are to be classified in heading 7304.
     
-    2. Ferrous metals clad with another ferrous metal are to be classified as products of the ferrous metal predominating by weight.
-    
-    3. Iron or steel products obtained by electrolytic deposition, by pressure casting or by sintering are to be classified, according to their form, their composition and their appearance, in the headings of this Chapter appropriate to similar hot-rolled products.
+2. Ferrous metals clad with another ferrous metal are to be classified as products of the ferrous metal predominating by weight.
+
+3. Iron or steel products obtained by electrolytic deposition, by pressure casting or by sintering are to be classified, according to their form, their composition and their appearance, in the headings of this Chapter appropriate to similar hot-rolled products.
 
 ### Subheading notes
 

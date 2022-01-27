@@ -26,11 +26,11 @@
     
     (8) urea, whether or not pure;
     
-    (b) fertilisers consisting of any of the goods described in (a) above mixed together;
+    b. fertilisers consisting of any of the goods described in (a) above mixed together;
     
-    (c) fertilisers consisting of ammonium chloride or of any of the goods described in (a) or (b) above mixed with chalk, gypsum or other inorganic non-fertilising substances;
+    c. fertilisers consisting of ammonium chloride or of any of the goods described in (a) or (b) above mixed with chalk, gypsum or other inorganic non-fertilising substances;
     
-    (d) liquid fertilisers consisting of the goods of subparagraph (a)(2) or (8) above, or of mixtures of those goods, in an aqueous or ammoniacal solution.
+    d. liquid fertilisers consisting of the goods of subparagraph (a)(2) or (8) above, or of mixtures of those goods, in an aqueous or ammoniacal solution.
 
 3. Heading 3103 applies only to the following goods, provided that they are not put up in the forms or packages described in heading 3105:
 

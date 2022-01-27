@@ -27,7 +27,7 @@
     
     b. the constituent material of the outer sole shall be taken to be the material having the greatest surface area in contact with the ground, no account being taken of accessories or reinforcements such as spikes, bars, nails, protectors or similar attachments.
 
-### Subheading notes
+### Subheading note
 
 1. For the purposes of subheadings 6402 12, 6402 19, 6403 12, 6403 19 and 6404 11, the expression 'sports footwear' applies only to:
 

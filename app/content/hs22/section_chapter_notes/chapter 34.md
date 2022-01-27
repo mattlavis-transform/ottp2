@@ -33,4 +33,5 @@
     - (b) unmixed animal waxes or unmixed vegetable waxes, whether or not refined or coloured, of heading 1521;
     
     - (c) mineral waxes or similar products of heading 2712, whether or not intermixed or merely coloured; or
+    
     - (d) waxes mixed with, dispersed in or dissolved in a liquid medium (headings 3405, 3809, etc.).
