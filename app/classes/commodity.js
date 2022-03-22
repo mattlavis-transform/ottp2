@@ -43,6 +43,7 @@ class Commodity {
         this.get_heading_class();
 
         this.quotas = [];
+        this.quota_order_numbers = [];
         this.mfns = [];
         this.vats = [];
         this.excises = [];
@@ -84,13 +85,32 @@ class Commodity {
 
         this.customs_duties_measures = [];
 
-        this.format_commodity_code();
+        this.get_preference_codes();
+    }
+
+    get_preference_codes() {
+        this.preference_codes = require('../data/preference_codes/preference_codes.json');
+        var a = 1;
+    }
+
+    assign_preference_codes() {
+        var gsp_areas = ["2005", "2020", "2027"];
+        this.measures.forEach(m => {
+            var a = 1;
+            var preference_codes = this.preference_codes["measure_types"][m.measure_type_id];
+            if (typeof preference_codes !== 'undefined') {
+                if (gsp_areas.includes(m.geographical_area_id)) {
+                    m.preference_code = preference_codes[0];
+                } else {
+                    m.preference_code = preference_codes[preference_codes.length - 1];
+                }
+            }
+        });
     }
 
     get_heading_class() {
         if (this.number_indents <= 1) {
             this.heading_class = " b";
-            // this.heading_class = "";
         } else {
             this.heading_class = "";
         }
@@ -165,6 +185,9 @@ class Commodity {
         this.crumb = "";
         this.ancestry = [];
 
+        this.chapter_note = "";
+        this.section_note = "";
+
         // Get all the measures + measure components
         this.included.forEach(item => {
             if (item["type"] == "section") {
@@ -172,10 +195,12 @@ class Commodity {
                 this.section_id = item.attributes.position;
                 this.section_title = item.attributes.title;
                 this.ancestry.push(description);
+                this.section_note = item.attributes["section_note"];
 
             } else if (item["type"] == "chapter") {
                 var description = item["attributes"]["formatted_description"];
                 this.ancestry.push(description);
+                this.chapter_note = item.attributes["chapter_note"];
 
             } else if (item["type"] == "heading") {
                 var description = item["attributes"]["formatted_description"];
@@ -242,6 +267,8 @@ class Commodity {
                 // Get quota order number
                 try {
                     m.order_number_id = item["relationships"]["order_number"]["data"]["id"];
+                    this.quota_order_numbers.push(m.order_number_id);
+                    var a = 1
                 } catch (error) {
                     // Do nothing
                 }
@@ -364,7 +391,19 @@ class Commodity {
             this.calculate_quotas();
             //this.calculate_preferences();
         }
+        this.get_quota_balances();
+        this.assign_preference_codes();
+    }
 
+    get_quota_balances() {
+        this.quota_balances = {}
+        axios.get('https://www.trade-tariff.service.gov.uk/api/v2/quotas/search?order_number=058003&include=quota_balance_events')
+            .then((response) => {
+                console.log("Getting exchange rate");
+                var data = response.data;
+                // this.exchange_rate = parseFloat(data["rates"]["GBP"]);
+                var a = 1;
+            });
     }
 
     get_export_measure_ids() {
@@ -1192,6 +1231,7 @@ class Commodity {
 
             }
         });
+        var a = 1;
     }
 
     get_customs_duties_string() {

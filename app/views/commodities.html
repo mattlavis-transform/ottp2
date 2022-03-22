@@ -126,6 +126,16 @@
                             </tbody>
                         </table>
                     {% endif %}
+                    {% if commodity.chapter_note %}
+                        <h2 class="govuk-heading-m">Chapter notes</h2>
+                        {{ commodity.chapter_note | convert_markdown | safe }}
+                    {% endif %}
+                    {% if commodity.section_note %}
+                        <h2 class="govuk-heading-m">Section notes</h2>
+                        {{ commodity.section_note | convert_markdown | safe }}
+                    {% endif %}
+                    <p>&nbsp;</p>
+                    {% include "includes/general_interpretative_rules.html" %}
                 </div>
                 {# <div class="govuk-tabs__panel" id="bti">
                     BTI goes here
@@ -217,6 +227,56 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <details class="govuk-details" data-module="govuk-details">
+                        <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+      View recent quota balance updates
+    </span>
+                        </summary>
+                        <div class="govuk-details__text">
+
+                            <table class="govuk-table govuk-table-s">
+                                {# <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption> #}
+                                <thead class="govuk-table__head">
+                                    <tr class="govuk-table__row">
+                                        <th scope="col" class="govuk-table__header">Date updated</th>
+                                        <th scope="col" class="govuk-table__header">Old balance</th>
+                                        <th scope="col" class="govuk-table__header">New balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="govuk-table__body">
+                                    <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">1 March 2022</td>
+                                        <td class="govuk-table__cell">1,200,300 kg</td>
+                                        <td class="govuk-table__cell">1,100,100 kg</td>
+                                    </tr>
+                                    <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">28 February 2022</td>
+                                        <td class="govuk-table__cell">1,100,100 kg</td>
+                                        <td class="govuk-table__cell">1,000,100 kg</td>
+                                    </tr>
+                                    <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">27 February 2022</td>
+                                        <td class="govuk-table__cell">1,100,100 kg</td>
+                                        <td class="govuk-table__cell">1,000,100 kg</td>
+                                    </tr>
+                                    <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">26 February 2022</td>
+                                        <td class="govuk-table__cell">1,100,100 kg</td>
+                                        <td class="govuk-table__cell">1,000,100 kg</td>
+                                    </tr>
+                                    <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">25 February 2022</td>
+                                        <td class="govuk-table__cell">1,100,100 kg</td>
+                                        <td class="govuk-table__cell">1,000,100 kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </details>
+
                     <p>In an effort to facilitate UK importers HMRC endeavours to keep quotas 'OPEN' where possible, therefore the
             information displayed above may differ slightly from the current UK position. If you require further
             information contact the Tariff Quota Management Team by email: <a

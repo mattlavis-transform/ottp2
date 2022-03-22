@@ -1,7 +1,9 @@
 const e = require("express");
+const axios = require('axios')
 const dotenv = require('dotenv');
 const config = require('../config.js');
 var MarkdownIt = require('markdown-it');
+// const asyncMiddleware = require('./asyncMiddleware');
 
 class Context {
     constructor(req, settings_profile = "") {
@@ -25,6 +27,17 @@ class Context {
         this.get_preferences();
         this.get_location();
         this.get_simulation_date();
+        // this.get_trade_direction(req);
+    }
+
+    get_trade_direction(req) {
+        this.trade_direction = req.session.data["trade_direction"];
+        if (this.trade_direction == "import") {
+            this.rules_of_origin_title = "Importing commodity COMMODITY from " + this.country_name;
+        } else {
+            this.rules_of_origin_title = "Exporting commodity COMMODITY to " + this.country_name;
+        }
+        this.rules_of_origin_title = this.rules_of_origin_title.replace("COMMODITY", this.goods_nomenclature_item_id);
     }
 
     get_simulation_date() {
@@ -97,8 +110,6 @@ class Context {
         }
     }
 
-
-
     get_location() {
         var geoip = require('geoip-country');
         var ip = "207.97.227.239"; // US address
@@ -125,6 +136,179 @@ class Context {
         var d = new Date();
         this.today = format_date(d, "D MMMM YYYY");
         this.yesterday = format_date(d, "D MMMM YYYY");
+    }
+
+    get_commodity(req) {
+        this.goods_nomenclature_item_id = req.params["goods_nomenclature_item_id"];
+    }
+    
+    get_phase(req) {
+        this.phase = req.session.data["phase"];
+    }
+
+    get_scheme_code() {
+        var jp = require('jsonpath');
+        var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
+        data = data["schemes"];
+        var query_string = "$[?(@.countries.indexOf('" + this.country + "') != -1)]"
+        this.matching_schemes = jp.query(data, query_string);
+        if (this.matching_schemes.length == 1) {
+            this.scheme_code = this.matching_schemes[0].scheme_code;
+            this.scheme_title = this.matching_schemes[0].title;
+        } else {
+            var a = 1; // There is either no match or there is more than one match
+        }
+        var a = 1;
+    }
+
+    get_roo_origin() {
+        if (this.trade_direction == "import") {
+            this.roo_origin = this.country_name
+        } else {
+            this.roo_origin = "the United Kingdom"
+        }
+    }
+
+    get_wholly_obtained(req) {
+        if (req.session.data["wholly_obtained"] == "yes") {
+            this.wholly_obtained = true;
+        } else {
+            this.wholly_obtained = false;
+        }
+    }
+
+    get_sufficiently_processed(req) {
+        if (req.session.data["sufficiently_processed"] == "yes") {
+            this.sufficiently_processed = true;
+        } else {
+            this.sufficiently_processed = false;
+        }
+    }
+
+    get_rules_met(req) {
+        if (req.session.data["met_product_specific_rules"] == "yes") {
+            this.met_product_specific_rules = true;
+        } else {
+            this.met_product_specific_rules = false;
+        }
+    }
+
+    async get_product_specific_rules() {
+        var axios_response;
+        var root = "https://www.trade-tariff.service.gov.uk";
+        var url = root + `/api/v2/rules_of_origin_schemes/${this.goods_nomenclature_item_id.substr(0, 6)}/${this.country}`
+
+        this.product_specific_rules = [];
+
+        [axios_response] = await Promise.all([
+            axios.get(url)
+        ]);
+
+        var included = axios_response.data["included"];
+        included.forEach(item => {
+            if (item["type"] == "rules_of_origin_rule") {
+                this.product_specific_rules.push(item);
+            }
+        });
+        var a = 1;
+    }
+
+    async get_roo_links() {
+        var axios_response;
+        var root = "https://www.trade-tariff.service.gov.uk";
+        var url = root + `/api/v2/rules_of_origin_schemes/${this.goods_nomenclature_item_id.substr(0, 6)}/${this.country}`
+
+        this.links = [];
+
+        [axios_response] = await Promise.all([
+            axios.get(url)
+        ]);
+
+        var included = axios_response.data["included"];
+        included.forEach(item => {
+            if (item["type"] == "rules_of_origin_link") {
+                this.links.push(item);
+            }
+        });
+        var a = 1;
+        this.explainers = [
+            {
+                "title": "Determining if a good is wholly obtained",
+                "file": "wholly-obtained.md"
+            },
+            {
+                "title": "Determining if a product has been sufficiently processed",
+                "file": "insufficient-processing.md"
+            },
+            {
+                "title": "Neutral elements",
+                "file": "neutral-elements.md"
+            },
+            {
+                "title": "Tolerances",
+                "file": "tolerances.md"
+            },
+            {
+                "title": "Sets",
+                "file": "sets.md"
+            },
+            {
+                "title": "Verification",
+                "file": "verification.md"
+            },
+            {
+                "title": "Cumulation",
+                "file": "cumulation.md"
+            }
+        ]
+    }
+
+    async get_proofs() {
+        var axios_response;
+        var root = "https://www.trade-tariff.service.gov.uk";
+        var url = root + `/api/v2/rules_of_origin_schemes/${this.goods_nomenclature_item_id.substr(0, 6)}/${this.country}`
+
+        this.proofs = [];
+
+        [axios_response] = await Promise.all([
+            axios.get(url)
+        ]);
+
+        var included = axios_response.data["included"];
+        included.forEach(item => {
+            if (item["type"] == "rules_of_origin_proof") {
+                this.proofs.push(item);
+            }
+        });
+        var a = 1;
+    }
+
+    get_article(document_type) {
+        var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/articles/' + this.scheme_code + "/" + document_type + '.md';
+        var fs = require('fs');
+        var data = fs.readFileSync(path, 'utf8');
+        if (document_type == "wholly-obtained") {
+            this.wholly_obtained = data;
+        }
+        else if (document_type == "neutral-elements") {
+            this.neutral_elements = data;
+        }
+        else if (document_type == "cumulation") {
+            this.cumulation = data;
+        }
+        else if (document_type == "insufficient-processing") {
+            this.insufficient_processing = data;
+        }
+        else if (document_type == "tolerances") {
+            this.tolerances = data;
+        }
+        else if (document_type == "sets") {
+            this.sets = data;
+        }
+        else if (document_type == "verification") {
+            this.verification = data;
+        }
+        // var a = 1;
     }
 
     get_country(req) {
@@ -248,9 +432,11 @@ class Context {
     get_scope(s) {
         if ((s == "ni") || (s == "eu") || (s == "xi")) {
             this.scope_id = "xi";
+            this.scope_id_roo = "xi";
             this.scope_id_slash = "/xi/";
         } else {
             this.scope_id = "";
+            this.scope_id_roo = "uk";
             this.scope_id_slash = "/";
         }
     }

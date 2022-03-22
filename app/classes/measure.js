@@ -1,6 +1,5 @@
 const e = require('express');
 const { max } = require('lodash');
-const GeographicalArea = require('./geographical_area');
 const MeasureConditionCodeGroup = require('./measure_condition_code_group');
 
 class Measure {
@@ -254,7 +253,6 @@ class Measure {
                     let tmp = Object.assign(Object.create(Object.getPrototypeOf(cc0)), cc0);
                     tmp.append_condition(cc1);
                     working_conditions.push(tmp);
-                    // console.log("Combining: " + tmp.measure_condition.requirement + "\n\n");
                 });
             });
         }

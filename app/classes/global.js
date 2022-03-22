@@ -272,7 +272,7 @@ global.validate_starch = function (req, res) {
 }
 
 global.get_rules_of_origin = function (req, res) {
-    var data = require('../data/roo/xi/roo_schemes.json');
+    var data = require('../data/roo/uk/roo_schemes_uk.json');
     var geo_data = require('../assets/data/geographical_areas.json');
     var schemes = data.schemes;
     schemes.forEach(scheme => {
@@ -340,6 +340,31 @@ global.get_geography = function (id, res) {
             ret.members.forEach(m => {
                 m.description = countries[m.id];
             });
+            var a = 1;
+        }
+    });
+    return (ret);
+}
+
+
+
+global.get_measure_type = function (id, res) {
+    var a = 1;
+    var ret = {};
+    var data = res["data"];
+
+    var preference_codes = require('../data/preference_codes/preference_codes.json');
+    preference_codes = preference_codes["measure_types"];
+    data.forEach(mt => {
+        if (mt.id == id) {
+            ret.id = id;
+            ret.description = mt.attributes.description;
+            ret.measure_type_series_id = mt.attributes.measure_type_series_id;
+            ret.measure_component_applicable_code = mt.attributes.measure_component_applicable_code;
+            ret.order_number_capture_code = mt.attributes.order_number_capture_code;
+            ret.trade_movement_code = mt.attributes.trade_movement_code;
+            ret.measure_type_series_description = mt.attributes.measure_type_series_description;
+            ret.preference_code = preference_codes[mt.id];
             var a = 1;
         }
     });

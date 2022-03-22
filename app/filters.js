@@ -70,7 +70,26 @@ module.exports = function (env) {
         });
 
         return (s);
+    }
 
+    filters.format_psr = function(rule_text) {
+        rule_text = rule_text.replace("{{CC}}", "<span class='roo_explainer'><strong>CC rule - change of chapter</strong><br>A product complies with the CC rule when all non-originating materials used in its production are classified in a different HS chapter than the product.</span>");
+
+        rule_text = rule_text.replace("{{CTH}}", "<span class='roo_explainer'><strong>CTH rule - change in tariff heading</strong><br>A product complies with the CTH rule when all non-originating materials used in its production are classified in a different HS heading than the product.</span>");
+
+        rule_text = rule_text.replace("{{CTSH}}", "<span class='roo_explainer'><strong>CTSH rule - change in tariff subheading</strong><br>A product complies with the CTSH rule when all of the non-originating materials used in its production are classified in a different HS subheading than the product.</span>");
+
+        rule_text = rule_text.replace("{{WO}}", "<span class='roo_explainer'><strong>Wholly obtained</strong><br>The 'wholly obtained' rule applies mainly to basic agricultural products, fishery products, minerals, or waste and scrap.<br><br>Wholly obtained products are goods obtained entirely in the territory of one country without the addition of any non-originating materials.</span>");
+
+        rule_text = rule_text.replace("{{EXW}}", "<span class='roo_explainer'><strong>Ex-works price</strong><br>When importing on Ex Works terms, the buyer is responsible for the whole shipment from door to door.  All costs and liabilities are with the buyer. The only responsibility for a seller during the whole transportation process is to ensure that the goods they are selling are made available for collection at their premises.</span>");
+
+        // rule_text = rule_text.replace("ex-works price", "<a href='/help/#EXW'>ex-works price</a>");
+        // rule_text = rule_text.replace("(EXW)", "(<a href='/help/#EXW'>ex-works price</a>)");
+        rule_text = rule_text.replace("(RVC)", "(<a href='/help/#RVC'>RVC</a>)");
+        rule_text = rule_text.replace("(FOB)", "(<a href='/help/#FOB'>FOB</a>)");
+
+        rule_text = rule_text.replace("MaxNOM", "<a href='/help/#MaxNOM'>MaxNOM</a> (Maximum value of non-originating materials)");
+        return (rule_text);
     }
 
 
@@ -277,18 +296,25 @@ module.exports = function (env) {
         }
     }
 
-    filters.convert_markdown = function (str) {
+    filters.convert_markdown = function (str, hide_bullets) {
         if (typeof str !== 'undefined') {
             md = new MarkdownIt();
             str = str.replace(/\* ([0-9]{1,2})\\. /g, '$1. ');
             str = str.replace(/  \* \(([a-z]{1,2})\)/g, '\n\n    $1. ');
+            
             var markdown_text = md.render(str);
             markdown_text = markdown_text.replace("&lt;", "<");
             markdown_text = markdown_text.replace("&gt;", ">");
             markdown_text = markdown_text.replace(/<h2>/g, "<h3 class='govuk-heading-s'>");
             markdown_text = markdown_text.replace(/<\/h2>/g, "</h3>");
+            markdown_text = markdown_text.replace(/<h3>/g, "<h3 class='govuk-heading-s'>");
 
-            markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list govuk-list--bullet'>")
+            if (hide_bullets) {
+                markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list'>")
+            } else {
+                markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list govuk-list--bullet'>")
+            }
+            markdown_text = markdown_text.replace(/<ol>/g, "<ul class='govuk-list govuk-list--number'>")
             return markdown_text;
         } else {
             return "";

@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Not met - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+{% endblock %}
+
+{% block beforeContent %}
+    {{ govukPhaseBanner({
+      tag: {
+        text: "beta"
+      },
+      html: 'This is a Beta service - your <a href="{{ context.feedback_url }}" class="govuk-link">feedback</a> will help us to improve it.'
+    }) }}
+    {{ govukBackLink({
+        text: "Back",
+        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+    }) }}
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
+                <input type="hidden" name="phase" id="phase" value="processing" >
+                <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
+                <h1 class="govuk-heading-xl">Your product meets the rules of origin</h1>
+                <h2 class="govuk-heading-m">How to document the origin of your product</h1>
+                <p class="govuk-body">
+                    To benefit from a preference, originating products should be accompanied by
+                    appropriate proofs confirming their origin.</p>
+
+                {% if context.proofs | length > 1 %}
+                <p class="govuk-body">Click on a proof to find out more.</p>
+                {% endif %}
+
+                <ul class="govuk-list">
+                    {% for proof in context.proofs %}
+                        <li>
+                            <a href="{{ proof.attributes.url }}">{{ proof.attributes.summary }} (opens in new tab)</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                <h2 class="govuk-heading-m govuk-!-margin-top-6">How rules of origin are verified</h2>
+                {{ context.verification | convert_markdown | safe }}
+
+            </form>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <aside class="app-related-items" role="complementary">
+                <h2 class="govuk-heading-m" id="subsection-title">Related content</h2>
+                <nav role="navigation" aria-labelledby="subsection-title">
+                    <ul class="govuk-list govuk-!-font-size-16">
+                        {% for link in context.links %}
+                            <li>
+                                <a href="{{ link.attributes.url }}">{{ link.attributes.text }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <h2 class="govuk-heading-m" id="subsection-title">Rules of origin in the TCA</h2>
+                    <ul class="govuk-list govuk-!-font-size-16">
+                        {% for explainer in context.explainers %}
+                            <li>
+                                <a href="{{ explainer.file }}">{{ explainer.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    
+                </nav>
+            </aside>
+        </div>
+    </div>
+
+{% endblock %}
+</html>

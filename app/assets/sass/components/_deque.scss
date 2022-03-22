@@ -1,5 +1,6 @@
 $indent             : 12px;
-$link-colour        : #339;
+$link-colour        : #30609B;
+$link-colour-hover  : #102F74;
 $break-point-widest : 55em; // 880px : the point at which VAT & supp unit disappear
 $break-point-inter  : 45em; // 720px : the point at which MFN disappears
 $break-point-mobile : 30em; // 480px : the point at which we go into a serial view
@@ -12,11 +13,22 @@ $width-commodity-code    : 9em;
 $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$width-supplementary-unit} + #{$width-third-country-duty});
 
 .deque-expander {
-    // border                 : 1px solid red;
     padding                : 0px;
     font-family            : "GDS Transport", arial, sans-serif;
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.deque-expander a {
+    color: $link-colour !important
+}
+
+.deque-expander a:visited {
+    color: $link-colour !important
+}
+
+.deque-expander a:hover {
+    color: $link-colour-hover !important
 }
 
 .deque-expander .deque-expander-summary {
@@ -26,17 +38,29 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
     color     : $link-colour;
     left      : 0;
     text-align: left;
-    margin    : 0.5em 0px;
+    margin    : 0px 0px 0px 0px;
+
+}
+
+.deque-expander {
+    font-size: 14px !important;
 
     .endline {
 
 
         .heading-description {
-            // text-indent: 20px;
+            padding-left: $indent;
+            width       : calc(100% * (#{$width-commodity-code}));
+        }
+    }
+
+    .intermediate {
+        .heading-description {
             padding-left: $indent;
             width       : calc(100% - (#{$width-commodity-code}));
         }
     }
+
 }
 
 .deque-expander .deque-expander-summary:visited {
@@ -48,28 +72,32 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
 }
 
 .deque-expander-summary .endline .heading-description::before {
-    content   : "\25B6";
-    width     : $indent * 1;
-    font-size : 12px;
-    top       : -2px;
-    margin-left      : -1 * $indent;
-    position  : relative;
-    display   : inline-block;
-    text-align: left;
+    content    : "\25B6";
+    width      : $indent * 1;
+    font-size  : 12px;
+    top        : -2px;
+    margin-left: -1 * $indent;
+    position   : relative;
+    display    : inline-block;
+    text-align : left;
 }
 
-// .deque-expander .deque-expander-summary .toggle-indicator:before {
-//     background : none;
-//     content    : "\25B6";
-//     color      : $link-colour;
-//     top        : -2px;
-//     position   : relative;
-//     font-size  : 10px;
-//     font-weight: bold;
-//     padding    : 0;
-//     text-align : center;
-//     width      : $indent;
-// }
+.deque-expander-summary .intermediate .heading-description::before {
+    content    : "\25B6";
+    width      : ($indent * 1) - 3;
+    font-size  : 12px;
+    top        : -1px;
+    margin-left: -1 * $indent;
+    position   : relative;
+    display    : inline-block;
+    text-align : left;
+}
+
+
+.deque-expander-summary .intermediate .heading-description.heading-open::before {
+    content     : "\25BC";
+    // font-size: 13px;
+}
 
 .deque-expander .deque-expander-summary:hover {
     cursor: pointer;
@@ -85,7 +113,7 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
 
 .deque-expander .deque-expander-content {
     clear      : both;
-    margin-left: $indent * 2;
+    margin-left: ($indent * 2);
 
     a {
         text-decoration: none;
@@ -108,6 +136,16 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
             display: block;
         }
     }
+
+    // Smaller than mobile
+    .intermediate {
+        flex          : none;
+        flex-direction: row;
+
+        .heading-commodity-code {
+            display: block;
+        }
+    }
 }
 
 @media (min-width: $break-point-mobile) {
@@ -117,11 +155,133 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
         display       : flex;
         flex-direction: row-reverse;
     }
+
+    .intermediate {
+        display       : flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .endline {
     padding      : 4px 0px 4px 0px;
     margin       : 4px 0px;
+    border-bottom: 1px solid #f0f0f0;
+    font-family  : "GDS Transport", arial, sans-serif;
+
+    .heading-vat {
+        text-align: right;
+    }
+
+    .heading-third-country-duty {
+        text-align: right;
+    }
+
+    .heading-supplementary-unit {
+        text-align   : right;
+        // font-size : 9px !important;
+    }
+
+    .heading-commodity-code {
+        text-align: right;
+
+        span {
+            font-weight: normal !important;
+        }
+    }
+
+    @media (min-width: $break-point-widest) {
+
+        // Larger screens
+        .heading-description {
+            width: calc(100% - #{$other-widths});
+        }
+
+        .heading-vat {
+            width: $width-vat;
+        }
+
+        .heading-third-country-duty {
+            width: $width-third-country-duty;
+        }
+
+        .heading-supplementary-unit {
+            width: $width-supplementary-unit;
+        }
+
+        .heading-commodity-code {
+            width: $width-commodity-code;
+        }
+    }
+
+    @media (min-width: $break-point-inter) and (max-width: $break-point-widest) {
+        .heading-description {
+            width: calc(100% - (#{$width-commodity-code} + #{$width-third-country-duty}));
+        }
+
+        .heading-vat {
+            display: none;
+        }
+
+        .heading-third-country-duty {
+            width: $width-third-country-duty;
+            color: black;
+        }
+
+        .heading-supplementary-unit {
+            display: none;
+        }
+
+        .heading-commodity-code {
+            width: $width-commodity-code;
+        }
+    }
+
+    @media (min-width: $break-point-mobile) and (max-width: $break-point-inter) {
+        .heading-description {
+            width: calc(100% - #{$width-commodity-code});
+        }
+
+        .heading-vat {
+            display: none;
+        }
+
+        .heading-supplementary-unit {
+            display: none;
+        }
+
+        .heading-third-country-duty {
+            display: none;
+        }
+
+        .heading-commodity-code {
+            width     : $width-commodity-code;
+            text-align: right;
+        }
+    }
+
+    @media (max-width: $break-point-mobile) {
+        .heading-vat {
+            display: none;
+        }
+
+        .heading-third-country-duty {
+            display: none;
+        }
+
+        .heading-supplementary-unit {
+            display: none;
+        }
+
+        .heading-commodity-code {
+            margin-bottom: 0.5em;
+        }
+
+    }
+}
+
+.intermediate {
+    padding      : 0px 0px 4px 0px;
+    margin       : 2px 0px;
     border-bottom: 1px solid #f0f0f0;
     font-family  : "GDS Transport", arial, sans-serif;
 
@@ -153,25 +313,18 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
         }
 
         .heading-vat {
-            // background-color: darkseagreen;
-            width   : $width-vat;
-            // color: black;
+            width: $width-vat;
         }
 
         .heading-third-country-duty {
-            // background-color: darkgoldenrod;
-            width   : $width-third-country-duty;
-            // color: black;
+            width: $width-third-country-duty;
         }
 
         .heading-supplementary-unit {
-            // background-color: darkkhaki;
-            width   : $width-supplementary-unit;
-            // color: black;
+            width: $width-supplementary-unit;
         }
 
         .heading-commodity-code {
-            // background-color: deeppink;
             width: $width-commodity-code;
         }
     }
@@ -247,7 +400,8 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
         font-family     : 'Azeret Mono', 'Courier New', Courier, monospace;
         padding         : 2px 3px;
         margin          : 0px 2px 0px 0px;
-        font-size       : 14px;
+        font-size       : 13px;
+        font-weight     : normal;
         background-color: #eee;
         color           : #000;
     }
@@ -266,19 +420,28 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
 }
 
 .heading-header {
-    // background-color: #f0f0f0;
-    font-family      : "GDS Transport", arial, sans-serif;
-    color            : #666;
-    // font-size  : 12px;
-    // font-weight   : bold;
-    padding          : 0px;
+    font-family  : "GDS Transport", arial, sans-serif;
+    color        : #666;
+    padding      : 0px;
+    margin-bottom: 1em;
 }
 
 .endline.heading-header {
     border-bottom: 0px;
 
     div {
-        // text-align: center;
+        top: 100%
+    }
+
+    div.heading-description {
+        text-align: left;
+    }
+}
+
+.intermediate.heading-header {
+    border-bottom: 0px;
+
+    div {
         top: 100%
     }
 
@@ -295,11 +458,20 @@ $other-widths            : calc(#{$width-vat} + #{$width-commodity-code} + #{$wi
     }
 
     .tools {
-        padding         : 0.5em;
+        padding         : 0.75em 0.5em;
         background-color: #eee;
-    }
-}
 
-.headings-list {
-    // margin-top: -1em;
+        span {
+            font-family            : "GDS Transport", arial, sans-serif;
+            -webkit-font-smoothing : antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-right          : 1em;
+            color                  : $link-colour;
+            text-decoration        : underline;
+        }
+
+        span:hover {
+            color: $link-colour-hover;
+        }
+    }
 }

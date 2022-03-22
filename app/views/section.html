@@ -75,6 +75,8 @@
                     {{ section.data.attributes.section_note | convert_markdown | safe }}
                 </article>
             {% endif %}
+
+            {% include "includes/general_interpretative_rules.html" %}
             <div class="bottom_switcher">
                 {% include "includes/scope_switcher_panel.html" %}
             </div>

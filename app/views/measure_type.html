@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+    <script>
+        document.write('<a href="javascript:history.back();" class="govuk-back-link">Back</a>');
+    </script>
+    <noscript>
+        <a href="{{ referer }}" class="govuk-back-link">Back</a>
+    </noscript>
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+            <span class="govuk-caption-xl">{{ context.title }}</span>
+            <h1 class="govuk-heading-l">{{ measure_type.description }}</h1>
+            {# <p>Measure type {{ measure_type.id }}, <strong>{{ measure_type.description }}</strong></p> #}
+            <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Description</th>
+                        <td class="govuk-table__cell">{{ measure_type.description }}</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Trade movement code</th>
+                        <td class="govuk-table__cell">{{ measure_type.trade_movement_code }}</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Measure component applicable code</th>
+                        <td class="govuk-table__cell">{{ measure_type.measure_component_applicable_code }}</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Order number capture code</th>
+                        <td class="govuk-table__cell">{{ measure_type.order_number_capture_code }}</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Preference code</th>
+                        <td class="govuk-table__cell">
+                            {{ measure_type.preference_code[0]["preference_code"] }}<br>
+                            {{ measure_type.preference_code[0]["description"] }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+</html>

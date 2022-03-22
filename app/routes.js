@@ -314,7 +314,7 @@ router.get([
     } else {
         // UK
         const axiosrequest1 = axios.get(url);
-        try {
+        // try {
             await axios.all([axiosrequest1]).then(axios.spread(function (response) {
                 c = new Commodity();
                 c.country = context.country;
@@ -340,14 +340,14 @@ router.get([
                     'commodity': c
                 });
             }));
-        }
-        catch (error) {
-            var url = "/commodity_history/" + req.params["goods_nomenclature_item_id"];
-            if (context.simulation_date != "") {
-                url += "?as_of=" + context.simulation_date
-            }
-            res.redirect(url);
-        }
+        // }
+        // catch (error) {
+        //     var url = "/commodity_history/" + req.params["goods_nomenclature_item_id"];
+        //     if (context.simulation_date != "") {
+        //         url += "?as_of=" + context.simulation_date
+        //     }
+        //     res.redirect(url);
+        // }
     }
 });
 
@@ -376,6 +376,31 @@ router.get(['/geographical_area/:id/', '/:scope_id/geographical_area/:id/',], fu
                 'context': context,
                 'referer': referer,
                 'geographical_area': g
+            });
+        });
+});
+
+
+
+// Get a measure types
+router.get(['/measure_type/:id/', '/:scope_id/measure_type/:id/',], function (req, res) {
+    var id = req.params["id"];
+    var context = new Context(req);
+    var referer = req.headers.referer;
+    if (referer == null) {
+        referer = "/";
+    }
+    var url = 'https://www.trade-tariff.service.gov.uk/api/v2/measure_types/';
+    if ((context.scope_id == "ni") || (context.scope_id == "xi")) {
+        url = url.replace("/api", "/xi/api");
+    }
+    axios.get(url)
+        .then((response) => {
+            mt = global.get_measure_type(id, response.data);
+            res.render('measure_type', {
+                'context': context,
+                'referer': referer,
+                'measure_type': mt
             });
         });
 });
@@ -467,7 +492,6 @@ router.get(['/news/', '/:scope_id/news'], function (req, res) {
         'news': news
     });
 });
-
 
 // Preferences
 router.get([

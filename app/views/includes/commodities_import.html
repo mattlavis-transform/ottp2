@@ -78,6 +78,9 @@
             <thead class="govuk-table__head app-flexible-table__head">
                 <tr class="sticky govuk-table__row app-flexible-table__row {{ class }}">
                     <th scope="col" class="govuk-table__header measure app-flexible-table__header">Measure type</th>
+                    {% if display_block.block == "Customs duties" or display_block.block == "Quotas" %}
+                        <th scope="col" class="govuk-table__header value app-flexible-table__header c">Preference code</th>
+                    {% endif %}
                     <th scope="col" class="govuk-table__header country app-flexible-table__header">Country</th>
                     {% if display_block.block != "Import controls" and display_block.block != "UK import controls" %}
                         <th scope="col" class="govuk-table__header value app-flexible-table__header">Duty rate</th>
@@ -86,7 +89,7 @@
                     {# <th scope="col" class="govuk-table__header conditions nw app-flexible-table__header">Measure detail</th> #}
                     <th scope="col" class="govuk-table__header footnotes app-flexible-table__header">Conditions</th>
                     <th scope="col" class="govuk-table__header footnotes app-flexible-table__header c">Footnotes</th>
-                    <th scope="col" class="govuk-table__header legal_base app-flexible-table__header">Legal base</th>
+                    {# <th scope="col" class="govuk-table__header legal_base app-flexible-table__header">Legal base</th> #}
                 </tr>
             </thead>
             <tbody class="govuk-table__body  app-flexible-table__body">
@@ -96,7 +99,13 @@
 
                             <td class="govuk-table__cell measure app-flexible-table__cell measure_type_{{ measure.measure_type_id }}" scope="row" data-column-heading="Measure type">
                                 <div>
-                                    <span class="table-line">{{ measure.measure_type_description }}</span>
+                                    <span class="table-line">
+                                        {% if display_block.block == "Customs duties" or display_block.block == "Quotas" %}
+                                            <a href="/measure_type/{{ measure.measure_type_id }}/">{{ measure.measure_type_description }}</a>
+                                        {% else %}
+                                            {{ measure.measure_type_description }}
+                                        {% endif %}
+                                    </span>
                                     {% if measure.order_number_id %}
                                         <span class="table-line">Order no: <a href="#quota_{{ measure.order_number_id }}" rel="modal:open">{{ measure.order_number_id }}</a>
                                         </span>
@@ -107,6 +116,12 @@
                                     {% endif %}
                                 </div>
                             </td>
+
+                            {% if display_block.block == "Customs duties" or display_block.block == "Quotas" %}
+                                <td class="govuk-table__cell measure app-flexible-table__cell measure_type_{{ measure.measure_type_id }} c" scope="row" data-column-heading="Preference code">
+                                    <span title="{{ measure.preference_code.description | safe }}">{{ measure.preference_code.preference_code | safe }}</span>
+                                </td>
+                            {% endif %}
 
                             <td class="govuk-table__cell country app-flexible-table__cell" scope="row" data-column-heading="Country">
                                 {% if (measure.geographical_area.geographical_area_code == 1) %}
@@ -160,22 +175,20 @@
                                     {% endif %}
                                 </td>
 
-                                
-                            <td class="govuk-table__cell dates app-flexible-table__cell c" scope="row" data-column-heading="Footnotes" nowrap>
-                                {% if measure.has_footnotes %}
-                                    {% if measure.footnotes.length == 1 %}
-                                        <a href="#footnotes_{{ measure.id }}" rel="modal:open">{{ measure.footnotes[0].code }}</a>
-                                    {% else %}
-                                        <a href="#footnotes_{{ measure.id }}" rel="modal:open">Footnotes</a>
-                                    {% endif %}
-                                {% else %}-
+                                <td class="govuk-table__cell dates app-flexible-table__cell c" scope="row" data-column-heading="Footnotes" nowrap>
+                                    {% if measure.has_footnotes %}
+                                        {% if measure.footnotes.length == 1 %}
+                                            <a href="#footnotes_{{ measure.id }}" rel="modal:open">{{ measure.footnotes[0].code }}</a>
+                                        {% else %}
+                                            <a href="#footnotes_{{ measure.id }}" rel="modal:open">Footnotes</a>
+                                        {% endif %}
+                                    {% else %}-
                             {% endif %}
-                            </td>
-                            
-
-                                <td class="govuk-table__cell dates app-flexible-table__cell" scope="row" data-column-heading="Legal base" nowrap>
-                                    <a target="_blank" href="https://www.legislation.gov.uk/uksi/2019/16" title="The Leghold Trap and Pelt Imports (Amendment etc.) (EU Exit) Regulations 2019">S.I. 2019/16</a>
                                 </td>
+
+                                {# <td class="govuk-table__cell dates app-flexible-table__cell" scope="row" data-column-heading="Legal base" nowrap>
+                                    <a target="_blank" href="https://www.legislation.gov.uk/uksi/2019/16" title="The Leghold Trap and Pelt Imports (Amendment etc.) (EU Exit) Regulations 2019">S.I. 2019/16</a>
+                                </td> #}
                             </tr>
                         {% endif %}
                     {% endfor %}
@@ -188,7 +201,7 @@
                         <span class="govuk-details__summary-text">{{ display_block.explainers.title }}</span>
                     </summary>
                     <div class="govuk-details__text">
-                        {{ commodity.customs_duties_string | safe }}
+                        {{ commodity.customs_duties_string | safe }}WINKY
                     </div>
                 </details>
             {% endif %}

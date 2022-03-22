@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Sufficient processing - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+{% endblock %}
+
+{% block beforeContent %}
+    {{ govukPhaseBanner({
+      tag: {
+        text: "beta"
+      },
+      html: 'This is a Beta service - your <a href="{{ context.feedback_url }}" class="govuk-link">feedback</a> will help us to improve it.'
+    }) }}
+    {{ govukBackLink({
+        text: "Back",
+        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+    }) }}
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+            <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
+                <input type="hidden" name="phase" id="phase" value="product_specific_rules" >
+                <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
+                <h1 class="govuk-heading-xl">Do your goods meet the product-specific rules?</h1>
+                {# <p class="govuk-body">You have said that not all of the components that make up your goods
+                    come from {{ context.country_name }}, but they have been sufficiently processed.</p> #}
+
+                <p class="govuk-body">In order to qualify for preferential treatment, your goods need to
+                    meet the product-specific rules. A product complies with the rule when the production process(es) mentioned in
+                    the rule takes place in the EU or the United Kingdom regardless of
+                    the origin of the materials used in that process.</p>
+
+                <table class="govuk-table">
+                    {% if context.product_specific_rules | length > 1 %}
+                        <caption class="govuk-table__caption govuk-table__caption--m normal_weight">
+                        Choose the category that your product belongs to, then read the rule of origin 
+                        to see if your product meets the necessary criteria.
+                    </caption>
+                    {% endif %}
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header">
+                                Product category</th>
+                            <th scope="col" class="govuk-table__header">Rule of origin / production process</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        {% for psr in context.product_specific_rules %}
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">
+                                    {# Products in category {{ psr.attributes.heading }}<br><br> #}
+                                    {{ psr.attributes.description }}
+                                </td>
+                                <td class="govuk-table__cell">{{ psr.attributes.rule | format_psr | safe }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+                {{ govukRadios({
+                idPrefix: "met_product_specific_rules",
+                name: "met_product_specific_rules",
+                fieldset: {
+                    legend: {
+                    text: "Have your goods been processed in such a way as to meet the product-specific rules?",
+                    isPageHeading: false,
+                    classes: "govuk-fieldset__legend--s b"
+                    }
+                },
+                hint: {
+                    text: ""
+                },
+                items: [
+                    {
+                        value: "yes",
+                        text: "Yes",
+                        hint: {
+                            text: ""
+                        }
+                    },
+                    {
+                        value: "no",
+                        text: "No",
+                        hint: {
+                            text: ""
+                        }
+                    }
+                ]
+                }) }}
+
+                {{ govukButton({
+                    text: "Continue",
+                    href: ""
+                }) }}
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+</html>

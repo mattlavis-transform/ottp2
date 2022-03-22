@@ -27,8 +27,9 @@ const routes_import_guidance = require('./app/routes/routes_import_guidance.js')
 const routes_meursing = require('./app/routes/routes_meursing.js')
 const routes_cpc = require('./app/routes/routes_cpc.js')
 const routes_tools = require('./app/routes/routes_tools.js')
-const routes_roo = require('./app/routes/routes_roo.js')
+const routes_roo_new = require('./app/routes/routes_roo_new.js')
 const routes_duty_calculator = require('./app/routes/routes_duty_calculator.js')
+const routes_static = require('./app/routes/routes_static.js')
 const utils = require('./lib/utils.js')
 const extensions = require('./lib/extensions/extensions.js')
 
@@ -257,8 +258,9 @@ if (typeof (routes) !== 'function') {
   app.use('/', routes_meursing)
   app.use('/', routes_cpc)
   app.use('/', routes_tools)
-  app.use('/', routes_roo)
+  app.use('/', routes_roo_new)
   app.use('/', routes_duty_calculator)
+  app.use('/', routes_static)
 }
 
 if (useDocumentation) {
