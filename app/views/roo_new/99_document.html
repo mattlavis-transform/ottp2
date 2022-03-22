@@ -25,7 +25,7 @@
                 <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
                 <h1 class="govuk-heading-xl">{{ context.document_title | safe }}</h1>
                 
-                {{ context.document_content | safe }}
+                {{ context.document_content | convert_markdown | safe }}
 
                 
 

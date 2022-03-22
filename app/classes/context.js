@@ -210,9 +210,10 @@ class Context {
         if (this.document != "") {
             var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/articles/' + this.scheme_code + "/" + this.document + '.md';
             var fs = require('fs');
-            var data = fs.readFileSync(path, 'utf8');
-            var md = new MarkdownIt();
-            this.document_content = md.render(data);
+            // var data = fs.readFileSync(path, 'utf8');
+            // var md = new MarkdownIt();
+            // this.document_content = md.render(data);
+            this.document_content = fs.readFileSync(path, 'utf8');
         } else {
             this.document_content = "";
         }
