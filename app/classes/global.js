@@ -349,10 +349,40 @@ global.get_geography = function (id, res) {
 
 
 global.get_measure_type = function (id, res) {
-    var a = 1;
-    var ret = {};
+    var jp = require('jsonpath');
+    var ret = {
+        "id": "",
+        "description": "",
+        "measure_type_series_id": "",
+        "measure_component_applicable_code": "",
+        "order_number_capture_code": "",
+        "trade_movement_code": "",
+        "trade_direction": "",
+        "measure_type_series_description": "",
+        "preference_code": "",
+        "hint": ""
+    };
     var data = res["data"];
+    var hint;
 
+    // Get measure types
+    var measure_types = require('../data/measure_types.json');
+    var query_string = '$[?(@.measure_type == "' + id + '")]'
+    var result = jp.query(measure_types, query_string);
+    if (result) {
+        result = result[0];
+        try {
+            hint = result["hint"];
+        }
+        catch {
+            hint = "";
+        }
+    } else {
+        var a = 1;
+        hint = "";
+    }
+
+    // Get preference codes
     var preference_codes = require('../data/preference_codes/preference_codes.json');
     preference_codes = preference_codes["measure_types"];
     data.forEach(mt => {
@@ -363,9 +393,25 @@ global.get_measure_type = function (id, res) {
             ret.measure_component_applicable_code = mt.attributes.measure_component_applicable_code;
             ret.order_number_capture_code = mt.attributes.order_number_capture_code;
             ret.trade_movement_code = mt.attributes.trade_movement_code;
+            switch (mt.attributes.trade_movement_code) {
+                case 0:
+                    ret.trade_direction = "import only";
+                    break;
+                case 1:
+                    ret.trade_direction = "export only";
+                    break;
+                case 2:
+                    ret.trade_direction = "import and export";
+                    break;
+                default:
+                    ret.trade_direction = "import only";
+            }
             ret.measure_type_series_description = mt.attributes.measure_type_series_description;
             ret.preference_code = preference_codes[mt.id];
-            var a = 1;
+            if (typeof ret.preference_code === 'undefined') {
+                ret.preference_code = "";
+            }
+            ret.hint = hint;
         }
     });
     return (ret);

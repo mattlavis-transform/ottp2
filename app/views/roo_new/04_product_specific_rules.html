@@ -41,19 +41,17 @@
                     {% endif %}
                     <thead class="govuk-table__head">
                         <tr class="govuk-table__row">
-                            <th scope="col" class="govuk-table__header">
-                                Product category</th>
-                            <th scope="col" class="govuk-table__header">Rule of origin / production process</th>
+                            <th scope="col" class="govuk-table__header" style="width:50% !important">Product category</th>
+                            <th scope="col" class="govuk-table__header" style="width:50% !important">Rule of origin / production process</th>
                         </tr>
                     </thead>
                     <tbody class="govuk-table__body">
                         {% for psr in context.product_specific_rules %}
                             <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">
-                                    {# Products in category {{ psr.attributes.heading }}<br><br> #}
-                                    {{ psr.attributes.description }}
+                                <td class="govuk-table__cell" style="max-width:50%">
+                                    {{ psr.attributes.description | format_psr | safe  }}
                                 </td>
-                                <td class="govuk-table__cell">{{ psr.attributes.rule | format_psr | safe }}</td>
+                                <td class="govuk-table__cell" style="max-width:50%">{{ psr.attributes.rule | format_psr | safe }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>

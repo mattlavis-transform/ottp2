@@ -27,6 +27,8 @@ class Context {
         this.get_preferences();
         this.get_location();
         this.get_simulation_date();
+
+        this.show_rosa_version = true;
         // this.get_trade_direction(req);
     }
 
@@ -190,6 +192,29 @@ class Context {
             this.met_product_specific_rules = true;
         } else {
             this.met_product_specific_rules = false;
+        }
+    }
+
+    get_tolerances(req) {
+        if (req.session.data["met_tolerances"] == "yes") {
+            this.met_tolerances = true;
+        } else {
+            this.met_tolerances = false;
+        }
+    }
+
+    get_document(req) {
+        this.document = req.params["document"];
+        this.document_title = req.params["title"];
+
+        if (this.document != "") {
+            var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/articles/' + this.scheme_code + "/" + this.document + '.md';
+            var fs = require('fs');
+            var data = fs.readFileSync(path, 'utf8');
+            var md = new MarkdownIt();
+            this.document_content = md.render(data);
+        } else {
+            this.document_content = "";
         }
     }
 

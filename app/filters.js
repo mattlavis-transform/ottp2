@@ -72,7 +72,20 @@ module.exports = function (env) {
         return (s);
     }
 
+    filters.remove_extension = function(s) {
+        var my_array = s.split(".");
+        s = my_array[0];
+        return (s);
+    }
+
     filters.format_psr = function(rule_text) {
+
+        md = new MarkdownIt();
+        // str = str.replace(/\* ([0-9]{1,2})\\. /g, '$1. ');
+        // str = str.replace(/  \* \(([a-z]{1,2})\)/g, '\n\n    $1. ');
+        
+        var rule_text = md.render(rule_text);
+        
         rule_text = rule_text.replace("{{CC}}", "<span class='roo_explainer'><strong>CC rule - change of chapter</strong><br>A product complies with the CC rule when all non-originating materials used in its production are classified in a different HS chapter than the product.</span>");
 
         rule_text = rule_text.replace("{{CTH}}", "<span class='roo_explainer'><strong>CTH rule - change in tariff heading</strong><br>A product complies with the CTH rule when all non-originating materials used in its production are classified in a different HS heading than the product.</span>");

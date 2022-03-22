@@ -85,18 +85,14 @@
                     {% if display_block.block != "Import controls" and display_block.block != "UK import controls" %}
                         <th scope="col" class="govuk-table__header value app-flexible-table__header">Duty rate</th>
                     {% endif %}
-                    {# <th scope="col" class="govuk-table__header dates app-flexible-table__header">Dates</th> #}
-                    {# <th scope="col" class="govuk-table__header conditions nw app-flexible-table__header">Measure detail</th> #}
                     <th scope="col" class="govuk-table__header footnotes app-flexible-table__header">Conditions</th>
                     <th scope="col" class="govuk-table__header footnotes app-flexible-table__header c">Footnotes</th>
-                    {# <th scope="col" class="govuk-table__header legal_base app-flexible-table__header">Legal base</th> #}
                 </tr>
             </thead>
             <tbody class="govuk-table__body  app-flexible-table__body">
                 {% for measure in commodity.measures %}
                     {% if (measure.import == true) and (measure.display_block.block == display_block.block) %}
                         <tr id="import_measure_{{ measure.id }}" class="govuk-table__row measure app-flexible-table__row {{ class }}">
-
                             <td class="govuk-table__cell measure app-flexible-table__cell measure_type_{{ measure.measure_type_id }}" scope="row" data-column-heading="Measure type">
                                 <div>
                                     <span class="table-line">
@@ -195,7 +191,7 @@
 
                 </tbody>
             </table>
-            {% if display_block.explainers.title %}
+            {# {% if display_block.explainers.title %}
                 <details class="govuk-details govuk-details-m" data-module="govuk-details">
                     <summary class="govuk-details__summary">
                         <span class="govuk-details__summary-text">{{ display_block.explainers.title }}</span>
@@ -204,6 +200,6 @@
                         {{ commodity.customs_duties_string | safe }}WINKY
                     </div>
                 </details>
-            {% endif %}
+            {% endif %} #}
         {% endif %}
     {% endfor %}

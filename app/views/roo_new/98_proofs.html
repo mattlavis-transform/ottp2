@@ -30,7 +30,7 @@
                     appropriate proofs confirming their origin.</p>
 
                 {% if context.proofs | length > 1 %}
-                <p class="govuk-body">Click on a proof to find out more.</p>
+                    <p class="govuk-body">Click on a proof to find out more.</p>
                 {% endif %}
 
                 <ul class="govuk-list">
@@ -61,11 +61,11 @@
                     <ul class="govuk-list govuk-!-font-size-16">
                         {% for explainer in context.explainers %}
                             <li>
-                                <a href="{{ explainer.file }}">{{ explainer.title }}</a>
+                                <a href="/roo/document/{{ context.goods_nomenclature_item_id }}/{{ context.country }}/{{ explainer.file | remove_extension }}/{{ explainer.title }}">{{ explainer.title }}</a>
                             </li>
                         {% endfor %}
                     </ul>
-                    
+
                 </nav>
             </aside>
         </div>

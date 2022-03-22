@@ -60,6 +60,13 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
         } else {
             url = "/roo/tolerances/" + context.goods_nomenclature_item_id + "/" + context.country;
         }
+    } else if (context.phase == "tolerances") {
+        context.get_tolerances(req);
+        if (context.met_tolerances) {
+            url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
+        } else {
+            url = "/roo/not_met/" + context.goods_nomenclature_item_id + "/" + context.country;
+        }
     }
 
     res.redirect(url);
@@ -196,6 +203,22 @@ router.get(['/roo/not_met/:goods_nomenclature_item_id/:country/', 'xi/roo/proces
     context.get_scheme_code();
 
     res.render('roo_new/99_not_met', {
+        'context': context
+    });
+});
+
+// Document
+router.get(['/roo/document/:goods_nomenclature_item_id/:country/:document/:title/', 'xi/roo/processing/:goods_nomenclature_item_id/:country/:document/:title/'], function (req, res) {
+    var context = new Context(req, "commodity");
+    context.get_country(req);
+    context.get_commodity(req);
+    context.get_trade_direction(req);
+    context.get_scope();
+    context.get_roo_origin(req);
+    context.get_scheme_code();
+    context.get_document(req);
+
+    res.render('roo_new/99_document', {
         'context': context
     });
 });
