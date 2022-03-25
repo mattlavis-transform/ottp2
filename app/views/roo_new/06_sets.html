@@ -21,7 +21,7 @@
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-three-quarters">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
-                <input type="hidden" name="phase" id="phase" value="product_specific_rules" >
+                <input type="hidden" name="phase" id="phase" value="sets" >
                 <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
                 <h1 class="govuk-heading-xl">Sets</h1>
 
@@ -39,13 +39,13 @@
 
 
                 {{ govukRadios({
-                idPrefix: "met_tolerances",
-                name: "met_tolerances",
+                idPrefix: "met_set",
+                name: "met_set",
                 fieldset: {
                     legend: {
-                    text: "Dya meet tolerances?",
+                    text: "Having read information on sets, do you now meet the rules of origin?",
                     isPageHeading: false,
-                    classes: "govuk-fieldset__legend--s b"
+                    classes: "govuk-fieldset__legend--sb"
                     }
                 },
                 hint: {

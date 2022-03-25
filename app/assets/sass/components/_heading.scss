@@ -577,14 +577,14 @@ article .commodity-tree ul.commodities li a:after {
     clear       : both
 }
 
-.js-enabled em {
-    font-family            : GDS Transport, arial, sans-serif;
-    -webkit-font-smoothing : antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size              : 12px;
-    font-size              : .75rem;
-    line-height            : 1.25
-}
+// .js-enabled em {
+//     font-family            : GDS Transport, arial, sans-serif;
+//     -webkit-font-smoothing : antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     font-size              : 12px;
+//     font-size              : .75rem;
+//     line-height            : 1.25
+// }
 
 @media print {
     .js-enabled em {
@@ -592,13 +592,13 @@ article .commodity-tree ul.commodities li a:after {
     }
 }
 
-@media (min-width:40.0625em) {
-    .js-enabled em {
-        font-size  : 14px;
-        font-size  : .875rem;
-        line-height: 1.42857
-    }
-}
+// @media (min-width:40.0625em) {
+//     .js-enabled em {
+//         font-size  : 14px;
+//         font-size  : .875rem;
+//         line-height: 1.42857
+//     }
+// }
 
 @media print {
     .js-enabled em {

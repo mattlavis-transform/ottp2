@@ -3,7 +3,8 @@ const axios = require('axios')
 const dotenv = require('dotenv');
 const config = require('../config.js');
 var MarkdownIt = require('markdown-it');
-// const asyncMiddleware = require('./asyncMiddleware');
+const path = require('path')
+const RooMvp = require('../classes/roo_mvp.js');
 
 class Context {
     constructor(req, settings_profile = "") {
@@ -29,16 +30,26 @@ class Context {
         this.get_simulation_date();
 
         this.show_rosa_version = true;
-        // this.get_trade_direction(req);
     }
 
     get_trade_direction(req) {
         this.trade_direction = req.session.data["trade_direction"];
-        if (this.trade_direction == "import") {
-            this.rules_of_origin_title = "Importing commodity COMMODITY from " + this.country_name;
+
+        if ((typeof this.country !== 'undefined') && (this.country !== '') && (this.country !== 'common')) {
+            if (this.trade_direction == "import") {
+                this.rules_of_origin_title = "Importing commodity COMMODITY from " + this.country_name;
+            } else {
+                this.rules_of_origin_title = "Exporting commodity COMMODITY to " + this.country_name;
+            }
+
         } else {
-            this.rules_of_origin_title = "Exporting commodity COMMODITY to " + this.country_name;
+            if (this.trade_direction == "import") {
+                this.rules_of_origin_title = "Importing commodity COMMODITY";
+            } else {
+                this.rules_of_origin_title = "Exporting commodity COMMODITY";
+            }
         }
+
         this.rules_of_origin_title = this.rules_of_origin_title.replace("COMMODITY", this.goods_nomenclature_item_id);
     }
 
@@ -143,24 +154,29 @@ class Context {
     get_commodity(req) {
         this.goods_nomenclature_item_id = req.params["goods_nomenclature_item_id"];
     }
-    
+
     get_phase(req) {
         this.phase = req.session.data["phase"];
     }
 
     get_scheme_code() {
-        var jp = require('jsonpath');
-        var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
-        data = data["schemes"];
-        var query_string = "$[?(@.countries.indexOf('" + this.country + "') != -1)]"
-        this.matching_schemes = jp.query(data, query_string);
-        if (this.matching_schemes.length == 1) {
-            this.scheme_code = this.matching_schemes[0].scheme_code;
-            this.scheme_title = this.matching_schemes[0].title;
+        if (this.country == "common") {
+            this.scheme_code = "common";
+            this.scheme_title = "";
         } else {
-            var a = 1; // There is either no match or there is more than one match
+            var jp = require('jsonpath');
+            var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
+            data = data["schemes"];
+            var query_string = "$[?(@.countries.indexOf('" + this.country + "') != -1)]"
+            this.matching_schemes = jp.query(data, query_string);
+            if (this.matching_schemes.length == 1) {
+                this.scheme_code = this.matching_schemes[0].scheme_code;
+                this.scheme_title = this.matching_schemes[0].title;
+            } else {
+                var a = 1; // There is either no match or there is more than one match
+            }
         }
-        var a = 1;
+
     }
 
     get_roo_origin() {
@@ -203,6 +219,14 @@ class Context {
         }
     }
 
+    get_met_set(req) {
+        if (req.session.data["met_set"] == "yes") {
+            this.met_set = true;
+        } else {
+            this.met_set = false;
+        }
+    }
+
     get_document(req) {
         this.document = req.params["document"];
         this.document_title = req.params["title"];
@@ -225,6 +249,12 @@ class Context {
         var url = root + `/api/v2/rules_of_origin_schemes/${this.goods_nomenclature_item_id.substr(0, 6)}/${this.country}`
 
         this.product_specific_rules = [];
+        this.has_cc = false;
+        this.has_cth = false;
+        this.has_ctsh = false;
+        this.has_exw = false;
+        this.has_rvc = false;
+        this.terms = [];
 
         [axios_response] = await Promise.all([
             axios.get(url)
@@ -234,9 +264,45 @@ class Context {
         included.forEach(item => {
             if (item["type"] == "rules_of_origin_rule") {
                 this.product_specific_rules.push(item);
+                if (item.attributes.rule.includes("{{WO}}")) {
+                    this.terms.push("WO");
+                }
+                if (item.attributes.rule.includes("{{CC}}")) {
+                    this.terms.push("CC");
+                }
+                if (item.attributes.rule.includes("{{CTH}}")) {
+                    this.terms.push("CTH");
+                }
+                if (item.attributes.rule.includes("{{CTSH}}")) {
+                    this.terms.push("CTSH");
+                }
+                if (item.attributes.rule.includes("RVC")) {
+                    this.terms.push("RVC");
+                }
+                if (item.attributes.rule.includes("{{EXW}}")) {
+                    this.terms.push("EXW");
+                }
+                if (item.attributes.rule.includes("MaxNOM")) {
+                    this.terms.push("MaxNOM");
+                }
             }
         });
-        var a = 1;
+    }
+
+    get_definitions() {
+        this.definitions = {};
+        var files = ["WO", "CC", "CTH", "CTSH", "EXW", "RVC", "MaxNOM"];
+        files.forEach(file => {
+            this.get_definition(file);
+        });
+    }
+
+    get_definition(file) {
+        var path = process.cwd() + '/app/data/roo/definitions/examples/' + file + '.html';
+        var fs = require('fs');
+        var content = fs.readFileSync(path, 'utf8');
+        content = content.replace(/{{ context.goods_nomenclature_item_id }}/g, this.goods_nomenclature_item_id)
+        this.definitions[file] = content;
     }
 
     async get_roo_links() {
@@ -364,7 +430,12 @@ class Context {
                 this.country_name = item["description"];
             }
         });
+    }
 
+    get_roo_intro_notes(req) {
+        var roo = new RooMvp(req, this);
+        this.intro_text = roo.intro_text;
+        var a = 1;
     }
 
     set_profile() {

@@ -78,30 +78,35 @@ module.exports = function (env) {
         return (s);
     }
 
-    filters.format_psr = function(rule_text) {
+    filters.format_psr = function(rule_text, minimal = false) {
 
         md = new MarkdownIt();
         // str = str.replace(/\* ([0-9]{1,2})\\. /g, '$1. ');
         // str = str.replace(/  \* \(([a-z]{1,2})\)/g, '\n\n    $1. ');
         
+        rule_text = rule_text.replace(/;/g, ';\n');
         var rule_text = md.render(rule_text);
         
-        rule_text = rule_text.replace("{{CC}}", "<span class='roo_explainer'><strong>CC rule - change of chapter</strong><br>A product complies with the CC rule when all non-originating materials used in its production are classified in a different HS chapter than the product.</span>");
+        if (minimal) {
+            rule_text = rule_text.replace("{{CC}}", "");
+            rule_text = rule_text.replace("{{CTH}}", "");
+            rule_text = rule_text.replace("{{CTSH}}", "");
+            rule_text = rule_text.replace("{{WO}}", "");
+            rule_text = rule_text.replace("{{EXW}}", "");
+            rule_text = rule_text.replace("(RVC)", "");
+            rule_text = rule_text.replace("(FOB)", "");
+            rule_text = rule_text.replace("MaxNOM", "");
+        } else {
+            rule_text = rule_text.replace("{{CC}}", "<span class='roo_explainer'><strong>CC rule - change of chapter</strong><br>A product complies with the CC rule when all non-originating materials used in its production are classified in a different HS chapter than the product.</span>");
+            rule_text = rule_text.replace("{{CTH}}", "<span class='roo_explainer'><strong>CTH rule - change in tariff heading</strong><br>A product complies with the CTH rule when all non-originating materials used in its production are classified in a different HS heading than the product.</span>");
+            rule_text = rule_text.replace("{{CTSH}}", "<span class='roo_explainer'><strong>CTSH rule - change in tariff subheading</strong><br>A product complies with the CTSH rule when all of the non-originating materials used in its production are classified in a different HS subheading than the product.</span>");
+            rule_text = rule_text.replace("{{WO}}", "<span class='roo_explainer'><strong>Wholly obtained</strong><br>The 'wholly obtained' rule applies mainly to basic agricultural products, fishery products, minerals, or waste and scrap.<br><br>Wholly obtained products are goods obtained entirely in the territory of one country without the addition of any non-originating materials.</span>");
+            rule_text = rule_text.replace("{{EXW}}", "<span class='roo_explainer'><strong>Ex-works price</strong><br>When importing on Ex Works terms, the buyer is responsible for the whole shipment from door to door.  All costs and liabilities are with the buyer. The only responsibility for a seller during the whole transportation process is to ensure that the goods they are selling are made available for collection at their premises.</span>");
+            rule_text = rule_text.replace("(RVC)", "(<a href='/help/#RVC'>RVC</a>)");
+            rule_text = rule_text.replace("(FOB)", "(<a href='/help/#FOB'>FOB</a>)");
+            rule_text = rule_text.replace("MaxNOM", "<a href='/help/#MaxNOM'>MaxNOM</a> (Maximum value of non-originating materials)");
+        }
 
-        rule_text = rule_text.replace("{{CTH}}", "<span class='roo_explainer'><strong>CTH rule - change in tariff heading</strong><br>A product complies with the CTH rule when all non-originating materials used in its production are classified in a different HS heading than the product.</span>");
-
-        rule_text = rule_text.replace("{{CTSH}}", "<span class='roo_explainer'><strong>CTSH rule - change in tariff subheading</strong><br>A product complies with the CTSH rule when all of the non-originating materials used in its production are classified in a different HS subheading than the product.</span>");
-
-        rule_text = rule_text.replace("{{WO}}", "<span class='roo_explainer'><strong>Wholly obtained</strong><br>The 'wholly obtained' rule applies mainly to basic agricultural products, fishery products, minerals, or waste and scrap.<br><br>Wholly obtained products are goods obtained entirely in the territory of one country without the addition of any non-originating materials.</span>");
-
-        rule_text = rule_text.replace("{{EXW}}", "<span class='roo_explainer'><strong>Ex-works price</strong><br>When importing on Ex Works terms, the buyer is responsible for the whole shipment from door to door.  All costs and liabilities are with the buyer. The only responsibility for a seller during the whole transportation process is to ensure that the goods they are selling are made available for collection at their premises.</span>");
-
-        // rule_text = rule_text.replace("ex-works price", "<a href='/help/#EXW'>ex-works price</a>");
-        // rule_text = rule_text.replace("(EXW)", "(<a href='/help/#EXW'>ex-works price</a>)");
-        rule_text = rule_text.replace("(RVC)", "(<a href='/help/#RVC'>RVC</a>)");
-        rule_text = rule_text.replace("(FOB)", "(<a href='/help/#FOB'>FOB</a>)");
-
-        rule_text = rule_text.replace("MaxNOM", "<a href='/help/#MaxNOM'>MaxNOM</a> (Maximum value of non-originating materials)");
         return (rule_text);
     }
 

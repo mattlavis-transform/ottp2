@@ -5,7 +5,6 @@ const api_helper = require('../API_helper');
 const { response } = require('express');
 const Heading = require('../classes/heading.js');
 const Commodity = require('../classes/commodity.js');
-// const Roo = require('../classes/roo.js');
 const ImportedContext = require('../classes/imported_context.js');
 const Error_handler = require('../classes/error_handler.js');
 const date = require('date-and-time');
@@ -13,9 +12,6 @@ const GeographicalArea = require('../classes/geographical_area');
 const Link = require('../classes/link');
 const Context = require('../classes/context');
 const { xor } = require('lodash');
-const RooMvp = require('../classes/roo_mvp.js');
-const Roo = require('../classes/roo_mvp.js');
-// const asyncMiddleware = require('../classes/asyncMiddleware');
 
 require('../classes/global.js');
 require('../classes/news.js');
@@ -65,6 +61,13 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
         if (context.met_tolerances) {
             url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
         } else {
+            url = "/roo/sets/" + context.goods_nomenclature_item_id + "/" + context.country;
+        }
+    } else if (context.phase == "sets") {
+        context.get_met_set(req);
+        if (context.met_set) {
+            url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
+        } else {
             url = "/roo/not_met/" + context.goods_nomenclature_item_id + "/" + context.country;
         }
     }
@@ -96,7 +99,6 @@ router.get(['/roo/origination/:goods_nomenclature_item_id/:country/', 'xi/roo/or
     context.get_scheme_code();
     context.get_article("wholly-obtained")
     context.get_article("neutral-elements")
-    context.get_article("cumulation")
 
     res.render('roo_new/02_originate', {
         'context': context
@@ -113,6 +115,7 @@ router.get(['/roo/processing/:goods_nomenclature_item_id/:country/', 'xi/roo/pro
     context.get_roo_origin(req);
     context.get_scheme_code();
     context.get_article("insufficient-processing")
+    context.get_article("cumulation")
 
     res.render('roo_new/03_processing', {
         'context': context
@@ -131,6 +134,8 @@ router.get(
         context.get_scope();
         context.get_roo_origin(req);
         context.get_scheme_code();
+        context.get_definitions();
+        context.get_roo_intro_notes(req);
         await context.get_product_specific_rules();
 
         res.render('roo_new/04_product_specific_rules', {
@@ -208,7 +213,10 @@ router.get(['/roo/not_met/:goods_nomenclature_item_id/:country/', 'xi/roo/proces
 });
 
 // Document
-router.get(['/roo/document/:goods_nomenclature_item_id/:country/:document/:title/', 'xi/roo/processing/:goods_nomenclature_item_id/:country/:document/:title/'], function (req, res) {
+router.get([
+    '/roo/document/:goods_nomenclature_item_id/:country/:document/:title/',
+    'xi/roo/processing/:goods_nomenclature_item_id/:country/:document/:title/'
+], function (req, res) {
     var context = new Context(req, "commodity");
     context.get_country(req);
     context.get_commodity(req);

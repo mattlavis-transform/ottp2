@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Sufficient processing - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+  Product-specific rules - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -24,13 +24,27 @@
                 <input type="hidden" name="phase" id="phase" value="product_specific_rules" >
                 <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
                 <h1 class="govuk-heading-xl">Do your goods meet the product-specific rules?</h1>
-                {# <p class="govuk-body">You have said that not all of the components that make up your goods
-                    come from {{ context.country_name }}, but they have been sufficiently processed.</p> #}
 
                 <p class="govuk-body">In order to qualify for preferential treatment, your goods need to
                     meet the product-specific rules. A product complies with the rule when the production process(es) mentioned in
-                    the rule takes place in the EU or the United Kingdom regardless of
+                    the rule takes place in the { relevant country } regardless of
                     the origin of the materials used in that process.</p>
+
+                <p class="govuk-body"></p>
+                <div class="govuk-inset-text">
+                    Read the rules and explanatory notes below to understand if your goods meet
+                    the product-specific rules. You only need to meet one of the rules for your goods 
+                    to qualify.
+                </div>
+
+                <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">How to read the rules of origin table</span>
+                    </summary>
+                    <div class="govuk-details__text">
+                        {% include "includes/how-to-use-psr.html" %}
+                    </div>
+                </details>
 
                 <table class="govuk-table">
                     {% if context.product_specific_rules | length > 1 %}
@@ -41,21 +55,62 @@
                     {% endif %}
                     <thead class="govuk-table__head">
                         <tr class="govuk-table__row">
-                            <th scope="col" class="govuk-table__header" style="width:50% !important">Product category</th>
-                            <th scope="col" class="govuk-table__header" style="width:50% !important">Rule of origin / production process</th>
+                            <th scope="col" class="govuk-table__header" style="width:20%">Heading</th>
+                            <th scope="col" class="govuk-table__header" style="width:30%">Description</th>
+                            <th scope="col" class="govuk-table__header" style="width:50%">Rule of origin / production process</th>
                         </tr>
                     </thead>
                     <tbody class="govuk-table__body">
                         {% for psr in context.product_specific_rules %}
                             <tr class="govuk-table__row">
-                                <td class="govuk-table__cell" style="max-width:50%">
+                                <td class="govuk-table__cell">
+                                    {{ psr.attributes.heading | format_psr | safe  }}
+                                </td>
+                                <td class="govuk-table__cell">
                                     {{ psr.attributes.description | format_psr | safe  }}
                                 </td>
-                                <td class="govuk-table__cell" style="max-width:50%">{{ psr.attributes.rule | format_psr | safe }}</td>
+                                <td class="govuk-table__cell">{{ psr.attributes.rule | format_psr(true) | safe }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
                 </table>
+
+                {% if context.terms | length > 0 %}
+                    {# <h3 class="govuk-heading-s">Explanatory notes - how to read the rules of origin</h3> #}
+                    <h3 class="govuk-heading-s">Explanatory notes</h3>
+                    {% if context.intro_text != "" %}
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary">
+                                <span class="govuk-details__summary-text">Introductory notes</span>
+                            </summary>
+                            <div class="govuk-details__text">
+                                {{ context.intro_text | safe }}
+                            </div>
+                        </details>
+
+                    {% endif %}
+                    {% if "WO" in context.terms %}
+                        {{ context.definitions["WO"] | safe }}
+                    {% endif %}
+                    {% if "CC" in context.terms %}
+                        {{ context.definitions["CC"] | safe }}
+                    {% endif %}
+                    {% if "CTH" in context.terms %}
+                        {{ context.definitions["CTH"] | safe }}
+                    {% endif %}
+                    {% if "CTSH" in context.terms %}
+                        {{ context.definitions["CTSH"] | safe }}
+                    {% endif %}
+                    {% if "MaxNOM" in context.terms %}
+                        {{ context.definitions["MaxNOM"] | safe }}
+                    {% endif %}
+                    {% if "RVC" in context.terms %}
+                        {{ context.definitions["RVC"] | safe }}
+                    {% endif %}
+                    {% if "EXW" in context.terms %}
+                        {{ context.definitions["EXW"] | safe }}
+                    {% endif %}
+                {% endif %}
 
                 {{ govukRadios({
                 idPrefix: "met_product_specific_rules",
@@ -64,7 +119,7 @@
                     legend: {
                     text: "Have your goods been processed in such a way as to meet the product-specific rules?",
                     isPageHeading: false,
-                    classes: "govuk-fieldset__legend--s b"
+                    classes: "govuk-fieldset__legend--sb"
                     }
                 },
                 hint: {

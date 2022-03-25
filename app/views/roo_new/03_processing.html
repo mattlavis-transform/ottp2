@@ -23,20 +23,32 @@
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="processing" >
                 <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
-                <h1 class="govuk-heading-xl">Have your goods been sufficiently processed?</h1>
-                <p class="govuk-body">You have said that not all of the components that make up your goods
-                    come from x. In order to qualify for preferential treatment, your goods need to
-                    have been sufficiently processed.</p>
+                <h1 class="govuk-heading-xl">Have non-originating parts been sufficiently processed?</h1>
+                <p class="govuk-body">You have said that not all of the parts that make up your goods
+                    come from x. In order to qualify for preferential treatment, your non-originating parts
+                    need to have been sufficiently processed.</p>
 
                 <details class="govuk-details" data-module="govuk-details">
                     <summary class="govuk-details__summary">
                         <span class="govuk-details__summary-text">
-                            What defines 'sufficient processing'
+                            What defines 'sufficient processing' in the X trade agreement?
                             {# in {{ context.scheme_title }} #}
                         </span>
                     </summary>
                     <div class="govuk-details__text">
                         {{ context.insufficient_processing | convert_markdown | safe }}
+                    </div>
+                </details>
+
+                <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                            Cumulation
+                            {# in {{ context.scheme_title }} #}
+                        </span>
+                    </summary>
+                    <div class="govuk-details__text">
+                        {{ context.cumulation | convert_markdown | safe }}
                     </div>
                 </details>
 

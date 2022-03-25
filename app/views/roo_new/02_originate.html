@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Wholly obtained - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+  Are your goods wholly obtained - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -45,7 +45,6 @@
                     <div class="govuk-details__text">
                         {{ context.wholly_obtained | convert_markdown | safe }}
                         {{ context.neutral_elements | convert_markdown | safe }}
-                        {{ context.cumulation | convert_markdown | safe }}
                     </div>
                 </details>
 
