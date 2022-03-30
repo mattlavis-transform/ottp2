@@ -145,6 +145,9 @@ table.measures2 dl dd ul li {
         span {
             padding: 0px 4px 0px 0px;
         }
+        span:last-of-type {
+            padding: 0px;
+        }
     }
 
 }

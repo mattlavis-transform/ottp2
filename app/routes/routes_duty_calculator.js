@@ -713,6 +713,30 @@ router.get('/duty-calculator/differential/:goods_nomenclature_item_id', function
         });
 });
 
+
+// Calculator - Results (flat - dummy HTML)
+router.get('/duty-calculator/commodity_not_permitted/:goods_nomenclature_item_id', function (req, res) {
+    var context = new Context(req);
+    // scope_id = global.get_scope(req.params["scope_id"]);
+    // scope_id = "";
+    // root_url = global.get_root_url(req, scope_id);
+    var err = req.session.data["error"];
+    var url = global.get_commodity_api(req);
+    axios.get(url)
+        .then((response) => {
+            c = new Commodity();
+            c.pass_request(req);
+            c.phase = "results";
+            c.get_data(response.data);
+            c.get_measure_data(req, req.session.data["origin"]);
+            res.render('calculate/commodity_not_permitted', {
+                'commodity': c,
+                'context': context,
+                'error': err
+            });
+        });
+});
+
 // Calculator - Results (flat - dummy HTML)
 router.get('/test_endpoint/:goods_nomenclatures', function (req, res) {
     var url = "https://www.trade-tariff.service.gov.uk/api/v2/goods_nomenclatures/section/1";
