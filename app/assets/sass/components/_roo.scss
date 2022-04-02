@@ -274,6 +274,36 @@
 
 .roo_table {
     ul {
-        margin:0px;
+        margin: 0px;
     }
+}
+
+.roo_container {
+    li {
+        p {
+            position: relative;
+            left    : 0.5em;
+        }
+    }
+
+    ol>li>ol {
+        margin-left: 0.5em;
+    }
+
+    ol>li>ul {
+        margin-left: 0.5em;
+    }
+
+    ol li>ol>li>ol>li>ol>li {
+        list-style-type: upper-alpha;
+    }
+
+    ol li>ol>li>ol>li {
+        list-style-type: lower-roman;
+    }
+
+    ol li>ol>li {
+        list-style-type: lower-alpha;
+    }
+
 }

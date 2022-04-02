@@ -30,26 +30,26 @@ Specific fields in the declaration/notes on completion:
 Additional Information (DE 2/2):
 
 As appropriate, enter:
-Coverage 	AI statement code 	Details to be declared
-Full rate of levy is being declared and paid at import. 	CCLFL 	Enter ‘Levy relief not claimed’
-Where partial relief from climate change levy is claimed for approved entities. 	CCLPR 	Enter ‘Partial levy relief claimed’ followed by the agreement number with the Environment Agency.
-Relief from the full rate of levy is being claimed. 	CCLFC 	Enter ‘Waste Coal valued under £15 per tonne’
-Request for the 14-day election procedure by consignees registered for levy purposes. 	CCL14 	Enter ‘14-day election procedure requested’ and the number of the levy registration certificate
-CCL DEFRA facility 	GEN18 	Enter the appropriate facility number allocated by DEFRA in relation to a climate change levy agreement.
+Coverage  AI statement code  Details to be declared
+Full rate of levy is being declared and paid at import.  CCLFL  Enter ‘Levy relief not claimed’
+Where partial relief from climate change levy is claimed for approved entities.  CCLPR  Enter ‘Partial levy relief claimed’ followed by the agreement number with the Environment Agency.
+Relief from the full rate of levy is being claimed.  CCLFC  Enter ‘Waste Coal valued under £15 per tonne’
+Request for the 14-day election procedure by consignees registered for levy purposes.  CCL14  Enter ‘14-day election procedure requested’ and the number of the levy registration certificate
+CCL DEFRA facility  GEN18  Enter the appropriate facility number allocated by DEFRA in relation to a climate change levy agreement.
 Duty calculation override
 Where relief is claimed under the terms of Notice CCL1
 Note: this code is only to be used where the amount of duty payable is being manually calculated, as required by the customs procedure or other AI statement.
-See CDS Volume 3 import Declaration Completion Guide and Appendix 1: DE 1/10: Requested and Previous Procedure Codes for details on how to declare the tax lines in DE 4/4 – 4/7 when code OVR01 is used. 	OVR01 	Enter ‘Duty override claimed’ followed by a plain text description of the reason for the override
+See CDS Volume 3 import Declaration Completion Guide and Appendix 1: DE 1/10: Requested and Previous Procedure Codes for details on how to declare the tax lines in DE 4/4 - 4/7 when code OVR01 is used.  OVR01  Enter ‘Duty override claimed’ followed by a plain text description of the reason for the override
 For example: CCL claimed under terms of Notice CCL1
 Security required
 
-–
+-
 VAT:
 
 VAT must be paid at import.
 Post clearance action:
 
-–
+-
 Notes:
 
 For suspension of excise duty on Hydrocarbon Oil ‘Tied Oil Scheme’ Additional Procedure Code 1TO should be used in DE 1/11, with AI statement code ‘MORC1’ declared in DE 2/2.
@@ -66,4 +66,4 @@ For multi item consignments a schedule listing: name and address of each consign
     Charges due for each packet (with details of calculations)
     Total charges due
 
-The type of document used for this schedule should be declared using the appropriate code from N235 – N787 in DE 2/3 (see above).
+The type of document used for this schedule should be declared using the appropriate code from N235 - N787 in DE 2/3 (see above).

@@ -21,63 +21,16 @@
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-three-quarters">
 
-            <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
-                <input type="hidden" name="phase" id="phase" value="originating" >
+            <form action="/roo/wholly_obtained/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
-                <h1 class="govuk-heading-xl">Are your goods wholly obtained in {{ context.roo_origin }}?</h1>
-                <p class="govuk-body">Your goods are treated as 'wholly obtained' if they're exclusively produced in a country
-                    covered in a trade agreement, without incorporating materials from any other country.</p>
+                <h1 class="govuk-heading-xl">How to work out if your products are 'originating'</h1>
+                <p class="govuk-body-l">Rules of origin are the criteria needed to determine the national source of a product. Their importance is derived from the fact that duties and restrictions in several cases depend upon the source of imports.</p>
 
-                    <p class="govuk-body">'Wholly obtained' includes products such as:</p>
-                    <ul class="govuk-list govuk-list--bullet">
-                        <li>mineral products extracted or taken from its soil or from its seabed</li>
-                        <li>live animals born and raised there</li>
-                        <li>products obtained by hunting or fishing conducted there</li>
-                        <li>products produced only using materials from the country covered by the trade agreement and do not include materials from any other country</li>
-                    </ul>
+                {{ context.originating | convert_markdown | safe }}
 
-                <details class="govuk-details" data-module="govuk-details">
-                    <summary class="govuk-details__summary">
-                        <span class="govuk-details__summary-text">
-                            Wholly-obtained goods, as defined in {{ context.scheme_title }}
-                        </span>
-                    </summary>
-                    <div class="govuk-details__text">
-                        {{ context.wholly_obtained | convert_markdown | safe }}
-                        {{ context.neutral_elements | convert_markdown | safe }}
-                    </div>
-                </details>
-
-                {{ govukRadios({
-                idPrefix: "wholly_obtained",
-                name: "wholly_obtained",
-                fieldset: {
-                    legend: {
-                    text: "Are your goods wholly obtained in " + context.roo_origin + "?",
-                    isPageHeading: false,
-                    classes: "govuk-fieldset__legend--s b"
-                    }
-                },
-                hint: {
-                    text: ""
-                },
-                items: [
-                    {
-                        value: "yes",
-                        text: "Yes, my goods are wholly obtained in " + context.roo_origin,
-                        hint: {
-                            text: ""
-                        }
-                    },
-                    {
-                        value: "no",
-                        text: "No, my goods are not wholly obtained in " + context.roo_origin,
-                        hint: {
-                            text: ""
-                        }
-                    }
-                ]
-                }) }}
+                <div class="govuk-inset-text">
+                    Use this tool to help you to work out if your products meet these rules of origin.
+                </div>
 
                 {{ govukButton({
                     text: "Continue",

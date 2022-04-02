@@ -9,9 +9,9 @@ The Prototype Kit stores answers that users enter. This means you can make more 
 3. Change 'Name' to 'Number of balls you can juggle'.
 4. In the `<dd>` tag on the next line, change 'Sarah Philips' to `{{ data['how-many-balls'] }}`.
 
-This is how we show data a user has entered – 'how-many-balls' is the `name` attribute from the `<input>` on the question page.
+This is how we show data a user has entered - 'how-many-balls' is the `name` attribute from the `<input>` on the question page.
 
-Update the screen reader text – change this
+Update the screen reader text - change this
 ```
 <span class="govuk-visually-hidden"> name</span>
 ```

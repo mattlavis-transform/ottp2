@@ -82,6 +82,14 @@ router.get(['/tools/certificates/', '/:scope_id/tools/certificates'], function (
     });
 });
 
+// Certificates
+router.get(['/tools/certificates_results/', '/:scope_id/tools/certificates_results'], function (req, res) {
+    var context = new Context(req);
+    res.render('tools/certificates_results', {
+        'context': context
+    });
+});
+
 // Additional codes
 router.get(['/tools/additional_codes/', '/:scope_id/tools/additional_codes'], function (req, res) {
     var context = new Context(req);

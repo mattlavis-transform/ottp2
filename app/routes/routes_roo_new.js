@@ -35,12 +35,12 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
     context.get_commodity(req);
     context.get_phase(req)
 
-    if (context.phase == "originating") {
-        context.get_wholly_obtained(req);
-        if (context.wholly_obtained) {
-            url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
+    if (context.phase == "wholly_obtained") {
+        context.get_sufficiently_processed(req);
+        if (context.sufficiently_processed) {
+            url = "/roo/product_specific_rules/" + context.goods_nomenclature_item_id + "/" + context.country;
         } else {
-            url = "/roo/processing/" + context.goods_nomenclature_item_id + "/" + context.country;
+            url = "/roo/not_met/" + context.goods_nomenclature_item_id + "/" + context.country;
         }
     } else if (context.phase == "processing") {
         context.get_sufficiently_processed(req);
@@ -97,10 +97,30 @@ router.get(['/roo/origination/:goods_nomenclature_item_id/:country/', 'xi/roo/or
     context.get_scope();
     context.get_roo_origin(req);
     context.get_scheme_code();
+    if (context.trade_direction == "import") {
+        context.get_article("originating_import");
+    } else {
+        context.get_article("originating_export");
+    }
+
+    res.render('roo_new/02_originate', {
+        'context': context
+    });
+});
+
+// 03 Wholly obtained
+router.get(['/roo/wholly_obtained/:goods_nomenclature_item_id/:country/', 'xi/roo/wholly_obtained/:goods_nomenclature_item_id/:country/'], function (req, res) {
+    var context = new Context(req, "commodity");
+    context.get_country(req);
+    context.get_commodity(req);
+    context.get_trade_direction(req);
+    context.get_scope();
+    context.get_roo_origin(req);
+    context.get_scheme_code();
     context.get_article("wholly-obtained")
     context.get_article("neutral-elements")
 
-    res.render('roo_new/02_originate', {
+    res.render('roo_new/03_wholly_obtained', {
         'context': context
     });
 });
@@ -117,7 +137,7 @@ router.get(['/roo/processing/:goods_nomenclature_item_id/:country/', 'xi/roo/pro
     context.get_article("insufficient-processing")
     context.get_article("cumulation")
 
-    res.render('roo_new/03_processing', {
+    res.render('roo_new/04_processing', {
         'context': context
     });
 });
@@ -138,7 +158,7 @@ router.get(
         context.get_roo_intro_notes(req);
         await context.get_product_specific_rules();
 
-        res.render('roo_new/04_product_specific_rules', {
+        res.render('roo_new/05_product_specific_rules', {
             'context': context
         });
     }));
@@ -155,7 +175,7 @@ router.get(['/roo/tolerances/:goods_nomenclature_item_id/:country/', 'xi/roo/tol
     context.get_scheme_code();
     context.get_article("tolerances")
 
-    res.render('roo_new/05_tolerances', {
+    res.render('roo_new/06_tolerances', {
         'context': context
     });
 });
@@ -171,7 +191,7 @@ router.get(['/roo/sets/:goods_nomenclature_item_id/:country/', 'xi/roo/tolerance
     context.get_scheme_code();
     context.get_article("sets")
 
-    res.render('roo_new/06_sets', {
+    res.render('roo_new/07_sets', {
         'context': context
     });
 });

@@ -1,12 +1,12 @@
 1. This chapter does not cover:
 
-	- (a) edible products (other than guts, bladders and stomachs of animals, whole and pieces thereof, and animal blood, liquid or dried);
-	
-	- (b hides or skins (including fur skins), other than goods of heading 0505 and parings and similar waste of raw hides or skins of heading 0511 (Chapter 41 or 43);
-	
-	- (c) animal textile materials, other than horsehair and horsehair waste (Section XI); or
-	
-	- (d) prepared knots or tufts for broom or brush making (heading 9603).
+ - (a) edible products (other than guts, bladders and stomachs of animals, whole and pieces thereof, and animal blood, liquid or dried);
+ 
+ - (b hides or skins (including fur skins), other than goods of heading 0505 and parings and similar waste of raw hides or skins of heading 0511 (Chapter 41 or 43);
+ 
+ - (c) animal textile materials, other than horsehair and horsehair waste (Section XI); or
+ 
+ - (d) prepared knots or tufts for broom or brush making (heading 9603).
 
 2. For the purposes of heading 0501, the sorting of hair by length (provided the root ends and tip ends respectively are not arranged together) shall be deemed not to constitute working.
 

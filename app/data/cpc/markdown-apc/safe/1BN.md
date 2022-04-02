@@ -79,7 +79,7 @@ The duty calculated on the provisional weight given in DE 6/1 must be either pai
 
 ### VAT:
 
-–
+-
 
 ### Post clearance action:
 
@@ -91,4 +91,4 @@ Additional Procedure Code 1BN can only be used with Requested and Previous Proce
 
 ### Additional documents needed:
 
-–
+-

@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Are your goods wholly obtained - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+{% endblock %}
+
+{% block beforeContent %}
+    {{ govukPhaseBanner({
+      tag: {
+        text: "beta"
+      },
+      html: 'This is a Beta service - your <a href="{{ context.feedback_url }}" class="govuk-link">feedback</a> will help us to improve it.'
+    }) }}
+    {{ govukBackLink({
+        text: "Back",
+        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+    }) }}
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+
+            <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
+                <input type="hidden" name="phase" id="phase" value="wholly_obtained" >
+                <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
+                <h1 class="govuk-heading-xl">Are your goods wholly obtained in {{ context.roo_origin }}?</h1>
+                <p class="govuk-body">Your goods are treated as 'wholly obtained' if they're exclusively produced in a country
+                    covered in a trade agreement, without incorporating materials from any other country.</p>
+
+                <div class="govuk-inset-text">
+                    <p class="govuk-body">'Wholly obtained' includes products such as:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>mineral products extracted or taken from its soil or from its seabed</li>
+                        <li>live animals born and raised there</li>
+                        <li>products obtained by hunting or fishing conducted there</li>
+                        <li>products produced only using materials from the country covered by the trade agreement and do not include materials from any other country</li>
+                    </ul>
+                </div>
+
+                <div class="roo_container">
+                    {{ context.wholly_obtained | convert_markdown | safe }}
+                    {{ context.neutral_elements | convert_markdown | safe }}
+                </div>
+
+                {# <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                            Wholly-obtained goods, as defined in the {{ context.scheme_title }}
+                        </span>
+                    </summary>
+                    <div class="govuk-details__text roo_container">
+                        {{ context.wholly_obtained | convert_markdown | safe }}
+                        {{ context.neutral_elements | convert_markdown | safe }}
+                    </div>
+                </details> #}
+
+                {{ govukRadios({
+                    idPrefix: "wholly_obtained",
+                    name: "wholly_obtained",
+                    fieldset: {
+                        legend: {
+                        text: "Are your goods wholly obtained in " + context.roo_origin + "?",
+                        isPageHeading: false,
+                        classes: "govuk-fieldset__legend--s b"
+                        }
+                    },
+                    hint: {
+                        text: ""
+                    },
+                    items: [
+                        {
+                            value: "yes",
+                            text: "Yes, my goods are wholly obtained in " + context.roo_origin,
+                            hint: {
+                                text: ""
+                            }
+                        },
+                        {
+                            value: "no",
+                            text: "No, my goods are not wholly obtained in " + context.roo_origin,
+                            hint: {
+                                text: ""
+                            }
+                        }
+                    ]
+                }) }}
+
+                {{ govukButton({
+                    text: "Continue",
+                    href: ""
+                }) }}
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+</html>

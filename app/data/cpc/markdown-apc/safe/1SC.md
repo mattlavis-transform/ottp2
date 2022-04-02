@@ -22,7 +22,7 @@ Spare parts must be entered under their individual commodity code numbers.
 
 ### Notices:
 
-–
+-
 
 ### Specific fields in the declaration/notes on completion:
 
@@ -55,11 +55,11 @@ Please see [Appendix 9: DE 4/8: Method of Payment Codes](https://www.gov.uk/gove
 
 ### VAT:
 
-–
+-
 
 ### Post clearance action:
 
-–
+-
 
 ### Notes:
 

@@ -27,9 +27,9 @@ Where applicable, the tax lines should be declared in accordance with the IP/OP 
 For goods now being removed from a customs warehouse that were previously entered to IP:
 
  * Where the intention to apply Article 86(3) of the Code customs debt rules was indicated on the:
-	 + Original entry to IP and Additional Procedure code 44 was declared in DE 1/11 and
-	 + Diversion from IP to enter the goods to the customs warehouse and Additional Procedure code 44 was declared in DE 1/11 then
-	
+  + Original entry to IP and Additional Procedure code 44 was declared in DE 1/11 and
+  + Diversion from IP to enter the goods to the customs warehouse and Additional Procedure code 44 was declared in DE 1/11 then
+ 
  * GEN86 must be declared as an AI statement in DE 2/2 on this declaration in conjunction with Additional Procedure Code 1XW in DE 1/11.
  * F44 is not also required.
 

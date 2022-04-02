@@ -172,6 +172,10 @@ class Context {
             if (this.matching_schemes.length == 1) {
                 this.scheme_code = this.matching_schemes[0].scheme_code;
                 this.scheme_title = this.matching_schemes[0].title;
+                this.ord = this.matching_schemes[0].ord;
+                if (typeof this.scheme_ord === 'undefined') {
+                    this.scheme_ord = "";
+                }
             } else {
                 var a = 1; // There is either no match or there is more than one match
             }
@@ -234,9 +238,6 @@ class Context {
         if (this.document != "") {
             var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/articles/' + this.scheme_code + "/" + this.document + '.md';
             var fs = require('fs');
-            // var data = fs.readFileSync(path, 'utf8');
-            // var md = new MarkdownIt();
-            // this.document_content = md.render(data);
             this.document_content = fs.readFileSync(path, 'utf8');
         } else {
             this.document_content = "";
@@ -379,8 +380,18 @@ class Context {
         var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/articles/' + this.scheme_code + "/" + document_type + '.md';
         var fs = require('fs');
         var data = fs.readFileSync(path, 'utf8');
+        data = data.replace(/{{ (Article [0-9]{1,2}) }}/g, "*This information is derived from **$1** of the {{ ORD }}*.");
+        data = data.replace(/{{ (Articles [0-9]{1,2} and [0-9]{1,2}) }}/g, "*This information is derived from **$1** of the {{ ORD }}*.");
+        data = data.replace(/{{ (Articles [0-9]{1,2} to [0-9]{1,2}) }}/g, "*This information is derived from **$1** of the {{ ORD }}*.");
+        data = data.replace(/{{ (Articles [0-9]{1,2} - [0-9]{1,2}) }}/g, "*This information is derived from **$1** of the {{ ORD }}*.");
+        data = data.replace(/{{ ORD }}/g, this.ord);
+        data = data.replace(/(### Wholly obtained products)/g, '$1 according to the ' + this.scheme_title);
+
         if (document_type == "wholly-obtained") {
             this.wholly_obtained = data;
+        }
+        else if ((document_type == "originating_import") || (document_type == "originating_export")) {
+            this.originating = data;
         }
         else if (document_type == "neutral-elements") {
             this.neutral_elements = data;
@@ -400,7 +411,6 @@ class Context {
         else if (document_type == "verification") {
             this.verification = data;
         }
-        // var a = 1;
     }
 
     get_country(req) {

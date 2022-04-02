@@ -12,8 +12,8 @@ node_modules/*
 .tmuxp.*
 package-lock.json
 app/data/roo_psr
-app/data/roo/uk
-app/data/roo/xi
+xapp/data/roo/uk
+xapp/data/roo/xi
 app/data/roo/future
 app/data/roo/future/roo_psr
 sql/

@@ -16,6 +16,6 @@ The information could include:
 - if the origin criterion was based on a change in tariff classification, a list of all the non-originating materials including their tariff classification number under the Harmonized System (in 2, 4 or 6-digit format depending on the origin criteria)
 - the information relating to the compliance with the provision on non-alteration (if applicable), for example a certificate of non-manipulation from the Customs Authority in the country of transit
 
-If the importer cannot get the information - including when the exporter or producer does not provide the information because it is deemed commercially sensitive — preferential tariff treatment may still be claimed if the exporter issues a statement on origin.
+If the importer cannot get the information - including when the exporter or producer does not provide the information because it is deemed commercially sensitive - preferential tariff treatment may still be claimed if the exporter issues a statement on origin.
 
 An importer making a claim for preferential tariff treatment must keep all records that show that the product is eligible for preference for 4 years from the date of importation. These records may be stored in an electronic format.

@@ -198,18 +198,18 @@ The use of this Additional Procedure Code is a declaration by the importer that 
  * Evidence of export and End Use status as described in [Notice 236: Returned Goods Relief](https://www.gov.uk/government/publications/notice-236-returned-goods-relief) except where the export declaration reference is quoted in DE 2/1 (Previous Documents).
  * Entry under this Procedure Code is a declaration that:
  * If claiming duty relief:
-	 + The goods are eligible to claim RGR.
-	 + Any additional security which may be needed will be provided.
-	 + All other conditions and requirements associated with claiming RGR have been met.
-	 + The goods had been entered to end use prior to their exportation from the customs territory of the EU or Territory with which the EU has formed a customs union.
-	 + The goods are being entered for free circulation with RGR and End Use within 3 years of them being exported from that territory unless a valid waiver is claimed. A period of 6 years is allowed for Crown Servants.
-	 + If the waiver of the 3-year time limit for reimportation is claimed due to special circumstances, insert \xe2\x80\x98Waiver of time limit claimed\xe2\x80\x99 in DE 2/2 as a GEN03 AI Statement. This waiver must be shown to be reasonable to HMRC when requested.
-	 + The goods haven\xe2\x80\x99t undergone any process or repair outside that territory other than routine maintenance to keep them in good condition, or handling which only altered the goods appearance, for example attaching operating instructions in foreign languages.
-	
+  + The goods are eligible to claim RGR.
+  + Any additional security which may be needed will be provided.
+  + All other conditions and requirements associated with claiming RGR have been met.
+  + The goods had been entered to end use prior to their exportation from the customs territory of the EU or Territory with which the EU has formed a customs union.
+  + The goods are being entered for free circulation with RGR and End Use within 3 years of them being exported from that territory unless a valid waiver is claimed. A period of 6 years is allowed for Crown Servants.
+  + If the waiver of the 3-year time limit for reimportation is claimed due to special circumstances, insert \xe2\x80\x98Waiver of time limit claimed\xe2\x80\x99 in DE 2/2 as a GEN03 AI Statement. This waiver must be shown to be reasonable to HMRC when requested.
+  + The goods haven\xe2\x80\x99t undergone any process or repair outside that territory other than routine maintenance to keep them in good condition, or handling which only altered the goods appearance, for example attaching operating instructions in foreign languages.
+ 
  * If claiming VAT relief, it is a further declaration that:
-	 + the goods were exported from the EU by the importer or on their behalf.
-	 + any VAT due on the goods was paid and not refunded on export from the EU.
-	
+  + the goods were exported from the EU by the importer or on their behalf.
+  + any VAT due on the goods was paid and not refunded on export from the EU.
+ 
 
 Where RGR is being claimed on re-imported IP goods, Additional Procedure Codes F04 or F07 must be used instead of 1RL.
 

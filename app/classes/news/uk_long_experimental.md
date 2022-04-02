@@ -1,7 +1,7 @@
 ::: spoiler Hello
 For additional information, see:
 
-- [Trade remedies notice: safeguard measures on certain steel products – application of tariff rate quotas (opens in new window)](https://www.gov.uk/government/publications/trade-remedies-notice-safeguard-measures-on-certain-steel-products-application-of-tariff-rate-quotas)
+- [Trade remedies notice: safeguard measures on certain steel products - application of tariff rate quotas (opens in new window)](https://www.gov.uk/government/publications/trade-remedies-notice-safeguard-measures-on-certain-steel-products-application-of-tariff-rate-quotas)
 - [Statement made on 30 June 2021 by the Secretary of State for International Trade (opens in new window)](https://questions-statements.parliament.uk/written-statements/detail/2021-06-30/hcws136)
 
 :::
@@ -16,5 +16,5 @@ If they are not at risk of onward movement to the EU, use [the Northern Ireland 
 
 For additional information, see:
 
-- [Trade remedies notice: safeguard measures on certain steel products – application of tariff rate quotas (opens in new window)](https://www.gov.uk/government/publications/trade-remedies-notice-safeguard-measures-on-certain-steel-products-application-of-tariff-rate-quotas)
+- [Trade remedies notice: safeguard measures on certain steel products - application of tariff rate quotas (opens in new window)](https://www.gov.uk/government/publications/trade-remedies-notice-safeguard-measures-on-certain-steel-products-application-of-tariff-rate-quotas)
 - [Statement made on 30 June 2021 by the Secretary of State for International Trade (opens in new window)](https://questions-statements.parliament.uk/written-statements/detail/2021-06-30/hcws136)

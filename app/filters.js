@@ -323,8 +323,8 @@ module.exports = function (env) {
             var markdown_text = md.render(str);
             markdown_text = markdown_text.replace("&lt;", "<");
             markdown_text = markdown_text.replace("&gt;", ">");
-            markdown_text = markdown_text.replace(/<h2>/g, "<h3 class='govuk-heading-s'>");
-            markdown_text = markdown_text.replace(/<\/h2>/g, "</h3>");
+            markdown_text = markdown_text.replace(/<h1>/g, "<h1 class='govuk-heading-m'>");
+            markdown_text = markdown_text.replace(/<h2>/g, "<h2 class='govuk-heading-s'>");
             markdown_text = markdown_text.replace(/<h3>/g, "<h3 class='govuk-heading-s'>");
 
             if (hide_bullets) {
@@ -332,7 +332,7 @@ module.exports = function (env) {
             } else {
                 markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list govuk-list--bullet'>")
             }
-            markdown_text = markdown_text.replace(/<ol>/g, "<ul class='govuk-list govuk-list--number'>")
+            markdown_text = markdown_text.replace(/<ol>/g, "<ol class='govuk-list govuk-list--number'>")
             return markdown_text;
         } else {
             return "";

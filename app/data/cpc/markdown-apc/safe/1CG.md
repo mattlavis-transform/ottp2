@@ -45,15 +45,15 @@ This Additional Procedure Code must also be declared on the Supplementary Declar
 
 ### Security required:
 
-–
+-
 
 ### VAT:
 
-–
+-
 
 ### Post clearance action:
 
-–
+-
 
 ### Notes:
 

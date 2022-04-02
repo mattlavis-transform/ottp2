@@ -145,6 +145,7 @@ table.measures2 dl dd ul li {
         span {
             padding: 0px 4px 0px 0px;
         }
+
         span:last-of-type {
             padding: 0px;
         }
@@ -507,4 +508,32 @@ p.calendar {
 
 .govuk-back-link {
     margin-top: 2em
+}
+
+.white_select {
+    background-color: white !important;
+}
+
+dl.tabular {
+    font-family            : "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight            : 400;
+    font-size              : 19px;
+    display                : flex;
+    flex-flow              : row wrap;
+
+    dt {
+        flex-basis : 20%;
+        padding    : 0.5em 0px;
+        font-weight: bold;
+    }
+
+    dd {
+        flex-basis: 70%;
+        flex-grow : 1;
+        margin    : 0;
+        padding   : 0.5em 4px;
+    }
+
 }

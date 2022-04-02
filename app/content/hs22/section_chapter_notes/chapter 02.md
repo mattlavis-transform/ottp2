@@ -16,9 +16,9 @@
 
    (c) ‘compensated quarters’, for the purposes of subheadings 0201 20 20 and 0202 20 10: portions composed of either:
 
-      — forequarters comprising all the bones and the scrag, neck and shoulder, and cut at the tenth rib; and hindquarters comprising all the bones and the thigh and sirloin, and cut at the third rib, or
+      - forequarters comprising all the bones and the scrag, neck and shoulder, and cut at the tenth rib; and hindquarters comprising all the bones and the thigh and sirloin, and cut at the third rib, or
 
-      — forequarters comprising all the bones and the scrag, neck and shoulder, and cut at the fifth rib, with the whole of the flank and breast attached; and hindquarters comprising all the bones and the thigh and sirloin and cut at the eighth cut rib.
+      - forequarters comprising all the bones and the scrag, neck and shoulder, and cut at the fifth rib, with the whole of the flank and breast attached; and hindquarters comprising all the bones and the thigh and sirloin and cut at the eighth cut rib.
       The forequarters and the hindquarters constituting ‘compensated quarters’ must be presented to customs at the same time and in equal numbers, and the total weight of the forequarters must be the same as that of the hindquarters; however, a difference between the weights of the two parts of the consignment is allowed, provided that this does not exceed 5 % of the weight of the heavier part (forequarters or hindquarters);
 
    (d) ‘unseparated forequarters’, for the purposes of subheadings 0201 20 30 and 0202 20 30: the front part of a carcase, comprising all the bones and the scrag, neck and shoulder, with a minimum of four pairs of ribs and a maximum of 10 pairs of ribs (the first four pairs of ribs must be whole, the others may be cut), with or without the thin flank;
@@ -63,9 +63,9 @@
 
    C. Subheadings 0206 49 00 and 0210 99 49, include, in particular, heads or halves of heads of domestic swine, with or without the brains, cheeks or tongues, and parts thereof. The head is separated from the rest of the half-carcase as follows:
 
-      — by a straight cut parallel to the cranium; or
+      - by a straight cut parallel to the cranium; or
 
-      — by a cut parallel to the cranium up to the level of the eyes and then inclined to the front of the head, thereby causing the chaps to remain attached to the half-carcase. The cheeks, snouts and ears as well as the meat attached to the head, particularly to the rear part, are considered parts of heads. 
+      - by a cut parallel to the cranium up to the level of the eyes and then inclined to the front of the head, thereby causing the chaps to remain attached to the half-carcase. The cheeks, snouts and ears as well as the meat attached to the head, particularly to the rear part, are considered parts of heads. 
 
    However, the cuts of boneless meat of the fore-end, presented alone (jowls, chaps, or chaps and jowls together), fall in subheading 0203 19 55, 0203 29 55, 0210 19 50 or 0210 19 81, as the case may be.
 

@@ -73,15 +73,15 @@ Use one of the following status codes (see Appendix 5B: DE 2/3 document status c
 
 ### Security required
 
-–
+-
 
 ### VAT:
 
-–
+-
 
 ### Post clearance action:
 
-–
+-
 
 ### Notes:
 
