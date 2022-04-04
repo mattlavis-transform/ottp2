@@ -3,6 +3,6 @@ In order to determine whether a product is originating, it shall not be necessar
 - energy and fuel;
 - plant and equipment;
 - machines and tools;
-(d) goods which do not enter and which are not intended to enter into the final composition of the product.
+- goods which do not enter and which are not intended to enter into the final composition of the product.
 
 {{ Article 11 }}

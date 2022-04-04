@@ -3,6 +3,6 @@ In order to determine whether a product originates, it shall not be necessary to
 - energy and fuel;
 - plant and equipment, including goods to be used for their maintenance;
 (c) machines, tools, dies and moulds;
-(d) any other goods which do not enter and which are not intended to enter into the final composition of the product.
+- any other goods which do not enter and which are not intended to enter into the final composition of the product.
 
 {{ Article 11 }}

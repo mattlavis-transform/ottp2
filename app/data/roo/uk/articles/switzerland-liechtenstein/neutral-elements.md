@@ -7,6 +7,6 @@ In order to determine whether a product is an originating product, no account sh
 
 - machines and tools; or
 
-(d) any other goods which do not enter, and which are not intended to enter, into the final composition of the product.
+- any other goods which do not enter, and which are not intended to enter, into the final composition of the product.
 
 {{ Article 11 }}
