@@ -21,17 +21,57 @@
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-three-quarters">
 
-            <form action="/roo/wholly_obtained/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
-                <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
-                <h1 class="govuk-heading-xl">How to work out if your products are 'originating'</h1>
-                <p class="govuk-body-l">Rules of origin are the criteria needed to determine the national source of a product. Their importance is derived from the fact that duties and restrictions in several cases depend upon the source of imports.</p>
+            <form action="/roo/wholly_obtained_info/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
+                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+                <h1 class="govuk-heading-l">
+                    How to work out if your products are classed as 'originating' in
+                    {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
+                </h1>
+                <p class="govuk-body-l">Rules of origin are the criteria which determine the national source of a product.
+                    They are important as they determine if your trade is eligible for preferential tariff treatment.</p>
 
-                {{ context.originating | convert_markdown | safe }}
+                <div class="govuk-inset-text panel_grey">
+                    <ul class="govuk-list commodity-split">
+                        {% if context.trade_direction == "import" %}
+                            <li>The third-country duty (or <abbr title="Most-Favoured Nation">MFN</abbr> duty)
+                            for importing commodity {{ context.goods_nomenclature_item_id | format_and_trim_commodity_code | safe }} is <span class="roo_duty">{{ context.mfn }}</span>.</li>
+                            {% if context.has_preferential_rates %}
+                                {% if context.preference != Null %}
+                                    <li>The {{ context.scheme_title }} features a tariff preference with a duty of
+                                    <span class="roo_duty">{{ context.preference }}</span>.
+                                </li>
+                                {% endif %}
+                                {% if context.quota != Null %}
+                                    <li>The {{ context.scheme_title }} features a preferential quota
+                                        (order number <span class="roo_duty">{{ context.quota["ordernumber"] }}</span>)
+                                    with a preferential duty of <span class="roo_duty">{{ context.quota["duty"] }}</span>.
+                                </li>
+                                {% endif %}
 
-                <div class="govuk-inset-text">
-                    Use this tool to help you to work out if your products meet these rules of origin.
+                            {% else %}
+                                <li>While there are <span class="roo_duty">no preferential duty rates</span> for importing commodity
+                                    {{ context.goods_nomenclature_item_id | format_and_trim_commodity_code | safe }} from {{ context.country_name }}, 
+                                    you may still use this tool to help you to work out if your products are classed as originating in
+                                    {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.</li>
+                            {% endif %}
+                        {% endif %}
+
+                        {% if context.trade_direction == "import" %}
+                            {% if context.has_preferential_rates %}
+                                <li>Use this tool to help you to work out if your products are classed as originating in
+                                {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
+                                and eligible for preferential duties subject to the {{ context.scheme_title }}.</li>
+                            {% endif %}
+                        {% else %}
+                            <li>Use this tool to help you to work out if your products are classed as originating in
+                        {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.</li>
+                        {% endif %}
+                    </ul>
                 </div>
 
+                {{ context.originating | convert_markdown | link_to_roo_original(context.original) | safe }}
+
+                <p>Click on the 'Continue' button to view the definition of 'wholly obtained' for the {{ context.scheme_title }}.</p>
                 {{ govukButton({
                     text: "Continue",
                     href: ""

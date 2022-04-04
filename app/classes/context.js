@@ -6,6 +6,8 @@ var MarkdownIt = require('markdown-it');
 const path = require('path')
 const RooMvp = require('../classes/roo_mvp.js');
 
+require('./global.js');
+
 class Context {
     constructor(req, settings_profile = "") {
         this.title = "";
@@ -50,7 +52,8 @@ class Context {
             }
         }
 
-        this.rules_of_origin_title = this.rules_of_origin_title.replace("COMMODITY", this.goods_nomenclature_item_id);
+        var comm_code = format_and_trim_commodity_code(this.goods_nomenclature_item_id, true);
+        this.rules_of_origin_title = this.rules_of_origin_title.replace("COMMODITY", comm_code);
     }
 
     get_simulation_date() {
@@ -142,7 +145,6 @@ class Context {
 
         // Get automatically submit
         this.auto_submit = this.req.session.data["auto_submit"] ?? "yes";
-        var a = 1;
     }
 
     get_date() {
@@ -159,35 +161,49 @@ class Context {
         this.phase = req.session.data["phase"];
     }
 
-    get_scheme_code() {
+    get_scheme_code(req) {
+        var jp = require('jsonpath');
+        var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
+        data = data["schemes"];
         if (this.country == "common") {
             this.scheme_code = "common";
             this.scheme_title = "";
+            this.ord = "";
+            this.original = "";
+        } else if ((req.session.data["scheme_code"] != "") && (typeof req.session.data["scheme_code"] !== 'undefined')) {
+            this.scheme_code = req.session.data["scheme_code"];
+            this.multiple_schemes = true;
+            var query_string = "$[?(@.scheme_code == '" + this.scheme_code + "')]"
+            this.matching_schemes = jp.query(data, query_string);
+            this.scheme_title = this.matching_schemes[0].title;
+            this.ord = this.matching_schemes[0].ord;
+            this.original = this.matching_schemes[0].original;
+            if (typeof this.scheme_ord === 'undefined') {
+                this.scheme_ord = "";
+            }
         } else {
-            var jp = require('jsonpath');
-            var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
-            data = data["schemes"];
             var query_string = "$[?(@.countries.indexOf('" + this.country + "') != -1)]"
             this.matching_schemes = jp.query(data, query_string);
             if (this.matching_schemes.length == 1) {
+                this.multiple_schemes = false;
                 this.scheme_code = this.matching_schemes[0].scheme_code;
                 this.scheme_title = this.matching_schemes[0].title;
                 this.ord = this.matching_schemes[0].ord;
+                this.original = this.matching_schemes[0].original;
                 if (typeof this.scheme_ord === 'undefined') {
                     this.scheme_ord = "";
                 }
             } else {
-                var a = 1; // There is either no match or there is more than one match
+                this.multiple_schemes = true;
             }
         }
-
     }
 
     get_roo_origin() {
         if (this.trade_direction == "import") {
-            this.roo_origin = this.country_name
+            this.roo_origin = this.country_name;
         } else {
-            this.roo_origin = "the United Kingdom"
+            this.roo_origin = "the United Kingdom";
         }
     }
 
@@ -199,11 +215,11 @@ class Context {
         }
     }
 
-    get_sufficiently_processed(req) {
-        if (req.session.data["sufficiently_processed"] == "yes") {
-            this.sufficiently_processed = true;
+    get_insufficient_processing(req) {
+        if (req.session.data["insufficient_processing"] == "yes") {
+            this.insufficient_processing = true;
         } else {
-            this.sufficiently_processed = false;
+            this.insufficient_processing = false;
         }
     }
 
@@ -290,6 +306,61 @@ class Context {
         });
     }
 
+    async get_related_duties() {
+        var axios_response;
+        var root = "https://www.trade-tariff.service.gov.uk";
+        var url = root + `/api/v2/commodities/${this.goods_nomenclature_item_id}?filter[geographical_area_id]=${this.country}`
+        // https://www.trade-tariff.service.gov.uk/api/v2/commodities/0208907000?filter[geographical_area_id]=CH
+        this.measures = [];
+
+        [axios_response] = await Promise.all([
+            axios.get(url)
+        ]);
+
+        var included = axios_response.data["included"];
+
+        var mfn_measures = ["103", "105"]
+        var preference_measures = ["106", "142", "145"]
+        var quota_measures = ["143", "146"]
+
+        this.mfn = "";
+        this.preference = null;
+        this.quota = null;
+
+        // Get all the duty expressions first
+        var duty_expressions = {}
+        included.forEach(item => {
+            if (item["type"] == "duty_expression") {
+                var id = item["id"].replace(/-duty_expression/g, "");
+                duty_expressions[id] = item["attributes"]["base"];
+                var a = 1;
+            }
+        });
+        included.forEach(item => {
+            if (item["type"] == "measure") {
+                var measure_type = item["relationships"]["measure_type"]["data"]["id"];
+                if (mfn_measures.includes(measure_type)) {
+                    this.mfn = duty_expressions[item["id"]];
+                }
+                if (preference_measures.includes(measure_type)) {
+                    this.preference = duty_expressions[item["id"]];
+                }
+                if (quota_measures.includes(measure_type)) {
+                    this.quota = {
+                        "ordernumber": item["relationships"]["order_number"]["data"]["id"],
+                        "duty": duty_expressions[item["id"]]
+                    };
+                }
+            }
+        });
+
+        if ((this.preference != null) || (this.quota != null)) {
+            this.has_preferential_rates = true;
+        } else {
+            this.has_preferential_rates = false;
+        }
+    }
+
     get_definitions() {
         this.definitions = {};
         var files = ["WO", "CC", "CTH", "CTSH", "EXW", "RVC", "MaxNOM"];
@@ -323,7 +394,6 @@ class Context {
                 this.links.push(item);
             }
         });
-        var a = 1;
         this.explainers = [
             {
                 "title": "Determining if a good is wholly obtained",
@@ -373,44 +443,91 @@ class Context {
                 this.proofs.push(item);
             }
         });
-        var a = 1;
     }
 
     get_article(document_type) {
         var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/articles/' + this.scheme_code + "/" + document_type + '.md';
         var fs = require('fs');
-        var data = fs.readFileSync(path, 'utf8');
-        data = data.replace(/{{ (Article [0-9]{1,2}) }}/g, "*This information is derived from **$1** of the {{ ORD }}*.");
-        data = data.replace(/{{ (Articles [0-9]{1,2} and [0-9]{1,2}) }}/g, "*This information is derived from **$1** of the {{ ORD }}*.");
-        data = data.replace(/{{ (Articles [0-9]{1,2} to [0-9]{1,2}) }}/g, "*This information is derived from **$1** of the {{ ORD }}*.");
-        data = data.replace(/{{ (Articles [0-9]{1,2} - [0-9]{1,2}) }}/g, "*This information is derived from **$1** of the {{ ORD }}*.");
-        data = data.replace(/{{ ORD }}/g, this.ord);
-        data = data.replace(/(### Wholly obtained products)/g, '$1 according to the ' + this.scheme_title);
+        try {
+            var data = fs.readFileSync(path, 'utf8');
+            data = data.replace(/{{ (Article [0-9]{1,2}) }}/g, "> This information is derived from **$1** of the {{ ORD }}.{{ ORIGINAL }}");
+            data = data.replace(/{{ (Articles [0-9]{1,2} and [0-9]{1,2}) }}/g, "> This information is derived from **$1** of the {{ ORD }}.{{ ORIGINAL }}");
+            data = data.replace(/{{ (Articles [0-9]{1,2} to [0-9]{1,2}) }}/g, "> This information is derived from **$1** of the {{ ORD }}.{{ ORIGINAL }}");
+            data = data.replace(/{{ (Articles [0-9]{1,2} - [0-9]{1,2}) }}/g, "> This information is derived from **$1** of the {{ ORD }}.{{ ORIGINAL }}");
+            data = data.replace(/{{ ORD }}/g, this.ord);
+            data = data.replace(/(#{2,3} Wholly obtained products)/g, '$1 according to the ' + this.scheme_title);
 
-        if (document_type == "wholly-obtained") {
-            this.wholly_obtained = data;
+            if (document_type == "wholly-obtained") {
+                this.wholly_obtained = data;
+            }
+            else if ((document_type == "originating_import") || (document_type == "originating_export")) {
+                this.originating = data;
+            }
+            else if (document_type == "neutral-elements") {
+                this.neutral_elements = data;
+            }
+            else if (document_type == "accessories") {
+                this.accessories = data;
+            }
+            else if (document_type == "packaging") {
+                this.packaging = data;
+            }
+            else if (document_type == "cumulation") {
+                this.cumulation = data;
+                this.get_cumulation_types();
+            }
+            else if (document_type == "insufficient-processing") {
+                this.insufficient_processing = data;
+            }
+            else if (document_type == "sufficiently-worked") {
+                this.sufficiently_worked = data;
+            }
+            else if (document_type == "tolerances") {
+                this.tolerances = data;
+            }
+            else if (document_type == "sets") {
+                this.sets = data;
+            }
+            else if (document_type == "verification") {
+                this.verification = data;
+            }
+        } catch {
+            console.log("Error getting document " + document_type);
         }
-        else if ((document_type == "originating_import") || (document_type == "originating_export")) {
-            this.originating = data;
+    }
+
+    get_cumulation_types() {
+        this.get_cumulation_texts();
+        this.cumulation_types = {
+            "bilateral": false,
+            "diagonal": false,
+            "extended": false,
+            "regional": false,
+            "full": false,
+            "count": 0
         }
-        else if (document_type == "neutral-elements") {
-            this.neutral_elements = data;
+        if (this.cumulation.toLowerCase().includes("bilateral cumulation")) {
+            this.cumulation_types["bilateral"] = true;
+            this.cumulation_types["count"] += 1;
         }
-        else if (document_type == "cumulation") {
-            this.cumulation = data;
+        if (this.cumulation.toLowerCase().includes("extended cumulation")) {
+            this.cumulation_types["extended"] = true;
+            this.cumulation_types["count"] += 1;
         }
-        else if (document_type == "insufficient-processing") {
-            this.insufficient_processing = data;
+        if (this.cumulation.toLowerCase().includes("diagonal cumulation")) {
+            this.cumulation_types["diagonal"] = true;
+            this.cumulation_types["count"] += 1;
         }
-        else if (document_type == "tolerances") {
-            this.tolerances = data;
-        }
-        else if (document_type == "sets") {
-            this.sets = data;
-        }
-        else if (document_type == "verification") {
-            this.verification = data;
-        }
+        var a = 1;
+    }
+
+    get_cumulation_texts() {
+        this.cumulation_texts = {};
+        var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/articles/common/cumulation/';
+        var fs = require('fs');
+        this.cumulation_texts["bilateral"] = fs.readFileSync(path + "bilateral.md", 'utf8');
+        this.cumulation_texts["diagonal"] = fs.readFileSync(path + "diagonal.md", 'utf8');
+        this.cumulation_texts["extended"] = fs.readFileSync(path + "extended.md", 'utf8');
     }
 
     get_country(req) {
@@ -445,7 +562,6 @@ class Context {
     get_roo_intro_notes(req) {
         var roo = new RooMvp(req, this);
         this.intro_text = roo.intro_text;
-        var a = 1;
     }
 
     set_profile() {
@@ -608,7 +724,6 @@ class Context {
             }
         });
         this.countries = countries;
-        var a = 1;
     }
 
     get_sort_order() {

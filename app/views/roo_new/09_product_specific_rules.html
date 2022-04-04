@@ -19,24 +19,25 @@
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters">
+        <div class="govuk-grid-column-three-quarters roo_container">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="product_specific_rules" >
-                <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
+                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
                 <h1 class="govuk-heading-xl">Do your goods meet the product-specific rules?</h1>
 
-                <p class="govuk-body">In order to qualify for preferential treatment, your goods need to
+                {{ context.sufficiently_worked | convert_markdown | link_to_roo_original(context.original) | safe }}
+
+                {# <p class="govuk-body">In order to qualify for preferential treatment, your goods need to
                     meet the product-specific rules. A product complies with the rule when the production process(es) mentioned in
                     the rule takes place in the { relevant country } regardless of
-                    the origin of the materials used in that process.</p>
+                    the origin of the materials used in that process.</p> #}
 
-                <p class="govuk-body"></p>
+                <h2 class="govuk-heading-m">Do your goods meet the product-specific rules?</h2>
                 <div class="govuk-inset-text">
                     Read the rules and explanatory notes below to understand if your goods meet
                     the product-specific rules. You only need to meet one of the rules for your goods 
                     to qualify.
                 </div>
-
                 <details class="govuk-details" data-module="govuk-details">
                     <summary class="govuk-details__summary">
                         <span class="govuk-details__summary-text">How to read the rules of origin table</span>
@@ -45,6 +46,16 @@
                         {% include "includes/how-to-use-psr.html" %}
                     </div>
                 </details>
+                {% if context.intro_text != "" %}
+                    <details class="govuk-details" data-module="govuk-details">
+                        <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">Introductory notes</span>
+                        </summary>
+                        <div class="govuk-details__text">
+                            {{ context.intro_text | safe }}
+                        </div>
+                    </details>
+                {% endif %}
 
                 <table class="govuk-table">
                     {% if context.product_specific_rules | length > 1 %}
@@ -64,10 +75,10 @@
                         {% for psr in context.product_specific_rules %}
                             <tr class="govuk-table__row">
                                 <td class="govuk-table__cell">
-                                    {{ psr.attributes.heading | format_psr | safe  }}
+                                    {{ psr.attributes.heading | format_psr | safe }}
                                 </td>
                                 <td class="govuk-table__cell">
-                                    {{ psr.attributes.description | format_psr | safe  }}
+                                    {{ psr.attributes.description | format_psr | safe }}
                                 </td>
                                 <td class="govuk-table__cell">{{ psr.attributes.rule | format_psr(true) | safe }}</td>
                             </tr>
@@ -76,19 +87,7 @@
                 </table>
 
                 {% if context.terms | length > 0 %}
-                    {# <h3 class="govuk-heading-s">Explanatory notes - how to read the rules of origin</h3> #}
                     <h3 class="govuk-heading-s">Explanatory notes</h3>
-                    {% if context.intro_text != "" %}
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary">
-                                <span class="govuk-details__summary-text">Introductory notes</span>
-                            </summary>
-                            <div class="govuk-details__text">
-                                {{ context.intro_text | safe }}
-                            </div>
-                        </details>
-
-                    {% endif %}
                     {% if "WO" in context.terms %}
                         {{ context.definitions["WO"] | safe }}
                     {% endif %}

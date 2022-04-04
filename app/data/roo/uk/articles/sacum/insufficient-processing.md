@@ -1,5 +1,3 @@
-### Insufficient working or processing
-
 1. Without prejudice to paragraph 2, the following operations shall be considered as insufficient working or processing to confer the status of originating products, whether or not the requirements of Article 8 of this Origin Reference Document are satisfied:
 
 (a) preserving operations to ensure that the products remain in good condition during transport and storage;

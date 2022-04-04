@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Are your goods wholly obtained - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+{% endblock %}
+
+{% block beforeContent %}
+    {{ govukPhaseBanner({
+      tag: {
+        text: "beta"
+      },
+      html: 'This is a Beta service - your <a href="{{ context.feedback_url }}" class="govuk-link">feedback</a> will help us to improve it.'
+    }) }}
+    {{ govukBackLink({
+        text: "Back",
+        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+    }) }}
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+
+            <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+            <h1 class="govuk-heading-l">How 'wholly obtained' is defined in the {{ context.scheme_title }}</h1>
+            <p class="govuk-body-l">Your goods are treated as 'wholly obtained' if they are exclusively produced in a country
+                    covered in a trade agreement, without incorporating materials from any other country.</p>
+
+            <div class="govuk-inset-text">
+                <p class="govuk-body">This page shows how 'wholly obtained' is defined in the {{ context.scheme_title }}.
+
+                {# </p>
+                <p class="govuk-body"> #}
+                    The following page will identify the treatment of packaging materials and other elements which
+                    may be excluded from being counted in determining the 'wholly' obtained status.
+                </p>
+            </div>
+
+            <div class="roo_container" id="wholly-obtained">
+                {{ context.wholly_obtained | convert_markdown | link_to_roo_original(context.original) | safe }}
+
+            </div>
+            
+
+            {{ govukButton({
+                text: "Continue",
+                href: "/roo/neutral/" + context.goods_nomenclature_item_id + "/" + context.country
+            }) }}
+
+            {# </form> #}
+        </div>
+    </div>
+
+{% endblock %}
+</html>

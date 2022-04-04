@@ -1,4 +1,4 @@
-### Wholly obtained products
+## Wholly obtained products
 
 1. The following products shall be considered as wholly obtained in the UK or in a signatory Andean Country:
 

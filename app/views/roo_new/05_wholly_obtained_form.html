@@ -23,37 +23,7 @@
 
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="wholly_obtained" >
-                <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
-                <h1 class="govuk-heading-xl">Are your goods wholly obtained in {{ context.roo_origin }}?</h1>
-                <p class="govuk-body">Your goods are treated as 'wholly obtained' if they're exclusively produced in a country
-                    covered in a trade agreement, without incorporating materials from any other country.</p>
-
-                <div class="govuk-inset-text">
-                    <p class="govuk-body">'Wholly obtained' includes products such as:</p>
-                    <ul class="govuk-list govuk-list--bullet">
-                        <li>mineral products extracted or taken from its soil or from its seabed</li>
-                        <li>live animals born and raised there</li>
-                        <li>products obtained by hunting or fishing conducted there</li>
-                        <li>products produced only using materials from the country covered by the trade agreement and do not include materials from any other country</li>
-                    </ul>
-                </div>
-
-                <div class="roo_container">
-                    {{ context.wholly_obtained | convert_markdown | safe }}
-                    {{ context.neutral_elements | convert_markdown | safe }}
-                </div>
-
-                {# <details class="govuk-details" data-module="govuk-details">
-                    <summary class="govuk-details__summary">
-                        <span class="govuk-details__summary-text">
-                            Wholly-obtained goods, as defined in the {{ context.scheme_title }}
-                        </span>
-                    </summary>
-                    <div class="govuk-details__text roo_container">
-                        {{ context.wholly_obtained | convert_markdown | safe }}
-                        {{ context.neutral_elements | convert_markdown | safe }}
-                    </div>
-                </details> #}
+                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
 
                 {{ govukRadios({
                     idPrefix: "wholly_obtained",
@@ -62,11 +32,16 @@
                         legend: {
                         text: "Are your goods wholly obtained in " + context.roo_origin + "?",
                         isPageHeading: false,
-                        classes: "govuk-fieldset__legend--s b"
+                        classes: "govuk-fieldset__legend--xl"
                         }
                     },
                     hint: {
-                        text: ""
+                        html: "Based on the definition of 
+                    <a href='/roo/wholly_obtained_info/0208907000/VN'>wholly obtained</a>
+                    and the list of
+                    <a href='/roo/neutral/0208907000/VN'>neutral elements and other parts to be disregarded</a>,
+                    identify if your goods are wholly obtained.
+                    "
                     },
                     items: [
                         {
@@ -80,7 +55,7 @@
                             value: "no",
                             text: "No, my goods are not wholly obtained in " + context.roo_origin,
                             hint: {
-                                text: ""
+                                text: "My product is produced using some non-originating materials"
                             }
                         }
                     ]

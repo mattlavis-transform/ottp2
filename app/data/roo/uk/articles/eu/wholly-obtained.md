@@ -1,4 +1,4 @@
-### Wholly obtained products
+## Wholly obtained products
 1. The following products shall be considered as wholly obtained in a Party:
    1. mineral products extracted or taken from its soil or from its seabed;
    2. plants and vegetable products grown or harvested there;

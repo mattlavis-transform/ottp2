@@ -22,7 +22,7 @@
         <div class="govuk-grid-column-three-quarters">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="processing" >
-                <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
+                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
                 <h1 class="govuk-heading-xl">Rules of origin not met</h1>
                 <p class="govuk-body">You have answered that you do not fulfill the product specific rules even taking
                     into account available flexibilities such as tolerance, absorption and cumulation.

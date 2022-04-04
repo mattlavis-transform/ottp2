@@ -1,4 +1,4 @@
-Cumulation in the United Kingdom
+### Cumulation in the United Kingdom
 
 1. Without prejudice to the provisions of Article 2(1), products shall be considered as originating in the United Kingdom, if they are obtained there, incorporating materials originating in Switzerland (including Liechtenstein) , Iceland, Norway, Turkey or the European Union, provided that the working or processing carried out in the United Kingdom goes beyond the operations referred to in Article 7. It shall not be necessary for such materials to have undergone sufficient working or processing.
 
@@ -12,24 +12,24 @@ Cumulation in the United Kingdom
 
 6. Products originating in the countries or territory referred to in paragraphs 1 and 2, which do not undergo any working or processing in the United Kingdom retain their origin if exported into one of these countries or territory.
 
-7.  (a) The cumulation provided for in this Article in respect of the European Union may be applied provided that:
+7. 
+   1. The cumulation provided for in this Article in respect of the European Union may be applied provided that:
 
-    i. the United Kingdom, Serbia and the European Union have arrangements on administrative cooperation which ensure a correct implementation of this Article;
+      1. the United Kingdom, Serbia and the European Union have arrangements on administrative cooperation which ensure a correct implementation of this Article;
 
-    ii. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+      2. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
 
-    iii. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
+      3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
 
-    (b) Except as provided for in paragraph 7(a), the cumulation provided for in this Article may be applied provided that:
+   2. Except as provided for in paragraph 7(a), the cumulation provided for in this Article may be applied provided that:
 
-    i. a preferential trade agreement in accordance with Article XXIV of the General Agreement on Tariffs and Trade 1994 (‘GATT 1994’) is applicable between the countries or territory involved in the acquisition of the originating status and the country or territory of destination;
+      1. a preferential trade agreement in accordance with Article XXIV of the General Agreement on Tariffs and Trade 1994 (‘GATT 1994’) is applicable between the countries or territory involved in the acquisition of the originating status and the country or territory of destination;
 
-    ii. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+      2. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
 
-    iii. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
+      3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
 
 8.  The United Kingdom shall provide Serbia with details of the agreements or arrangements including their dates of entry into force, and their corresponding rules of origin, which are applied with the other countries or territory referred to in paragraphs 1 and 2.
-
 
 ### Cumulation in Serbia
 
@@ -41,20 +41,22 @@ Cumulation in the United Kingdom
 
 4. Products originating in the countries or territory referred to in paragraphs 1 and 2, which do not undergo any working or processing in Serbia, retain their origin if exported into one of these countries or territory.
 
-5. (a) The cumulation provided for in this Article in respect of the European Union may be applied provided that:
+5. 
+   1. The cumulation provided for in this Article in respect of the European Union may be applied provided that:
 
-    i. the United Kingdom, Serbia and the European Union have arrangements on administrative cooperation which ensure a correct implementation of this Article;
+      1. the United Kingdom, Serbia and the European Union have arrangements on administrative cooperation which ensure a correct implementation of this Article;
 
-    ii. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+      2. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
 
-    iii. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
+      3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
 
-    (b) Except as provided for in paragraph 5(a), the cumulation provided for in this Article may be applied provided that:
-    i. a preferential trade agreement in accordance with Article XXIV of the GATT 1994 is applicable between the countries or territory involved in the acquisition of the originating status and the country or territory of destination;
+   2. Except as provided for in paragraph 5(a), the cumulation provided for in this Article may be applied provided that:
 
-    ii. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+      1. a preferential trade agreement in accordance with Article XXIV of the GATT 1994 is applicable between the countries or territory involved in the acquisition of the originating status and the country or territory of destination;
 
-    iii. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
+      2. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+
+      3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
 
 6. Serbia shall provide the United Kingdom with details of the agreements or arrangements including their dates of entry into force, and their corresponding rules of origin, which are applied with the other countries or territory referred to in paragraphs 1 and 2.
 

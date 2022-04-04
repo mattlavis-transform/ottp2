@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Cumulation - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+{% endblock %}
+
+{% block beforeContent %}
+    {{ govukPhaseBanner({
+      tag: {
+        text: "beta"
+      },
+      html: 'This is a Beta service - your <a href="{{ context.feedback_url }}" class="govuk-link">feedback</a> will help us to improve it.'
+    }) }}
+    {{ govukBackLink({
+        text: "Back",
+        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+    }) }}
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters roo_container">
+            <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
+                <input type="hidden" name="phase" id="phase" value="processing" >
+                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+                <h1 class="govuk-heading-l">Can I include parts or components from other countries?</h1>
+                <p class="govuk-body-l">Not all of the parts that make up your goods
+                    come from {{ context.country_name }}. In order to qualify for preferential treatment, you 
+                    may be able to include parts that come from other countries.</p>
+                    
+                    <p class="govuk-body-l">This depends on the 
+                    <strong>cumulation rules</strong> of the trade agreement, which are described below.
+                </p>
+
+                <div class="govuk-inset-text">
+                    <p>
+                        <strong>Cumulation</strong> is the term used to describe a system that allows the origin of materials or processing undertaken in country A to be added to the materials and processing undertaken within country B, so long as they are further processed or added to products originating in country B.</p>
+                    <p>This allows those factors that contributed to the origin of country A materials to be considered as though undertaken in B.</p>
+                </div>
+
+                {# <p>With cumulation although not all preferential agreements enable this, where they do the working or processing carried out in each partner country on originating products does not have to be ‘sufficient working or processing’ as set out in the list rules although it should be beyond minimal processing.</p> #}
+
+                <h2 class="govuk-heading-m">Cumulation in the {{ context.scheme_title }}</h2>
+                {% if context.cumulation_types["count"] > 0 %}
+                    <div class="govuk-inset-text">
+                        <p>The {{ context.scheme_title }} features {{ context.cumulation_types["count"] }}
+                            {{ "type" if context.cumulation_types["count"] == 1 else "types" }}
+                             of cumulation. These are described below.</p>
+
+                        {% if context.cumulation_types["bilateral"] == true %}
+                            <details class="govuk-details" data-module="govuk-details">
+                                <summary class="govuk-details__summary">
+                                    <span class="govuk-details__summary-text">Bilateral cumulation</span>
+                                </summary>
+                                    <div class="govuk-details__text">
+                                        {{ context.cumulation_texts["bilateral"] | convert_markdown | safe }}
+                                    </div>
+                            </details>
+                        {% endif %}
+
+                        {% if context.cumulation_types["diagonal"] == true %}
+                            <details class="govuk-details" data-module="govuk-details">
+                                <summary class="govuk-details__summary">
+                                    <span class="govuk-details__summary-text">Diagonal cumulation</span>
+                                </summary>
+                                <div class="govuk-details__text">
+                                    {{ context.cumulation_texts["diagonal"] | convert_markdown | safe }}
+                                </div>
+                            </details>
+                        {% endif %}
+
+                        {% if context.cumulation_types["extended"] == true %}
+                            <details class="govuk-details" data-module="govuk-details">
+                                <summary class="govuk-details__summary">
+                                    <span class="govuk-details__summary-text">Extended (or third-party) cumulation</span>
+                                </summary>
+                                <div class="govuk-details__text">
+                                    {{ context.cumulation_texts["extended"] | convert_markdown | safe }}
+                                </div>
+                            </details>
+                        {% endif %}
+                    </div>
+                {% endif %}
+
+                {{ context.cumulation | convert_markdown | link_to_roo_original(context.original) | safe }}
+
+                {{ govukRadios({
+                idPrefix: "sufficiently_processed",
+                name: "sufficiently_processed",
+                fieldset: {
+                    legend: {
+                    text: "Have your goods been subject to sufficient processing to qualify for preferential treatment?",
+                    isPageHeading: false,
+                    classes: "govuk-fieldset__legend--s b"
+                    }
+                },
+                hint: {
+                    text: ""
+                },
+                items: [
+                    {
+                        value: "yes",
+                        text: "Yes",
+                        hint: {
+                            text: ""
+                        }
+                    },
+                    {
+                        value: "no",
+                        text: "No",
+                        hint: {
+                            text: ""
+                        }
+                    }
+                ]
+                }) }}
+
+                {{ govukButton({
+                    text: "Continue",
+                    href: ""
+                }) }}
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+</html>

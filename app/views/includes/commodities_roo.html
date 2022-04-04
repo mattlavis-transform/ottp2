@@ -14,8 +14,12 @@
                             <li>{{ scheme.title }}</li>
                         {% endfor %}
                     </ul>
+                    {{ govukButton({
+                        text: "Check rules of origin",
+                        href: "/roo/trade_direction/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.country
+                    }) }}
                 {% else %}
-                    <p>In order to qualify for the lower or zero preferential tariff
+                    <p>In order to qualify for a lower or zero preferential tariff
                         under the <strong>{{ roo.title }}</strong>, the product must originate
                         in {{ roo.origin_text }} or {{ roo.partners }}.</p>
                     <p>You do not need to apply for a preferential tariff (or comply with preferential rules of origin)
@@ -24,10 +28,6 @@
                     <div class="govuk-inset-text">
                         <p>Use this tool to determine whether this product fulfils the rules of origin
                             and can therefore be considered as originating.</p>
-                        {# <p>
-                            <a href="/roo/trade_direction/{{ commodity.data.attributes.goods_nomenclature_item_id }}/{{ context.country }} ">Start self-assessment</a>
-                        </p> #}
-
 
                         {{ govukButton({
                             text: "Check rules of origin",

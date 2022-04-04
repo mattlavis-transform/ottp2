@@ -1,4 +1,4 @@
-### Wholly obtained products
+## Wholly obtained products
 1. The following shall be considered as wholly obtained in the United Kingdom or Georgia:
 
    1. mineral products extracted from its soil or from its seabed;

@@ -1,4 +1,4 @@
-### Wholly obtained products
+## Wholly obtained products
 1. The following shall be considered as wholly obtained in Ghana or the UK:
 
    1. live animals born and raised there;

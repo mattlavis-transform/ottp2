@@ -1,5 +1,6 @@
 ### Cumulation of Origin
-1. Notwithstanding Article 2 (General Requirements), products shall be considered as originating in the exporting Party if such products are obtained there by incorporating materials originating in the other Party or the EU, provided that the working or processing carried out in the exporting Party goes beyond the operations referred to in Article 6 (Insufficient Working or Processing).  
+
+1. Notwithstanding Article 2 (General Requirements), products shall be considered as originating in the exporting Party if such products are obtained there by incorporating materials originating in the other Party or the EU, provided that the working or processing carried out in the exporting Party goes beyond the operations referred to in Article 6 (Insufficient Working or Processing). 
 
 2. For the purposes of paragraph 1, the origin of the materials shall be determined according to the rules of origin of the United Kingdom-Viet Nam Agreement. 
 
@@ -17,15 +18,15 @@
 
 9. The cumulation in respect of the ASEAN countries (provided for in paragraphs 6, 7 and 8) applies if:
 
-    (a) the ASEAN countries involved in the acquisition of the originating status have undertaken to:
+   1. the ASEAN countries involved in the acquisition of the originating status have undertaken to:
 
-    (i) comply or ensure compliance with this Origin Reference Document; and
+       1. comply or ensure compliance with this Origin Reference Document; and
 
-    (ii) provide the administrative cooperation necessary to ensure the correct implementation of this Origin Reference Document both with regard to the UK and among themselves;
+       2. provide the administrative cooperation necessary to ensure the correct implementation of this Origin Reference Document both with regard to the UK and among themselves;
 
-    (b) the undertakings referred to in subparagraph (a) have been notified to the UK; and
+   2. the undertakings referred to in subparagraph (a) have been notified to the UK; and
 
-    (c) the tariff duty the UK applies to the products listed in Annex IV to this Origin Reference Document obtained in Viet Nam by use of such cumulation is higher than or the same as the duty the UK applies to the same product originating in the ASEAN country involved in the cumulation.
+   3. the tariff duty the UK applies to the products listed in Annex IV to this Origin Reference Document obtained in Viet Nam by use of such cumulation is higher than or the same as the duty the UK applies to the same product originating in the ASEAN country involved in the cumulation.
 
 10. Proofs of origin issued by application of paragraph 6 shall bear the following entry: "Application of Article 3(6) of the Origin Reference Document to the Viet Nam-UK FTA".
 
@@ -37,15 +38,13 @@
 
 14. The cumulation provided for in paragraphs 11 to 13 applies if:
 
+    1. the Republic of Korea applies with the UK a preferential trade agreement in accordance with Article XXIV of GATT 1994;
 
-    (a) the Republic of Korea applies with the UK a preferential trade agreement in accordance with Article XXIV of GATT 1994;
+    2. the Republic of Korea and Viet Nam have undertaken and notified to the UK their undertaking to:
 
-    (b) the Republic of Korea and Viet Nam have undertaken and notified to the UK their undertaking to:
+        1. comply or ensure compliance with the cumulation provided for by this Article; and
 
-    (i) comply or ensure compliance with the cumulation provided for by this Article; and
-
-
-    (ii) provide the administrative cooperation necessary to ensure the correct implementation of this Origin Reference Document both with regard to the UK and between themselves.
+        2. provide the administrative cooperation necessary to ensure the correct implementation of this Origin Reference Document both with regard to the UK and between themselves.
 
 15. Proofs of origin issued by Viet Nam by application of paragraph 11 shall bear the following entry: "Application of Article 3(11) of Protocol 1 to the Viet Nam-UK FTA".
 

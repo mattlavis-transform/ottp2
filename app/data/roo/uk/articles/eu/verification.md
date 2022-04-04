@@ -4,20 +4,20 @@
 
 2. The information requested pursuant to paragraph 1 shall cover no more than the following elements:
 
-    (a)	if the claim was based on a statement on origin, that statement on origin; *and*
+    (a) if the claim was based on a statement on origin, that statement on origin; *and*
 
-    (b)	information pertaining to the fulfilment of origin criteria, which is:
+    (b) information pertaining to the fulfilment of origin criteria, which is:
 
-      (i)	where the origin criterion is “wholly obtained”, the applicable category (such as
+      (i) where the origin criterion is “wholly obtained”, the applicable category (such as
       harvesting, mining, fishing) and the place of production;
 
-      (ii)	where the origin criterion is based on change in tariff classification, a list of all the non- originating materials, including their tariff classification (in 2, 4 or 6-digit format, depending on the origin criterion);
+      (ii) where the origin criterion is based on change in tariff classification, a list of all the non- originating materials, including their tariff classification (in 2, 4 or 6-digit format, depending on the origin criterion);
 
-      (iii)	where the origin criterion is based on a value method, the value of the final product as well as the value of all the non-originating materials used in the production of that product;
+      (iii) where the origin criterion is based on a value method, the value of the final product as well as the value of all the non-originating materials used in the production of that product;
 
-      (iv)	where the origin criterion is based on weight, the weight of the final product as well as the weight of the relevant non-originating materials used in the final product;
+      (iv) where the origin criterion is based on weight, the weight of the final product as well as the weight of the relevant non-originating materials used in the final product;
 
-      (v)	where the origin criterion is based on a specific production process, a description of that specific process.
+      (v) where the origin criterion is based on a specific production process, a description of that specific process.
 
 3. When providing the requested information, the importer may add any other information that it considers relevant for the purpose of verification.
 

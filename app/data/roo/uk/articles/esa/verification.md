@@ -14,7 +14,7 @@
 7.   Where the verification procedure or any other available information appears to indicate that the provisions of this Origin Reference Document are being contravened, the exporting country on its own initiative or at the request of the importing country shall carry out appropriate enquires or arrange for such enquiries to be carried out with due urgency to identify and prevent such contraventions and for this purpose the exporting country concerned may invite the participation of the importing country in these verifications.
 
 
-### Verification of suppliers’ declarations
+### Verification of suppliers’ declarations
 1.   Verification of suppliers’ declarations shall be carried out based on risk analysis and at random or whenever the customs authorities of the country where such declarations have been taken into account to issue a movement certificate EUR.1 or to make out an invoice declaration, have reasonable doubts as to the authenticity of the document or the correctness of the information given in this document.
 2.   The customs authorities to which a supplier’s declaration is submitted may request the customs authorities of the State where the declaration was made to issue an information certificate, a specimen of which appears in Annex VI to this Origin Reference Document. Alternatively, the certifying authorities to which a supplier’s declaration is submitted may request the exporter to produce an information certificate issued by the customs authorities of the State where the declaration was made.
 

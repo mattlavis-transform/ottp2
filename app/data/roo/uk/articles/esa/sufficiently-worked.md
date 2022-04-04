@@ -8,8 +8,8 @@
 
 4.   Notwithstanding paragraphs 1 and 2, non-originating materials which, according to the conditions set out in Annex II and Annex II(a) should not be used in the manufacture of a given product may nevertheless be used, provided that:
 
-(a)	their total value does not exceed 15 per cent of the ex-works price of the product;
-(b)	 any of the percentages given in the list for the maximum value of non-originating materials are not exceeded through the application of this paragraph.
+(a) their total value does not exceed 15 per cent of the ex-works price of the product;
+(b)  any of the percentages given in the list for the maximum value of non-originating materials are not exceeded through the application of this paragraph.
 
 5.   The provisions of paragraph 4 shall not apply to products of Chapters 50 to 63 of HS 1996.
 

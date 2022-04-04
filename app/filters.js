@@ -2,6 +2,8 @@ var nomar = require("nomar");
 var MarkdownIt = require('markdown-it');
 var _ = require('underscore');
 
+require('./classes/global.js');
+
 module.exports = function (env) {
 
     /**
@@ -235,35 +237,40 @@ module.exports = function (env) {
         }
     }
 
-    filters.format_and_trim_commodity_code = function (str, end_line = false) {
-        var s = "";
-        end_line = true;
-        if (typeof str !== 'undefined') {
-            if (end_line) {
-                s += "<span>" + str.substr(0, 4) + "</span>";
-                s += "<span>" + str.substr(4, 4) + "</span>";
-                s += "<span>" + str.substr(8, 2) + "</span>";
-            } else {
-                s += "<span>" + str.substr(0, 4) + "</span>";
-                // 6-digit codes
-                if (str.substr(6, 4) == "0000") {
-                    s += "<span>" + str.substr(4, 2) + "</span>";
-                }
-                // 8-digit codes
-                else if (str.substr(8, 2) == "00") {
-                    s += "<span>" + str.substr(4, 4) + "</span>";
-                }
-                // 10-digit codes
-                else {
-                    s += "<span>" + str.substr(4, 4) + "</span>";
-                    s += "<span>" + str.substr(8, 2) + "</span>";
-                }
-            }
+    // filters.format_and_trim_commodity_code = function (str, end_line = false) {
+    //     var s = "";
+    //     end_line = true;
+    //     if (typeof str !== 'undefined') {
+    //         if (end_line) {
+    //             s += "<span>" + str.substr(0, 4) + "</span>";
+    //             s += "<span>" + str.substr(4, 4) + "</span>";
+    //             s += "<span>" + str.substr(8, 2) + "</span>";
+    //         } else {
+    //             s += "<span>" + str.substr(0, 4) + "</span>";
+    //             // 6-digit codes
+    //             if (str.substr(6, 4) == "0000") {
+    //                 s += "<span>" + str.substr(4, 2) + "</span>";
+    //             }
+    //             // 8-digit codes
+    //             else if (str.substr(8, 2) == "00") {
+    //                 s += "<span>" + str.substr(4, 4) + "</span>";
+    //             }
+    //             // 10-digit codes
+    //             else {
+    //                 s += "<span>" + str.substr(4, 4) + "</span>";
+    //                 s += "<span>" + str.substr(8, 2) + "</span>";
+    //             }
+    //         }
 
-            return s;
-        } else {
-            return "";
-        }
+    //         return s;
+    //     } else {
+    //         return "";
+    //     }
+    // }
+
+    filters.format_and_trim_commodity_code = function (str, end_line = false) {
+        var s = global.format_and_trim_commodity_code(str, end_line);
+        return (s);
     }
 
     filters.format_commodity_code3 = function (str, entity) {
@@ -323,8 +330,8 @@ module.exports = function (env) {
             var markdown_text = md.render(str);
             markdown_text = markdown_text.replace("&lt;", "<");
             markdown_text = markdown_text.replace("&gt;", ">");
-            markdown_text = markdown_text.replace(/<h1>/g, "<h1 class='govuk-heading-m'>");
-            markdown_text = markdown_text.replace(/<h2>/g, "<h2 class='govuk-heading-s'>");
+            markdown_text = markdown_text.replace(/<h1>/g, "<h1 class='govuk-heading-l'>");
+            markdown_text = markdown_text.replace(/<h2>/g, "<h2 class='govuk-heading-m'>");
             markdown_text = markdown_text.replace(/<h3>/g, "<h3 class='govuk-heading-s'>");
 
             if (hide_bullets) {
@@ -336,6 +343,16 @@ module.exports = function (env) {
             return markdown_text;
         } else {
             return "";
+        }
+    }
+
+    filters.link_to_roo_original = function (s, original) {
+        if (s == "") {
+            return "";
+        } else {
+            var url = "/public/downloads/roo_reference/" + original;
+            s = s.replace(/{{ ORIGINAL }}/g, "<br><br><a target='_blank' class='download' href='" + url + "'>Download rules of origin reference document (opens in new tab)</a>");
+            return (s);
         }
     }
 

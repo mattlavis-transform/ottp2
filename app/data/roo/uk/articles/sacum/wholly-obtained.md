@@ -1,4 +1,4 @@
-### Wholly obtained products
+## Wholly obtained products
 1. The following shall be considered as wholly obtained in the territory of a SACU Member State, Mozambique or the UK:
 
    1. mineral products extracted from their soil or from their seabed;

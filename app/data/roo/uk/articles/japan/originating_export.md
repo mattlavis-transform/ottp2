@@ -4,7 +4,7 @@ For the purpose of the application of preferential tariff treatment by a Party t
 
 - products produced exclusively from **materials originating in that Party**; *or*
 
-- products produced using non-originating materials provided they satisfy all applicable requirements of Annex B.2.	For the purposes of this Origin Reference Document, the territorial scope of a Party does not include the sea, seabed and subsoil beyond its territorial sea.
+- products produced using non-originating materials provided they satisfy all applicable requirements of Annex B.2. For the purposes of this Origin Reference Document, the territorial scope of a Party does not include the sea, seabed and subsoil beyond its territorial sea.
 
 ---
 

@@ -12,21 +12,22 @@
 
 6. Products originating in the countries referred to in paragraphs 1 and 2, which do not undergo any working or processing in the United Kingdom retain their origin if exported into one of these countries.
 
-7. (a) The cumulation provided for in this Article in respect of the European Union may be applied provided that:
+7. 
+   1. The cumulation provided for in this Article in respect of the European Union may be applied provided that:
 
-    (i) the United Kingdom, Ukraine and the European Union have arrangements on administrative cooperation which ensure a correct implementation of this Article;
+      1. the United Kingdom, Ukraine and the European Union have arrangements on administrative cooperation which ensure a correct implementation of this Article;
 
-    (ii) materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+      2. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
 
-    (iii) notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties. 
+      3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties. 
 
-    (b) Except as provided for in paragraph 7(a), the cumulation provided for in this Article may be applied provided that:
+   2. Except as provided for in paragraph 7(a), the cumulation provided for in this Article may be applied provided that:
 
-    (i) a preferential trade agreement in accordance with Article XXIV of the General Agreement on Tariffs and Trade 1994 ("GATT 1994") is applicable between the countries involved in the acquisition of the originating status and the country of destination;
+      1. a preferential trade agreement in accordance with Article XXIV of the General Agreement on Tariffs and Trade 1994 ("GATT 1994") is applicable between the countries involved in the acquisition of the originating status and the country of destination;
 
-    (ii) materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+      2. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
 
-    (iii) notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
+      3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
 
 8. The United Kingdom shall provide Ukraine with details of the agreements or arrangements including their dates of entry into force, and their corresponding rules of origin, which are applied with the other countries referred to in paragraphs 1 and 2.
 
@@ -40,23 +41,23 @@
 
 4. Products originating in the countries referred to in paragraphs 1 and 2, which do not undergo any working or processing in Ukraine, retain their origin if exported into one of these countries.
 
-5. (a) The cumulation provided for in this Article in respect of the European Union may be applied provided that:
+5. 
+   1. The cumulation provided for in this Article in respect of the European Union may be applied provided that:
 
-    (i) the United Kingdom, Ukraine and the European Union have arrangements on administrative cooperation which ensure a correct implementation of this Article;
+      1. the United Kingdom, Ukraine and the European Union have arrangements on administrative cooperation which ensure a correct implementation of this Article;
 
-    (ii) materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+      2. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
 
-    (iii) notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
+      3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
 
-    (b) Except as provided for in paragraph 5(a), the cumulation provided for in this Article may be applied provided that:
+   2. Except as provided for in paragraph 5(a), the cumulation provided for in this Article may be applied provided that:
 
-    (i) a preferential trade agreement in accordance with Article XXIV of the GATT 1994 is applicable between the countries involved in the acquisition of the originating status and the country of destination;
+      1. a preferential trade agreement in accordance with Article XXIV of the GATT 1994 is applicable between the countries involved in the acquisition of the originating status and the country of destination;
 
-    (ii) materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
+      2. materials and products have acquired originating status by the application of rules of origin identical to those in this Origin Reference Document; and
 
-    (iii) notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
+      3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
 
 6. Ukraine shall provide the United Kingdom with details of the agreements or arrangements including their dates of entry into force, and their corresponding rules of origin, which are applied with the other countries referred to in paragraphs 1 and 2.
-
 
 {{ Articles 3 and 4 }}

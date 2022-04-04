@@ -30,15 +30,15 @@
 
 9. The cumulation provided for in paragraphs 2 and 6 may only be applied provided that:
 
-    (a) the SACU Member State or Mozambique, as the case may be, other ACP EPA States and UK OCTs have entered into an arrangement or agreement on adminis¬trative cooperation with each other, which ensures compliance with and a correct implementation of this Article and includes a reference to the use of appropriate proofs of origin;
+   1. the SACU Member State or Mozambique, as the case may be, other ACP EPA States and UK OCTs have entered into an arrangement or agreement on adminis¬trative cooperation with each other, which ensures compliance with and a correct implementation of this Article and includes a reference to the use of appropriate proofs of origin;
 
-    (b) the SACU Secretariat and the Ministry of Industry and Trade of Mozambique have provided the UK with the details of the arrangements or agreements on administrative cooperation entered into with the other countries or territories referred to in this Article.
+   2. the SACU Secretariat and the Ministry of Industry and Trade of Mozambique have provided the UK with the details of the arrangements or agreements on administrative cooperation entered into with the other countries or territories referred to in this Article.
 
 10. The cumulation provided for in paragraph 3 and 7 may only be applied provided that:
 
-    (a) the UK, the other ACP EPA States and UK OCTs have entered into an arrangement or agreement on administrative cooperation with each other, which ensures compliance with and a correct implementation of this Article and includes a reference to the use of appropriate proofs of origin;
+    1. the UK, the other ACP EPA States and UK OCTs have entered into an arrangement or agreement on administrative cooperation with each other, which ensures compliance with and a correct implementation of this Article and includes a reference to the use of appropriate proofs of origin;
 
-    (b) the UK has provided the SACU Member States and Mozambique, through the SACU Secretariat and the Ministry of Industry and Trade of Mozambique, with details of agreements on administrative cooperation with the other countries or territories referred to in this Article. 
+    2. the UK has provided the SACU Member States and Mozambique, through the SACU Secretariat and the Ministry of Industry and Trade of Mozambique, with details of agreements on administrative cooperation with the other countries or territories referred to in this Article. 
 
 11. Once the requirements of paragraphs 9 and 10 have been fulfilled and the date for the simultaneous entry into force of cumulation provided for under this Article has been agreed upon between the UK and the SACU Member States and Mozambique, each Party shall fulfil its own publication and information requirements provided for in paragraph 14.
 
@@ -50,21 +50,21 @@
 
 15. The cumulation provided in paragraph 2 shall not apply to materials:
 
-    (a) of headings 1604 and 1605 originating in the Pacific States according to Article 6(6) of Protocol II of the Interim Economic Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland, on the one part, and the Pacific States, on the other part.
+    1. of headings 1604 and 1605 originating in the Pacific States according to Article 6(6) of Protocol II of the Interim Economic Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland, on the one part, and the Pacific States, on the other part.
 
-    (b) of headings 1604 and 1605 originating in the Pacific States according to any future provision of a preferential trade agreement between the UK and Pacific ACP States .
+    2. of headings 1604 and 1605 originating in the Pacific States according to any future provision of a preferential trade agreement between the UK and Pacific ACP States .
 
-    (c) originating in South Africa and which cannot be imported directly into the UK duty–free quota–free.
+    3. originating in South Africa and which cannot be imported directly into the UK duty–free quota–free.
 
 16. The cumulation provided in paragraph 3 shall:
 
-    (a) Where the final product is exported to SACU, not apply to materials:
+    1. Where the final product is exported to SACU, not apply to materials:
 
-    (i) originating in non–SACU SADC states, which do not enjoy duty–free quota–free access into SACU under the SADC Protocol on Trade; and
+        1. originating in non–SACU SADC states, which do not enjoy duty–free quota–free access into SACU under the SADC Protocol on Trade; and
 
-    (ii) originating in UK OCTs or ACP EPA states, other than the non–SACU SADC states, which cannot be imported directly into SACU duty–free quota–free.
+        2. originating in UK OCTs or ACP EPA states, other than the non–SACU SADC states, which cannot be imported directly into SACU duty–free quota–free.
 
-    (b) Where the final product is exported to Mozambique, not apply to materials originating in OCTs or other ACP EPA states, which cannot be imported directly into Mozambique duty–free quota–free.
+    2. Where the final product is exported to Mozambique, not apply to materials originating in OCTs or other ACP EPA states, which cannot be imported directly into Mozambique duty–free quota–free.
 
 17. In respect of paragraphs 15(c), 16(a), 16(b), the UK, SACU and Mozambique, respectively, shall establish the list of materials concerned and shall ensure the lists are revised as necessary to ensure compliance with those paragraphs. SACU and Mozambique shall notify their respective lists and any subsequent versions thereof in track changes to the UK. The UK shall notify its respective list and any subsequent versions thereof in track changes to the SACU Secretariat and the Ministry of Industry and Trade of Mozambique. After notification, as provided for in this paragraph, each party shall make public each of these lists according to their own internal procedures. The Parties shall publish the lists and any subsequent amendments thereof within one (1) month of receipt of the notification. In cases where lists, or their subsequent versions, are notified after the date of entry into force of cumulation, exclusion from cumulation with the materials will become effective six (6) months after the receipt of the notification.
 
@@ -85,12 +85,9 @@
 6. For cumulation provided in paragraph 5, when the working or processing carried out in the SACU Member State or in Mozambique or in the UK does not go beyond the operations referred to in Article 9(1) of this Protocol, the product obtained shall be considered as originating in in the SACU Member State or in Mozambique or in the UK only when the value added there is greater than the value added in any one of the other countries or territories
 
 7. Cumulation of EU materials and processing referred to in paragraph 1 to 6 of this Article shall apply under the following conditions:
-
-    (i) a preferential trade agreement in accordance with Article XXIV of the General Agreement on Tariffs and Trade 1994 is applicable between the countries involved in the acquisition of the originating status and the country of destination ;
-
-    (ii) the origin of materials originating in the EU shall be determined according to rules of origin identical to those in this Origin Reference Document; and
-
-    (iii) notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties. 
+   1. a preferential trade agreement in accordance with Article XXIV of the General Agreement on Tariffs and Trade 1994 is applicable between the countries involved in the acquisition of the originating status and the country of destination ;
+   2. the origin of materials originating in the EU shall be determined according to rules of origin identical to those in this Origin Reference Document; and
+   3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties. 
 
 ### Cumulation with respect to materials which are subject to MFN duty free treatment in the UK
 
@@ -103,18 +100,16 @@
 1. The UK shall notify yearly to the Special Committee on Customs and Trade Facilitation referred to in Article 50 of the Agreement (‘The Committee’) the list of materials to which the provisions of this Article shall apply.
 
 2. The cumulation provided for in this Article shall not apply to materials:
-    
-    (a) which at importation into the UK are subject to anti–dumping or countervailing duties when originating from the country which is subject to these anti–dumping or countervailing duties ;
-    
-    (b) classified in Goods Classification Table subheadings which include, in the Customs Tariff of the United Kingdom, 8–digit tariff lines which are not free of customs duties by means of application of conventional rates of the UK's most–favoured nation tariff.
+   1. which at importation into the UK are subject to anti–dumping or countervailing duties when originating from the country which is subject to these anti–dumping or countervailing duties ;
+   2. classified in Goods Classification Table subheadings which include, in the Customs Tariff of the United Kingdom, 8–digit tariff lines which are not free of customs duties by means of application of conventional rates of the UK's most–favoured nation tariff.
 
 ### Cumulation with respect to materials originating in other countries benefiting from preferential duty–free quota–free access to the UK
 
 1. Without prejudice to the provisions of Article 2(2) of this Origin Reference Document, materials shall be considered as materials originating in a SACU Member State or Mozambique when incorporated into a product obtained there, provided:
 
-    (a)  they have undergone working or processing going beyond that referred to in Article 9(1) of this Origin Reference Document; and
+   1. they have undergone working or processing going beyond that referred to in Article 9(1) of this Origin Reference Document; and
 
-    (b)  they meet the requirements of paragraph 1A.
+   2. they meet the requirements of paragraph 1A.
 
     1A. Subject to paragraph 1B, the requirements to be satisfied for the purposes of paragraph 1(b) are as follows:
 
@@ -145,6 +140,7 @@
     (d) materials which are subject to a safeguard measure that varies suspends or withdraws the preferential arrangements under the GSP.
 
 2. At the request of a SACU Member State or Mozambique, materials originating in countries or territories which benefit from agreements or arrangements that provide for duty–free quota–free access to the market of the UK can be considered as materials originating in a SACU Member State or Mozambique. The request shall be submitted by the SACU Member State or Mozambique to the UK, which shall take a decision on the request in accordance with its internal procedures.
+
     It shall not be necessary that such materials have undergone sufficient working or processing, provided they have undergone working or processing going beyond that referred to in Article 9(1) of this Origin Reference Document.
 
     2.1. The origin of the materials of the countries or territories concerned shall be determined according to the rules of origin applicable in the framework of the UK's preferential agreements or arrangements with those countries and territories and in accordance with Article 30 of this Origin Reference Document.

@@ -1,4 +1,4 @@
-### Wholly Obtained Products
+## Wholly obtained products
 1. The following shall be considered as wholly obtained in a Party:
 
    1. mineral products extracted from its soil or from its seabed;
@@ -43,4 +43,4 @@
 
          2. are at least 50 per cent owned by the UK, by Viet Nam, by a Member State of the EU or by their public entities or nationals.
 
-{{ Article 4  }}
+{{ Article 4 }}

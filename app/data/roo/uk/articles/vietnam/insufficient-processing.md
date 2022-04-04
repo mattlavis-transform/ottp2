@@ -1,43 +1,41 @@
-### Insufficient Working or Processing
+1. The following operations shall be considered as insufficient working or processing to confer the status of originating products, whether or not the requirements of Article 5 (Sufficiently Worked or Processed Products) are satisfied:
 
-1.	The following operations shall be considered as insufficient working or processing to confer the status of originating products, whether or not the requirements of Article 5 (Sufficiently Worked or Processed Products) are satisfied:
+   1. preserving operations to ensure that the products remain in good condition during transport and storage;
 
-    (a)	preserving operations to ensure that the products remain in good condition during transport and storage;
+   2. breaking-up and assembly of packages;
 
-    (b)	breaking-up and assembly of packages;
+   3. washing, cleaning, removal of dust, oxide, oil, paint or other coverings;
 
-    (c)	washing, cleaning, removal of dust, oxide, oil, paint or other coverings;
+   4. ironing or pressing of textiles and textile articles;
 
-    (d)	ironing or pressing of textiles and textile articles;
+   5. simple painting and polishing operations;
 
-    (e)	simple painting and polishing operations;
+   6. husking and partial or total milling of rice; polishing and glazing of cereals and rice;
 
-    (f)	husking and partial or total milling of rice; polishing and glazing of cereals and rice;
+   7. operations to colour or flavour sugar or form sugar lumps; partial or total milling of crystal sugar;
 
-    (g)	operations to colour or flavour sugar or form sugar lumps; partial or total milling of crystal sugar;
+   8. peeling, stoning and shelling of fruits, nuts and vegetables;
 
-    (h)	peeling, stoning and shelling of fruits, nuts and vegetables;
+   9. sharpening, simple grinding or simple cutting;
 
-    (i)	sharpening, simple grinding or simple cutting;
+   10. sifting, screening, sorting, classifying, grading, or matching (including the making-up of sets of articles);
 
-    (j)	sifting, screening, sorting, classifying, grading, or matching (including the making-up of sets of articles);
+   11. simple placing in bottles, cans, flasks, bags, cases, boxes, fixing on cards or boards and all other simple packaging operations;
 
-    (k)	simple placing in bottles, cans, flasks, bags, cases, boxes, fixing on cards or boards and all other simple packaging operations;
+   12. affixing or printing marks, labels, logos and other like distinguishing signs on products or their packaging;
 
-    (l)	affixing or printing marks, labels, logos and other like distinguishing signs on products or their packaging;
+   13. simple mixing of products, whether or not of different kinds; mixing of sugar with any material;
 
-    (m)	simple mixing of products, whether or not of different kinds; mixing of sugar with any material;
+   14. simple addition of water, dilution, dehydration or denaturation of products;
 
-    (n)	simple addition of water, dilution, dehydration or denaturation of products;
+   15. simple assembly of parts of articles to constitute a complete article or disassembly of products into parts;
 
-    (o)	simple assembly of parts of articles to constitute a complete article or disassembly of products into parts;
+   16. a combination of two or more of the operations specified in subparagraphs (a) to (o); or
 
-    (p)	a combination of two or more of the operations specified in subparagraphs (a) to (o); or
+   17. slaughter of animals.
 
-    (q)	slaughter of animals.
+2. For the purpose of paragraph 1, operations shall be considered simple when for their performance neither special skills are required nor machines, apparatus or tools especially produced or installed for those operations.
 
-2.	For the purpose of paragraph 1, operations shall be considered simple when for their performance neither special skills are required nor machines, apparatus or tools especially produced or installed for those operations.
-
-3.	All operations carried out either in the UK or in Viet Nam on a given product shall be considered together when determining whether the working or processing undergone by that product is to be regarded as insufficient within the meaning of paragraph 1.
+3. All operations carried out either in the UK or in Viet Nam on a given product shall be considered together when determining whether the working or processing undergone by that product is to be regarded as insufficient within the meaning of paragraph 1.
 
 {{ Article 6 }}

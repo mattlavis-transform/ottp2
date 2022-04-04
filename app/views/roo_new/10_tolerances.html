@@ -22,10 +22,10 @@
         <div class="govuk-grid-column-three-quarters">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="tolerances" >
-                <span class="govuk-caption-xl">{{ context.rules_of_origin_title }}</span>
+                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
                 <h1 class="govuk-heading-xl">Tolerances</h1>
 
-                {{ context.tolerances | convert_markdown | safe }}
+                {{ context.tolerances | convert_markdown | link_to_roo_original(context.original) | safe }}
 
                 {{ govukRadios({
                 idPrefix: "met_tolerances",

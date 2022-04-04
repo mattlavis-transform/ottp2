@@ -306,4 +306,23 @@
         list-style-type: lower-alpha;
     }
 
+    blockquote {
+        background-color: #f0f0f0;
+        margin          : 1em 0px;
+        padding         : 1em 1em 0.5em 1em;
+    }
+}
+
+.download {
+    // background-color: red;
+    padding-left         : 24px;
+    background-image     : url('/public/images/download.png');
+    background-repeat    : no-repeat;
+    background-position-x: 0;
+    background-position-y: 6px;
+}
+
+.roo_duty {
+    font-weight: bold;
+    white-space: nowrap;
 }

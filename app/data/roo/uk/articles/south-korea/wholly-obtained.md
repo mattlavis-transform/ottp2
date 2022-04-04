@@ -1,4 +1,4 @@
-### Wholly obtained products 
+## Wholly obtained products 
 1. For the purposes of Article 2(a), the following shall be considered as wholly obtained in a Party: 
 
    1. mineral products extracted from the soil or from the seabed in the territory of a Party; 

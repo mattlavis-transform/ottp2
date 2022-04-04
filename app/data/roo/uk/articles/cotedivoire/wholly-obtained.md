@@ -1,4 +1,4 @@
-### Wholly obtained products
+## Wholly obtained products
 
 1. The following shall be considered as wholly obtained in Côte d'Ivoire or in the United Kingdom:
    1. live animals born and raised there;

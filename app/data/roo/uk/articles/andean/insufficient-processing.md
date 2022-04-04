@@ -1,59 +1,59 @@
 ### Insufficient Working or Processing Operations 
 
-1.	Without prejudice to paragraph 2, the following operations shall be considered as insufficient working or processing to confer the status of originating product, regardless of whether the requirements of Article 6 are satisfied:
+1. Without prejudice to paragraph 2, the following operations shall be considered as insufficient working or processing to confer the status of originating product, regardless of whether the requirements of Article 6 are satisfied:
 
 
-(a)	preserving operations to ensure that the products remain in good condition during transport and storage;
+(a) preserving operations to ensure that the products remain in good condition during transport and storage;
 
 
-(b)	breaking-up and assembly of packages;
-
-
-
-(c)	washing, cleaning, removal of dust, oxide, oil, paint or other coverings;
+(b) breaking-up and assembly of packages;
 
 
 
-(d)	ironing or pressing of textiles;
+(c) washing, cleaning, removal of dust, oxide, oil, paint or other coverings;
 
 
 
-(e)	simple painting and polishing operations;
+(d) ironing or pressing of textiles;
 
 
 
-(f)	husking, partial or total bleaching, polishing, and glazing of cereals and rice;
+(e) simple painting and polishing operations;
 
 
 
-(g)	operations to colour or flavour sugar or form sugar lumps; partial or total milling of crystal sugar;
-
-
-(h)	peeling, stoning and shelling of fruits, nuts and vegetables;
+(f) husking, partial or total bleaching, polishing, and glazing of cereals and rice;
 
 
 
-(i)	sharpening, simple grinding or simple cutting;
+(g) operations to colour or flavour sugar or form sugar lumps; partial or total milling of crystal sugar;
+
+
+(h) peeling, stoning and shelling of fruits, nuts and vegetables;
 
 
 
-(j)	sifting, screening, sorting, classifying, grading, matching (including the making-up of sets of articles);
+(i) sharpening, simple grinding or simple cutting;
 
 
-(k)	simple placing in bottles, cans, flasks, bags, cases, boxes, fixing on cards or boards and all other simple packaging operations;
+
+(j) sifting, screening, sorting, classifying, grading, matching (including the making-up of sets of articles);
 
 
-(l)	affixing or printing  marks, labels, logos and other like distinguishing signs on products or their packaging;
-
-(m)	simple mixing of products, whether or not of different kinds; mixing of sugar with any material;
+(k) simple placing in bottles, cans, flasks, bags, cases, boxes, fixing on cards or boards and all other simple packaging operations;
 
 
-(n)	simple assembly of parts of articles to constitute a complete article or disassembly of products into parts;
+(l) affixing or printing  marks, labels, logos and other like distinguishing signs on products or their packaging;
 
-(o)	slaughter of animals; and
+(m) simple mixing of products, whether or not of different kinds; mixing of sugar with any material;
 
 
-(p)	a combination of two or more operations specified in subparagraphs (a) to (o).
+(n) simple assembly of parts of articles to constitute a complete article or disassembly of products into parts;
+
+(o) slaughter of animals; and
+
+
+(p) a combination of two or more operations specified in subparagraphs (a) to (o).
 
 
 

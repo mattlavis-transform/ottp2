@@ -564,6 +564,10 @@
 		"description" : "Marshall Islands, Republic of"
 	},
 	{
+		"geographical_area_id" : "MK",
+		"description" : "North Macedonia"
+	},
+	{
 		"geographical_area_id" : "ML",
 		"description" : "Mali"
 	},
@@ -941,7 +945,7 @@
 	},
 	{
 		"geographical_area_id" : "VN",
-		"description" : "Viet Nam"
+		"description" : "Vietnam"
 	},
 	{
 		"geographical_area_id" : "VU",

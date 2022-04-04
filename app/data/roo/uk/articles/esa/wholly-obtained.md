@@ -1,4 +1,4 @@
-### Wholly obtained products
+## Wholly obtained products
 
 1. The following shall be considered as wholly obtained in an ESA State or in the UK:
 
