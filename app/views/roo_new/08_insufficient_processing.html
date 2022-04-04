@@ -24,28 +24,43 @@
                 <input type="hidden" name="phase" id="phase" value="insufficient_processing" >
                 <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
                 <h1 class="govuk-heading-xl">Have non-originating parts been sufficiently processed?</h1>
-                <p class="govuk-body-l">You have said that not all of the parts that make up your goods
-                    originate in {{ context.country_name }}. In order to qualify for preferential treatment, your non-originating parts
-                    need to have been sufficiently processed to count as originating.</p>
+                {# <p class="govuk-body-l">Not all of the parts that make up your goods
+                    originate in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.</p> #}
+
+                <p class="govuk-body-l">In order to qualify for preferential treatment, non-originating parts
+                    must be <strong>sufficiently processed</strong> to count as originating.</p>
 
                 <p class="govuk-body">Some operations are regarded as too minor to confer originating status to
                     non-originating materials that are used in the production of your goods. These operations are 
                     referred to as 'insufficient processing' and are specific to each trade agreement.</p>
 
-                <p class="govuk-body">The insufficient processing operations for {{ context.country }} are listed below.</p>
+                <p>Manufacturing and processing operations must be <strong>more than simple operations or processes</strong>, and must need special skills, machines, apparatus or equipment especially produced or installed to carry out the manufacture or process.</p>
+
+                <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">Defining simple operations</span>
+                    </summary>
+                    <div class="govuk-details__text">
+
+                        <p>Some of the listed operations can be clearly identified as insufficient operations, such as the affixing of a label on the product. However, there are also some operations that need to be assessed further as they contain the term ‘simple’, for example ‘simple assembly’.</p>
+
+                        <p>‘Simple’ usually describes activities which do not need special skills, machines, apparatus, or equipment especially produced or installed for carrying out the activity. This term may be further defined so that the skills, machines, apparatus, or tools used must also contribute to the product’s essential characteristics or properties.</p>
+                    </div>
+                </details>
+
+                <p class="govuk-body">The insufficient processing operations for the {{ context.scheme_title }} are listed below.</p>
 
                 <h2 class="govuk-heading-m">'Insufficient processing' operations according to the {{ context.scheme_title }}</h2>
                 {{ context.insufficient_processing | convert_markdown | link_to_roo_original(context.original) | safe }}
-
 
                 {{ govukRadios({
                 idPrefix: "insufficient_processing",
                 name: "insufficient_processing",
                 fieldset: {
                     legend: {
-                    text: "Have your goods been subject to sufficient processing to qualify for preferential treatment?",
+                    text: "Have non-originating parts been subject to sufficient processing to qualify for preferential treatment?",
                     isPageHeading: false,
-                    classes: "govuk-fieldset__legend--s b"
+                    classes: "govuk-fieldset__legend--sb"
                     }
                 },
                 hint: {

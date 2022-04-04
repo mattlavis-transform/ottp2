@@ -1,6 +1,4 @@
-### Sufficient working or processing
-
-1. Without prejudice to paragraph 3 and to Article 6, products which are not wholly obtained in a Party shall be considered to be sufficiently worked or processed when the conditions laid down in the list in Annex II for the goods concerned are fulfilled.
+1. Products which are not wholly obtained in a Party shall be considered to be sufficiently worked or processed when the conditions laid down in the list of **product-specific rules** for the goods concerned are fulfilled.
 
 2. If a product which has obtained originating status in a Party in accordance with paragraph 1 is used as a material in the manufacture of another product, no account shall be taken of the non-originating materials which may have been used in its manufacture.
 

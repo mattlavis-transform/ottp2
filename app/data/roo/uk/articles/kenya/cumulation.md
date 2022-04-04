@@ -98,4 +98,4 @@ It shall not be necessary that such materials have undergone sufficient working 
 (a) all the countries and territories involved in the acquisition of the originating status have entered into an arrangement or agreement on administrative cooperation with each other using the template in Annex X of the United Kingdom-EAC Agreement, which ensures a correct implementation of this Article and includes a reference to the use of appropriate proofs of origin;
 (b) the EAC Partner State or States will provide the UK, with details of arrangements or agreements on administrative cooperation with the other countries or territories referred to in this Article. The UK shall publish, according to its own procedures, the date on which the cumulation provided for in this Article may be applied with those countries and territories listed in this Article which have fulfilled the necessary requirements.
 
-{{ Articles 4 to 6}}
+{{ Articles 4 to 6 }}

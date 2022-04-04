@@ -1,4 +1,4 @@
-1. Without prejudice to paragraph 2, the following operations shall be considered as insufficient working or processing to confer the status of originating products, whether or not the requirements of Article 7 are satisfied:
+1. The following operations shall be considered as insufficient working or processing to confer the status of originating products, whether or not the requirements of Article 7 are satisfied:
 
 (a) operations to ensure the preservation of products in good condition during transport and storage;
 

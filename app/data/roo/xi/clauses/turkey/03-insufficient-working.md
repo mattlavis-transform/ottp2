@@ -2,7 +2,7 @@ ARTICLE 8
 
 Insufficient working or processing
 
-1. Without prejudice to paragraph 2, the following operations shall be considered to be insufficient working or processing to confer the status of an originating product, whether or not the requirements in Article 6 are satisfied:
+1. The following operations shall be considered to be insufficient working or processing to confer the status of an originating product, whether or not the requirements in Article 6 are satisfied:
 
 (a) preserving operations to ensure that the products remain in good condition during transport and storage;
 

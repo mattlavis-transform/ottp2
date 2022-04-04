@@ -74,21 +74,18 @@ module.exports = function (env) {
         return (s);
     }
 
-    filters.remove_extension = function(s) {
+    filters.remove_extension = function (s) {
         var my_array = s.split(".");
         s = my_array[0];
         return (s);
     }
 
-    filters.format_psr = function(rule_text, minimal = false) {
-
+    filters.format_psr = function (rule_text, minimal = false) {
         md = new MarkdownIt();
-        // str = str.replace(/\* ([0-9]{1,2})\\. /g, '$1. ');
-        // str = str.replace(/  \* \(([a-z]{1,2})\)/g, '\n\n    $1. ');
-        
         rule_text = rule_text.replace(/;/g, ';\n');
-        var rule_text = md.render(rule_text);
-        
+        rule_text = md.render(rule_text);
+        rule_text = rule_text.replace(/<ul/g, '<ul class="govuk-list xgovuk-list--bullet"');
+
         if (minimal) {
             rule_text = rule_text.replace("{{CC}}", "");
             rule_text = rule_text.replace("{{CTH}}", "");
@@ -326,7 +323,7 @@ module.exports = function (env) {
             md = new MarkdownIt();
             str = str.replace(/\* ([0-9]{1,2})\\. /g, '$1. ');
             str = str.replace(/  \* \(([a-z]{1,2})\)/g, '\n\n    $1. ');
-            
+
             var markdown_text = md.render(str);
             markdown_text = markdown_text.replace("&lt;", "<");
             markdown_text = markdown_text.replace("&gt;", ">");

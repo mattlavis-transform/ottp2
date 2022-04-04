@@ -79,4 +79,4 @@
 
    2. Côte d'Ivoire provides the United Kingdom with details of agreements on administrative cooperation with the other countries or territories referred to in this Article. The United Kingdom shall publish the date on which the cumulation provided for in this Article may be applied with those countries or territories listed in this Article which have fulfilled the necessary requirements.
 
-{{ Article 8}}
+{{ Article 8 }}

@@ -19,37 +19,50 @@
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters roo_container">
+        <div class="govuk-grid-column-three-quarters roo_container commodity-split">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="product_specific_rules" >
-                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+                <span class="govuk-caption-xl">{{ context.rules_of_origin_title | safe }}</span>
                 <h1 class="govuk-heading-xl">Do your goods meet the product-specific rules?</h1>
 
-                {{ context.sufficiently_worked | convert_markdown | link_to_roo_original(context.original) | safe }}
+                <p class="govuk-body-l">
+                    If your product contains non-originating materials, then you need to demonstrate that those materials 
+                    have been <strong>sufficiently worked or processed</strong> to count as originating.</p>
 
-                {# <p class="govuk-body">In order to qualify for preferential treatment, your goods need to
-                    meet the product-specific rules. A product complies with the rule when the production process(es) mentioned in
-                    the rule takes place in the { relevant country } regardless of
-                    the origin of the materials used in that process.</p> #}
+                <p class="govuk-body">
+                    The Rules of Origin section of each preferential trade arrangement contains a list
+                    which establishes, for each product, the required processing operations to be carried out
+                    in the partner country in order for the product to be considered as originating.
+                </p>
 
-                <h2 class="govuk-heading-m">Do your goods meet the product-specific rules?</h2>
-                <div class="govuk-inset-text">
-                    Read the rules and explanatory notes below to understand if your goods meet
-                    the product-specific rules. You only need to meet one of the rules for your goods 
+                {% if context.sufficiently_worked != "" %}
+                    <ul class="govuk-list govuk-list--bullet commodity-split">
+                        <li>First, read the general rules that define '<a href="#sufficient">sufficient working or processing</a>' in the {{ context.scheme_title }}.</li>
+                        <li>
+                        Then, read the <a href="#psr">product-specific rules</a> for trading commodity
+                        {{ context.goods_nomenclature_item_id | format_and_trim_commodity_code | safe }}
+                        with {{ context.country_name }}.
+                    </li>
+                    </ul>
+
+                    <h2 class="govuk-heading-m" id="sufficient">'Sufficient working or processing' in the {{ context.scheme_title }}</p>
+                    {{ context.sufficiently_worked | convert_markdown | link_to_roo_original(context.original) | safe }}
+                {% endif %}
+
+                <h2 class="govuk-heading-m" id="psr">Product-specific rules for {{ context.goods_nomenclature_item_id | format_and_trim_commodity_code | safe }}</h2>
+                <p>
+                    Read the introductory notes and rules below to understand if your goods meet
+                    the requirements for sufficient working or processing.
+                    {% if context.product_specific_rules | length > 1 %}
+                    You only need to meet one of the rules for your goods 
                     to qualify.
-                </div>
-                <details class="govuk-details" data-module="govuk-details">
-                    <summary class="govuk-details__summary">
-                        <span class="govuk-details__summary-text">How to read the rules of origin table</span>
-                    </summary>
-                    <div class="govuk-details__text">
-                        {% include "includes/how-to-use-psr.html" %}
-                    </div>
-                </details>
+                    {% endif %}
+                </p>
+
                 {% if context.intro_text != "" %}
                     <details class="govuk-details" data-module="govuk-details">
                         <summary class="govuk-details__summary">
-                            <span class="govuk-details__summary-text">Introductory notes</span>
+                            <span class="govuk-details__summary-text">Introductory notes to the product-specific rules</span>
                         </summary>
                         <div class="govuk-details__text">
                             {{ context.intro_text | safe }}
@@ -87,7 +100,7 @@
                 </table>
 
                 {% if context.terms | length > 0 %}
-                    <h3 class="govuk-heading-s">Explanatory notes</h3>
+                    <h3 class="govuk-heading-s">Explanations of key terms</h3>
                     {% if "WO" in context.terms %}
                         {{ context.definitions["WO"] | safe }}
                     {% endif %}
@@ -116,13 +129,13 @@
                 name: "met_product_specific_rules",
                 fieldset: {
                     legend: {
-                    text: "Have your goods been processed in such a way as to meet the product-specific rules?",
+                    text: "Have your goods been worked or processed sufficiently to gain 'originating' status?",
                     isPageHeading: false,
-                    classes: "govuk-fieldset__legend--sb"
+                    classes: "govuk-fieldset__legend--l"
                     }
                 },
                 hint: {
-                    text: ""
+                    html: "Base your answer on the product-specific rules, bearing in mind any cumulation rules that are featured in the " + context.scheme_title + "."
                 },
                 items: [
                     {

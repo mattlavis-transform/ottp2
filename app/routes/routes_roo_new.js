@@ -40,26 +40,32 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
         context.get_country(req);
         context.get_commodity(req);
         context.get_trade_direction(req);
-        context.get_scope();
         context.get_roo_origin(req);
         context.get_scheme_code(req);
+
+        // If there are possibly multiple schemes, such as Kenya, Ghana, Viet Nam or Moldova,
+        // then we redirect to the page to select the appropriate scheme
+        // otherwise we go to to 'general originating requirements' page
         if (context.multiple_schemes) {
             var url = "/roo/scheme_select/" + context.goods_nomenclature_item_id + "/" + context.country + "/";
-            res.redirect(url);
         } else {
             var url = "/roo/origination/" + context.goods_nomenclature_item_id + "/" + context.country
-            res.redirect(url);
         }
+        // res.redirect(url);
     }
     else if (context.phase == "wholly_obtained") {
         context.get_wholly_obtained(req);
+        // If the user says at this early stage that the goods are wholly obtained, then
+        // take them to the proofs + verification page
+        // else take them to the cumulation page instead.
         if (context.wholly_obtained) {
             url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
         } else {
-            url = "/roo/insufficient_processing/" + context.goods_nomenclature_item_id + "/" + context.country;
+            // url = "/roo/insufficient_processing/" + context.goods_nomenclature_item_id + "/" + context.country;
+            url = "/roo/cumulation/" + context.goods_nomenclature_item_id + "/" + context.country;
         }
     } else if (context.phase == "scheme_select") {
-        var a = 1;
+        // From selecting a scheme, take the user to the origination screen (always)
         url = "/roo/origination/" + context.goods_nomenclature_item_id + "/" + context.country;
     } else if (context.phase == "insufficient_processing") {
         context.get_insufficient_processing(req);

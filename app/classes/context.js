@@ -193,6 +193,12 @@ class Context {
                 if (typeof this.scheme_ord === 'undefined') {
                     this.scheme_ord = "";
                 }
+                try {
+                    this.articles = this.matching_schemes[0].articles;
+                } catch {
+                    this.articles = {}
+                }
+                var a = 1;
             } else {
                 this.multiple_schemes = true;
             }
@@ -457,6 +463,12 @@ class Context {
             data = data.replace(/{{ ORD }}/g, this.ord);
             data = data.replace(/(#{2,3} Wholly obtained products)/g, '$1 according to the ' + this.scheme_title);
 
+            // Legalese
+            data = data.replace(/shall be/g, "are");
+            data = data.replace(/shall/g, "will");
+
+            data = this.replace_article_references(data);
+
             if (document_type == "wholly-obtained") {
                 this.wholly_obtained = data;
             }
@@ -494,6 +506,44 @@ class Context {
         } catch {
             console.log("Error getting document " + document_type);
         }
+    }
+
+    replace_article_references(data) {
+        var a = 1;
+        var article_definitions = {
+            "general": { "screen": "definitions", "title": "General" },
+            "definitions": { "screen": "definitions", "title": "Definitions" },
+            "general requirements": { "screen": "origination", "title": "General requirements" },
+            "wholly obtained": { "screen": "wholly_obtained_info", "title": "Wholly obtained products" },
+            "sufficient working": { "screen": "product_specific_rules", "title": "Sufficient working or processing" },
+            "tolerances": { "screen": "tolerances", "title": "Tolerances" },
+            "insufficient working": { "screen": "insufficient_processing", "title": "Insufficient working or processing" },
+            "cumulation": { "screen": "cumulation", "title": "Cumulation" },
+            "cumulation - conditions": { "screen": "cumulation", "title": "Cumulation" },
+            "unit of qualification": { "screen": "", "title": "Unit of qualification" },
+            "accessories": { "screen": "neutral", "title": "Accessories" },
+            "sets": { "screen": "sets", "title": "Sets" },
+            "neutral elements": { "screen": "neutral", "title": "Neutral elements" },
+            "accounting segregation": { "screen": "", "title": "Accounting segregation" },
+            "principle of territoriality": { "screen": "", "title": "Principle of territoriality" },
+            "packing materials - shipment": { "screen": "neutral", "title": "Packing materials - shipment" },
+            "packing materials - retail": { "screen": "neutral", "title": "Packing materials - retail" },
+            "returned products": { "screen": "", "title": "Returned products" },
+            "non-alteration": { "screen": "", "title": "Non-alteration" },
+            "exhibitions": { "screen": "", "title": "Exhibitions" },
+            "direct transport": { "screen": "", "title": "Direct transport" },
+            "duty-free": { "screen": "", "title": "Working or processing of materials whose import into the UK is free of duty" },
+            "verification": { "screen": "proofs", "title": "Verification" }
+        }
+
+        for (const [key, value] of Object.entries(this.articles)) {
+            // console.log(key, value);
+            var regex = new RegExp("(" + key + ")([;:,. \()])", "gi");
+            var link = "/roo/" + article_definitions[value]["screen"] + "/" + this.goods_nomenclature_item_id + "/" + this.country;
+            var title = article_definitions[value]["title"];
+            data = data.replace(regex, "[$1 (" + title + ")](" + link + ")$2");
+        }
+        return (data);
     }
 
     get_cumulation_types() {

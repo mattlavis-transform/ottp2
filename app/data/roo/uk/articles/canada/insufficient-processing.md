@@ -1,7 +1,7 @@
 Insufficient Production
 
 
-1. Without prejudice to paragraph 2, the following operations are insufficient to confer origin on a product, whether or not the requirements of Articles 5 or 6 are satisfied:
+1. The following operations are insufficient to confer origin on a product, whether or not the requirements of Articles 5 or 6 are satisfied:
 
 a. operations exclusively intended to preserve products in good condition during storage and transport ;
 b. breaking-up or assembly of packages;

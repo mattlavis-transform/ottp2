@@ -40,8 +40,10 @@
                 {{ context.wholly_obtained | convert_markdown | link_to_roo_original(context.original) | safe }}
 
             </div>
-            
 
+            <p>Click on the 'Continue' button to see which parts can be disregarded in determining originating status 
+                for the {{ context.scheme_title }}.</p>
+                
             {{ govukButton({
                 text: "Continue",
                 href: "/roo/neutral/" + context.goods_nomenclature_item_id + "/" + context.country
