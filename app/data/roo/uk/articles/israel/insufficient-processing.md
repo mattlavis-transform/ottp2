@@ -33,3 +33,5 @@
    16. slaughter of animals.
 
 2. All operations carried out either in the UK or in Israel on a given product shall be considered together when determining whether the working or processing undergone by that product is to be regarded as insufficient within the meaning of paragraph 1.
+
+{{ Article 7 }}

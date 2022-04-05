@@ -1,5 +1,3 @@
-### Insufficient working or processing operations
-
 1. Notwithstanding paragraph 2, the following operations shall be considered as insufficient working or processing to confer the status of originating products, whether or not the requirements of Article 5 are satisfied:
 
     (a) operations to ensure the preservation of products in good condition during transport and storage (ventilation, spreading out, drying, freezing, chilling, placing in salt, sulphur dioxide or other aqueous solutions, removal of damaged parts, and like operations);

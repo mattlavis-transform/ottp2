@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Are your goods wholly obtained - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+  Neutral elements - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -67,7 +67,7 @@
                 {{ context.accessories | convert_markdown | link_to_roo_original(context.original) | safe }}
             </div>
 
-            <p>Click on the 'Continue' button to .. {{ context.scheme_title }}.</p>
+            <p>Click on the 'Continue' button to indicate if your goods are wholly obtained, based on the rules of the {{ context.scheme_title }}.</p>
             {{ govukButton({
                 text: "Continue",
                 href: "/roo/wholly_obtained/" + context.goods_nomenclature_item_id + "/" + context.country

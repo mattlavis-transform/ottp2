@@ -1,36 +1,37 @@
-1. The following operations shall be considered as insufficient working or processing to confer the status of originating products, whether or not the requirements of Article 6 are satisfied: 
+1. The following operations shall be considered as insufficient working or processing to confer the status of originating products, whether or not the requirements of Article 6 are satisfied:
 
-(a) preserving operations to ensure that the products remain in good condition during transport and storage; 
+   1. preserving operations to ensure that the products remain in good condition during transport and storage;
 
-(b) breaking-up and assembly of packages; 
+   2. breaking-up and assembly of packages;
 
-(c) washing, cleaning, removal of dust, oxide, oil, paint or other coverings; 
+   3. washing, cleaning, removal of dust, oxide, oil, paint or other coverings;
 
-(d) ironing or pressing of textiles; 
-(e) simple painting and polishing operations; 
+   4. ironing or pressing of textiles;
 
-(f) husking, partial or total bleaching, polishing, and glazing of cereals and rice; 
+   5. simple painting and polishing operations;
 
-(g) operations to colour sugar or form sugar lumps; 
+   6. husking, partial or total bleaching, polishing, and glazing of cereals and rice;
 
-(h) peeling, stoning and shelling, of fruits, nuts and vegetables; 
+   7. operations to colour sugar or form sugar lumps;
 
-(i) sharpening, simple grinding or simple cutting; 
+   8. peeling, stoning and shelling, of fruits, nuts and vegetables;
 
-(j) sifting, screening, sorting, classifying, grading, matching, (including the making-up of sets of articles); 
+   9. sharpening, simple grinding or simple cutting;
 
-(k) simple placing in bottles, cans, flasks, bags, cases, boxes, fixing on cards or boards and all other simple packaging operations;
- 
-(l) affixing or printing marks, labels, logos and other like distinguishing signs on products or their packaging; 
+   10. sifting, screening, sorting, classifying, grading, matching, (including the making-up of sets of articles);
 
-(m) simple mixing of products, whether or not of different kinds; 
+   11. simple placing in bottles, cans, flasks, bags, cases, boxes, fixing on cards or boards and all other simple packaging operations;
 
-(n) simple assembly of parts of articles to constitute a complete article or disassembly of products into parts; 
+   12. affixing or printing marks, labels, logos and other like distinguishing signs on products or their packaging;
 
-(o) a combination of two or more operations specified in (a) to (n); 
+   13. simple mixing of products, whether or not of different kinds;
 
-(p) slaughter of animals. 
+   14. simple assembly of parts of articles to constitute a complete article or disassembly of products into parts;
 
-2. All operations carried out either in the United Kingdom or in Jordan on a given product shall be considered together when determining whether the working or processing undergone by that product is to be regarded as insufficient within the meaning of paragraph 1. 
+   15. a combination of two or more operations specified in (a) to (n);
+
+   16. slaughter of animals.
+
+2. All operations carried out either in the United Kingdom or in Jordan on a given product shall be considered together when determining whether the working or processing undergone by that product is to be regarded as insufficient within the meaning of paragraph 1.
 
 {{ Article 7 }}

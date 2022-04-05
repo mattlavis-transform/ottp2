@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Sufficient processing - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+  Tolerances - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -19,7 +19,7 @@
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters">
+        <div class="govuk-grid-column-three-quarters roo_container">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="tolerances" >
                 <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>

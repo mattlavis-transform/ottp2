@@ -1,4 +1,3 @@
-### Wholly obtained
 
 1. The following shall be considered as wholly obtained in an EAC Partner State or in the UK:
 

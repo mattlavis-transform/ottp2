@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Not met - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+  Proofs of origin and verification - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -33,10 +33,10 @@
                     <p class="govuk-body">Click on a proof to find out more.</p>
                 {% endif %}
 
-                <ul class="govuk-list">
+                <ul class="govuk-list govuk-list--bullet">
                     {% for proof in context.proofs %}
                         <li>
-                            <a href="{{ proof.attributes.url }}">{{ proof.attributes.summary }} (opens in new tab)</a>
+                            <a target="_blank" href="{{ proof.attributes.url }}">{{ proof.attributes.summary }} (opens in new tab)</a>
                         </li>
                     {% endfor %}
                 </ul>

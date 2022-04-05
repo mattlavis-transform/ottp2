@@ -466,6 +466,7 @@ class Context {
             // Legalese
             data = data.replace(/shall be/g, "are");
             data = data.replace(/shall/g, "will");
+            data = data.replace(/ %/g, "%");
 
             data = this.replace_article_references(data);
 
@@ -509,7 +510,6 @@ class Context {
     }
 
     replace_article_references(data) {
-        var a = 1;
         var article_definitions = {
             "general": { "screen": "definitions", "title": "General" },
             "definitions": { "screen": "definitions", "title": "Definitions" },
