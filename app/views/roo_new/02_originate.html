@@ -13,13 +13,13 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+        href: context.back_link
     }) }}
 {% endblock %}
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters">
+        <div class="govuk-grid-column-three-quarters roo_container">
 
             <form action="/roo/wholly_obtained_info/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
@@ -29,6 +29,9 @@
                 </h1>
                 <p class="govuk-body-l">Rules of origin are the criteria which determine the national source of a product.
                     They are important as they determine if your trade is eligible for preferential tariff treatment.</p>
+                    <p>This page defines the broad rules that determine if your product is originating according to the
+                        {{ context.scheme_title }}.
+                    </p>
 
                 <div class="govuk-inset-text panel_grey">
                     <ul class="govuk-list commodity-split">
@@ -71,7 +74,21 @@
 
                 {{ context.originating | convert_markdown | link_to_roo_original(context.original) | safe }}
 
-                <p>Click on the 'Continue' button to view the definition of 'wholly obtained' for the {{ context.scheme_title }}.</p>
+                {% if context.features["absorption"] == true %}
+                <p>The {{ context.scheme_title }} features a principle known as the <b>absorption</b>, meaning that non-originating
+                intermediate components may be classed as originating, if they have gained originating status in the trading partner.</p>
+                <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">How the absorption principle works</span>
+                    </summary>
+                    <div class="govuk-details__text">
+                        {% include "includes/absorption.html" %}
+                    </div>
+                </details>
+                {% endif %}
+
+                <p class="b">Next step</p>
+                <p>Click on the 'Continue' button to view the definition of '<b>wholly obtained</b>' for the {{ context.scheme_title }}.</p>
                 {{ govukButton({
                     text: "Continue",
                     href: ""

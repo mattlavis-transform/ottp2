@@ -13,24 +13,28 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+        href: context.back_link
     }) }}
 {% endblock %}
 
 {% block content %}
-    <div class="govuk-grid-row">
+    <div class="govuk-grid-row" id="top">
         <div class="govuk-grid-column-two-thirds roo_container">
-            <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
-                <input type="hidden" name="phase" id="phase" value="processing" >
-                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
-                <h1 class="govuk-heading-xl">Your product meets the rules of origin</h1>
-                <h2 class="govuk-heading-m">How to document the origin of your product</h1>
-                <p class="govuk-body">
+            <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+            <h1 class="govuk-heading-xl">Your product meets the rules of origin</h1>
+            <p class="govuk-body">
                     To benefit from a preference, originating products should be accompanied by
                     appropriate proofs confirming their origin.</p>
 
+            {% if context.proofs | length > 0 %}
+                <h2 class="govuk-heading-m">Proof of origin - overview</h1>
                 {% if context.proofs | length > 1 %}
-                    <p class="govuk-body">Click on a proof to find out more.</p>
+                    <p class="govuk-body">There are {{ context.proofs | length }} ways to provide proof of origin. Click on an option
+                        to see an overview of that proof.
+                    </p>
+                {% else %}
+                    <p class="govuk-body">Click to see an overview of the proof of origin
+                    </p>
                 {% endif %}
 
                 <ul class="govuk-list govuk-list--bullet">
@@ -40,11 +44,23 @@
                         </li>
                     {% endfor %}
                 </ul>
+            {% endif %}
 
-                <h2 class="govuk-heading-m govuk-!-margin-top-6">How rules of origin are verified</h2>
-                {{ context.verification | convert_markdown | link_to_roo_original(context.original) | safe }}
+            <h2 class="govuk-heading-m">Documenting the origin of your product</h1>
+            
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    <a href="/roo/origin_processes/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
+                        Detailed processes for gaining proof of origin</a>
+                </li>
+                <li>
+                    <a href="/roo/verification/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
+                        Verification of proof of origin</a>
+                </li>
+            </ul>
 
-            </form>
+            {# <h2 class="govuk-heading-m govuk-!-margin-top-6">How rules of origin are verified</h2>
+            {{ context.verification | convert_markdown | link_to_roo_original(context.original) | safe }} #}
         </div>
         <div class="govuk-grid-column-one-third">
             <aside class="app-related-items" role="complementary">

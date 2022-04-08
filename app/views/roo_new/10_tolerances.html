@@ -13,7 +13,7 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+        href: context.back_link
     }) }}
 {% endblock %}
 
@@ -24,7 +24,25 @@
                 <input type="hidden" name="phase" id="phase" value="tolerances" >
                 <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
                 <h1 class="govuk-heading-xl">Tolerances</h1>
+                <p class="govuk-body-l">'Tolerances' represent a provision for the relaxation
+                    of the rules of origin under certain conditions.</p>
+                <p class="govuk-body-l">
+                    They allow a small amount of non-originating materials to be used in
+                    the production of the good without affecting its originating status.</p>
 
+                <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">Practical examples of tolerance clauses</span>
+                    </summary>
+                    <div class="govuk-details__text">
+                        <ol class="govuk-list govuk-list--number">
+                            <li>A good is subject to a 60% value added calculations rule which requires originating materials to constitute at least 60% of the total value of the product. The tolerance rule under the agreement is set at 10%. The rule cannot be applied to mean that this threshold can be reduced by 10%.</li>
+                            <li>A good is subject to a change in tariff classification rule. It complies with the rule but 5% of the non-originating materials have not gone through a change in tariff classification. The tolerance rule under the agreement is set at 10%. Tolerance can be applied and the 5% is allowed for the purpose of determining origin.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <h2 class="govuk-heading-m">Tolerances in the {{ context.scheme_title }}</h2>
                 {{ context.tolerances | convert_markdown | link_to_roo_original(context.original) | safe }}
 
                 {{ govukRadios({

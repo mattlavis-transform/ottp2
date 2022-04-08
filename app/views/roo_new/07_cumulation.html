@@ -13,7 +13,7 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+        href: context.back_link
     }) }}
 {% endblock %}
 
@@ -83,8 +83,18 @@
 
                 {{ context.cumulation | convert_markdown | link_to_roo_original(context.original) | safe }}
 
-                <div class="govuk-inset-text">Bear cumulation rules in mind when working out if your non-originating parts
-                    meet the product-specific rules.</div>
+                {# <div class="govuk-inset-text">Bear cumulation rules in mind when working out if your non-originating parts
+                    meet the product-specific rules.</div> #}
+
+                <div class="govuk-warning-text">
+                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                    <strong class="govuk-warning-text__text">
+                        <span class="govuk-warning-text__assistive">Please note</span>
+                        Bear cumulation rules in mind when working out if your non-originating parts
+                        meet the product-specific rules.
+                    </strong>
+                </div>
+                
                 {{ govukButton({
                     text: "Continue",
                     href: "/roo/insufficient_processing/" + context.goods_nomenclature_item_id + "/" + context.country

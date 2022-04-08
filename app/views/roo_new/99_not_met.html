@@ -13,31 +13,109 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: "/commodities/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.scope_id
+        href: context.back_link
     }) }}
 {% endblock %}
 
 {% block content %}
-    <div class="govuk-grid-row">
+    <div class="govuk-grid-row roo_container">
         <div class="govuk-grid-column-three-quarters">
-            <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
-                <input type="hidden" name="phase" id="phase" value="processing" >
-                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
-                <h1 class="govuk-heading-xl">Rules of origin not met</h1>
-                <p class="govuk-body">You have answered that you do not fulfill the product specific rules even taking
-                    into account available flexibilities such as tolerance, absorption and cumulation.
-                    Based on those answers your product is not originating in the United Kingdom and cannot benefit
-                    from preference under the EU-UK Trade and Cooperation Agreement.</p>
+            <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+            <h1 class="govuk-heading-xl">Rules of origin not met</h1>
+            <p class="govuk-body-l">Your product does not appear to meet the rules of origin requirements 
+                    for the {{ context.scheme_title }}.</p>
 
-                {# <p class="govuk-body">You can continue the assessment for information purposes or go straight to
-                    the report of the self-assessment.</p> #}
+            <p class="govuk-body">
+                    Based on your answers, it is likely that your product does not class as 'originating' and cannot benefit
+                    from preferential tariff treatment under the agreement.</p>
 
-                {{ govukButton({
-                    text: "Start again",
-                    href: ""
-                }) }}
+            {% if context.features %}
+                <p class="govuk-body">However, there are a number of flexibilities in the {{ context.scheme_title }} which could
+                    be used to help you comply with the rules of origin.</p>
+                {% if context.features["tolerances"] %}
+                    <h2 class="govuk-heading-m">Tolerances</h2>
+                    <p>Tolerance rules allow you to use a limited quantity of non-originating materials
+                        that are normally prohibited by the product specific rule.</p>
+                    <p>
+                        <a href="/roo/tolerances/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">Find out more about tolerances</a>
+                    </p>
+                {% endif %}
 
-            </form>
+                {% if context.features["absorption"] %}
+                    {% include "includes/absorption.html" %}
+                    <h2 class="govuk-heading-m">The absorption principle</h2>
+                    {# <p>If in the production of a product you use materials that have already obtained originating status,
+                        you can count them as 100% originating (even if those materials were produced using non-originating
+                        materials). This is called the absorption principle.</p> #}
+                    <p>
+                        <em>Also known as the 'roll-up' or intermediate materials provision.</em>
+                    </p>
+
+                    <p>Once a part or intermediate material obtains originating status under an FTA, it is considered to be 100% originating when used for further processing even if inputs used for the production of this part or intermediate material were not originating.</p>
+
+                    <p>Once the originating status is obtained, the non-originating inputs are fully absorbed and not taken into account. In other words, the value of non-originating materials used in the production of the good will be disregarded once this good obtains originating status.</p>
+
+                    <details class="govuk-details" data-module="govuk-details">
+                        <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+                                    Example of the absorption principle
+                                </span>
+                        </summary>
+                        <div class="govuk-details__text">
+                                Part A is made of non-originating materials. The rule of origin for this part requires a change in tariff classification (CTC rule). The rule of origin is met and part A is considered originating. It is then used to manufacture the final product B which will be exported to an FTA partner. The rule of origin for the final product B requires non-originating materials not to exceed 40% of the value of the product (VA rule). For the calculation of regional value content part A is treated as 100% originating based on the roll-up principle as all the non-originating materials used to produce it were absorbed once part A obtained originating status.
+                            </div>
+                    </details>
+                {% endif %}
+
+                {% if context.features["sets"] %}
+                    <h2 class="govuk-heading-m">Sets</h2>
+                    <p>
+                        <em>If your product is a set, you may be able to apply an additional tolerance.</em>
+                    </p>
+                    <p>A provision that clarifies circumstances under which sets can be considered originating. In particular, it refers to situations where not all of the items in the set are originating.</p>
+                    <p>Sets, even when comprising of different items, can be classified under one commodity code based on the General Rules of Interpretation (GIR). Provisions on sets often set an originating value threshold above which the set is considered originating.</p>
+
+                    <details class="govuk-details" data-module="govuk-details">
+                        <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+                                    Example of a set
+                                </span>
+                        </summary>
+                        <div class="govuk-details__text">
+                                A stationery set consists of five different items. Based on the individual rules of origin for each products under the given FTA, four of these products are originating and one is not. The FTA states that sets can still be considered originating when the value of non-originating products does not exceed 10% of the value of the total set. As the non-originating product in this example constitutes 25% of the value, the set cannot be considered originating.
+                            </div>
+                    </details>
+                    {{ context.sets | convert_markdown | link_to_roo_original(context.original) | safe }}
+                {% endif %}
+
+                {% if context.features["cumulation"] %}
+                    <h2 class="govuk-heading-m">Cumulation rules</h2>
+                    <p>Don't forget that cumulation can affect a product's originating status.</p>
+                    <p>
+                        <a href="/roo/cumulation/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">Check what cumulation
+                            rules apply to the movement of goods under the {{ context.scheme_title }}</a>.
+                        </p>
+                {% endif %}
+
+            {% endif %}
+
+            <div class="zgovuk-inset-text panel_blue" style="padding-bottom:0px">
+
+                <div class="govuk-warning-text govuk-!-margin-bottom-0">
+                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                    <strong class="govuk-warning-text__text">
+                        {# <span class="govuk-warning-text__assistive">Please note</span> #}
+                        What's next
+                        <p>If you have read the flexibilities above and you now consider your goods to be originating
+                    in  {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }},
+                    read more about <a href="/roo/proofs/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">obtaining and verifying proofs of origin</a>.
+                        </p>
+                        <p>Alternatively, if your trade still does not meet the rules of origin,
+                        <a href="/roo/trade_direction/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">start again</a>.</p>
+                    </strong>
+                </div>
+
+            </div>
         </div>
     </div>
 

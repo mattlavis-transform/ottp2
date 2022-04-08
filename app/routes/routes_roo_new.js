@@ -51,7 +51,6 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
         } else {
             var url = "/roo/origination/" + context.goods_nomenclature_item_id + "/" + context.country
         }
-        // res.redirect(url);
     }
     else if (context.phase == "wholly_obtained") {
         context.get_wholly_obtained(req);
@@ -79,7 +78,7 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
         if (context.met_product_specific_rules) {
             url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
         } else {
-            url = "/roo/tolerances/" + context.goods_nomenclature_item_id + "/" + context.country;
+            url = "/roo/not_met/" + context.goods_nomenclature_item_id + "/" + context.country;
         }
     } else if (context.phase == "tolerances") {
         context.get_tolerances(req);
@@ -104,15 +103,25 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
 router.get(['/roo/trade_direction/:goods_nomenclature_item_id/:country/', 'xi/roo/trade_direction/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var phase = req.session.data["phase"];
     var context = new Context(req, "commodity");
-    context.get_scope();
-    context.get_country(req);
-    context.get_commodity(req);
     req.session.data["scheme_code"] = "";
     context.scheme_code = "";
 
-    res.render('roo_new/01_trade_direction', {
-        'context': context
-    });
+    context.get_scope();
+    context.get_country(req);
+    context.get_commodity(req);
+    context.get_roo_origin(req);
+    context.get_scheme_code(req);
+
+
+    // if ((context.multiple_schemes) && (context.scheme_code == '')) {
+    if (context.multiple_schemes) {
+        var url = "/roo/scheme_select/" + context.goods_nomenclature_item_id + "/" + context.country + "/";
+        res.redirect(url);
+    } else {
+        res.render('roo_new/01_trade_direction', {
+            'context': context
+        });
+    }
 });
 
 // 01b Select one of multiple schemes
@@ -125,7 +134,6 @@ router.get(['/roo/scheme_select/:goods_nomenclature_item_id/:country/', 'xi/roo/
     context.get_scope();
     context.get_roo_origin(req);
     context.get_scheme_code(req);
-    // context.get_article("wholly-obtained");
 
     res.render('roo_new/01b_scheme_select', {
         'context': context
@@ -297,6 +305,42 @@ router.get(['/roo/sets/:goods_nomenclature_item_id/:country/', 'xi/roo/tolerance
     });
 });
 
+// Origin processes
+router.get(['/roo/origin_processes/:goods_nomenclature_item_id/:country/', 'xi/roo/origin_processes/:goods_nomenclature_item_id/:country/'],
+    asyncMiddleware(async (req, res, next) => {
+        var context = new Context(req, "commodity");
+        context.get_country(req);
+        context.get_commodity(req);
+        context.get_trade_direction(req);
+        context.get_scope();
+        context.get_roo_origin(req);
+        context.get_scheme_code(req);
+        await context.get_proofs();
+        await context.get_roo_links();
+        context.get_article("origin_processes")
+
+        res.render('roo_new/20_origin_processes', {
+            'context': context
+        });
+    }));
+
+// Verification
+router.get(['/roo/verification/:goods_nomenclature_item_id/:country/', 'xi/roo/verification/:goods_nomenclature_item_id/:country/'],
+    asyncMiddleware(async (req, res, next) => {
+        var context = new Context(req, "commodity");
+        context.get_country(req);
+        context.get_commodity(req);
+        context.get_trade_direction(req);
+        context.get_scope();
+        context.get_roo_origin(req);
+        context.get_scheme_code(req);
+        context.get_article("verification")
+
+        res.render('roo_new/30_verification', {
+            'context': context
+        });
+    }));
+
 
 // Proofs
 router.get(['/roo/proofs/:goods_nomenclature_item_id/:country/', 'xi/roo/proofs/:goods_nomenclature_item_id/:country/'],
@@ -310,7 +354,6 @@ router.get(['/roo/proofs/:goods_nomenclature_item_id/:country/', 'xi/roo/proofs/
         context.get_scheme_code(req);
         await context.get_proofs();
         await context.get_roo_links();
-        context.get_article("verification")
 
         res.render('roo_new/98_proofs', {
             'context': context
@@ -327,6 +370,7 @@ router.get(['/roo/not_met/:goods_nomenclature_item_id/:country/', 'xi/roo/not_me
     context.get_scope();
     context.get_roo_origin(req);
     context.get_scheme_code(req);
+    context.get_article("sets")
 
     res.render('roo_new/99_not_met', {
         'context': context

@@ -399,7 +399,7 @@ class Commodity {
         this.quota_balances = {}
         axios.get('https://www.trade-tariff.service.gov.uk/api/v2/quotas/search?order_number=058003&include=quota_balance_events')
             .then((response) => {
-                console.log("Getting exchange rate");
+                console.log("Getting quota balances");
                 var data = response.data;
                 // this.exchange_rate = parseFloat(data["rates"]["GBP"]);
                 var a = 1;
@@ -1316,12 +1316,13 @@ class Commodity {
     }
 
     get_exchange_rate() {
-        axios.get('https://api.exchangeratesapi.io/latest')
-            .then((response) => {
-                console.log("Getting exchange rate");
-                var data = response.data;
-                this.exchange_rate = parseFloat(data["rates"]["GBP"]);
-            });
+        this.exchange_rate = "0.8951";
+        // axios.get('https://api.exchangeratesapi.io/latest')
+        //     .then((response) => {
+        //         console.log("Getting exchange rate");
+        //         var data = response.data;
+        //         this.exchange_rate = parseFloat(data["rates"]["GBP"]);
+        //     });
     }
 
     get_descendants(commodities, number_indents, start_at) {

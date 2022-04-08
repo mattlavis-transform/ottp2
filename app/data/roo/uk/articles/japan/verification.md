@@ -2,24 +2,25 @@
 
 2. The information requested pursuant to paragraph 1 shall cover no more than the following elements:
 
-(a) if a statement on origin was the basis of the claim referred to in subparagraph 2(a) of Article 16, that statement on origin;
+   1. if a statement on origin was the basis of the claim referred to in subparagraph 2(a) of Article 16, that statement on origin;
 
-(b) the tariff classification number of the product under HS 2017 and origin criteria used;
+   2. the tariff classification number of the product under HS 2017 and origin criteria used;
 
-(c) a brief description of the production process;
+   3. a brief description of the production process;
 
-(d) if the origin criterion was based on a specific production process, a specific description of that process;
+   4. if the origin criterion was based on a specific production process, a specific description of that process;
 
-(e) if applicable, a description of the originating and non-originating materials used in the production process;
+   5. if applicable, a description of the originating and non-originating materials used in the production process;
 
-(f) if the origin criterion was "wholly obtained", the applicable category (such as harvesting, mining, fishing and place of production);
-(g) if the origin criterion was based on a value method, the value of the product as well as the value of all the non-originating or, as appropriate to establish compliance with the value requirement, originating materials used in the production;
+   6. if the origin criterion was "wholly obtained", the applicable category (such as harvesting, mining, fishing and place of production);
 
-(h) if the origin criterion was based on weight, the weight of the product as well as the weight of the relevant non-originating or, as appropriate to establish compliance with the weight requirement, originating materials used in the product;
+   7. if the origin criterion was based on a value method, the value of the product as well as the value of all the non-originating or, as appropriate to establish compliance with the value requirement, originating materials used in the production;
 
-(i) if the origin criterion was based on a change in tariff classification, a list of all the non originating materials including their tariff classification number under HS 2017 (in two-, four- or six-digit format depending on the origin criteria); or
+   8. if the origin criterion was based on weight, the weight of the product as well as the weight of the relevant non-originating or, as appropriate to establish compliance with the weight requirement, originating materials used in the product;
 
-(j) the information relating to the compliance with the provision on non-alteration referred to in Article 10.
+   9. if the origin criterion was based on a change in tariff classification, a list of all the non originating materials including their tariff classification number under HS 2017 (in two-, four- or six-digit format depending on the origin criteria); or
+
+   10. the information relating to the compliance with the provision on non-alteration referred to in Article 10.
 
 3. When providing the requested information, the importer may add any other information that it considers relevant for the purpose of verification.
 

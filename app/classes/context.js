@@ -10,6 +10,7 @@ require('./global.js');
 
 class Context {
     constructor(req, settings_profile = "") {
+        this.back_link = req.headers.referer;
         this.title = "";
         this.root_url = "";
         this.source = "";
@@ -165,6 +166,9 @@ class Context {
         var jp = require('jsonpath');
         var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
         data = data["schemes"];
+        
+        this.features = null;
+
         if (this.country == "common") {
             this.scheme_code = "common";
             this.scheme_title = "";
@@ -181,6 +185,7 @@ class Context {
             if (typeof this.scheme_ord === 'undefined') {
                 this.scheme_ord = "";
             }
+            this.features = this.matching_schemes[0].features;
         } else {
             var query_string = "$[?(@.countries.indexOf('" + this.country + "') != -1)]"
             this.matching_schemes = jp.query(data, query_string);
@@ -198,7 +203,7 @@ class Context {
                 } catch {
                     this.articles = {}
                 }
-                var a = 1;
+                this.features = this.matching_schemes[0].features;
             } else {
                 this.multiple_schemes = true;
             }
@@ -504,6 +509,9 @@ class Context {
             else if (document_type == "verification") {
                 this.verification = data;
             }
+            else if (document_type == "origin_processes") {
+                this.origin_processes = data;
+            }
         } catch {
             console.log("Error getting document " + document_type);
         }
@@ -597,6 +605,23 @@ class Context {
             this.get_country_description();
         } else {
             this.country_name = "All countries";
+        }
+        this.check_gsp();
+    }
+
+    check_gsp() {
+        var gsp_countries = [
+            "AF", "AO", "BD", "BF", "BI", "BJ", "BT", "CD", "CF", "DJ", "ER", "ET", "GM", "GN",
+            "GW", "HT", "KH", "KI", "KM", "LA", "LR", "LS", "MG", "ML", "MM", "MR", "MW", "MZ",
+            "NE", "NP", "RW", "SB", "SD", "SL", "SN", "SO", "SS", "ST", "TD", "TG", "TL", "TV",
+            "TZ", "UG", "VU", "YE", "ZM", "CG", "CK", "DZ", "FM", "GH", "ID", "IN", "JO", "KE",
+            "NG", "NU", "SY", "TJ", "VN", "WS", "BO", "CV", "KG", "LK", "MN", "PH", "PK", "UZ"
+        ]
+
+        if (gsp_countries.includes(this.country)) {
+            this.gsp = true;
+        } else {
+            this.gsp = false;
         }
     }
 

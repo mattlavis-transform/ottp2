@@ -325,11 +325,12 @@ module.exports = function (env) {
             str = str.replace(/  \* \(([a-z]{1,2})\)/g, '\n\n    $1. ');
 
             var markdown_text = md.render(str);
-            markdown_text = markdown_text.replace("&lt;", "<");
-            markdown_text = markdown_text.replace("&gt;", ">");
+            markdown_text = markdown_text.replace(/&lt;/g, "<");
+            markdown_text = markdown_text.replace(/&gt;/g, ">");
             markdown_text = markdown_text.replace(/<h1>/g, "<h1 class='govuk-heading-l'>");
             markdown_text = markdown_text.replace(/<h2>/g, "<h2 class='govuk-heading-m'>");
             markdown_text = markdown_text.replace(/<h3>/g, "<h3 class='govuk-heading-s'>");
+            markdown_text = markdown_text.replace(/{{ top }}/g, "<a href='#top'>Back to top</a>");
 
             if (hide_bullets) {
                 markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list'>")
