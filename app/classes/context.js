@@ -469,6 +469,7 @@ class Context {
             data = data.replace(/(#{2,3} Wholly obtained products)/g, '$1 according to the ' + this.scheme_title);
 
             // Legalese
+            data = data.replace(/EUR 1/g, "EUR1");
             data = data.replace(/shall be/g, "are");
             data = data.replace(/shall/g, "will");
             data = data.replace(/ %/g, "%");
@@ -545,7 +546,7 @@ class Context {
         }
 
         for (const [key, value] of Object.entries(this.articles)) {
-            // console.log(key, value);
+            console.log(key, value);
             var regex = new RegExp("(" + key + ")([;:,. \()])", "gi");
             var link = "/roo/" + article_definitions[value]["screen"] + "/" + this.goods_nomenclature_item_id + "/" + this.country;
             var title = article_definitions[value]["title"];

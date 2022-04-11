@@ -40,11 +40,11 @@
 
    1. if origin has been obtained by application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-   ‘CUMULATION APPLIED WITH … (name of the country/countries)’
+        ‘CUMULATION APPLIED WITH … (name of the country/countries)’
 
    2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-   ‘NO CUMULATION APPLIED’
+        ‘NO CUMULATION APPLIED’
 
 1. The customs authorities issuing movement certificates EUR.1 or EUR-MED shall take any steps necessary to verify the originating status of the products and the fulfilment of the other requirements of this Origin Reference Document. For this purpose, they shall have the right to call for any evidence and to carry out any inspection of the exporter’s accounts or any other check considered appropriate. They shall also ensure that the forms referred to in paragraph 2 are duly completed. In particular, they shall check whether the space reserved for the description of the products has been completed in such a manner as to exclude all possibility of fraudulent additions.
 
@@ -69,18 +69,20 @@
 
 5. Movement certificates EUR.1 or EUR-MED issued retrospectively by application of paragraph 1 shall be endorsed with the following phrase in English:
 
- ‘ISSUED RETROSPECTIVELY’
+    ‘ISSUED RETROSPECTIVELY’
 
- Movement certificates EUR-MED issued retrospectively by application of paragraph 2 shall be endorsed with the following phrase in English:
+    Movement certificates EUR-MED issued retrospectively by application of paragraph 2 shall be endorsed with the following phrase in English:
 
- ‘ISSUED RETROSPECTIVELY (Original EUR.1 No … [date and place of issue])’
+    ‘ISSUED RETROSPECTIVELY (Original EUR.1 No … [date and place of issue])’
 
-6. The endorsement referred to in paragraph 5 shall be inserted in Box 7 of the movement certificate EUR.1 or EUR-MED.
+1. The endorsement referred to in paragraph 5 shall be inserted in Box 7 of the movement certificate EUR.1 or EUR-MED.
 
 {{ top }}
 
 ## Article 19 - Issue of a duplicate movement certificate EUR.1 or EUR-MED
+
 1. In the event of theft, loss or destruction of a movement certificate EUR.1 or EUR-MED, the exporter may apply to the customs authorities which issued it for a duplicate made out on the basis of the export documents in their possession.
+
 2. The duplicate issued in this way shall be endorsed with the following word in English:
 
     ‘DUPLICATE’
@@ -137,11 +139,11 @@ When originating products are placed under the control of a customs office in th
 
    1. if origin has been obtained by application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
    
-   ‘CUMULATION APPLIED WITH …  (name of the country/countries)’; 
+        ‘CUMULATION APPLIED WITH …  (name of the country/countries)’; 
 
    2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
- 
-	‘NO CUMULATION APPLIED’
+
+        ‘NO CUMULATION APPLIED’
 
 5. The exporter making out an origin declaration or an origin declaration EUR-MED shall be prepared to submit at any time, at the request of the customs authorities of the exporting Party, all appropriate documents proving the originating status of the products concerned as well as the fulfilment of the other requirements of this Origin Reference Document.
 

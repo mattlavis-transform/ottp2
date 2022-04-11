@@ -116,13 +116,13 @@ When originating products are placed under the control of a customs office in Ca
 
 When the products enter an eligible ACP State, a further period of validity of four months shall begin on the date on which the customs authorities in the country of transit enter the following in box 7 of the movement certificate EUR.1:
 
-− the word 'transit',
+- the word 'transit',
 
-− the name of the country of transit,
+- the name of the country of transit,
 
-− the official stamp, a specimen of which has already been made available to the United Kingdom, and
+- the official stamp, a specimen of which has already been made available to the United Kingdom, and
 
-− the date of the endorsements.
+- the date of the endorsements.
 
 {{ top }}
 

@@ -37,19 +37,20 @@
    3. the products may be re-exported from the country of destination to one of the countries referred to in Articles 3 and 4. 
 
 6. A movement certificate EUR-MED shall contain one of the following statements in English in box 7:
+
    1. if origin has been obtained by application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    'CUMULATION APPLIED WITH … (name of the country/countries)'
+      'CUMULATION APPLIED WITH … (name of the country/countries)'
 
-    2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
+   2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    'NO CUMULATION APPLIED'
+      'NO CUMULATION APPLIED'
 
 7. The customs authorities issuing movement certificates EUR.1 or EUR-MED shall take any steps necessary to verify the originating status of the products and the fulfilment of the other requirements of this Origin Reference Document. For this purpose, they shall have the right to call for any evidence and to carry out any inspection of the exporter's accounts or any other check considered appropriate. They shall also ensure that the forms referred to in paragraph 2 are duly completed. In particular, they shall check whether the space reserved for the description of the products has been completed in such a manner as to exclude all possibility of fraudulent additions.
 
 8. The date of issue of the movement certificate EUR.1 or EUR-MED shall be indicated in Box 11 of the certificate.
 
-9. A movement certificate EUR.1 or EUR-MED shall be issued by the customs authorities and made available to the exporter as soon as actual exportation has been effected or ensured.
+9.  A movement certificate EUR.1 or EUR-MED shall be issued by the customs authorities and made available to the exporter as soon as actual exportation has been effected or ensured.
 
 {{ top }}
 
@@ -132,17 +133,22 @@ When originating products are placed under the control of a customs office in th
    2. if the products concerned may be considered as products originating in one of the other countries referred to in Articles 3 and 4 with which cumulation is applicable, without application of cumulation with materials originating in one of the countries referred to in Articles 3 and 4, and fulfil the other requirements of this Origin Reference Document, provided a certificate EUR-MED or an invoice declaration EUR-MED has been issued in the country of origin.
 
 3. An origin declaration EUR-MED may be made out if the products concerned can be considered as products originating in the United Kingdom, in Ukraine or in one of the other countries referred to in Articles 3 and 4 with which cumulation is applicable, and fulfil the requirements of this Origin Reference Document, in the following cases:
+
    1. cumulation was applied with materials originating in Switzerland (including Liechtenstein), Turkey or one of the other countries referred to in Articles 3(2) and 4(2); or
+
    2. the products may be used as materials in the context of cumulation for the manufacture of products for export to one of the other countries referred to in Articles 3 and 4; or
+
    3. the products may be re-exported from the country of destination to one of the other countries referred to in Articles 3 and 4.
+
 4. An origin declaration EUR-MED shall contain one of the following statements in English:
+
    1. if origin has been obtained by application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    'CUMULATION APPLIED WITH … (name of the country/countries)'
+      'CUMULATION APPLIED WITH … (name of the country/countries)'
 
-    2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
+   2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    'NO CUMULATION APPLIED'
+      'NO CUMULATION APPLIED'
 
 5. The exporter making out an origin declaration or an origin declaration EUR-MED shall be prepared to submit at any time, at the request of the customs authorities of the exporting Party, all appropriate documents proving the originating status of the products concerned as well as the fulfilment of the other requirements of this Origin Reference Document.
 

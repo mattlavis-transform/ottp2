@@ -14,7 +14,7 @@
 
 {{ top }}
 
-## Article 17 - Procedure for the issue of a movement certificate EUR.1 or EUR-MED
+## Article 17 - Procedure for the issue of a movement certificate EUR.1 or EUR-MED
 
 1. A movement certificate EUR.1 or EUR-MED shall be issued by the customs authorities of the exporting Party on application having been made in writing by the exporter or, under the exporter’s responsibility, by his authorised representative.
 
@@ -32,19 +32,19 @@
 
    1. cumulation was applied with materials originating in Switzerland (including Liechtenstein), Turkey or one of the countries referred to in Articles 3(2) and 4(2); or
 
-   2. the products may be used as materials in the context of cumulation for the manufacture of products for export to one of the countries referred to in Articles 3 and 4; or 
+   2. the products may be used as materials in the context of cumulation for the manufacture of products for export to one of the countries referred to in Articles 3 and 4; or
 
-   3. the products may be re-exported from the country of destination to one of the countries referred to in Articles 3 and 4. 
+   3. the products may be re-exported from the country of destination to one of the countries referred to in Articles 3 and 4.
  
 6. A movement certificate EUR-MED shall contain one of the following statements in English in box 7:
 
    1. if origin has been obtained by application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    ‘CUMULATION APPLIED WITH … (name of the country/countries)’
+        ‘CUMULATION APPLIED WITH … (name of the country/countries)’
 
-    2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
+   2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    ‘NO CUMULATION APPLIED’
+        ‘NO CUMULATION APPLIED’
 
 7. The customs authorities issuing movement certificates EUR.1 or EUR-MED shall take any steps necessary to verify the originating status of the products and the fulfilment of the other requirements of this Origin Reference Document. For this purpose, they shall have the right to call for any evidence and to carry out any inspection of the exporter’s accounts or any other check considered appropriate. They shall also ensure that the forms referred to in paragraph 2 are duly completed. In particular, they shall check whether the space reserved for the description of the products has been completed in such a manner as to exclude all possibility of fraudulent additions.
 
@@ -54,7 +54,7 @@
 
 {{ top }}
 
-## Article 18 - Movement certificates EUR.1 or EUR-MED issued retrospectively
+## Article 18 - Movement certificates EUR.1 or EUR-MED issued retrospectively
 
 1. Notwithstanding Article 17(9), a movement certificate EUR.1 or EUR-MED may exceptionally be issued after exportation of the products to which it relates if:
 
@@ -80,7 +80,7 @@
 
 {{ top }}
 
-## Article 19 - Issue of a duplicate movement certificate EUR.1 or EUR-MED
+## Article 19 - Issue of a duplicate movement certificate EUR.1 or EUR-MED
 
 1. In the event of theft, loss or destruction of a movement certificate EUR.1 or EUR-MED, the exporter may apply to the customs authorities which issued it for a duplicate made out on the basis of the export documents in their possession.
 
@@ -94,13 +94,13 @@
 
 {{ top }}
 
-## Article 20 - Issue of movement certificates EUR.1 or EUR-MED on the basis of a proof of origin issued or made out previously 
+## Article 20 - Issue of movement certificates EUR.1 or EUR-MED on the basis of a proof of origin issued or made out previously 
 
 When originating products are placed under the control of a customs office in the United Kingdom or the Faroe Islands, it shall be possible to replace the original proof of origin by one or more movement certificates EUR.1 or EUR-MED for the purpose of sending all or some of these products elsewhere within the United Kingdom or the Faroe Islands. The replacement movement certificate(s) EUR.1 or EUR-MED shall be issued by the customs office under whose control the products are placed.
 
 {{ top }}
 
-## Article 21 - Accounting segregation
+## Article 21 - Accounting segregation
 
 1. Where considerable cost or material difficulties arise in keeping separate stocks of originating and non-originating materials which are identical and interchangeable, the customs authorities may, at the written request of those concerned, authorise the so-called ‘accounting segregation’ method (hereinafter referred to as the ‘method’) to be used for managing such stocks.
 
@@ -116,7 +116,7 @@ When originating products are placed under the control of a customs office in th
 
 {{ top }}
 
-## Article 22 - Conditions for making out an origin declaration or an origin declaration EUR-MED
+## Article 22 - Conditions for making out an origin declaration or an origin declaration EUR-MED
 
 1. An origin declaration or an origin declaration EUR-MED as referred to in Article 16(1)(c) may be made out:
 
@@ -142,11 +142,11 @@ When originating products are placed under the control of a customs office in th
 
    1. if origin has been obtained by application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    ‘CUMULATION APPLIED WITH … (name of the country/countries)’
+        ‘CUMULATION APPLIED WITH … (name of the country/countries)’
 
     2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    ‘NO CUMULATION APPLIED’
+        ‘NO CUMULATION APPLIED’
 
 5. The exporter making out an origin declaration or an origin declaration EUR-MED shall be prepared to submit at any time, at the request of the customs authorities of the exporting Party, all appropriate documents proving the originating status of the products concerned as well as the fulfilment of the other requirements of this Origin Reference Document.
 
@@ -158,7 +158,7 @@ When originating products are placed under the control of a customs office in th
 
 {{ top }}
 
-## Article 23 - Approved exporter
+## Article 23 - Approved exporter
 
 1. The customs authorities of the exporting Party may authorise any exporter (hereinafter referred to as ‘approved exporter’), who makes frequent shipments of products in accordance to the provisions of the United Kingdom-Faroe Islands Agreement to make out origin declarations or origin declarations EUR-MED irrespective of the value of the products concerned. An exporter seeking such authorisation shall offer to the satisfaction of the customs authorities all guarantees necessary to verify the originating status of the products as well as the fulfilment of the other requirements of this Origin Reference Document.
 
@@ -172,7 +172,7 @@ When originating products are placed under the control of a customs office in th
 
 {{ top }}
 
-## Article 24 - Validity of proof of origin
+## Article 24 - Validity of proof of origin
 
 1. A proof of origin shall be valid for four months from the date of issue in the exporting Party, and shall be submitted within that period to the customs authorities of the importing Party
 
@@ -182,19 +182,19 @@ When originating products are placed under the control of a customs office in th
 
 {{ top }}
 
-## Article 25 - Submission of proof of origin
+## Article 25 - Submission of proof of origin
 
 Proofs of origin shall be submitted to the customs authorities of the importing Party in accordance with the procedures applicable in that country. The said authorities may require a translation of a proof of origin and may also require the import declaration to be accompanied by a statement from the importer to the effect that the products meet the conditions required for the implementation of the United Kingdom-Faroe Islands Agreement.
 
 {{ top }}
 
-## Article 26 - Importation by instalments
+## Article 26 - Importation by instalments
 
 Where, at the request of the importer and subject to the conditions laid down by the customs authorities of the importing Party, dismantled or non-assembled products within the meaning of paragraph 2(a) of Part Two, Section 1, of the Tariff of the United Kingdom falling within Sections XVI and XVII or headings 7308 and 9406 of HS 2007 are imported by instalments, a single proof of origin for such products shall be submitted to the customs authorities upon importation of the first instalment.
 
 {{ top }}
 
-## Article 27 - Exemptions from proof of origin
+## Article 27 - Exemptions from proof of origin
 
 1. Products sent as small packages from private persons to private persons or forming part of travellers’ personal luggage shall be admitted as originating products without requiring the submission of a proof of origin, provided that such products are not imported by way of trade and have been declared as meeting the requirements of this Origin Reference Document and where there is no doubt as to the veracity of such a declaration. In the case of products sent by post, that declaration may be made on the customs declaration CN22 / CN23 or on a sheet of paper annexed to that document.
 
@@ -204,7 +204,7 @@ Where, at the request of the importer and subject to the conditions laid down by
 
 {{ top }}
 
-## Article 28 - Supporting documents
+## Article 28 - Supporting documents
 
 The documents referred to in Articles 17(3) and 22(5) used for the purpose of proving that products covered by a movement certificate EUR.1 or EUR-MED, or an origin declaration or origin declaration EUR-MED may be considered as products originating in the United Kingdom, in the Faroe Islands or in one of the other countries referred to in Articles 3 and 4 and fulfil the other requirements of this Origin Reference Document may consist, inter alia, of the following:
 
@@ -220,7 +220,7 @@ The documents referred to in Articles 17(3) and 22(5) used for the purpose of pr
 
 {{ top }}
 
-## Article 29 - Preservation of Proof of Origin and Supporting Documents
+## Article 29 - Preservation of Proof of Origin and Supporting Documents
 
 1. The exporter applying for the issue of a movement certificate EUR.1 or EUR-MED shall keep for at least three years the documents referred to in Article 17(3).
 
@@ -232,7 +232,7 @@ The documents referred to in Articles 17(3) and 22(5) used for the purpose of pr
 
 {{ top }}
 
-## Article 30 - Discrepancies and formal errors
+## Article 30 - Discrepancies and formal errors
 
 1. The discovery of slight discrepancies between the statements made in the proof of origin and those made in the documents submitted to the customs office for the purpose of carrying out the formalities for importing the products shall not ipso facto render the proof of origin null and void if it is duly established that this document does correspond to the products submitted.
 
@@ -240,7 +240,7 @@ The documents referred to in Articles 17(3) and 22(5) used for the purpose of pr
 
 {{ top }}
 
-## Article 31 - Amounts expressed in euro
+## Article 31 - Amounts expressed in euro
 
 1. For the application of the provisions of Article 22(1)(b) and Article 27(3) in cases where products are invoiced in a currency other than euro, amounts in the national currencies of the countries referred to in Articles 3 and 4 equivalent to the amounts expressed in euro shall be fixed annually by each of the countries concerned.
 

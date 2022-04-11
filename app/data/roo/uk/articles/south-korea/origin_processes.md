@@ -88,7 +88,7 @@ The documents referred to in Article 15.3 used for the purpose of proving that p
 
 - documents proving the working or processing of materials in a Party, issued or made out in a Party where these documents are used as provided for in its domestic law;
 
-_ proofs of origin proving the originating status of materials used issued or made out in a Party in accordance with this Origin Reference Document; and
+- proofs of origin proving the originating status of materials used issued or made out in a Party in accordance with this Origin Reference Document; and
 
 - appropriate evidence concerning working or processing undergone outside territories of the Parties by application of Article 12, proving that the requirements of that Article have been satisfied.
 

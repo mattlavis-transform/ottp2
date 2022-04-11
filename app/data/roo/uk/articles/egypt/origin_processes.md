@@ -38,17 +38,17 @@
 
    1. if origin has been obtained by application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    ‘CUMULATION APPLIED WITH … (name of the country/countries)’
+      ‘CUMULATION APPLIED WITH … (name of the country/countries)’
 
    2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    ‘NO CUMULATION APPLIED’
+      ‘NO CUMULATION APPLIED’
 
-7. The customs authorities issuing movement certificates EUR.1 or EUR-MED shall take any steps necessary to verify the originating status of the products and the fulfilment of the other requirements of this Origin Reference Document. For this purpose, they shall have the right to call for any evidence and to carry out any inspection of the exporter’s accounts or any other check considered appropriate. They shall also ensure that the forms referred to in paragraph 2 are duly completed. In particular, they shall check whether the space reserved for the description of the products has been completed in such a manner as to exclude all possibility of fraudulent additions.
+1. The customs authorities issuing movement certificates EUR.1 or EUR-MED shall take any steps necessary to verify the originating status of the products and the fulfilment of the other requirements of this Origin Reference Document. For this purpose, they shall have the right to call for any evidence and to carry out any inspection of the exporter’s accounts or any other check considered appropriate. They shall also ensure that the forms referred to in paragraph 2 are duly completed. In particular, they shall check whether the space reserved for the description of the products has been completed in such a manner as to exclude all possibility of fraudulent additions.
 
-8. The date of issue of the movement certificate EUR.1 or EUR-MED shall be indicated in Box 11 of the certificate.
+2. The date of issue of the movement certificate EUR.1 or EUR-MED shall be indicated in Box 11 of the certificate.
 
-9. A movement certificate EUR.1 or EUR-MED shall be issued by the customs authorities and made available to the exporter as soon as actual exportation has been effected or ensured.
+3. A movement certificate EUR.1 or EUR-MED shall be issued by the customs authorities and made available to the exporter as soon as actual exportation has been effected or ensured.
 
 {{ top }}
 
@@ -140,19 +140,19 @@ When originating products are placed under the control of a customs office in th
 
    1. if origin has been obtained by application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    ‘CUMULATION APPLIED WITH … (name of the country/countries)’
+      ‘CUMULATION APPLIED WITH … (name of the country/countries)’
 
    2. if origin has been obtained without the application of cumulation with materials originating in one or more of the countries referred to in Articles 3 and 4:
 
-    ‘NO CUMULATION APPLIED’
+      ‘NO CUMULATION APPLIED’
 
-5. The exporter making out an origin declaration or an origin declaration EUR-MED shall be prepared to submit at any time, at the request of the customs authorities of the exporting Party, all appropriate documents proving the originating status of the products concerned as well as the fulfilment of the other requirements of this Origin Reference Document.
+1. The exporter making out an origin declaration or an origin declaration EUR-MED shall be prepared to submit at any time, at the request of the customs authorities of the exporting Party, all appropriate documents proving the originating status of the products concerned as well as the fulfilment of the other requirements of this Origin Reference Document.
 
-6. An origin declaration or an origin declaration EUR-MED shall be made out by the exporter by typing, stamping or printing on the invoice, the delivery note or another commercial document, the declaration, the texts of which appear in Annexes IVa and IVb, using one of the linguistic versions set out in those Annexes and in accordance with the provisions of the national law of the exporting country. If the declaration is handwritten, it shall be written in ink in printed characters.
+2. An origin declaration or an origin declaration EUR-MED shall be made out by the exporter by typing, stamping or printing on the invoice, the delivery note or another commercial document, the declaration, the texts of which appear in Annexes IVa and IVb, using one of the linguistic versions set out in those Annexes and in accordance with the provisions of the national law of the exporting country. If the declaration is handwritten, it shall be written in ink in printed characters.
 
-7. Origin declarations and origin declarations EUR-MED shall bear the original signature of the exporter in manuscript. However, an approved exporter within the meaning of Article 23 shall not be required to sign such declarations provided that he gives the customs authorities of the exporting Party a written undertaking that he accepts full responsibility for any origin declaration which identifies him as if it had been signed in manuscript by him.
+3. Origin declarations and origin declarations EUR-MED shall bear the original signature of the exporter in manuscript. However, an approved exporter within the meaning of Article 23 shall not be required to sign such declarations provided that he gives the customs authorities of the exporting Party a written undertaking that he accepts full responsibility for any origin declaration which identifies him as if it had been signed in manuscript by him.
 
-8. An origin declaration or an origin declaration EUR-MED may be made out by the exporter when the products to which it relates are exported, or after exportation on condition that it is presented in the importing country at the latest two years after the importation of the products to which it relates.
+4. An origin declaration or an origin declaration EUR-MED may be made out by the exporter when the products to which it relates are exported, or after exportation on condition that it is presented in the importing country at the latest two years after the importation of the products to which it relates.
 
 {{ top }}
 
