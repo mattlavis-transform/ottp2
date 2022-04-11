@@ -1,3 +1,5 @@
+## Verification of proofs of origin
+
 1. Subsequent verifications of proofs of origin shall be carried out at random or whenever the customs authorities of the importing country have reasonable doubts as to the authenticity of such documents, the originating status of the products concerned or the fulfilment of the other requirements of this Origin Reference Document.
 
 2. For the purposes of implementing paragraph 1, the customs authorities of the importing country shall return the movement certificate EUR.1 or EUR-MED and the invoice, if it has been submitted, the invoice declaration or the invoice declaration EUR-MED, or a copy of these documents, to the customs authorities of the exporting country giving, where appropriate, the reasons for the request for verification. Any documents and information obtained suggesting that the information given on the proof of origin is incorrect shall be forwarded in support of the request for verification.

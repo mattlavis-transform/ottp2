@@ -1,4 +1,4 @@
-### Verification of proofs of origin
+## Verification of proofs of origin
 
 1. Subsequent verifications of proofs of origin shall be carried out at random or whenever the customs authorities of the United Kingdom have reasonable doubts as to the authenticity of such documents, the originating status of the products concerned or the fulfilment of the other requirements of Part A of this Origin Reference Document.
 
@@ -14,7 +14,7 @@
 
 7. Where the verification procedure or any other information available appears to indicate that the provisions of Part A of this Origin Reference Document are being contravened, appropriate enquiries shall be carried out with due urgency to identify and prevent such contraventions.
 
-### Verification of suppliers' declarations
+## Verification of suppliers' declarations
 
 1. Verification of suppliers' declarations shall be carried out at random or whenever the customs authorities of the United Kingdom have reasonable doubts as to the authenticity of the document or the accuracy or completeness of the information concerning the true origin of the materials in question.
 

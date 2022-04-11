@@ -1,4 +1,4 @@
-### Verification of proofs of origin 
+## Verification of proofs of origin 
 
 1. Subsequent verifications of proofs of origin will be carried out at random or whenever HMRC has reasonable doubts as to the authenticity of such documents, the originating status of the products concerned or the fulfilment of the other requirements of this Annex.
 
@@ -12,7 +12,7 @@
 
 6. If in cases of reasonable doubt there is no reply within 10 months of the date of the verification request or if the reply does not contain sufficient information to determine the authenticity of the document in question or the real origin of the products, the requesting customs authorities will, except in exceptional circumstances, refuse entitlement to the preferences.
 
-### Verification of suppliers’ declarations
+## Verification of suppliers’ declarations
 
 1. Verification of suppliers’ declaration may be carried out at random or whenever the customs authorities of the importing country or territory have reasonable doubts as to the authenticity of the document or the accuracy or completeness of the information concerning the true origin of the materials in question.
 

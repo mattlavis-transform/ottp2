@@ -1,4 +1,4 @@
-### Verification of proof of origin
+## Verification of proof of origin
 
 1. Subsequent verifications of proof of origin shall be carried out based on risk analysis and at random or whenever the customs authorities of the importing country have reasonable doubts as to the authenticity of such documents, the originating status of the products concerned or the fulfilment of the other requirements of this Origin Reference Document.
 
@@ -14,12 +14,13 @@
 
 7. Where the verification procedure or any other available information appears to indicate that the provisions of this Origin Reference Document are being contravened, the exporting country on its own initiative or at the request of the importing country shall carry out appropriate enquires or arrange for such enquiries to be carried out with due urgency to identify and prevent such contraventions and for this purpose the exporting country concerned may invite the participation of the importing country in these verifications.
 
-### Verification of suppliers’ declarations
+## Verification of suppliers’ declarations
 
 1. Verification of suppliers’ declarations shall be carried out based on risk analysis and at random, or whenever the customs authorities of the country where such declarations have been taken into account to issue a movement certificate EUR.1 or to make out an invoice declaration, have reasonable doubts as to the authenticity of the document or the correctness of the information given in this document.
 
 2. The customs authorities to which a supplier’s declaration is submitted may request the customs authorities of the State where the declaration was made to issue an information certificate, a specimen of which appears in Annex VI to this Origin Reference Document. Alter¬ natively, the certifying authorities to which a supplier’s declaration is submitted may request the exporter to produce an information certificate issued by the customs authorities of the State where the declaration was made.
-A copy of the information certificate shall be preserved by the office which has issued it for at least three years.
+
+    A copy of the information certificate shall be preserved by the office which has issued it for at least three years.
 
 3. The customs authorities requesting the verification shall be informed of the results thereof as soon as possible. The results must indicate clearly whether the information given in the sup¬ plier’s declaration is correct and make it possible for them to determine whether and to what extent this supplier’s declaration could be taken into account for issuing a movement certificate EUR.1 or for making out an invoice declaration.
 

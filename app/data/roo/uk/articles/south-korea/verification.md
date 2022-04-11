@@ -1,4 +1,4 @@
-### Verification of proofs of origin
+## Verification of proofs of origin
 
 1. In order to ensure the proper application of  this Origin Reference Document, the Parties shall assist each other, through the customs authorities, in checking the authenticity of the proofs of origin and the correctness of the information given in these documents.
 

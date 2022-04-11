@@ -1,4 +1,4 @@
-### Verification of Origin Declarations
+## Verification of Origin Declarations
 
 1. Subsequent verifications of origin declarations shall be carried out at random or whenever the customs authorities of the importing Party have reasonable doubts as to the authenticity of such documents, the originating status of the products concerned or the fulfilment of the other requirements of this Origin Reference Document.
 

@@ -1,4 +1,4 @@
-### Verification of proofs of origin
+## Verification of proofs of origin
 
 1. Subsequent verifications of proofs of origin shall be carried out based on risk analysis and at random or whenever the customs authorities of the importing country have reasonable doubts as to the authenticity of such documents, the originating status of the products concerned or the fulfilment of the other requirements of this Origin Reference Document.
 
@@ -15,7 +15,7 @@
 7. The Parties shall refer to Article 7 of Protocol No. 2 to the United Kingdom-Ghana Agreement on mutual administrative assistance in customs matters for joint enquiries on proofs of origin.
 
 
-### Verification of supplier's declarations
+## Verification of supplier's declarations
 
 1. Verification of a supplier's declarations shall be carried out based on risk analysis and at random or whenever the customs authorities of the country where such declarations have been taken into account to issue a movement certificate EUR.1 or to make out an origin declaration, have reasonable doubts as to the authenticity of the document or the correctness of the information given in this document.
 

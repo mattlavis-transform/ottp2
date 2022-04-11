@@ -1,4 +1,4 @@
-### Verification of proofs of origin
+## Verification of proofs of origin
 
 1. Subsequent verifications of proofs of origin shall be carried out at random or whenever the customs authorities of the importing country have reasonable doubts as to the authenticity of such documents, the originating status of the products concerned or the fulfilment of the other requirements of this Origin Reference Document. 
 

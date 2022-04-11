@@ -1,18 +1,17 @@
-Proof of Origin
+## Proof of Origin
 
 1. Products originating in the UK, on importation into Canada, and products originating in Canada, on importation into the UK, benefit from preferential tariff treatment of the United Kingdom-Canada Agreement on the basis of a declaration (‘origin declaration’).
+
 2. The origin declaration is provided on an invoice or any other commercial document that describes the originating product in sufficient detail to enable its identification.
 
 3. The different linguistic versions of the text of the origin declaration are set out in Annex 2.
 
-Article 19
-
-Obligations Regarding Exportations
+## Obligations Regarding Exportations
 
 1. An origin declaration as referred to in Article 18.1 shall be completed:
+   1. in the UK, by an exporter in accordance with requirements pursuant to the Taxation (Cross-border Trade) Act 2018, (c. 22); and
 
-a. in the UK, by an exporter in accordance with requirements pursuant to the Taxation (Cross-border Trade) Act 2018, (c. 22); and
-b. in Canada, by an exporter in accordance with Part V of the Customs Act, R.S.C., 1985, c. 1 (2nd Supp.).
+   2. in Canada, by an exporter in accordance with Part V of the Customs Act, R.S.C., 1985, c. 1 (2nd Supp.).
 
 2. The exporter completing an origin declaration shall at the request of the customs authority of the Party of export submit a copy of the origin declaration and all appropriate documents proving the originating status of the products concerned, including supporting documents or written statements from the producers or suppliers, and fulfil the other requirements of this Origin Reference Document.
 
@@ -26,23 +25,21 @@ b. in Canada, by an exporter in accordance with Part V of the Customs Act, R.S.C
 
 7. The Parties may allow the establishment of a system that permits an origin declaration to be submitted electronically and directly from the exporter in the territory of a Party to an importer in the territory of the other Party, including the replacement of the exporter's signature on the origin declaration with an electronic signature or identification code.
 
-Article 20
-
-Validity of Origin Declaration
+## Validity of Origin Declaration
 
 1. An origin declaration shall be valid for 12 months from the date it was completed by the exporter, or for such longer period of time as provided by the Party of import. The preferential tariff treatment may be claimed, within this validity period, to the customs authority of the Party of import.
 
 2. The Party of import may accept an origin declaration submitted to its customs authority after the validity period referred to in paragraph 1 for the purpose of preferential tariff treatment in accordance with that Party's laws.
 
-Article 21
-
-Obligations Regarding Importations
+## Obligations Regarding Importations
 
 1. For the purpose of claiming preferential tariff treatment, the importer shall:
 
-a. submit the origin declaration to the customs authority of the Party of import as required by and in accordance with the procedures applicable in that Party;
-b. if required by the customs authority of the Party of import, submit a translation of the origin declaration; and
-c. if required by the customs authority of the Party of import, provide for a statement accompanying or forming a part of the import declaration, to the effect that the products meet the conditions required for the application of the United Kingdom-Canada Agreement.
+   1. submit the origin declaration to the customs authority of the Party of import as required by and in accordance with the procedures applicable in that Party;
+
+   2. if required by the customs authority of the Party of import, submit a translation of the origin declaration; and
+
+   3. if required by the customs authority of the Party of import, provide for a statement accompanying or forming a part of the import declaration, to the effect that the products meet the conditions required for the application of the United Kingdom-Canada Agreement.
 
 2. An importer that becomes aware or has reason to believe that an origin declaration for a product to which preferential tariff treatment has been granted contains incorrect information shall immediately notify the customs authority of the Party of import in writing of any change affecting the originating status of that product and pay any duties owing.
 

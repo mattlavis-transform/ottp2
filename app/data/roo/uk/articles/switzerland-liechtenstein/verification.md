@@ -1,4 +1,4 @@
-### Verification of proofs of origin
+## Verification of proofs of origin
 
 1. Subsequent verifications of proofs of origin shall be carried out at random or whenever the customs authorities of the importing Party have reasonable doubts as to the authenticity of such documents, the originating status of the products concerned or the fulfilment of the other requirements of this Origin Reference Document.
 
@@ -12,7 +12,7 @@
 
 6. If in cases of reasonable doubt there is no reply within ten months of the date of the verification request or if the reply does not contain sufficient information to determine the authenticity of the document in question or the real origin of the products, the requesting customs authorities shall, except in exceptional circumstances, refuse entitlement to the preferences.
 
-### Verification of supplier’s declarations
+## Verification of supplier’s declarations
 
 1. Subsequent verifications of supplier’s declarations or long-term supplier’s declarations may be carried out at random or whenever the customs authorities of a Party where such declarations have been taken into account to issue a movement certificate EUR.1 or to make out an origin declaration, have reasonable doubts as to the authenticity of the document or the correctness of the information given in that document.
 
