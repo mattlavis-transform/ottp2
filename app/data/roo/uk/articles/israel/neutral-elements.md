@@ -4,3 +4,5 @@ In order to determine whether a product is an originating product, it shall not 
 - plant and equipment;
 - machines and tools;
 - goods which neither enter into the final composition of the product nor are intended to do so.
+
+{{ Article 11 }}

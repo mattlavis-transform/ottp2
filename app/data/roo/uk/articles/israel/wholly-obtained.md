@@ -33,3 +33,5 @@
     4. of which the master and officers are nationals of the UK, a Member State of the EU or Israel; and
 
     5. of which at least 75 % of the crew are nationals of the UK, a Member State of the EU or Israel.
+
+{{ Article 5 }}

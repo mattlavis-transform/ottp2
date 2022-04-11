@@ -10,7 +10,6 @@
 
 5. For cumulation provided in paragraph 3, where the working or processing carried out in the UK does not go beyond the operation referred to in Article 7, the product obtained shall be considered as originating in the UK only where the value added there is greater than the value added in any of the other countries. 
 
-
 6. Products originating in one of the countries referred to in paragraphs 1 and 2 which do not undergo any working or processing in the UK retain their origin if exported into one of these countries.
 
 7. 
@@ -60,3 +59,5 @@
       3. notices indicating the fulfilment of the necessary requirements to apply cumulation have been published by the Parties.
 
 6. Israel shall provide the UK with details of the Agreements or arrangements including their dates of entry into force, and their corresponding rules of origin, which are applied with the other countries referred to in paragraphs 1 and 2.
+
+{{ Article 3 and 4 }}

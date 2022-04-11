@@ -9,3 +9,5 @@
 3. In determining whether a product meets a value requirement set out in Annex B, the value of accessories, spare parts, tools and instructional or other information materials shall be taken into account as originating or non-originating materials, as the case may be, in the calculation for the purpose of the application of the value requirement to the product.
 
 4. A product's accessories, spare parts, tools and instructional or other information materials shall have the originating status of the product with which they are delivered.
+
+{{ Article 12 }}

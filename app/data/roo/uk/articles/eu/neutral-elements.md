@@ -13,3 +13,5 @@ In order to determine whether a product is originating in a Party, it shall not 
 - equipment, devices and supplies used for testing or inspecting the product; and
 
 - other materials used in the production which are not incorporated into the product nor intended to be incorporated into the final composition of the product.
+
+{{ Article 13 }}

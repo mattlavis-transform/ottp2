@@ -5,3 +5,5 @@ Accessories, spare parts and tools dispatched with a piece of equipment, machine
 - which are not separately invoiced, 
 
 shall be regarded as one with the piece of equipment, machine, apparatus or vehicle in question. 
+
+{{ Article 8 }}

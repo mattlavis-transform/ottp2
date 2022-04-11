@@ -10,3 +10,5 @@ The conditions referred to above indicate, for all products covered by the UK-Is
    This paragraph shall not apply to products falling within Chapters 50 to 63 of HS 2002.
 
 3. Paragraphs 1 and 2 shall apply subject to the provisions of Article 7.
+
+{{ Article 6 }}

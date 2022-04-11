@@ -11,3 +11,5 @@
 5. The customs authorities requesting the verification shall be informed of the results of this verification as soon as possible. These results shall indicate clearly whether the documents are authentic and whether the products concerned may be considered as products originating in the United Kingdom, in Egypt or in one of the other countries referred to in Articles 3 and 4 and fulfil the other requirements of this Origin Reference Document.
 
 6. If, in cases of reasonable doubt, there is no reply within ten months of the date of the verification request or if the reply does not contain sufficient information to determine the authenticity of the document in question or the real origin of the products, the requesting customs authorities shall, except in exceptional circumstances, refuse entitlement to the preferences.
+
+{{ Article 32 }}

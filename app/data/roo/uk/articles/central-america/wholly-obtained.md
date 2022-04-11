@@ -1,4 +1,5 @@
 ## Wholly obtained products
+
 1. The following shall be considered as wholly obtained in the United Kingdom or in Central America:
 
    1. mineral products extracted from their soil or from their seabed;
@@ -45,3 +46,5 @@
          - which are at least 50 per cent owned by the United Kingdom, a Member State of the European Union or a Republic of the CA Party, public entities or nationals thereof.
 
 3. The conditions of paragraph 2 can be fulfilled in the different countries mentioned in Article 3 under conditions referred to in this Article.
+
+{{ Article 4 }}

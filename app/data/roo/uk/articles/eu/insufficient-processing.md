@@ -33,3 +33,5 @@
    16. slaughter of animals.
 
 2. For the purposes of paragraph 1, operations shall be considered simple if neither special skills nor machines, apparatus or equipment especially produced or installed are needed for carrying out those operations.
+
+{{ Article 7 }}

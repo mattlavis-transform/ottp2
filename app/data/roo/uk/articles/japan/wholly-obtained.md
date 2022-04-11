@@ -43,3 +43,5 @@
          1. which have their head office and their main place of business in a Party or in the European Union; and
 
          2. in which at least 50 per cent of the ownership belongs to natural persons or juridical persons of a Party or of the European Union.
+
+{{ Article 3 }}

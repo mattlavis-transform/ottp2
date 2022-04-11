@@ -7,3 +7,5 @@
 3. Paragraphs 1 and 2 do not apply if the production carried out in the other Party does not go beyond the operations referred to in Article 7.
 
 4. In order for an exporter to complete the statement on origin referred to in point (a) of Article 18 [Claim for preferential tariff treatment] for a product referred to in paragraph 2 of this Article, the exporter shall obtain from its supplier a supplier’s declaration or an equivalent document that contains the same information describing the non-originating materials concerned in sufficient detail to enable them to be identified.
+
+{{ Article 4 }}

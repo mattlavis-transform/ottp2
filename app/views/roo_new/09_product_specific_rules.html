@@ -35,7 +35,7 @@
                     in the partner country in order for the product to be considered as originating.
                 </p>
 
-                {% if context.sufficiently_worked != "" %}
+                {% if context.sufficiently_worked != "" and context.sufficiently_worked != null %}
                     <ul class="govuk-list govuk-list--bullet commodity-split">
                         <li>First, read the general rules that define '<a href="#sufficient">sufficient working or processing</a>' in the {{ context.scheme_title }}.</li>
                         <li>
