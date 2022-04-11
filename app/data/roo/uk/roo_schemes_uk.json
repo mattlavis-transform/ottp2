@@ -276,7 +276,7 @@
             },
             "features": {
                 "absorption": true,
-                "tolerances": false,
+                "tolerances": true,
                 "sets": true,
                 "cumulation": true
             },
