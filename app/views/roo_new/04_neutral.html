@@ -63,7 +63,7 @@
                 {% endif %}
 
                 {% if context.packaging %}
-                    <h3 class="govuk-heading-s">Packing materials and containers for shipment, packaging materials and containers for retail sale in {{ context.scheme_title }}</h3>
+                    <h3 class="govuk-heading-s">Packing materials in the {{ context.scheme_title }}</h3>
                     <div class="agreement_content">{{ context.packaging | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
                     {% if "paragraph 5" in context.packaging %}
                         {% include "includes/accessories_para5.html" %}
@@ -71,7 +71,7 @@
                 {% endif %}
 
                 {% if context.accessories %}
-                    <h3 class="govuk-heading-s">Accessories, spare parts and tools in {{ context.scheme_title }}</h3>
+                    <h3 class="govuk-heading-s">Accessories, spare parts and tools in the {{ context.scheme_title }}</h3>
                     <div class="agreement_content">{{ context.accessories | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
                 {% endif %}
             </div>
