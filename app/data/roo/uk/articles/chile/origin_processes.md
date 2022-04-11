@@ -4,7 +4,7 @@
 
     1. a movement certificate EUR.1, a specimen of which appears in Appendix III; *or*
 
-    1. in the cases specified in Article 20(1), a declaration, subsequently referred to as the ‘invoice declaration’, given by the exporter on an invoice, a delivery note or any other commercial document which describes the products concerned in sufficient detail to enable them to be identified. The text of the invoice declaration appears in Appendix IV.
+    2. in the cases specified in Article 20(1), a declaration, subsequently referred to as the ‘invoice declaration’, given by the exporter on an invoice, a delivery note or any other commercial document which describes the products concerned in sufficient detail to enable them to be identified. The text of the invoice declaration appears in Appendix IV.
 
 2. Notwithstanding paragraph 1, originating products within the meaning of this Origin Reference Document shall, in the cases specified in Article 25, benefit from the United Kingdom-Chile Agreement without it being necessary to submit any of the documents referred to above.
 
@@ -185,3 +185,5 @@ The documents referred to in Articles 16(3) and 20(3) used for the purpose of pr
 4. A country may round up or down the amount resulting from the conversion into its national currency of an amount expressed in euro. The rounded-off amount may not differ from the amount resulting from the conversion by more than 5 per cent. A country may retain unchanged its national currency equivalent of an amount expressed in euro if, at the time of the annual adjustment provided for in paragraph 3, the conversion of that amount, prior to any rounding-off, results in an increase of less than 15 per cent in the national currency equivalent. The national currency equivalent may be retained unchanged if the conversion would result in a decrease in that equivalent value.
 
 {{ top }}
+
+{{ Articles 15 to 29 }}

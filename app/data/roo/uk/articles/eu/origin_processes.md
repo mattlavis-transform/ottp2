@@ -1,4 +1,4 @@
-## Article 18 - Claim for Preferential Tariff Treatment <a name='article18'></a>
+## Article 18 - Claim for Preferential Tariff Treatment
 
 1. The importing Party, on importation, shall grant preferential tariff treatment to a product originating in the other Party within the meaning of this Origin Reference Document on the basis of a claim by the importer for preferential tariff treatment. The importer shall be responsible for the correctness of the claim for preferential tariff treatment and for compliance with the requirements provided for in this Origin Reference Document.
 
@@ -12,7 +12,7 @@
 
 {{ top }}
 
-## Article 18a - Time of the Claim for Preferential Tariff Treatment <a name='article18a'></a>
+## Article 18a - Time of the Claim for Preferential Tariff Treatment
 
 1. A claim for preferential tariff treatment and the basis for that claim as referred to in Article 18(2) shall be included in the customs import declaration in accordance with the laws and regulations of the importing Party.
 
@@ -29,6 +29,7 @@
 {{ top }}
 
 ## Article 19 - Statement on Origin
+
 1. A statement on origin shall be made out by an exporter of a product on the basis of information demonstrating that the product is originating, including information on the originating status of materials used in the production of the product. The exporter shall be responsible for the correctness of the statement on origin and the information provided.
 
 2. A statement on origin shall be made out using one of the language versions set out in Annex ORIG-4 in an invoice or on any other document that describes the originating product in sufficient detail to enable the identification of that product. The exporter shall be responsible for providing sufficient detail to allow the identification of the originating product. The importing Party shall not require the importer to submit a translation of the statement on origin.
@@ -98,3 +99,5 @@ The customs authority of the importing Party shall not reject a claim for prefer
 3. The importer shall be responsible for the correctness of the declaration and for the compliance with the requirements provided for in this Origin Reference Document. The record-keeping requirements set out in Article 22 shall not apply to the importer under this Article.
 
 {{ top }}
+
+{{ Articles 18 to 23 }}

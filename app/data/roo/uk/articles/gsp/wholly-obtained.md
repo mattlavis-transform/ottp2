@@ -1,4 +1,4 @@
-1. In Part 1 of the Act and in Column 3 of the table in Part 2 of Schedule 1, any reference to goods being wholly obtained in a country or territory includes the following specified cases—
+1. In Part 1 of the Act and in Column 3 of the table in Part 2 of Schedule 1, any reference to goods being wholly obtained in a country or territory includes the following specified cases-
 
    1. mineral products extracted from the soil or seabed of the country or territory;
 
@@ -22,7 +22,7 @@
 
    11. goods produced in the country or territory exclusively from the things specified in sub-paragraphs (a) to (j).
 
-2. In paragraph (1)(g) and (h), “vessels of the country or territory” and “factory ships of the country or territory” apply only to vessels and factory ships which—
+2. In paragraph (1)(g) and (h), “vessels of the country or territory” and “factory ships of the country or territory” apply only to vessels and factory ships which-
 
    1. are registered in the beneficiary country or in the United Kingdom;
 

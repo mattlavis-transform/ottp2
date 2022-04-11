@@ -212,6 +212,7 @@ class MeasureCondition {
             if (result.length > 0) {
                 var guidance_cds = result[0].guidance_cds;
                 var guidance_chief = result[0].guidance_chief;
+                var applies_to_chief = result[0].applies_to_chief;
 
                 var md = new MarkdownIt();
                 this.appendix_5a.guidance_cds = md.render(guidance_cds);
