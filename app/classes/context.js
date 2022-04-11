@@ -470,7 +470,7 @@ class Context {
 
             // Legalese
             data = data.replace(/EUR 1/g, "EUR1");
-            data = data.replace(/shall be/g, "are");
+            // data = data.replace(/shall be/g, "are");
             data = data.replace(/shall/g, "will");
             data = data.replace(/ %/g, "%");
 

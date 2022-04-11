@@ -22,7 +22,7 @@
         <div class="govuk-grid-column-three-quarters">
             <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
             <h1 class="govuk-heading-xl">Verification for proving origin for goods coming from {{ context.country_name }}</h1>
-            {{ context.verification | convert_markdown | link_to_roo_original(context.original) | safe }}
+            <div class="agreement_content">{{ context.verification | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
         </div>
     </div>
 

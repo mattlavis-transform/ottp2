@@ -51,7 +51,7 @@
                 <p class="govuk-body">The insufficient processing operations for the {{ context.scheme_title }} are listed below.</p>
 
                 <h2 class="govuk-heading-m">'Insufficient processing' operations according to the {{ context.scheme_title }}</h2>
-                {{ context.insufficient_processing | convert_markdown | link_to_roo_original(context.original) | safe }}
+                <div class="agreement_content">{{ context.insufficient_processing | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
 
                 {{ govukRadios({
                 idPrefix: "insufficient_processing",

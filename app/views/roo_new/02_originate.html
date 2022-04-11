@@ -73,10 +73,10 @@
                     </ul>
                 </div>
 
-                {{ context.originating | convert_markdown | link_to_roo_original(context.original) | safe }}
+                <div class="agreement_content">{{ context.originating | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
 
                 {% if context.features["absorption"] == true %}
-                <p>The {{ context.scheme_title }} features a principle known as the <b>absorption</b>, meaning that non-originating
+                <p>The {{ context.scheme_title }} features a principle known as <b>absorption</b>, meaning that non-originating
                 intermediate components may be classed as originating, if they have gained originating status in the trading partner.</p>
                 <details class="govuk-details" data-module="govuk-details">
                     <summary class="govuk-details__summary">

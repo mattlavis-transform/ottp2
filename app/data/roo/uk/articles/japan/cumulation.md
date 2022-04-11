@@ -1,5 +1,3 @@
-### Cumulation of origin
-
 1. A product that qualifies as originating in a Party shall be considered as originating in the other Party if used as a material in the production of another product in the other Party.
 
 2. A product that qualifies as originating in the European Union  shall be considered as originating in a Party if used as a material in the production of another product classified under the Chapters and headings of HS 2017 as specified in Annex C in the Party.

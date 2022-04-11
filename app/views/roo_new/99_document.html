@@ -25,7 +25,7 @@
                 <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
                 <h1 class="govuk-heading-xl">{{ context.document_title | safe }}</h1>
                 
-                {{ context.document_content | convert_markdown | link_to_roo_original(context.original) | safe }}
+                <div class="agreement_content">{{ context.document_content | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
 
                 
 

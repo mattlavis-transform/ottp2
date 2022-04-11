@@ -1,8 +1,8 @@
 1. For the purposes of this Article, accessories, spare parts, tools and instructional or other information materials are covered if:
 
-(a) the accessories, spare parts, tools and instructional or other information materials are classified and delivered with, but not invoiced separately from, the product; and
+   1. the accessories, spare parts, tools and instructional or other information materials are classified and delivered with, but not invoiced separately from, the product; and
 
-(b) the types, quantities and value of the accessories, spare parts, tools and instructional or other information materials are customary for that product.
+   2. the types, quantities and value of the accessories, spare parts, tools and instructional or other information materials are customary for that product.
 
 2. In determining whether a product is wholly obtained, or satisfies a production process or change in tariff classification requirement as set out in Annex B, accessories, spare parts, tools and instructional or other information materials shall be disregarded.
 

@@ -85,7 +85,7 @@
                                 A stationery set consists of five different items. Based on the individual rules of origin for each products under the given FTA, four of these products are originating and one is not. The FTA states that sets can still be considered originating when the value of non-originating products does not exceed 10% of the value of the total set. As the non-originating product in this example constitutes 25% of the value, the set cannot be considered originating.
                             </div>
                     </details>
-                    {{ context.sets | convert_markdown | link_to_roo_original(context.original) | safe }}
+                    <div class="agreement_content">{{ context.sets | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
                 {% endif %}
 
                 {% if context.features["cumulation"] %}

@@ -43,7 +43,7 @@
                 <h3 class="govuk-heading-s">Neutral elements in the {{ context.scheme_title }}</h3>
 
                 {% if context.neutral_elements %}
-                    {{ context.neutral_elements | convert_markdown | link_to_roo_original(context.original) | safe }}
+                    <div class="agreement_content">{{ context.neutral_elements | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
 
                     <details class="govuk-details" data-module="govuk-details">
                         <summary class="govuk-details__summary">
@@ -64,7 +64,7 @@
 
                 {% if context.packaging %}
                     <h3 class="govuk-heading-s">Packing materials and containers for shipment, packaging materials and containers for retail sale in {{ context.scheme_title }}</h3>
-                    {{ context.packaging | convert_markdown | link_to_roo_original(context.original) | safe }}
+                    <div class="agreement_content">{{ context.packaging | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
                     {% if "paragraph 5" in context.packaging %}
                         {% include "includes/accessories_para5.html" %}
                     {% endif %}
@@ -72,7 +72,7 @@
 
                 {% if context.accessories %}
                     <h3 class="govuk-heading-s">Accessories, spare parts and tools in {{ context.scheme_title }}</h3>
-                    {{ context.accessories | convert_markdown | link_to_roo_original(context.original) | safe }}
+                    <div class="agreement_content">{{ context.accessories | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
                 {% endif %}
             </div>
 
