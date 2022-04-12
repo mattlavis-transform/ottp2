@@ -48,7 +48,7 @@
     
     (w) articles of Chapter 92 (for example, musical instruments or parts thereof);
     
-    (x) articles of Chapter 94 (for example, furniture, lamps and lighting fittings, illuminated signs, prefabricated buildings);
+    (x) articles of Chapter 94 (for example, furniture, luminaires and lighting fittings, illuminated signs, prefabricated buildings);
     
     (y) articles of Chapter 95 (for example, toys, games, sports requisites); or
     
