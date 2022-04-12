@@ -62,4 +62,4 @@ Where the woven, knitted or crocheted fabrics, felt or nonwovens are present mer
     
 - made up from unimpregnated, uncoated or uncovered woven, knitted or crocheted fabrics, felt or nonwovens and subsequently impregnated, coated or covered with cellular rubber.
 
-(Note 3(c) to Chapter 56 and note 4, last paragraph, to Chapter 59).
+(Note 3(c) to Chapter 56 and note 5, last paragraph, to Chapter 59).

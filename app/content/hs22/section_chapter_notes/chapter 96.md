@@ -18,7 +18,7 @@
     
     ij. articles of Chapter 93 (arms and parts thereof);
     
-    k. articles of Chapter 94 (for example, furniture, lamps and lighting fittings);
+    k. articles of Chapter 94 (for example, furniture, luminaires and lighting fittings);
     
     l. articles of Chapter 95 (toys, games, sports requisites); or
     

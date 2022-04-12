@@ -97,3 +97,8 @@ Hollow products, coiled or not, which have a uniform cross-section with only one
     - ‘beverage can end stock and tab stock’: sheets or strips in coils, having magnesium as the predominant alloy element and having a minimum tensile strength of 345 MPa. The sheets or strips have a uniform solid cross-section along their whole length, are of a width of 30 mm or more but not more than 2000 mm, of a thickness exceeding 0.2 mm but not exceeding 0.35 mm, and of a length always superior to the width and to the thickness. Beverage can end stock is varnished on both sides. Beverage can tab stock is degreased and oiled.
     
     These products are to be used for the fabrication of rigid beverage cans, including ends (lids) and tabs.
+
+3. For the purposes of subheadings 7606 11 30, 7606 12 30 and 7607 20 91, the following term shall have the meaning hereby assigned to it:
+
+   - ‘Aluminium Composite Panel’: laminated goods consisting of two flat-rolled sheets or foils of aluminium, whether or not alloyed, each of them having a thickness of not less than 0,08 mm but not exceeding 0,55 mm, and a continuous core of non-porous
+   - polymer or mineral material, held together with an adhesive, all together having a thickness of 1,0 mm or more, but not exceeding 6,1 mm. The two external aluminium cover sheets or foils can have different finishes. These goods cannot be coiled.

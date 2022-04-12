@@ -6,15 +6,17 @@
     
     c. pearls, natural or cultured, or precious or semi-precious stones (headings 7101 to 7103).
 
-2. For the purposes of heading 9702, the expression 'original engravings, prints and lithographs' means impressions produced directly, in black and white or in colour, of one or of several plates wholly executed by hand by the artist, irrespective of the process or of the material employed by him, but not including any mechanical or photomechanical process.
+2. Heading 9701 does not apply to mosaics that are mass-produced reproductions, casts or works of conventional craftsmanship of a commercial character, even if these articles are   de-signed or created by artists. 
 
-3. Heading 9703 does not apply to mass-produced reproductions or works of conventional craftsmanship of a commercial character, even if these articles are designed or created by artists.
+3. For the purposes of heading 9702, the expression 'original engravings, prints and lithographs' means impressions produced directly, in black and white or in colour, of one or of several plates wholly executed by hand by the artist, irrespective of the process or of the material employed by him, but not including any mechanical or photomechanical process.
 
-4. (A) Subject to Notes 1 to 3 above, articles of this chapter are to be classified in this chapter and not in any other chapter of the classification.
+4. Heading 9703 does not apply to mass-produced reproductions or works of conventional craftsmanship of a commercial character, even if these articles are designed or created by artists.
+
+5. (A) Subject to Notes 1 to 3 above, articles of this chapter are to be classified in this chapter and not in any other chapter of the classification.
 
     (B) Heading 9706 does not apply to articles of the preceding headings of this chapter.
 
-5. Frames around paintings, drawings, pastels, collages or similar decorative plaques, engravings, prints or lithographs are to be classified with those articles, provided they are of a kind and of a value normal to those articles. Frames which are not of a kind or of a value normal to the articles referred to in this note are to be classified separately.
+6. Frames around paintings, drawings, pastels, collages or similar decorative plaques, engravings, prints or lithographs are to be classified with those articles, provided they are of a kind and of a value normal to those articles. Frames which are not of a kind or of a value normal to the articles referred to in this note are to be classified separately.
 
 ### Additional chapter note
 

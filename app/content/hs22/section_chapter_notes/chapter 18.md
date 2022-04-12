@@ -1,6 +1,11 @@
-1. This chapter does not cover the preparations of heading 0403, 1901, 1904, 1905, 2105, 2202, 2208, 3003 or 3004.
+1. This Chapter does not cover:
+
+   - (a) Food preparations containing more than 20 % by weight of sausage, meat, meat offal, blood, insects, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16); 
+
+   - (b) Preparations of headings 0403, 1901, 1902, 1904, 1905, 2105, 2202, 2208, 3003 or 3004. 
 
 2. Heading 1806 includes sugar confectionery containing cocoa and, subject to Note 1 to this chapter, other food preparations containing cocoa.
+
 
 ### Additional chapter notes
 

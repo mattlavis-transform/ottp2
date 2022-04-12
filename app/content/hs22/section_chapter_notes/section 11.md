@@ -34,11 +34,11 @@
     
     r. glass fibres or articles of glass fibres, other than embroidery with glass thread on a visible ground of fabric (Chapter 70);
     
-    s. articles of Chapter 94 (for example, furniture, bedding, lamps and lighting fittings);
+    s. articles of Chapter 94 (for example, furniture, bedding, luminaires and lighting fittings);
     
     t. articles of Chapter 95 (for example, toys, games, sports requisites and nets);
     
-    u. articles of Chapter 96 (for example, brushes, travel sets for sewing, slide fasteners, typewriter ribbons, sanitary towels (pads) and tampons, napkins (diapers) and napkin liners for babies); or
+    u. articles of Chapter 96 (for example, brushes, travel sets for sewing, slide fasteners, typewriter ribbons, sanitary towels (pads) and tampons, napkins (diapers) and napkin liners); or
     
     v. articles of Chapter 97.
 
@@ -206,6 +206,8 @@
 13. For the purposes of this section and, where applicable, throughout the classification, the expression 'elastomeric yarn' means filament yarn, including monofilament, of synthetic textile material, other than textured yarn, which does not break on being extended to three times its original length and which returns, after being extended to twice its original length, within a period of five minutes, to a length not greater than one and a half times its original length.
 
 14. Unless the context otherwise requires, textile garments of different headings are to be classified in their own headings, even if put up in sets for retail sale. For the purposes of this note, the expression 'textile garments' means garments of headings 6101 to 6114 and headings 6201 to 6211.
+
+15. Subject to Note 1 to Section XI, textiles, garments and other textile articles, incorporating chemical, mechanical or electronic components for additional functionality, whether incorpo-rated as built-in components or within the fibre or fabric, are classified in their respective head-ings in Section XI provided that they retain the essential character of the goods of this Section.
 
 ### Subheading notes
 

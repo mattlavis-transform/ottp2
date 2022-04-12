@@ -1,26 +1,32 @@
 1. The expression ‘milk’ means full-cream milk or partially or completely skimmed milk.
 
-2. For the purposes of heading 0405:
+2. For the purposes of heading 0403, yogurt may be concentrated or flavoured and may contain added sugar or other sweetening matter, fruit, nuts, cocoa, chocolate, spices, coffee or coffee extracts, plants, parts of plants, cereals or bakers’ wares, provided that any added substance is not used for the purpose of replacing, in whole or in part, any milk constituent, and the product retains the essential character of yogurt.3 For the purposes of heading 0405:
 
- * (a) the term ‘butter’ means natural butter, whey butter or recombined butter (fresh, salted or rancid, including canned butter) derived exclusively from milk, with a milkfat content of 80 % or more but not more than 95 % by weight, a maximum milk solids-not-fat content of 2 % by weight and a maximum water content of 16 % by weight. Butter does not contain added emulsifiers, but may contain sodium chloride, food colours, neutralising salts and cultures of harmless lactic-acid-producing bacteria;
- 
- * (b) the expression ‘dairy spreads’ means a spreadable emulsion of the water-in-oil type, containing milkfat as the only fat in the product, with a milkfat content of 39 % or more but less than 80 % by weight.
+    - (a) the term ‘butter’ means natural butter, whey butter or recombined butter (fresh, salted or rancid, including canned butter) derived exclusively from milk, with a milkfat content of 80 % or more but not more than 95 % by weight, a maximum milk solids-not-fat content of 2 % by weight and a maximum water content of 16 % by weight. Butter does not contain added emulsifiers, but may contain sodium chloride, food colours, neutralising salts and cultures of harmless lactic-acid-producing bacteria;
+
+    - (b) the expression ‘dairy spreads’ means a spreadable emulsion of the water-in-oil type, containing milkfat as the only fat in the product, with a milkfat content of 39 % or more but less than 80 % by weight.
 
 3. Products obtained by the concentration of whey and with the addition of milk or milkfat are to be classified as cheese in heading 0406 provided that they have the three following characteristics:
 
- * (a) a milkfat content, by weight of the dry matter, of 5 % or more;
+   - (a) a milkfat content, by weight of the dry matter, of 5 % or more;
 
- * (b) a dry matter content, by weight, of at least 70 % but not exceeding 85 %; and
+   - (b) a dry matter content, by weight, of at least 70 % but not exceeding 85 %; and
 
- * (c) they are moulded or capable of being moulded.
+   - (c) they are moulded or capable of being moulded.
 
 4. This chapter does not cover:
 
- * (a) products obtained from whey, containing by weight more than 95 % lactose, expressed as anhydrous lactose calculated on the dry matter (heading 1702);
- 
- * (b) products obtained from milk by replacing one or more of its natural constituents (for example, butyric fats) by another substance (for example, oleic fats) (heading 1901 or 2106); or
+    - (a) non-living insects, unfit for human consumption (heading 0511);
 
- * (c) albumins (including concentrates of two or more whey proteins, containing by weight more than 80 % whey proteins, calculated on the dry matter) (heading 3502) or globulins (heading 3504).
+    - (b) products obtained from whey, containing by weight more than 95 % lactose, expressed as anhydrous lactose calculated on the dry matter (heading 1702);
+
+    - (c) products obtained from milk by replacing one or more of its natural constituents (for example, butyric fats) by another substance (for example, oleic fats) (heading 1901 or 2106); or
+
+    - (d) albumins (including concentrates of two or more whey proteins, containing by weight more than 80 % whey proteins, calculated on the dry matter) (heading 3502) or globulins (heading 3504).
+
+5. For the purposes of heading 0410, the term “insects” means edible non-living insects, whole or in parts, fresh, chilled, frozen, dried, smoked, salted or in brine, as well as flours and meals of insects, fit for human consumption. However, it does not cover edible non-living insects otherwise prepared or preserved (generally Section IV). 
+
+
 
 ### Subheading notes
 

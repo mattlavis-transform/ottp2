@@ -2,9 +2,11 @@
 
    a) products of the kinds described in headings 0201 to 0208 or 0210, unfit or unsuitable for human consumption;
 
-   b) guts, bladders or stomachs of animals (heading 0504) or animal blood (heading 0511 or 3002); or
+   b) edible, non-living insects (heading 0410)
 
-   c) animal fat, other than products of heading 0209 (Chapter 15).
+   c) guts, bladders or stomachs of animals (heading 0504) or animal blood (heading 0511 or 3002); or
+
+   d) animal fat, other than products of heading 0209 (Chapter 15).
 
 ### Additional chapter notes
 

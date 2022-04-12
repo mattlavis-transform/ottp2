@@ -10,6 +10,6 @@
     
     d. vehicles or bodies for vehicles of basketware (Chapter 87); or
     
-    e. articles of Chapter 94 (for example, furniture, lamps and lighting fittings).
+    e. articles of Chapter 94 (for example, furniture, luminaires and lighting fittings).
 
 3. For the purposes of heading 4601, the expression 'plaiting materials, plaits and similar products of plaiting materials, bound together in parallel strands' means plaiting materials, plaits and similar products of plaiting materials, placed side by side and bound together, in the form of sheets, whether or not the binding materials are of spun textile materials.

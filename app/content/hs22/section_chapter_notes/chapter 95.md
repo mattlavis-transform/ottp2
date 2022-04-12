@@ -27,22 +27,24 @@
     n. sports vehicles (other than bobsleighs, toboggans and the like) of Section XVII;
     
     o. children's bicycles (heading 8712);
+
+    p. Unmanned aircraft (heading 8806);
     
-    p. sports craft such as canoes and skiffs (Chapter 89), or their means of propulsion (Chapter 44 for such articles made of wood);
-    
-    q. spectacles, goggles or the like, for sports or outdoor games (heading 9004);
-    
-    r. decoy calls or whistles (heading 9208);
-    
-    s. arms or other articles of Chapter 93;
-    
-    t. electric garlands of all kinds (heading 9405);
-    
-    u. monopods, bipods, tripods and similar articles (heading 9620);
-    
-    v. racket strings, tents or other camping goods, or gloves, mittens and mitts (classified according to their constituent material); or
-    
-    w. tableware, kitchenware, toilet articles, carpets and other textile floor coverings, apparel, bedlinen, table linen, toilet linen, kitchen linen and similar articles having a utilitarian function (classified according to their constituent material).
+    q. sports craft such as canoes and skiffs (Chapter 89), or their means of propulsion (Chapter 44 for such articles made of wood);
+
+    r. spectacles, goggles or the like, for sports or outdoor games (heading 9004);
+
+    s. decoy calls or whistles (heading 9208);
+
+    t. arms or other articles of Chapter 93;
+
+    u. electric garlands of all kinds (heading 9405);
+
+    v. monopods, bipods, tripods and similar articles (heading 9620);
+
+    w. racket strings, tents or other camping goods, or gloves, mittens and mitts (classified according to their constituent material); or
+
+    x. tableware, kitchenware, toilet articles, carpets and other textile floor coverings, apparel, bedlinen, table linen, toilet linen, kitchen linen and similar articles having a utilitarian function (classified according to their constituent material).
 
 2. This chapter includes articles in which natural or cultured pearls, precious or semi-precious stones (natural, synthetic or reconstructed), precious metal or metal clad with precious metal constitute only minor constituents.
 
@@ -51,6 +53,14 @@
 4. Subject to the provision of note 1 above, heading 9503 applies, inter alia, to articles of this heading combined with one or more items, which cannot be considered as sets under the terms of General rule of interpretation 3(b) and which, if presented separately, would be classified in other headings, provided the articles are put up together for retail sale and the combinations have the essential character of toys.
 
 5. Heading 9503 does not cover articles which, on account of their design, shape or constituent material, are identifiable as intended exclusively for animals, for example, 'pet toys' (classification in their own appropriate heading).
+
+6. For the purposes of heading 9508 : 
+
+    - a. the expression “amusement park rides” means a device or combination of devices or equip-ment that carry, convey, or direct a person or persons over or through a fixed or restricted course, including watercourses, or within a defined area for the primary purposes of amuse-ment or entertainment. Such rides may be combined within an amusement park, theme park, water park or fairground. These amusement park rides do not include equipment of a kind commonly installed in residences or playgrounds; 
+
+    - b. the expression “water park amusements” means a device or combination of devices or equipment that are characterized by a defined area involving water, with no purposes built path. Water park amusements only include equipment designed specifically for water parks; and 
+
+    - c. The expression “fairground amusements” means games of chance, strength or skill, which commonly employ an operator or attendant and may be installed in permanent buildings or in-dependent concession stalls. Fairground amusements do not include equipment of heading 9504. 
 
 ### Subheading notes
 

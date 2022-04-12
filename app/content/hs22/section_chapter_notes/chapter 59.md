@@ -18,11 +18,13 @@
     
     b. fabrics made from yarn, strip or the like, impregnated, coated, covered or sheathed with plastics, of heading 5604.
 
-3. For the purposes of heading 5905, the expression 'textile wallcoverings' applies to products in rolls, of a width of not less than 45 cm, suitable for wall or ceiling decoration, consisting of a textile surface which has been fixed on a backing or has been treated on the back (impregnated or coated to permit pasting).
+3. For the purposes of heading 5903, “textile fabrics laminated with plastics” means products made by the assembly of one or more layers of fabrics with one or more sheets or film of plastics which are combined by any process that bonds the layers together, whether or not the sheets or film of plastics are visible to the naked eye in the cross-section.
+
+4. For the purposes of heading 5905, the expression 'textile wallcoverings' applies to products in rolls, of a width of not less than 45 cm, suitable for wall or ceiling decoration, consisting of a textile surface which has been fixed on a backing or has been treated on the back (impregnated or coated to permit pasting).
 
     This heading does not, however, apply to wallcoverings consisting of textile flock or dust fixed directly on a backing of paper (heading 4814) or on a textile backing (generally, heading 5907).
 
-4. For the purposes of heading 5906, the expression 'rubberised textile fabrics' means:
+5. For the purposes of heading 5906, the expression 'rubberised textile fabrics' means:
 
     a. textile fabrics impregnated, coated, covered or laminated with rubber:
     
@@ -34,7 +36,7 @@
     
     c. fabrics composed of parallel textile yarns agglomerated with rubber, irrespective of their weight per square metre. This heading does not, however, apply to plates, sheets or strip of cellular rubber, combined with textile fabric, where the textile fabric is present merely for reinforcing purposes (Chapter 40), or textile products of heading 5811.
 
-5. Heading 5907 does not apply to:
+6. Heading 5907 does not apply to:
 
     a. fabrics in which the impregnation, coating or covering cannot be seen with the naked eye (usually Chapters 50 to 55, 58 or 60); for the purpose of this provision, no account should be taken of any resulting change of colour;
     
@@ -54,13 +56,13 @@
     
     h. metal foil on a backing of textile fabrics (generally Section XIV or XV).
 
-6. Heading 5910 does not apply to:
+7. Heading 5910 does not apply to:
 
     a. transmission or conveyor belting, of textile material, of a thickness of less than 3 mm; or
     
     b. transmission or conveyor belts or belting of textile fabric impregnated, coated, covered or laminated with rubber or made from textile yarn or cord impregnated, coated, covered or sheathed with rubber (heading 4010).
 
-7. Heading 5911 applies to the following goods, which do not fall in any other heading of Section XI:
+8. Heading 5911 applies to the following goods, which do not fall in any other heading of Section XI:
 
     a. textile products in the piece, cut to length or simply cut to rectangular (including square) shape (other than those having the character of the products of headings 5908 to 5910), the following only:
     
@@ -68,7 +70,7 @@
     
     - bolting cloth;
     
-    - straining cloth of a kind used in oil-presses or the like, of textile material or of human hair;
+    - filtering or straining cloth of a kind used in oil-presses or the like, of textile material or of human hair;
     - flat woven textile fabrics with multiple warp or weft, whether or not felted, impregnated or coated, of a kind used in machinery or for other technical purposes;
     
     - textile fabrics reinforced with metal, of a kind used for technical purposes;
@@ -78,4 +80,5 @@
     b. textile articles (other than those of headings 5908 to 5910) of a kind used for technical purposes (for example, textile fabrics and felts, endless or fitted with linking devices, of a kind used in papermaking or similar machines (for example, for pulp or asbestos-cement), gaskets, washers, polishing discs and other machinery parts).
 
 ### Additional chapter note
+
 1. The term “bolting cloth, not made up” as regards code 5911 20 00 applies when the goods are indelibly marked in a way identifying them as being intended for bolting or similar industrial purposes.

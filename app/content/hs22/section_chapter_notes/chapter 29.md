@@ -12,7 +12,7 @@
     
     f. the products mentioned in (a), (b), (c), (d) or (e) above with an added stabiliser (including an anticaking agent) necessary for their preservation or transport;
     
-    g. the products mentioned in (a), (b), (c), (d), (e) or (f) above with an added anti-dusting agent or a colouring or odoriferous substance added to facilitate their identification or for safety reasons, provided that the additions do not render the product particularly suitable for a specific use rather than for general use;
+    g. the products mentioned in (a), (b), (c), (d), (e) or (f) above with an added anti-dusting agent or a colouring or odoriferous substance or an emetic added to facilitate their identification or for safety reasons, provided that the additions do not render the product particularly suitable for a specific use rather than for general use;
     
     h. the following products, diluted to standard strengths, for the production of azo dyes: diazonium salts, couplers for these salts and diazotisable amines and their salts.
 
@@ -42,7 +42,7 @@
 
 3. Goods which could be included in two or more of the headings of this chapter are to be classified in that one of those headings which occurs last in numerical order.
 
-4. In headings 2904 to 2906, 2908 to 2911 and 2913 to 2920, any reference to halogenated, sulphonated, nitrated or nitrosated derivatives includes a reference to compound derivatives, such as sulphohalogenated, nitrohalogenated, nitrosulphonated or nitrosulphohalogenated derivatives. Nitro or nitroso groups are not to be taken as 'nitrogen-functions' for the purposes of heading 2929. For the purposes of headings 2911, 2912, 2914, 2918 and 2922, 'oxygen-function' is to be restricted to the functions (the characteristic organic oxygencontaining groups) referred to in headings 2905 to 2920.
+4. In headings 2904 to 2906, 2908 to 2911 and 2913 to 2920, any reference to halogenated, sulphonated, nitrated or nitrosated derivatives includes a reference to compound derivatives, such as sulphohalogenated, nitrohalogenated, nitrosulphonated or nitrosulphohalogenated derivatives. Nitro or nitroso groups are not to be taken as 'nitrogen-functions' for the purposes of heading 2929. For the purposes of headings 2911, 2912, 2914, 2918 and 2922, 'oxygen-function', the characteristic organic oxygen-containing group  of those respective headings, is restricted to the oxygen-functions referred to in headings 2905 to 2920.
 
 5. (A) The esters of acid-function organic compounds of sub-chapters I to VII with organic compounds of these sub-chapters are to be classified with that compound which is classified in the heading which occurs last in numerical order in these sub-chapters.
 
@@ -72,6 +72,7 @@ hydrogen, oxygen and nitrogen, only have directly linked to carbon the atoms of 
     b. the expression 'used primarily as hormones' applies not only to hormone derivatives and structural analogues used primarily for their hormonal effect, but also to those derivatives and structural analogues used primarily as intermediates in the synthesis of products of this heading.
 
 ### Subheading notes
+
 1. Within any one heading of this chapter, derivatives of a chemical compound (or group of chemical compounds) are to be classified in the same subheading as that compound (or group of compounds), provided that they are not more specifically covered by any other subheading and that there is no residual subheading
 named 'Other' in the series of subheadings concerned.
 2. Note 3 to chapter 29 does not apply to the subheadings of this chapter.

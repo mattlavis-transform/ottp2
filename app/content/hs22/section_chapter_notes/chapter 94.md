@@ -10,8 +10,8 @@
     
     e. furniture specially designed as parts of refrigerating or freezing equipment of heading 8418; furniture specially designed for sewing machines (heading 8452);
     
-    f. lamps or lighting fittings of Chapter 85;
-    
+    f. lamps or light sources and parts thereof of Chapter 85;
+
     g. furniture specially designed as parts of apparatus of heading 8518 (heading 8518), of heading 8519 or 8521 (heading 8522) or of headings 8525 to 8528 (heading 8529);
     
     h. articles of heading 8714;
@@ -20,7 +20,7 @@
     
     k. articles of Chapter 91 (for example, clocks and clock cases);
     
-    l. toy furniture or toy lamps or lighting fittings (heading 9503), billiard tables or other furniture specially constructed for games (heading 9504), furniture for conjuring tricks or decorations (other than electric garlands) such as Chinese lanterns (heading 9505). or
+    l. toy furniture or toy luminaires and lighting fittings (heading 9503), billiard tables or other furniture specially constructed for games (heading 9504), furniture for conjuring tricks or decorations (other than lighting strings) such as Chinese lanterns (heading 9505); or 
     
     m. monopods, bipods, tripods and similar articles (heading 9620).
 
@@ -38,7 +38,7 @@
 
 4. For the purposes of heading 9406, the expression 'prefabricated buildings' means buildings which are finished in the factory or put up as elements, presented together, to be assembled on site, such as housing or worksite accommodation, offices, schools, shops, sheds, garages or similar buildings.
 
-    Prefabricated buildings include ‘modular building units’ of steel, normally presented in the size and shape of a standard shipping container, but substantially or completely pre-fitted internally. Such modular building units are normally designed to be assembled together to form permanent buildings.
+    Prefabricated buildings include "modular building units" of steel, normally presented in the size and shape of a standard shipping container, but substantially or completely pre-fitted internally. Such modular building units are normally designed to be assembled together to form permanent buildings.
 
 
 ### Additional chapter notes

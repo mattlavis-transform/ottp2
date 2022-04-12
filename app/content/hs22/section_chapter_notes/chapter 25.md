@@ -4,28 +4,29 @@
 
 2. This chapter does not cover:
 
-    a. sublimed sulphur, precipitated sulphur or colloidal sulphur (heading 2802);
-    
-    b. earth colours containing 70% or more by weight of combined iron evaluated as Fe2O3 (heading 2821);
-    
-    c. medicaments or other products of Chapter 30;
-    
-    d. perfumery, cosmetic or toilet preparations (Chapter 33);
-    
-    e. setts, curbstones or flagstones (heading 6801); mosaic cubes or the like (heading 6802); roofing, facing or damp course slates (heading 6803);
-    
-    f. precious or semi-precious stones (heading 7102 or 7103);
-    
-    g. cultured crystals (other than optical elements) weighing not less than 2.5g each, of sodium chloride or of magnesium oxide, of heading 3824; optical elements of sodium chloride or of magnesium oxide (heading 9001);
-    
-    h. billiard chalks (heading 9504); or
-    
-    ij. writing or drawing chalks or tailors' chalks (heading 9609).
+    - a. sublimed sulphur, precipitated sulphur or colloidal sulphur (heading 2802);
+
+    - b. earth colours containing 70% or more by weight of combined iron evaluated as Fe2O3 (heading 2821);
+
+    - c. medicaments or other products of Chapter 30;
+
+    - d. perfumery, cosmetic or toilet preparations (Chapter 33);
+
+    - e. dolomite ramming mix (heading 3816)
+
+    - f. setts, curbstones or flagstones (heading 6801); mosaic cubes or the like (heading 6802); roofing, facing or damp course slates (heading 6803);
+
+    - g. precious or semi-precious stones (heading 7102 or 7103);
+
+    - h. cultured crystals (other than optical elements) weighing not less than 2.5g each, of sodium chloride or of magnesium oxide, of heading 3824; optical elements of sodium chloride or of magnesium oxide (heading 9001);
+
+    - ij. billiard chalks (heading 9504); or
+
+    - k. writing or drawing chalks or tailors' chalks (heading 9609).
 
 3. Any products classifiable in heading 2517 and any other heading of the Chapter are to be classified in heading 2517.
 
-4. Heading 2530 applies inter alia to: vermiculite, perlite and chlorites, unexpanded; earth colours, whether or not calcined or mixed together; natural micaceous iron oxides; meerschaum (whether or not in polished pieces); amber; agglomerated meerschaum and agglomerated amber, in plates, rods, sticks or similar forms,
-not worked after moulding; jet; strontianite (whether or not calcined), other than strontium oxide; broken pieces of pottery, brick or concrete.
+4. Heading 2530 applies inter alia to: vermiculite, perlite and chlorites, unexpanded; earth colours, whether or not calcined or mixed together; natural micaceous iron oxides; meerschaum (whether or not in polished pieces); amber; agglomerated meerschaum and agglomerated amber, in plates, rods, sticks or similar forms, not worked after moulding; jet; strontianite (whether or not calcined), other than strontium oxide; broken pieces of pottery, brick or concrete.
 
 ### Additional chapter note
 

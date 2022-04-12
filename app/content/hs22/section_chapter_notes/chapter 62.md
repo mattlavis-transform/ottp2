@@ -33,15 +33,19 @@
     
     All of the components of an ensemble must be of the same fabric construction, style, colour and composition; they also must be of corresponding or compatible size. The term 'ensemble' does not apply to track suits or ski suits, of heading 6211.
 
-4. For the purposes of heading 6209:
+4. Headings 6205 and 6206 do not cover garments with pockets below the waist, with a ribbed waistband or other means of tightening at the bottom of the garment. Heading 6205 does not cover sleeveless garments. 
+
+    “Shirts” and “shirt-blouses” are garments designed to cover the upper part of the body, having long or short sleeves and a full or partial opening starting at the neckline. “Blouses” are loose-fitting garments also designed to cover the upper part of the body but may be sleeveless and with or without an opening at the neckline. “Shirts”, “shirt-blouses” and “blouses” may also have a collar.
+
+5. For the purposes of heading 6209:
 
     a. the expression 'babies' garments and clothing accessories' means articles for young children of a body height not exceeding 86cm;
     
     b. articles which are, prima facie, classifiable both in heading 6209 and in other headings of this chapter are to be classified in heading 6209.
 
-5. Garments which are, prima facie, classifiable both in heading 6210 and in other headings of this chapter, excluding heading 6209, are to be classified in heading 6210.
+6. Garments which are, prima facie, classifiable both in heading 6210 and in other headings of this chapter, excluding heading 6209, are to be classified in heading 6210.
 
-6. For the purposes of heading 6211, 'ski suits' means garments or sets of garments which, by their general appearance and texture, are identifiable as intended to be worn principally for skiing (cross-country or alpine). 
+7. For the purposes of heading 6211, 'ski suits' means garments or sets of garments which, by their general appearance and texture, are identifiable as intended to be worn principally for skiing (cross-country or alpine). 
 
     They consist either of:
     
@@ -57,17 +61,17 @@
     
     All the components of a 'ski-ensemble' must be made up in a fabric of the same texture, style and composition, whether or not of the same colour; they also must be of corresponding or compatible size.
 
-7. Scarves and articles of the scarf type, square or approximately square, of which no side exceeds 60cm, are to be classified as handkerchiefs (heading 6213). 
+8. Scarves and articles of the scarf type, square or approximately square, of which no side exceeds 60cm, are to be classified as handkerchiefs (heading 6213). 
 
     Handkerchiefs of which any side exceeds 60cm are to be classified in heading 6214.
 
-8. Garments of this Chapter designed for left over right closure at the front shall be regarded as men's or boys' garments, and those designed for right over left closure at the front as women's or girls' garments.
+9. Garments of this Chapter designed for left over right closure at the front shall be regarded as men's or boys' garments, and those designed for right over left closure at the front as women's or girls' garments.
 
     These provisions do not apply where the cut of the garment clearly indicates that it is designed for one or other of the sexes.
     
     Garments which cannot be identified as either men's or boys' garments or as women's or girls' garments are to be classified in the headings covering women's or girls' garments.
 
-9. Articles of this chapter may be made of metal thread.
+10. Articles of this chapter may be made of metal thread.
 
 ### Additional chapter notes
 
@@ -78,13 +82,13 @@
     All the components of an ensemble must be presented together for retail sale as a single unit. Individual wrapping or separate labelling of each component of such a single unit does not influence its classification
 as an ensemble.
 
-2. Headings 6209 and 6216 cover gloves, mittens and mitts, impregnated, coated or covered with plastics or rubber, even if they are:
+2. Headings 6209 and 6216 include gloves, mittens and mitts, impregnated, coated or covered with plastics or rubber, even if they are:
 
     - made up from textile fabrics (other than knitted or crocheted) impregnated, coated or covered with plastics or rubber of headings 5903 or 5906, or
     
     - made up from unimpregnated, uncoated or uncovered textile fabrics (other than knitted or crocheted) and subsequently impregnated, coated or covered with plastics or rubber.
     
-    Where textile fabrics (other than knitted or crocheted) serve only as reinforcement, gloves, mittens or mitts impregnated, coated or covered with cellular plastics or cellular rubber belong in Chapters 39 or 40, even if they are made up from unimpregnated, uncoated or uncovered textile fabrics (other than knitted or crocheted) and subsequently impregnated, coated or covered with cellular plastics or cellular rubber (Note 2(a)(5) and note 4, last paragraph to Chapter 59).
+    Where textile fabrics (other than knitted or crocheted) serve only as reinforcement, gloves, mittens or mitts impregnated, coated or covered with cellular plastics or cellular rubber belong in Chapters 39 or 40, even if they are made up from unimpregnated, uncoated or uncovered textile fabrics (other than knitted or crocheted) and subsequently impregnated, coated or covered with cellular plastics or cellular rubber (Note 2(a)(5) and note 5, last paragraph to Chapter 59).
 
 3. Code 6212 10 90 includes knitted brassières (so-called mastectomy bras), which typically comprise adjustable broad padded shoulder straps, centrally positioned over the breasts, with shaped cups and elastication at the back part of the base. The articles are closed by means of an adjustable ‘hook and eye fastening’.
 

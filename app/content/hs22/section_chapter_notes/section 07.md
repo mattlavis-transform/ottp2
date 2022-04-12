@@ -6,4 +6,4 @@
     
     c. identifiable, whether by their nature or by the relative proportions in which they are present, as being complementary one to another.
 
-2. Except for the goods of heading 3918 or 3919, plastics, rubber, and articles thereof, printed with motifs, characters or pictorial representations, which are not merely incidental to the primary use of the goods, fall in Chapter 49.
+2. Except for the goods of heading 3918 or 3919, plastics, rubber, and articles thereof, printed with motifs, characters or pictorial representations, which are not merely subsidiary to the primary use of the goods, fall in Chapter 49.

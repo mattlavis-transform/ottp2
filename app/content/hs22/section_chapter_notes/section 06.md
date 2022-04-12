@@ -11,3 +11,5 @@
     b. presented together; and
     
     c. identifiable, whether by their nature or by the relative proportions in which they are present, as being complementary one to another.
+
+4. Where a product answers to a description in one or more of the headings in Section VI by virtue of being described by name or function and also to heading 3827, then it is classifiable in a heading that references the product by name or function and not under heading 3827.

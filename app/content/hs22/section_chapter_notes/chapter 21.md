@@ -1,18 +1,20 @@
 1. This chapter does not cover:
 
-    - a. mixed vegetables of heading 0712;
-    
-    - b. roasted coffee substitutes containing coffee in any proportion (heading 0901);
-    
-    - c. flavoured tea (heading 0902);
-    
-    - d. spices or other products of headings 0904 to 0910;
-    
-    - e. food preparations, other than the products described in heading 2103 or 2104, containing more than 20% by weight of sausage, meat, meat offal, blood, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16);
-    
-    - f. yeast put up as a medicament or other products of heading 3003 or 3004; or
-    
-    - g. prepared enzymes of heading 3507.
+a. mixed vegetables of heading 0712;
+
+b. roasted coffee substitutes containing coffee in any proportion (heading 0901);
+
+c. flavoured tea (heading 0902);
+
+d. spices or other products of headings 0904 to 0910;
+
+e. food preparations, other than the products described in heading 2103 or 2104, containing more than 20% by weight of sausage, meat, meat offal, blood, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16);
+
+f. products of heading 2404
+
+g. yeast put up as a medicament or other products of heading 3003 or 3004; or
+
+h. prepared enzymes of heading 3507.
 
 2. Extracts of the substitutes referred to in note 1 (b) are to be classified in heading 2101.
 

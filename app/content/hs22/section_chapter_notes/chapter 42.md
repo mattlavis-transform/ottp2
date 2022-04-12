@@ -20,7 +20,7 @@
     
     (ij) strings, skins for drums or the like, or other parts of musical instruments (heading 9209);
     
-    k. articles of Chapter 94 (for example, furniture, lamps and lighting fittings);
+    k. articles of Chapter 94 (for example, furniture, luminaires and lighting fittings);
     
     l. articles of Chapter 95 (for example, toys, games, sports requisites); or
     

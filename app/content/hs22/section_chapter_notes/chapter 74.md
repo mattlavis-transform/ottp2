@@ -82,36 +82,6 @@ c. Master alloys:
 
 Alloys containing with other elements more than 10% by weight of copper, not usefully malleable and commonly used as an additive in the manufacture of other alloys or as de-oxidants, de-sulphurising agents or for similar uses in the metallurgy of non-ferrous metals. However, copper phosphide (phosphor copper) containing more than 15% by weight of phosphorus falls in heading 2848.
 
-d. Bars and rods:
-
-rolled, extruded, drawn or forged products, not in coils, which have a uniform solid cross-section along their whole length in the shape of circles, ovals, rectangles (including squares), equilateral triangles or regular convex polygons (including 'flattened circles' and 'modified rectangles', of which two opposite sides are convex arcs, the other two sides being straight, of equal length and parallel). 
-
-Products with a rectangular (including square), triangular or polygonal cross-section may have corners rounded along their whole length. The thickness of such products which have a rectangular (including 'modified rectangular') cross-section exceeds one-tenth of the width. The expression also covers cast or sintered products, of the same forms and dimensions, which have been subsequently worked after production (otherwise than by simple trimming or de-scaling), provided that they have not thereby assumed the character of articles or products of other headings.
-
-Wire-bars and billets with their ends tapered or otherwise worked simply to facilitate their entry into machines for converting them into, for example, drawing stock (wire-rod) or tubes, are however to be taken to be unwrought copper of heading 7403.
-
-e. Profiles:
-
-Rolled, extruded, drawn, forged or formed products, coiled or not, of a uniform cross-section along their whole length, which do not conform to any of the definitions of bars, rods, wire, plates, sheets, strip, foil, tubes or pipes. The expression also covers cast or sintered products, of the same forms, which have been subsequently worked after production (otherwise than by simple trimming or de-scaling), provided that they have not thereby assumed the character of articles or products of other headings.
-
-f. Wire:
-
-Rolled, extruded or drawn products, in coils, which have a uniform solid cross-section along their whole length in the shape of circles, ovals, rectangles (including squares), equilateral triangles or regular convex polygons (including 'flattened circles' and 'modified rectangles', of which two opposite sides are convex arcs, the other two sides being straight, of equal length and parallel). Products with a rectangular (including square), triangular or polygonal cross-section may have corners rounded along their whole length. The thickness of such products which have a rectangular (including 'modified rectangular') cross-section exceeds one-tenth of the width.
-
-g. Plates, sheets, strip and foil:
-
-Flat-surfaced products (other than the unwrought products of heading 7403), coiled or not, of solid rectangular (other than square) cross-section with or without rounded corners (including 'modified rectangles' of which two opposite sides are convex arcs, the other two sides being straight, of equal length and parallel) of a uniform thickness, which are:
-
-- of rectangular (including square) shape with a thickness not exceeding one-tenth of the width,
-
-- of a shape other than rectangular or square, of any size, provided that they do not assume the character of articles or products of other headings.
-
-Headings 7409 and 7410 apply, inter alia, to plates, sheets, strip and foil with patterns (for example, grooves, ribs, chequers, tears, buttons, lozenges) and to such products which have been perforated, corrugated, polished or coated, provided that they do not thereby assume the character of articles or products of other headings.
-
-h. Tubes and pipes:
-
-Hollow products, coiled or not, which have a uniform cross-section with only one enclosed void along their whole length in the shape of circles, ovals, rectangles (including squares), equilateral triangles or regular convex polygons, and which have a uniform wall thickness. Products with a rectangular (including square), equilateral triangular or regular convex polygonal cross-section, which may have corners rounded along their whole length, are also to be taken to be tubes and pipes provided the inner and outer cross-sections are concentric and have the same form and orientation. Tubes and pipes of the foregoing cross-sections may be polished, coated, bent, threaded, drilled, waisted, expanded, cone-shaped or fitted with flanges, collars or rings.
-
 ### Subheading note
 
 In this chapter, the following expressions have the meanings hereby assigned to them:

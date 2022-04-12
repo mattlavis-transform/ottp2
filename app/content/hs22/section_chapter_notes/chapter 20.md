@@ -1,9 +1,14 @@
 1. This chapter does not cover:
 
     - (a) vegetables, fruit or nuts, prepared or preserved by the processes specified in Chapter 7, 8 or 11;
-    - (b) food preparations containing more than 20% by weight of sausage, meat, meat offal, blood, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16);
-    - (c) bakers' wares and other products of heading 1905; or
-    - (d) homogenised composite food preparations of heading 2104.
+
+    - (b) vegetable fats and oils (Chapter 15)
+
+    - (c) food preparations containing more than 20% by weight of sausage, meat, meat offal, blood, insects, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16);
+
+    - (d) bakers' wares and other products of heading 1905; or
+
+    - (e) homogenised composite food preparations of heading 2104.
 
 2. Headings 2007 and 2008 do not apply to fruit jellies, fruit pastes, sugar-coated almonds or the like in the form of sugar confectionery (heading 1704) or chocolate confectionery (heading 1806).
 

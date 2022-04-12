@@ -10,7 +10,7 @@
     
     e. goods of heading 7007, 7008, 7011, 7014, 7015 or 7017;
     
-    f. parts of general use, as defined in note 2 to Section XV, of base metal (Section XV) or similar goods of plastics (Chapter 39);
+    f. parts of general use, as defined in note 2 to Section XV, of base metal (Section XV) or similar goods of plastics (Chapter 39), however, articles specially designed for use exclusively in implants in medical, surgical, dental or veterinary sciences are to be classified in heading 9021;
     
     g. pumps incorporating measuring devices, of heading 8413; weight-operated counting and checking machinery, or separately presented weights for balances (heading 8423); lifting or handling machinery (headings 8425 to 8428); paper or paperboard cutting machines of all kinds (heading 8441); fittings for adjusting work or tools on machine tools or water-jet cutting machines, of heading 8466, including fittings with optical devices for reading the scale (for example, optical dividing heads) but not those which are in themselves essentially optical instruments (for example, alignment telescopes); calculating machines (heading 8470); valves and other appliances of heading 8481; machines and apparatus (including apparatus for the projection or drawing of circuit patterns on sensitised semiconductor materials) of heading 8486;
     

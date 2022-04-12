@@ -8,6 +8,12 @@
 
 4. Heading 8712 includes all children's bicycles. Other children's cycles fall in heading 9503.
 
+### Subheading Note
+
+- a. front windscreens (windshields), rear windows and other windows, framed; and 
+
+- b. front windscreens (windshields), rear windows and other windows, whether or not framed, incorporating heating devices or other electrical or electronic devices, when suitable for use solely or principally with the motor vehicles of headings 8701 to 8705.
+
 ### Additional chapter notes
 
 1. Code 8703 10 18 includes mobility scooters which typically include a separate adjustable steering column, a horizontal platform, an adjustable seat, a steering column that can be folded down, thumb-operated levers for accelerating, braking and reversing.  They are not specially designed for the transport of disabled persons as they have no special features to alleviate a dis-ability.

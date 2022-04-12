@@ -2,7 +2,7 @@
 
 ### Additional chapter notes
 
-1. Subheadings 8901 10 10, 8901 20 10, 8901 30 10, 8901 90 10, 8902 00 10, 8903 91 10, 8903 92 10, 8904 00 91 and 8906 90 10 are to be taken to apply only to vessels, designed as sea going, having a hull of an overall length (excluding any projecting parts) of not less than 12m. However, fishing boats and lifeboats, designed as sea going, shall be considered as sea going vessels regardless of their length.
+1. Subheadings 8901 10 10, 8901 20 10, 8901 30 10, 8901 90 10, 8902 00 10, 8903 22 10, 8903 23 10, 8903 32 10, 8903 33 10, 8904 00 91 and 8906 90 10 are to be taken to apply only to vessels, designed as sea going, having a hull of an overall length (excluding any projecting parts) of not less than 12m. However, fishing boats and lifeboats, designed as sea going, shall be considered as sea going vessels regardless of their length.
 
 2. Subheadings 8905 10 10 and 8905 90 10 are to be taken to apply only to vessels and floating docks, designed as sea going.
 

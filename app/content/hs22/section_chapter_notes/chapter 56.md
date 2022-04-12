@@ -13,7 +13,7 @@
     
     or
     
-    f. sanitary towels (pads) and tampons, napkins (diapers) and napkin liners for babies, and similar articles, of heading 9619.
+    f. sanitary towels (pads) and tampons, napkins (diapers) and napkin liners and similar articles, of heading 9619.
 
 2. The term 'felt' includes needleloom felt and fabrics consisting of a web of textile fibres the cohesion of which has been enhanced by a stitch-bonding process using fibres from the web itself.
 

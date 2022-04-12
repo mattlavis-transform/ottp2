@@ -1,6 +1,6 @@
 1. This chapter does not cover:
 
-    - a. edible mixtures or preparations of animal or vegetable fats or oils of a kind used as mould-release preparations (heading 1517);
+    - a. edible mixtures or preparations of animal, vegetable or mirobial fats or oils of a kind used as mould-release preparations (heading 1517);
     
     - b. separate chemically defined compounds; or
     

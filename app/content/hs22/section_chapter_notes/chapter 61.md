@@ -38,6 +38,8 @@
 
 4. Headings 6105 and 6106 do not cover garments with pockets below the waist, with a ribbed waistband or other means of tightening at the bottom of the garment, or garments having an average of less than 10 stitches per linear centimetre in each direction counted on an area measuring at least 10cm x 10cm. Heading 6105 does not cover sleeveless garments.
 
+    “Shirts” and “shirt-blouses” are garments designed to cover the upper part of the body, having long or short sleeves and a full or partial opening starting at the neckline. “Blouses” are loose-fitting garments also designed to cover the upper part of the body but may be sleeveless and with or without an opening at the neckline. “Shirts”, “shirt-blouses” and “blouses” may also have a collar.
+
 5. Heading 6109 does not cover garments with a drawstring, ribbed waistband or other means of tightening at the bottom of the garment.
 
 6. For the purposes of heading 6111:
@@ -62,7 +64,7 @@
 
 8. Garments which are, prima facie, classifiable both in heading 6113 and in other headings of this Chapter, excluding heading 6111, are to be classified in heading 6113.
 
-9. Garments of this Chapter designed for left over right closure at the front shall be regarded as men's or boys' garments, and those designed for right over left closure at the front as women's or girls' garments.
+9.  Garments of this Chapter designed for left over right closure at the front shall be regarded as men's or boys' garments, and those designed for right over left closure at the front as women's or girls' garments.
 
     These provisions do not apply where the cut of the garment clearly indicates that it is designed for one or other of the sexes.
     
@@ -88,10 +90,10 @@
 
     These garments, which are intended to cover the upper part of the body, often possess many characteristics in common with those of T-shirts or with more traditional kinds of singlets and other vests of heading 6109.
 
-3. Heading 6111 and subheadings 6116 10 20 and 6116 10 80 cover gloves, mittens and mitts, impregnated, coated or covered with plastics or rubber, even if they are:
+3. Heading 6111 and subheadings 6116 10 20 and 6116 10 80 include gloves, mittens and mitts, impregnated, coated or covered with plastics or rubber, even if they are:
 
     - made up from knitted or crocheted textile fabrics impregnated, coated or covered with plastics or rubber of headings 5903 or 5906
     
     - or made up from unimpregnated, uncoated or uncovered knitted or crocheted textile fabrics and subsequently impregnated, coated or covered with plastics or rubber.
     
-    Where knitted or crocheted textile fabrics serve only as reinforcement, gloves, mittens or mitts impregnated, coated or covered with cellular plastics or cellular rubber belong in Chapters 39 or 40, even if they are made up from unimpregnated, uncoated or uncovered knitted or crocheted textile fabrics and subsequently impregnated, coated or covered with cellular plastics or cellular rubber (note 2(a)(5) and note 4 last paragraph to Chapter 59).
+    Where knitted or crocheted textile fabrics serve only as reinforcement, gloves, mittens or mitts impregnated, coated or covered with cellular plastics or cellular rubber belong in Chapters 39 or 40, even if they are made up from unimpregnated, uncoated or uncovered knitted or crocheted textile fabrics and subsequently impregnated, coated or covered with cellular plastics or cellular rubber (note 2(a)(5) and note 5 last paragraph to Chapter 59).

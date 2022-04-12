@@ -36,7 +36,7 @@
 
     a. Parts which are goods included in any of the headings of Chapter 84 or 85 (other than headings 8409, 8431, 8448, 8466, 8473, 8487, 8503, 8522, 8529, 8538 and 8548) are in all cases to be classified in their respective headings.
     
-    b. Other parts, if suitable for use solely or principally with a particular kind of machine, or with a number of machines of the same heading (including a machine of heading 8479 or 8543) are to be classified with the machines of that kind or in heading 8409, 8431, 8448, 8466, 8473, 8503, 8522, 8529 or 8538 as appropriate. However, parts which are equally suitable for use principally with the goods of headings 8517 and 8525 to 8528 are to be classified in heading 8517.
+    b. Other parts, if suitable for use solely or principally with a particular kind of machine, or with a number of machines of the same heading (including a machine of heading 8479 or 8543) are to be classified with the machines of that kind or in heading 8409, 8431, 8448, 8466, 8473, 8503, 8522, 8529 or 8538 as appropriate. However, parts which are equally suitable for use principally with the goods of headings 8517 and 8525 to 8528 are to be classified in heading 8517, and parts which are suitable for use solely or principally with the goods of heading 8524 are to be classified in heading 8529;
     
     c. All other parts are to be classified in heading 8409, 8431, 8448, 8466, 8473, 8503, 8522, 8529 or 8538 as appropriate or, failing that, in heading 8487 or 8548.
 
@@ -45,6 +45,18 @@
 4. Where a machine (including a combination of machines) consists of individual components (whether separate or interconnected by piping, by transmission devices, by electric cables or by other devices) intended to contribute together to a clearly defined function covered by one of the headings in Chapter 84 or 85, then the whole falls to be classified in the heading appropriate to that function.
 
 5. For the purposes of these notes, the expression ‘machine’ means any machine, machinery, plant, equipment, apparatus or appliance cited in the headings of Chapter 84 or 85.
+
+6. 
+   - (A) Throughout the Nomenclature, the expression “electrical and electronic waste and scrap” means electrical and electronic assemblies, printed circuit boards, and electrical or electronic ar-ticles that :
+
+      - (i) have been rendered unusable for their original purposes by breakage, cutting-up or other processes or are economically unsuitable for repair, refurbishment or renovation to render them fit for their original purposes; and 
+
+      - (ii) are packaged or shipped in a manner not intended to protect individual articles from damage during transportation, loading and unloading operations 
+
+    - (B) Mixed consignments of “electrical and electronic waste and scrap” and other waste and scrap are to be classified in heading 8549. 
+
+    - (C) This Section does not cover municipal waste, as defined in Note 4 to Chapter 38. 
+
 
 ## Additional section notes
 

@@ -26,7 +26,7 @@
     
     n. parts of firearms (heading 9305);
     
-    o. articles of Chapter 94 (for example, furniture, lamps and lighting fittings, prefabricated buildings);
+    o. articles of Chapter 94 (for example, furniture, luminaires and lighting fittings, prefabricated buildings);
     
     p. articles of Chapter 95 (for example, toys, games, sports requisites);
     
@@ -48,8 +48,14 @@
 
 1. For the purposes of subheading 4401 31, the expression 'wood pellets' means by-products, such as cutter shavings, sawdust or chips, of the mechanical wood-processing industry, furniture-making industry or other wood-transformation activities, which have been agglomerated either directly by compression or by the addition of a binder in a proportion not exceeding 3% by weight. Such pellets are cylindrical, with a diameter not exceeding 25mm and a length not exceeding 100mm.
 
+2. For the purposes of subheading 4401 32, the expression “wood briquettes” means by prod-ucts such as cutter shavings, saw dust or chips, of the mechanical wood processing industry, furniture making or other wood transformation activities, which have been agglomerated either directly by compression or by addition of a binder in a proportion not exceeding 3 % by weight. Such briquettes are in the form of cubiform, polyhedral or cylindrical units with the minimum cross-sectional dimension greater than 25 mm. 
+
+3. For the purposes of subheading 4407 13, “S-P-F” refers to wood sourced from mixed stands of spruce, pine and fir where the proportion of each species varies and is unknown. 
+
+4. For the purposes of subheading 4407 14, “Hem-fir” refers to wood sourced from mixed stands of Western hemlock and fir where the proportion of each species varies and is unknown.  
+
 ### Additional chapter notes
 
 1. For the purposes of heading 4405, 'wood flour' means wood powder of which not more than 8% by weight is retained by a sieve with an aperture of 0.63mm.
 
-2. For the purposes of subheadings 4414 00 10, 4418 10 10, 4418 20 10, 4419 00 10, 4420 10 11, and 4420 90 91 'tropical wood' means the following tropical woods: Acajou d'Afrique, Alan, Azob, Balsa, Dark Red Meranti, Dibtou, Ilomba, Imbuia, Iroko, Jelutong, Jongkong, Kapur, Kempas, Keruing, Light Red Meranti, Limba, Mahogany (Swietenia Spp), Makor, Mansonia, Meranti Bakau, Merbau, Obeche, Okoum, palissandre de Para, palissandre de Rio, palissandre de Rose, Ramin, Sapelli, Sipo, Teak, Tiama, Virola, White Lauan, White Meranti, White Seraya and Yellow Meranti.
+2. For the purposes of subheadings 4414 10 10, 4418 21 10, 4419 20 10, 4420 11 10, and 4420 90 91 'tropical wood' means the following tropical woods: Acajou d'Afrique, Alan, Azob, Balsa, Dark Red Meranti, Dibtou, Ilomba, Imbuia, Iroko, Jelutong, Jongkong, Kapur, Kempas, Keruing, Light Red Meranti, Limba, Mahogany (Swietenia Spp), Makor, Mansonia, Meranti Bakau, Merbau, Obeche, Okoum, palissandre de Para, palissandre de Rio, palissandre de Rose, Ramin, Sapelli, Sipo, Teak, Tiama, Virola, White Lauan, White Meranti, White Seraya and Yellow Meranti.
