@@ -35,6 +35,17 @@ class Context {
         this.show_rosa_version = true;
     }
 
+    set_phase(phase, sub_phase) {
+        this.phase = phase;
+        this.sub_phase = sub_phase;
+        this.get_aside();
+    }
+
+    get_aside() {
+        this.roo_phases = require('../data/roo/uk/roo_phases.json');
+        var a = 1;
+    }
+
     get_trade_direction(req) {
         this.trade_direction = req.session.data["trade_direction"];
 

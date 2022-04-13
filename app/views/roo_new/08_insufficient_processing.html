@@ -19,10 +19,11 @@
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters roo_container">
+        <div class="govuk-grid-column-two-thirds roo_container">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="insufficient_processing" >
-                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+                {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
+                <span class="govuk-caption-xl commodity-split">Are your goods originating?</span>
                 <h1 class="govuk-heading-xl">Have non-originating parts been sufficiently processed?</h1>
                 {# <p class="govuk-body-l">Not all of the parts that make up your goods
                     originate in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.</p> #}
@@ -90,6 +91,9 @@
                 }) }}
 
             </form>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            {% include "./aside.html" %}
         </div>
     </div>
 

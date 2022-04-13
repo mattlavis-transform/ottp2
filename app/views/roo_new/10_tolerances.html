@@ -19,10 +19,11 @@
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters roo_container">
+        <div class="govuk-grid-column-two-thirds roo_container">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="tolerances" >
-                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+                {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
+                <span class="govuk-caption-xl commodity-split">Are your goods originating?</span>
                 <h1 class="govuk-heading-xl">Tolerances</h1>
                 <p class="govuk-body-l">'Tolerances' represent a provision for the relaxation
                     of the rules of origin under certain conditions.</p>
@@ -82,6 +83,9 @@
                 }) }}
 
             </form>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            {% include "./aside.html" %}
         </div>
     </div>
 

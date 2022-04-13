@@ -19,10 +19,11 @@
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters roo_container">
+        <div class="govuk-grid-column-two-thirds roo_container">
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="processing" >
-                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+                {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
+                <span class="govuk-caption-xl commodity-split">Are your goods originating?</span>
                 <h1 class="govuk-heading-l">Including parts or components from other countries</h1>
                 <p class="govuk-body-l">Not all of the parts that make up your goods
                     come from {{ context.country_name }}.</p>
@@ -98,6 +99,9 @@
                 }) }}
 
             </form>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            {% include "./aside.html" %}
         </div>
     </div>
 

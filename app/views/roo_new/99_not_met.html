@@ -19,7 +19,7 @@
 
 {% block content %}
     <div class="govuk-grid-row roo_container">
-        <div class="govuk-grid-column-three-quarters">
+        <div class="govuk-grid-column-two-thirds">
             <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
             <h1 class="govuk-heading-xl">Rules of origin not met</h1>
             <p class="govuk-body-l">Your product does not appear to meet the rules of origin requirements 
@@ -114,6 +114,9 @@
                 </div>
 
             </div>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            {% include "./aside.html" %}
         </div>
     </div>
 

@@ -1,0 +1,56 @@
+{
+    "trade_direction": {
+        "title": "Details of your trade",
+        "intro_text": "{{ commodity }}",
+        "sub_phases": {
+            "trade_direction": {
+                "title": "Are you importing or exporting?",
+                "slug": "trade_direction"
+            }
+        }
+    },
+    "origination": {
+        "title": "Are your goods 'originating'?",
+        "intro_text": "",
+        "sub_phases": {
+            "origination": {
+                "title": "What is origination?",
+                "slug": "origination"
+            },
+            "wholly_obtained": {
+                "title": "Are your goods wholly obtained?",
+                "slug": "wholly_obtained_info"
+            },
+            "neutral": {
+                "title": "What components do you need to take into account?",
+                "slug": "neutral"
+            },
+            "insufficient_processing": {
+                "title": "Have your goods been sufficiently processed?",
+                "slug": "insufficient_processing"
+            },
+            "product_specific_rules": {
+                "title": "Does your product meet the product-specific rules?",
+                "slug": "product_specific_rules"
+            },
+            "cumulation": {
+                "title": "Including parts or components from other countries",
+                "slug": "cumulation"
+            }
+        }
+    },
+    "verification": {
+        "title": "Obtaining and verifying proof of origin",
+        "intro_text": "",
+        "sub_phases": {
+            "processes": {
+                "title": "Processes?",
+                "slug": "origin_processes"
+            },
+            "verification": {
+                "title": "How proofs of origin are verified",
+                "slug": "verification"
+            }
+        }
+    }
+}

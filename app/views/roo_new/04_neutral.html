@@ -19,9 +19,10 @@
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters">
+        <div class="govuk-grid-column-two-thirds">
 
-            <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+            {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
+            <span class="govuk-caption-xl commodity-split">Are your goods originating?</span>
             <h1 class="govuk-heading-xl">Inputs that should be disregarded in working out origin</h1>
             <p class="govuk-body-l">In determining whether a product is wholly obtained, you should disregard the origin of
                         neutral elements, meaning equipment and materials used in the production, but not
@@ -82,6 +83,9 @@
                 text: "Continue",
                 href: "/roo/wholly_obtained/" + context.goods_nomenclature_item_id + "/" + context.country
             }) }}
+        </div>
+        <div class="govuk-grid-column-one-third">
+            {% include "./aside.html" %}
         </div>
     </div>
 

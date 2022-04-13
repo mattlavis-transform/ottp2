@@ -59,8 +59,8 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
         if (context.wholly_obtained) {
             url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
         } else {
-            // url = "/roo/insufficient_processing/" + context.goods_nomenclature_item_id + "/" + context.country;
-            url = "/roo/cumulation/" + context.goods_nomenclature_item_id + "/" + context.country;
+            // url = "/roo/cumulation/" + context.goods_nomenclature_item_id + "/" + context.country;
+            url = "/roo/neutral/" + context.goods_nomenclature_item_id + "/" + context.country;
         }
     } else if (context.phase == "scheme_select") {
         // From selecting a scheme, take the user to the origination screen (always)
@@ -100,8 +100,8 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
 
 // 01 Trade Direction
 router.get(['/roo/trade_direction/:goods_nomenclature_item_id/:country/', 'xi/roo/trade_direction/:goods_nomenclature_item_id/:country/'], function (req, res) {
-    var phase = req.session.data["phase"];
     var context = new Context(req, "commodity");
+    context.set_phase("trade_direction", "trade_direction" );
     req.session.data["scheme_code"] = "";
     context.scheme_code = "";
 
@@ -110,7 +110,6 @@ router.get(['/roo/trade_direction/:goods_nomenclature_item_id/:country/', 'xi/ro
     context.get_commodity(req);
     context.get_roo_origin(req);
     context.get_scheme_code(req);
-
 
     // if ((context.multiple_schemes) && (context.scheme_code == '')) {
     if (context.multiple_schemes) {
@@ -145,6 +144,7 @@ router.get(['/roo/scheme_select/:goods_nomenclature_item_id/:country/', 'xi/roo/
 router.get(['/roo/origination/:goods_nomenclature_item_id/:country/', 'xi/roo/origination/:goods_nomenclature_item_id/:country/'],
     asyncMiddleware(async (req, res, next) => {
         var context = new Context(req, "commodity");
+        context.set_phase("origination", "origination");
         context.get_country(req);
         context.get_commodity(req);
         context.get_trade_direction(req);
@@ -171,6 +171,7 @@ router.get(['/roo/origination/:goods_nomenclature_item_id/:country/', 'xi/roo/or
 // 03 Wholly obtained info
 router.get(['/roo/wholly_obtained_info/:goods_nomenclature_item_id/:country/', 'xi/roo/wholly_obtained/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");
+    context.set_phase("origination", "wholly_obtained");
     context.get_country(req);
     context.get_commodity(req);
     context.get_trade_direction(req);
@@ -188,6 +189,7 @@ router.get(['/roo/wholly_obtained_info/:goods_nomenclature_item_id/:country/', '
 // 04 Neutral
 router.get(['/roo/neutral/:goods_nomenclature_item_id/:country/', 'xi/roo/neutral/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");
+    context.set_phase("origination", "neutral");
     context.get_country(req);
     context.get_commodity(req);
     context.get_trade_direction(req);
@@ -206,6 +208,7 @@ router.get(['/roo/neutral/:goods_nomenclature_item_id/:country/', 'xi/roo/neutra
 // 05 Wholly obtained form
 router.get(['/roo/wholly_obtained/:goods_nomenclature_item_id/:country/', 'xi/roo/wholly_obtained/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");
+    context.set_phase("origination", "wholly_obtained");
     context.get_country(req);
     context.get_commodity(req);
     context.get_trade_direction(req);
@@ -222,6 +225,7 @@ router.get(['/roo/wholly_obtained/:goods_nomenclature_item_id/:country/', 'xi/ro
 // 07 Cumulation
 router.get(['/roo/cumulation/:goods_nomenclature_item_id/:country/', 'xi/roo/cumulation/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");
+    context.set_phase("origination", "cumulation");
     context.get_country(req);
     context.get_commodity(req);
     context.get_trade_direction(req);
@@ -242,6 +246,7 @@ router.get(['/roo/cumulation/:goods_nomenclature_item_id/:country/', 'xi/roo/cum
 // 08 Insufficient processing
 router.get(['/roo/insufficient_processing/:goods_nomenclature_item_id/:country/', 'xi/roo/insufficient_processing/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");
+    context.set_phase("origination", "insufficient_processing");
     context.get_country(req);
     context.get_commodity(req);
     context.get_trade_direction(req);
@@ -261,6 +266,7 @@ router.get(
         'xi/roo/product_specific_rules/:goods_nomenclature_item_id/:country/'],
     asyncMiddleware(async (req, res, next) => {
         var context = new Context(req, "commodity");
+        context.set_phase("origination", "product_specific_rules");
         context.get_country(req);
         context.get_commodity(req);
         context.get_trade_direction(req);
@@ -332,6 +338,7 @@ router.get(['/roo/origin_processes/:goods_nomenclature_item_id/:country/', 'xi/r
 router.get(['/roo/verification/:goods_nomenclature_item_id/:country/', 'xi/roo/verification/:goods_nomenclature_item_id/:country/'],
     asyncMiddleware(async (req, res, next) => {
         var context = new Context(req, "commodity");
+        context.set_phase("verification", "verification");
         context.get_country(req);
         context.get_commodity(req);
         context.get_trade_direction(req);
@@ -350,6 +357,7 @@ router.get(['/roo/verification/:goods_nomenclature_item_id/:country/', 'xi/roo/v
 router.get(['/roo/proofs/:goods_nomenclature_item_id/:country/', 'xi/roo/proofs/:goods_nomenclature_item_id/:country/'],
     asyncMiddleware(async (req, res, next) => {
         var context = new Context(req, "commodity");
+        context.set_phase("verification", "proofs");
         context.get_country(req);
         context.get_commodity(req);
         context.get_trade_direction(req);

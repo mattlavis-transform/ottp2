@@ -19,16 +19,15 @@
 
 {% block content %}
     <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters roo_container">
+        <div class="govuk-grid-column-two-thirds roo_container">
 
             <form action="/roo/wholly_obtained_info/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
-                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+                {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
+                <span class="govuk-caption-xl commodity-split">Are your goods originating?</span>
                 <h1 class="govuk-heading-l">
                     How to work out if your products are classed as 'originating' in
                     {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
                 </h1>
-                {# <p class="govuk-body-l">Rules of origin are the criteria which determine the national source of a product.
-                    They are important as they determine if your trade is eligible for preferential tariff treatment.</p> #}
                 <p class="govuk-body-l">This page defines the broad rules that determine if your product originates in
                         {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
                         according to the {{ context.scheme_title }}.
@@ -107,6 +106,9 @@
                 }) }}
 
             </form>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            {% include "./aside.html" %}
         </div>
     </div>
 

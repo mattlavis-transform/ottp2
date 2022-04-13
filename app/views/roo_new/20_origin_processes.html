@@ -19,13 +19,17 @@
 
 {% block content %}
     <div class="govuk-grid-row roo_container">
-        <div class="govuk-grid-column-three-quarters">
-            <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+        <div class="govuk-grid-column-two-thirds">
+            {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
+            <span class="govuk-caption-xl commodity-split">Obtaining and verifying proofs of origin</span>
             <h1 class="govuk-heading-xl">Requirements for proving the origin for goods coming from {{ context.country_name }}</h1>
             <p class="govuk-body-l">The following information details the processes you will need to follow in order to
               gain proof of origin according to the {{ context.scheme_title }}, including the types of proof that are valid.
             </p>
             <div class="agreement_content">{{ context.origin_processes | convert_markdown | safe }}</div>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            {% include "./aside.html" %}
         </div>
     </div>
 {% endblock %}
