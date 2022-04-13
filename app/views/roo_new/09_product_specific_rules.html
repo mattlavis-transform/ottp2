@@ -46,7 +46,7 @@
                     </ul>
 
                     <h2 class="govuk-heading-m" id="sufficient">'Sufficient working or processing' in the {{ context.scheme_title }}</p>
-                    <div class="agreement_content">{{ context.sufficiently_worked | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
+                    <div class="agreement_content">{{ context.sufficiently_worked | convert_markdown | safe }}</div>
                 {% endif %}
 
                 <h2 class="govuk-heading-m" id="psr">Product-specific rules for {{ context.goods_nomenclature_item_id | format_and_trim_commodity_code | safe }}</h2>

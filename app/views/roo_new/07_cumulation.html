@@ -81,7 +81,7 @@
                     </div>
                 {% endif %}
 
-                <div class="agreement_content">{{ context.cumulation | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
+                <div class="agreement_content">{{ context.cumulation | convert_markdown | safe }}</div>
 
                 <div class="govuk-warning-text">
                     <span class="govuk-warning-text__icon" aria-hidden="true">!</span>

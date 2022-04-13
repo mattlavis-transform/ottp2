@@ -43,7 +43,7 @@
                 </details>
 
                 <h2 class="govuk-heading-m">Tolerances in the {{ context.scheme_title }}</h2>
-                <div class="agreement_content">{{ context.tolerances | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
+                <div class="agreement_content">{{ context.tolerances | convert_markdown | safe }}</div>
 
                 {{ govukRadios({
                 idPrefix: "met_tolerances",

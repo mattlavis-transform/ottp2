@@ -457,20 +457,50 @@ class Context {
     }
 
     get_article(document_type) {
+        const fs = require('fs');
+
+        var path = process.cwd() + "/app/views/roo_new/link_to_original.html";
+        var content = fs.readFileSync(path, 'utf8');
+        content = content.replace(/\n/gm, "");
+        content = content.replace(/\\"/gm, '"');
+
         var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/articles/' + this.scheme_code + "/" + document_type + '.md';
-        var fs = require('fs');
         try {
             var data = fs.readFileSync(path, 'utf8');
-            data = data.replace(/{{ (Article [0-9]{1,2}) }}/g, "> This information is derived from **$1** of the {{ ORD }}.{{ ORIGINAL }}");
-            data = data.replace(/{{ (Articles [0-9]{1,2} and [0-9]{1,2}) }}/g, "> This information is derived from **$1** of the {{ ORD }}.{{ ORIGINAL }}");
-            data = data.replace(/{{ (Articles [0-9]{1,2} to [0-9]{1,2}) }}/g, "> This information is derived from **$1** of the {{ ORD }}.{{ ORIGINAL }}");
-            data = data.replace(/{{ (Articles [0-9]{1,2} - [0-9]{1,2}) }}/g, "> This information is derived from **$1** of the {{ ORD }}.{{ ORIGINAL }}");
-            data = data.replace(/{{ ORD }}/g, this.ord);
+
+            var phrases = [
+                "{{ (Article [0-9]{1,2}) }}",
+                "{{ (Articles [0-9]{1,2} and [0-9]{1,2}) }}",
+                "{{ (Articles [0-9]{1,2} to [0-9]{1,2}) }}",
+                "{{ (Articles [0-9]{1,2} - [0-9]{1,2}) }}"
+            ]
+
+            var match_inner, match_outer;
+            phrases.forEach(phrase => {
+                var replace = "{{ (Article [0-9]{1,2}) }}";
+                var regexp = new RegExp(phrase, "");
+                var matches = data.match(regexp);
+                if (matches) {
+                    match_outer = matches[0];
+                    match_inner = matches[1];
+                }
+                // console.log(`Width: ${match[1]} / Height: ${match[2]}.`);
+            });
+
+            content = content.replace(/{{ ARTICLE }}/g, match_inner);
+            content = content.replace(/{{ ORD }}/g, this.ord);
+            content = content.replace(/{{ URL }}/g, "/public/downloads/roo_reference/" + this.original);
+
+            if (match_outer) {
+                var regexp = new RegExp(match_outer, "");
+                data = data.replace(regexp, content);
+            }
+            var a = 1;
+
             data = data.replace(/(#{2,3} Wholly obtained products)/g, '$1 according to the ' + this.scheme_title);
 
             // Legalese
             data = data.replace(/EUR 1/g, "EUR1");
-            // data = data.replace(/shall be/g, "are");
             data = data.replace(/shall/g, "will");
             data = data.replace(/ %/g, "%");
 
@@ -491,7 +521,11 @@ class Context {
             else if (document_type == "packaging") {
                 this.packaging = data;
             }
-            else if (document_type == "cumulation") {
+            else if (document_type == "cumulation-import") {
+                this.cumulation = data;
+                this.get_cumulation_types();
+            }
+            else if (document_type == "cumulation-export") {
                 this.cumulation = data;
                 this.get_cumulation_types();
             }

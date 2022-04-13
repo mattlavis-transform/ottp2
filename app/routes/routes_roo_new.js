@@ -228,7 +228,11 @@ router.get(['/roo/cumulation/:goods_nomenclature_item_id/:country/', 'xi/roo/cum
     context.get_scope();
     context.get_roo_origin(req);
     context.get_scheme_code(req);
-    context.get_article("cumulation");
+    if (context.trade_direction == "import") {
+        context.get_article("cumulation-import");
+    } else {
+        context.get_article("cumulation-export");
+    }
 
     res.render('roo_new/07_cumulation', {
         'context': context

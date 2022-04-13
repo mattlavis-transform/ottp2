@@ -25,7 +25,7 @@
             <p class="govuk-body-l">The following information details the processes you will need to follow in order to
               gain proof of origin according to the {{ context.scheme_title }}, including the types of proof that are valid.
             </p>
-            <div class="agreement_content">{{ context.origin_processes | convert_markdown | link_to_roo_original(context.original) | safe }}</div>
+            <div class="agreement_content">{{ context.origin_processes | convert_markdown | safe }}</div>
         </div>
     </div>
 {% endblock %}

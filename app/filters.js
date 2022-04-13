@@ -344,16 +344,6 @@ module.exports = function (env) {
         }
     }
 
-    filters.link_to_roo_original = function (s, original) {
-        if (s == "") {
-            return "";
-        } else {
-            var url = "/public/downloads/roo_reference/" + original;
-            s = s.replace(/{{ ORIGINAL }}/g, "<br><br><a target='_blank' class='download' href='" + url + "'>Download rules of origin reference document (opens in new tab)</a>");
-            return (s);
-        }
-    }
-
     filters.fwdslash = function (s) {
         if (s == "") {
             return "";
