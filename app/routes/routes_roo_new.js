@@ -319,6 +319,7 @@ router.get(['/roo/sets/:goods_nomenclature_item_id/:country/', 'xi/roo/tolerance
 router.get(['/roo/origin_processes/:goods_nomenclature_item_id/:country/', 'xi/roo/origin_processes/:goods_nomenclature_item_id/:country/'],
     asyncMiddleware(async (req, res, next) => {
         var context = new Context(req, "commodity");
+        context.set_phase("verification", "processes");
         context.get_country(req);
         context.get_commodity(req);
         context.get_trade_direction(req);
