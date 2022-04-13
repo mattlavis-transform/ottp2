@@ -25,7 +25,6 @@ const asyncMiddleware = fn =>
             .catch(next);
     };
 
-
 // Data handler
 router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/data_handler/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");

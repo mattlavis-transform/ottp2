@@ -1,24 +1,24 @@
 The following products shall be considered as wholly obtained in a Party:
 
-1. mineral products and other non-living natural resources extracted or taken from there;
+1. **mineral products** and other non-living natural resources extracted or taken from there;
 
-2. vegetables, plants, and plant products harvested or gathered there;
+2. **vegetables, plants, and plant products** harvested or gathered there;
 
-3. live animals born and raised there;
+3. **live animals** born and raised there;
 
-4. products obtained from live animals there;
+4. products **obtained from live animals** there;
 
-5. products from slaughtered animals born and raised there;
+5. products from **slaughtered animals** born and raised there;
 
-6. products obtained by hunting, trapping, or fishing conducted there, but not beyond the outer limits of the Party's territorial sea;
+6. products obtained by **hunting, trapping, or fishing** conducted there, but not beyond the outer limits of the Party's territorial sea;
 
-7. products of aquaculture raised there;
+7. products of **aquaculture** raised there;
 
-8. fish, shellfish, and other marine life taken beyond the outer limits of any territorial sea by a vessel or taken within the limits of the territorial sea of a Member State of the European Union by a vessel fulfilling the conditions of paragraph 2 with respect to the UK;
+8. **fish, shellfish, and other marine life** taken beyond the outer limits of any territorial sea by a vessel or taken within the limits of the territorial sea of a Member State of the European Union by a vessel fulfilling the conditions of paragraph 2 with respect to the UK;
 
-9. products made aboard factory ships exclusively from products referred to in subparagraph (h);
+9. products made aboard **factory ships** exclusively from products referred to in subparagraph (h);
 
-10. mineral products and other non-living natural resources, taken or extracted from the seabed, subsoil, or ocean floor of:
+10. **mineral products** and other non-living natural resources, taken or extracted from the seabed, subsoil, or ocean floor of:
 
     1.  the exclusive economic zone of Canada or the UK, as determined by domestic law and consistent with Part V of the United Nations Convention on the Law of the Sea, done at Montego Bay on 10 December 1982 (‘UNCLOS’);
 
@@ -26,9 +26,9 @@ The following products shall be considered as wholly obtained in a Party:
 
     3.  the Area as defined in Article 1(1) of UNCLOS, by a Party or a person of a Party, provided that that Party or person of a Party has rights to exploit such seabed, subsoil, or ocean floor;
 
-11. raw materials recovered from used products collected there, provided that these products are fit only for such recovery;
+11. **raw materials** recovered from used products collected there, provided that these products are fit only for such recovery;
 
-12. components recovered from used products collected there, provided that these products are fit only for such recovery, when the component is:
+12. **components recovered from used products collected** there, provided that these products are fit only for such recovery, when the component is:
 
    1. incorporated into another product; *or*
 

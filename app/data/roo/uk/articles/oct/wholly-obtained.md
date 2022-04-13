@@ -1,28 +1,28 @@
 1. The following will be considered to have been wholly obtained in an Overseas Territory:
 
-   1. mineral products extracted from its soil or from its seabed;
+   1. **mineral products** extracted from its soil or from its seabed;
 
-   2. plants and vegetable products grown or harvested there;
+   2. **plants and vegetable products** grown or harvested there;
 
-   3. live animals born and raised there;
+   3. **live animals** born and raised there;
 
-   4. products from live animals raised there;
+   4. **products from live animals** raised there;
 
-   5. products from slaughtered animals born and raised there;
+   5. products from **slaughtered animals** born and raised there;
 
-   6. products obtained by hunting or fishing conducted there;
+   6. products obtained by **hunting or fishing** conducted there;
 
    7. products of aquaculture where the fish, crustaceans and molluscs are born there and raised there;
 
-   8. products of sea fishing and other products taken from the sea outside any territorial sea by its vessels;
+   8. products of **sea fishing and other products** taken from the sea outside any territorial sea by its vessels;
 
-   9. products made on board its factory ships exclusively from the products referred to in point (h);
+   9. products made on board its **factory ships** exclusively from the products referred to in point (h);
 
-   10. used articles collected there fit only for the recovery of raw materials;
+   10. used articles collected there fit only for the recovery of **raw materials**;
 
-   11. waste and scrap resulting from manufacturing operations conducted there;
+   11. **waste and scrap** resulting from manufacturing operations conducted there;
 
-   12. products extracted from the seabed or below the seabed which is situated outside any territorial sea but where it has exclusive exploitation rights;
+   12. products extracted from the **seabed or below the seabed** which is situated outside any territorial sea but where it has exclusive exploitation rights;
 
    13. goods produced there exclusively from products specified in points (a) to (l).
 
