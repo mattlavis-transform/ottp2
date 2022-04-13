@@ -36,25 +36,21 @@
                         }
                     },
                     hint: {
-                        html: "Based on the definition of 
-                    <a href='/roo/wholly_obtained_info/0208907000/VN'>wholly obtained</a>
-                    and the list of
-                    <a href='/roo/neutral/0208907000/VN'>neutral elements and other parts to be disregarded</a>,
-                    identify if your goods are wholly obtained.
-                    "
+                        html: "Base your answer on the definition of 
+                            <a href='/roo/wholly_obtained_info/0208907000/VN'>wholly obtained</a> on the previous screen."
                     },
                     items: [
                         {
                             value: "yes",
                             text: "Yes, my goods are wholly obtained in " + context.roo_origin,
-                            hint: {
+                            xhint: {
                                 text: "according to the definition of 'wholly obtained' in the " + context.scheme_title
                             }
                         },
                         {
                             value: "no",
                             text: "No, my goods are not wholly obtained in " + context.roo_origin,
-                            hint: {
+                            xhint: {
                                 text: "My product is produced using some non-originating materials"
                             }
                         }

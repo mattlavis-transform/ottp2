@@ -179,6 +179,7 @@ router.get(['/roo/wholly_obtained_info/:goods_nomenclature_item_id/:country/', '
     context.get_roo_origin(req);
     context.get_scheme_code(req);
     context.get_article("wholly-obtained");
+    context.get_article("wholly-obtained-vessels");
 
     res.render('roo_new/03_wholly_obtained_info', {
         'context': context

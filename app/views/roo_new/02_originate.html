@@ -29,15 +29,15 @@
                 </h1>
                 {# <p class="govuk-body-l">Rules of origin are the criteria which determine the national source of a product.
                     They are important as they determine if your trade is eligible for preferential tariff treatment.</p> #}
-                    <p class="govuk-body-l">This page defines the broad rules that determine if your product originates in
+                <p class="govuk-body-l">This page defines the broad rules that determine if your product originates in
                         {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
                         according to the {{ context.scheme_title }}.
                     </p>
 
-                <div class="govuk-inset-text panel_grey">
-                    <p class="b">How rules of origin could affect the duty payable</p>
-                    <ul class="govuk-list commodity-split">
-                        {% if context.trade_direction == "import" %}
+                {% if context.trade_direction == "import" %}
+                    <div class="govuk-inset-text panel_grey">
+                        <p class="b">How rules of origin could affect the duty payable</p>
+                        <ul class="govuk-list commodity-split">
                             <li>The third-country duty (or <abbr title="Most-Favoured Nation">MFN</abbr> duty)
                             for importing commodity {{ context.goods_nomenclature_item_id | format_and_trim_commodity_code | safe }} is <span class="roo_duty">{{ context.mfn }}</span>.</li>
                             {% if context.has_preferential_rates %}
@@ -59,23 +59,13 @@
                                     you may still use this tool to help you to work out if your products are classed as originating in
                                     {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.</li>
                             {% endif %}
-                        {% endif %}
-
-                        {# {% if context.trade_direction == "import" %}
-                            {% if context.has_preferential_rates %}
-                                <li>Use this tool to help you to work out if your products are classed as originating in
-                                {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
-                                and eligible for preferential duties subject to the agreement.</li>
-                            {% endif %}
-                        {% else %}
-                            <li>Use this tool to help you to work out if your products are classed as originating in
-                            {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.</li>
-                        {% endif %} #}
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
+                {% endif %}
 
                 <div class="commodity-split">
-                    <p>For the purpose of implementing the {{ context.scheme_title }}, the following products will be considered as originating in Albania:</p>
+                    {# <p>According to the {{ context.scheme_title }}, the following products will be considered as originating in Albania:</p> #}
+                    <p>The following products are considered as originating in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}:</p>
                     <ul class="govuk-list govuk-list--bullet">
                         <li>
                             products <strong>wholly obtained</strong> in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }};

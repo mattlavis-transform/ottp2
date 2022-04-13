@@ -313,6 +313,46 @@
     }
 }
 
+.roo_container.single_tier {
+    ol>li>ol {
+        margin-left: 0.5em;
+    }
+
+    ol>li>ul {
+        margin-left: 0.5em;
+    }
+
+    // ol li>ol>li>ol>li>ol>li {
+    //     list-style-type: upper-alpha;
+    // }
+
+    // ol li>ol>li>ol>li {
+    //     list-style-type: lower-roman;
+    // }
+
+    // ol li>ol>li {
+    //     list-style-type: lower-alpha;
+    // }
+
+    ol li {
+        list-style-type: lower-alpha;
+    }
+
+    ol li>ol>li {
+        list-style-type: lower-roman;
+    }
+
+    ol li>ol>li>ol>li {
+        list-style-type: upper-alpha;
+    }
+
+    blockquote {
+        background-color: #f0f0f0;
+        margin          : 1em 0px;
+        padding         : 1em 1em 0.5em 1em;
+    }
+}
+
 .download {
     // background-color: red;
     padding-left         : 24px;
@@ -328,7 +368,6 @@
 }
 
 .agreement_content {
-    // border: 2px solid #eee3e3 !important;
-    padding: 0.5em;
-    background-color: #fff3f3;
+    // padding: 0.5em;
+    // background-color: #fff3f3;
 }

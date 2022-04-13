@@ -509,6 +509,9 @@ class Context {
             if (document_type == "wholly-obtained") {
                 this.wholly_obtained = data;
             }
+            else if (document_type == "wholly-obtained-vessels") {
+                this.wholly_obtained_vessels = data;
+            }
             else if ((document_type == "originating_import") || (document_type == "originating_export")) {
                 this.originating = data;
             }

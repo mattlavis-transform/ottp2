@@ -28,7 +28,7 @@
 
    2. if the products concerned can be considered as products originating in one of the other countries referred to in Articles 3 and 4 with which cumulation is applicable, without application of cumulation with materials originating in one of the countries referred to in Articles 3 and 4, and fulfil the other requirements of this Origin Reference Document, provided a certificate EUR-MED or an invoice declaration EUR-MED has been issued in the country of origin.
 
-5. A movement certificate EUR-MED shall be issued by the customs authorities of the United Kingdom or of Georgia, if the products concerned can be considered as products originating in the United Kingdom, Georgia or in one of the other countries referred to in Articles 3 and 4 with which cumulation is applicable, fulfil the requirements of this Origin Reference Document and :
+5. A movement certificate EUR-MED shall be issued by the customs authorities of the United Kingdom or of Georgia, if the products concerned can be considered as products originating in the United Kingdom, Georgia or in one of the other countries referred to in Articles 3 and 4 with which cumulation is applicable, fulfil the requirements of this Origin Reference Document and:
 
    1. cumulation was applied with materials originating in Switzerland (including Liechtenstein), Turkey or one of the countries referred to in Articles 3(2) and 4(2); or
 
