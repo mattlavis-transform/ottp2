@@ -19,6 +19,12 @@
                         href: "/roo/trade_direction/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.country
                     }) }}
                 {% else %}
+                    <p>
+                        Rules of origin are the criteria which determine the national source of a product. They are important as they
+                        determine if your trade is eligible for preferential tariff treatment, and may influence the rules that 
+                        apply to your import or export.
+                    </p>
+
                     <p>In order to qualify for a lower or zero preferential tariff
                         under the <strong>{{ roo.title }}</strong>, the product must originate
                         in {{ roo.origin_text }} or {{ roo.partners }}.</p>

@@ -27,10 +27,11 @@
                     How to work out if your products are classed as 'originating' in
                     {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
                 </h1>
-                <p class="govuk-body-l">Rules of origin are the criteria which determine the national source of a product.
-                    They are important as they determine if your trade is eligible for preferential tariff treatment.</p>
-                    <p>This page defines the broad rules that determine if your product is originating according to the
-                        {{ context.scheme_title }}.
+                {# <p class="govuk-body-l">Rules of origin are the criteria which determine the national source of a product.
+                    They are important as they determine if your trade is eligible for preferential tariff treatment.</p> #}
+                    <p class="govuk-body-l">This page defines the broad rules that determine if your product originates in
+                        {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
+                        according to the {{ context.scheme_title }}.
                     </p>
 
                 <div class="govuk-inset-text panel_grey">
@@ -60,7 +61,7 @@
                             {% endif %}
                         {% endif %}
 
-                        {% if context.trade_direction == "import" %}
+                        {# {% if context.trade_direction == "import" %}
                             {% if context.has_preferential_rates %}
                                 <li>Use this tool to help you to work out if your products are classed as originating in
                                 {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
@@ -68,14 +69,34 @@
                             {% endif %}
                         {% else %}
                             <li>Use this tool to help you to work out if your products are classed as originating in
-                        {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.</li>
-                        {% endif %}
+                            {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.</li>
+                        {% endif %} #}
                     </ul>
                 </div>
 
-                <div class="agreement_content">{{ context.originating | convert_markdown | safe }}</div>
+                <div class="commodity-split">
+                    <p>For the purpose of implementing the {{ context.scheme_title }}, the following products will be considered as originating in Albania:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>
+                            products <strong>wholly obtained</strong> in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }};
+                        </li>
+                        <li>
+                            products obtained in Albania incorporating materials which have not been wholly obtained there,
+                            provided that these materials have undergone <strong>sufficient working or processing</strong> in
+                            {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
+                            to obtain originating status;
+                        </li>
+                        <li>
+                            items produced using some <strong>non-originating materials</strong>, provided the product meets the rules specifically
+                            associated with commodity {{ context.goods_nomenclature_item_id | format_and_trim_commodity_code | safe }}.
+                        </li>
+                    </ul>
+                    <p>These concepts are defined throughout the next pages, so that you can determine if your product meets the rules of origin.</p>
+                </div>
 
-                {% if context.features["absorption"] == true %}
+                {# <div class="agreement_content">{{ context.originating | convert_markdown | safe }}</div> #}
+
+                {# {% if context.features["absorption"] == true %}
                 <p>The {{ context.scheme_title }} features a principle known as <b>absorption</b>, meaning that non-originating
                 intermediate components may be classed as originating, if they have gained originating status in the trading partner.</p>
                 <details class="govuk-details" data-module="govuk-details">
@@ -86,7 +107,7 @@
                         {% include "includes/absorption.html" %}
                     </div>
                 </details>
-                {% endif %}
+                {% endif %} #}
 
                 <p class="b">Next step</p>
                 <p>Click on the 'Continue' button to view the definition of '<b>wholly obtained</b>' for the {{ context.scheme_title }}.</p>
