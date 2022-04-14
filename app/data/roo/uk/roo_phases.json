@@ -27,6 +27,10 @@
                 "title": "What components do you need to take into account?",
                 "slug": "neutral"
             },
+            "cumulation": {
+                "title": "Including parts or components from other countries",
+                "slug": "cumulation"
+            },
             "insufficient_processing": {
                 "title": "Have non-originating parts been sufficiently processed?",
                 "slug": "insufficient_processing"
@@ -34,10 +38,6 @@
             "product_specific_rules": {
                 "title": "Does your product meet the product-specific rules?",
                 "slug": "product_specific_rules"
-            },
-            "cumulation": {
-                "title": "Including parts or components from other countries",
-                "slug": "cumulation"
             }
         }
     },
