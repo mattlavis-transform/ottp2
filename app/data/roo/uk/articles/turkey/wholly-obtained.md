@@ -6,7 +6,7 @@ The following products shall be considered as wholly obtained in a Party:
 
 3. **live animals** born and raised there;
 
-4. products obtained from live animals raised there;
+4. products **obtained from live animals** raised there;
 
 5. products obtained from **slaughtered animals** born and raised there;
 
