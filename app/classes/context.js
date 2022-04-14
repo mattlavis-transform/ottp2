@@ -418,7 +418,7 @@ class Context {
         });
         this.explainers = [
             {
-                "title": "Determining if a good is wholly obtained",
+                "title": "xxxDetermining if a good is wholly obtained",
                 "file": "wholly-obtained.md"
             },
             {
@@ -498,17 +498,22 @@ class Context {
                 // console.log(`Width: ${match[1]} / Height: ${match[2]}.`);
             });
 
-            content = content.replace(/{{ ARTICLE }}/g, match_inner);
-            content = content.replace(/{{ ORD }}/g, this.ord);
-            content = content.replace(/{{ URL }}/g, "/public/downloads/roo_reference/" + this.original);
+            // content = content.replace(/{{ ARTICLE }}/g, match_inner);
+            // content = content.replace(/{{ ORD }}/g, this.ord);
+            // content = content.replace(/{{ URL }}/g, "/public/downloads/roo_reference/" + this.original);
+
+            // if (match_outer) {
+            //     var regexp = new RegExp(match_outer, "");
+            //     data = data.replace(regexp, content);
+            // }
 
             if (match_outer) {
                 var regexp = new RegExp(match_outer, "");
-                data = data.replace(regexp, content);
+                data = data.replace(regexp, "");
             }
-            var a = 1;
 
-            data = data.replace(/(#{2,3} Wholly obtained products)/g, '$1 according to the ' + this.scheme_title);
+
+            // data = data.replace(/(#{2,3} Wholly obtained products)/g, '$1 according to the ' + this.scheme_title);
 
             // Legalese
             data = data.replace(/EUR 1/g, "EUR1");

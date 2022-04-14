@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  How to work out if your products are classed as 'originating' - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
+  How to work out if your goods are classed as 'originating' - Rules of origin for commodity {{ context.goods_nomenclature_item_id }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -25,7 +25,7 @@
                 {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
                 <span class="govuk-caption-xl commodity-split">Are your goods originating?</span>
                 <h1 class="govuk-heading-l">
-                    How to work out if your products are classed as 'originating' in
+                    How to work out if your goods are classed as 'originating' in
                     {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
                 </h1>
                 <p class="govuk-body-l">This page defines the broad rules that determine if your product originates in

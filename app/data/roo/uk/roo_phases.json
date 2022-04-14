@@ -1,5 +1,6 @@
 {
     "trade_direction": {
+        "show": true,
         "title": "Details of your trade",
         "intro_text": "{{ commodity }}",
         "sub_phases": {
@@ -10,15 +11,16 @@
         }
     },
     "origination": {
+        "show": true,
         "title": "Are your goods 'originating'?",
         "intro_text": "",
         "sub_phases": {
             "origination": {
-                "title": "What is origination?",
+                "title": "How to work out if your goods are classed as 'originating'",
                 "slug": "origination"
             },
             "wholly_obtained": {
-                "title": "Are your goods wholly obtained?",
+                "title": "How 'wholly obtained' is defined",
                 "slug": "wholly_obtained_info"
             },
             "neutral": {
@@ -26,7 +28,7 @@
                 "slug": "neutral"
             },
             "insufficient_processing": {
-                "title": "Have your goods been sufficiently processed?",
+                "title": "Have non-originating parts been sufficiently processed?",
                 "slug": "insufficient_processing"
             },
             "product_specific_rules": {
@@ -40,7 +42,42 @@
         }
     },
     "verification": {
+        "show": true,
         "title": "Obtaining and verifying proof of origin",
+        "intro_text": "",
+        "sub_phases": {
+            "proofs": {
+                "title": "Valid proofs of origin",
+                "slug": "origin_processes"
+            },
+            "processes": {
+                "title": "Processes?",
+                "slug": "origin_processes"
+            },
+            "verification": {
+                "title": "How proofs of origin are verified",
+                "slug": "verification"
+            }
+        }
+    },
+    "results": {
+        "show": false,
+        "title": "Your results",
+        "intro_text": "",
+        "sub_phases": {
+            "processes": {
+                "title": "Processes?",
+                "slug": "origin_processes"
+            },
+            "verification": {
+                "title": "How proofs of origin are verified",
+                "slug": "verification"
+            }
+        }
+    },
+    "documents": {
+        "show": true,
+        "title": "Useful documents",
         "intro_text": "",
         "sub_phases": {
             "processes": {
