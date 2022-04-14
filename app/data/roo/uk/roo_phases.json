@@ -76,7 +76,7 @@
         }
     },
     "documents": {
-        "show": true,
+        "show": false,
         "title": "Useful documents",
         "intro_text": "",
         "sub_phases": {
