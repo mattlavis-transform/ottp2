@@ -926,7 +926,9 @@
                         {
                               "rule": "\n- (ii) the value of non-originating sugar used in production does not exceed 30 per cent of the transaction value or ex-works price of the product",
                               "original": "or (ii) the value of non-originating sugar used in production does not exceed 30 per cent of the transaction value or ex-works price of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         },
                         {
@@ -1009,7 +1011,9 @@
                         {
                               "rule": "\n- (ii) the value of non-originating sugar used in production does not exceed 30 per cent of the transaction value or ex-works price of the product, and \n- (b) the net weight of non-originating material of Chapter 4 used in production does not exceed 20 per cent of the net weight of the product",
                               "original": "or (ii) the value of non-originating sugar used in production does not exceed 30 per cent of the transaction value or ex-works price of the product, and (b) the net weight of non-originating material of Chapter 4 used in production does not exceed 20 per cent of the net weight of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -4753,7 +4757,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "560490",
@@ -4773,7 +4777,7 @@
             },
             {
                   "heading": "560490",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "5604900000",
                   "max": "5604909999",
@@ -5159,7 +5163,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5902",
@@ -5179,7 +5183,7 @@
             },
             {
                   "heading": "5902",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "5902000000",
                   "max": "5902999999",
@@ -5245,7 +5249,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5905",
@@ -5265,7 +5269,7 @@
             },
             {
                   "heading": "5905",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "5905000000",
                   "max": "5905999999",
@@ -5305,7 +5309,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5906",
@@ -5353,7 +5357,7 @@
             },
             {
                   "heading": "5906",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "5906000000",
                   "max": "5906999999",
@@ -5421,7 +5425,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5908",
@@ -5441,7 +5445,7 @@
             },
             {
                   "heading": "5908",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "5908000000",
                   "max": "5908999999",
@@ -5471,7 +5475,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5909-5911",
@@ -5513,7 +5517,7 @@
             },
             {
                   "heading": "5909-5911",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "5909000000",
                   "max": "5911999999",
@@ -5587,7 +5591,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6101-6117",
@@ -5663,7 +5667,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6202",
@@ -5689,7 +5693,7 @@
             },
             {
                   "heading": "6202",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6202000000",
                   "max": "6202999999",
@@ -5745,7 +5749,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6204",
@@ -5771,7 +5775,7 @@
             },
             {
                   "heading": "6204",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6204000000",
                   "max": "6204999999",
@@ -5827,7 +5831,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6206",
@@ -5853,7 +5857,7 @@
             },
             {
                   "heading": "6206",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6206000000",
                   "max": "6206999999",
@@ -5909,7 +5913,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6209",
@@ -5935,7 +5939,7 @@
             },
             {
                   "heading": "6209",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6209000000",
                   "max": "6209999999",
@@ -5969,7 +5973,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6210",
@@ -5995,7 +5999,7 @@
             },
             {
                   "heading": "6210",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6210000000",
                   "max": "6210999999",
@@ -6029,7 +6033,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6211",
@@ -6055,7 +6059,7 @@
             },
             {
                   "heading": "6211",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6211000000",
                   "max": "6211999999",
@@ -6111,7 +6115,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6213-6214",
@@ -6143,7 +6147,7 @@
             },
             {
                   "heading": "6213-6214",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6213000000",
                   "max": "6214999999",
@@ -6199,7 +6203,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6216",
@@ -6225,7 +6229,7 @@
             },
             {
                   "heading": "6216",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6216000000",
                   "max": "6216999999",
@@ -6259,7 +6263,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6217",
@@ -6307,7 +6311,7 @@
             },
             {
                   "heading": "6217",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6217000000",
                   "max": "6217999999",
@@ -6335,7 +6339,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6301-6304",
@@ -6427,7 +6431,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6306",
@@ -6447,7 +6451,7 @@
             },
             {
                   "heading": "6306",
-                  "subdivision": "Other",
+                  "subdivision": "Others",
                   "prefix": "",
                   "min": "6306000000",
                   "max": "6306999999",

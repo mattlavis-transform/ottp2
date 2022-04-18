@@ -91,7 +91,7 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
     } else if (context.phase == "tolerances") {
         context.get_tolerances(req);
         if (context.met_tolerances) {
-            url = "/roo/met/" + context.goods_nomenclature_item_id + "/" + context.country;
+            url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
         } else {
             url = "/roo/sets/" + context.goods_nomenclature_item_id + "/" + context.country;
         }
@@ -99,7 +99,7 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
     } else if (context.phase == "sets") {
         context.get_met_set(req);
         if (context.met_set) {
-            url = "/roo/met/" + context.goods_nomenclature_item_id + "/" + context.country;
+            url = "/roo/proofs/" + context.goods_nomenclature_item_id + "/" + context.country;
         } else {
             url = "/roo/not_met/" + context.goods_nomenclature_item_id + "/" + context.country;
         }
@@ -358,7 +358,7 @@ router.get([
         await context.get_roo_links();
         context.get_article("origin_processes")
 
-        res.render('roo_new/20_origin_processes', {
+        res.render('roo_new/25_origin_processes', {
             'context': context
         });
     }));
@@ -381,8 +381,7 @@ router.get(['/roo/verification/:goods_nomenclature_item_id/:country/', 'xi/roo/v
         });
     }));
 
-
-// Proofs
+// Met
 router.get(['/roo/met/:goods_nomenclature_item_id/:country/', 'xi/roo/met/:goods_nomenclature_item_id/:country/'],
     asyncMiddleware(async (req, res, next) => {
         var context = new Context(req, "commodity");
@@ -397,11 +396,10 @@ router.get(['/roo/met/:goods_nomenclature_item_id/:country/', 'xi/roo/met/:goods
         await context.get_proofs();
         await context.get_roo_links();
 
-        res.render('roo_new/98_met', {
+        res.render('roo_new/20_met', {
             'context': context
         });
     }));
-
 
 // Not met
 router.get(['/roo/not_met/:goods_nomenclature_item_id/:country/', 'xi/roo/not_met/:goods_nomenclature_item_id/:country/'], function (req, res) {
@@ -416,10 +414,31 @@ router.get(['/roo/not_met/:goods_nomenclature_item_id/:country/', 'xi/roo/not_me
     context.get_product_specific_rules_json(req, "check_wo_only");
     context.get_article("sets")
 
-    res.render('roo_new/99_not_met', {
+    res.render('roo_new/20_not_met', {
         'context': context
     });
 });
+
+
+// Proofs (also Met)
+router.get(['/roo/proofs/:goods_nomenclature_item_id/:country/', 'xi/roo/proofs/:goods_nomenclature_item_id/:country/'],
+    asyncMiddleware(async (req, res, next) => {
+        var context = new Context(req, "commodity");
+        context.set_phase("verification", "proofs");
+        context.get_country(req);
+        context.get_commodity(req);
+        context.get_trade_direction(req);
+        context.get_scope();
+        context.get_roo_origin(req);
+        context.get_scheme_code(req);
+        context.get_product_specific_rules_json(req, "check_wo_only");
+        await context.get_proofs();
+        await context.get_roo_links();
+
+        res.render('roo_new/15_proofs', {
+            'context': context
+        });
+    }));
 
 // Document
 router.get([

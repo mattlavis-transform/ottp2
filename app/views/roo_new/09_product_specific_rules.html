@@ -37,8 +37,13 @@
                                 {% set index = 0 %}
                                 {# {{ context.subdivisions | dump }} #}
                                 {% for subdivision in context.subdivisions %}
+                                    {% if subdivision == "Any other product" %}
+                                        {% set subdivision_value = "Others" %}
+                                    {% else %}
+                                        {% set subdivision_value = subdivision %}
+                                    {% endif %}
                                     <div class="govuk-radios__item">
-                                        <input class="govuk-radios__input" id="subdivision_{{ index }}" name="subdivision" type="radio" value="{{ subdivision }}">
+                                        <input class="govuk-radios__input" id="subdivision_{{ index }}" name="subdivision" type="radio" value="{{ subdivision_value }}">
                                         <label class="govuk-label govuk-radios__label" for="subdivision_{{ index }}">{{ subdivision }}</label>
                                     </div>
                                     {% set index = index + 1 %}

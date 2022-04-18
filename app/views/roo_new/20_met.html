@@ -21,23 +21,39 @@
     <div class="govuk-grid-row" id="top">
         <div class="govuk-grid-column-two-thirds roo_container">
             <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
-            <h1 class="govuk-heading-xl">Your product meets the rules of origin</h1>
+            <h1 class="govuk-heading-xl">Origin requirements met</h1>
+            <div class="govuk-panel govuk-panel--confirmation">
+                {# <h1 class="govuk-panel__title">
+                    Rules of origin not met
+                </h1> #}
+                <div class="govuk-panel__body">
+                    Based on your responses, your product appears to meet the rules of origin requirements for the {{ context.scheme_title }}.
+                </div>
+            </div>
             <p class="govuk-body">
-                    To benefit from a preference, originating products should be accompanied by
-                    appropriate proofs confirming their origin.</p>
+                To benefit from a preferential tariff or quota, originating products should be accompanied by
+                an appropriate proof confirming their origin.
+            </p>
+            <h2 class="govuk-heading-m">Next steps</h2>
+            <ul class="govuk-list">
+                <li><a href="/roo/proofs/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">See valid proofs of origin</a></li>
+                <li><a href="/roo/origin_processes/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">See detailed processes and requirements for proving the origin for goods</a></li>
+                <li><a href="/roo/verification/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">How proofs of origin are verified</a></li>
+            </ul>
 
-            {% if context.proofs | length > 0 %}
+            {# {% if context.proofs | length > 0 %}
                 <h2 class="govuk-heading-m">Proof of origin - overview</h1>
                 {% if context.proofs | length > 1 %}
                     <p class="govuk-body">There are {{ context.proofs | length }} ways to provide proof of origin. Click on an option
                         to see an overview of that proof.
                     </p>
                 {% else %}
-                    <p class="govuk-body">Click to see an overview of the proof of origin
+                    <p class="govuk-body">
+                        Read an overview of the required proof of origin on gov.uk.
                     </p>
                 {% endif %}
 
-                <ul class="govuk-list govuk-list--bullet">
+                <ul class="govuk-list xgovuk-list--bullet">
                     {% for proof in context.proofs %}
                         <li>
                             <a target="_blank" href="{{ proof.attributes.url }}">{{ proof.attributes.summary }} (opens in new tab)</a>
@@ -57,32 +73,10 @@
                     <a href="/roo/verification/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                         Verification of proof of origin</a>
                 </li>
-            </ul>
+            </ul> #}
 
         </div>
-        {# <div class="govuk-grid-column-one-third">
-            <aside class="app-related-items" role="complementary">
-                <h2 class="govuk-heading-m" id="subsection-title">Related content</h2>
-                <nav role="navigation" aria-labelledby="subsection-title">
-                    <ul class="govuk-list govuk-!-font-size-16">
-                        {% for link in context.links %}
-                            <li>
-                                <a href="{{ link.attributes.url }}">{{ link.attributes.text }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                    <h2 class="govuk-heading-m" id="subsection-title">Rules of origin in the TCA</h2>
-                    <ul class="govuk-list govuk-!-font-size-16">
-                        {% for explainer in context.explainers %}
-                            <li>
-                                <a href="/roo/document/{{ context.goods_nomenclature_item_id }}/{{ context.country }}/{{ explainer.file | remove_extension }}/{{ explainer.title }}">{{ explainer.title }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
 
-                </nav>
-            </aside>
-        </div> #}
         <div class="govuk-grid-column-one-third">
             {% include "./aside.html" %}
         </div>

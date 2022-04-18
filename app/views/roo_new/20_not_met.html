@@ -22,9 +22,17 @@
         <div class="govuk-grid-column-two-thirds">
             <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
             <h1 class="govuk-heading-xl">Rules of origin not met</h1>
-            <p class="govuk-body-l">
+            {# <p class="govuk-body-l">
                 Your product does not appear to meet the rules of origin requirements for the {{ context.scheme_title }}.
-            </p>
+            </p> #}
+            <div class="govuk-panel govuk-panel--confirmation">
+                {# <h1 class="govuk-panel__title">
+                    Rules of origin not met
+                </h1> #}
+                <div class="govuk-panel__body">
+                    Your product does not appear to meet the rules of origin requirements for the {{ context.scheme_title }}.
+                </div>
+            </div>
 
             <p class="govuk-body">
                 Based on your answers, it is likely that your product does not class as 'originating' and cannot benefit
@@ -105,11 +113,11 @@
                             <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
                             <strong class="govuk-warning-text__text">
                                 <span class="govuk-warning-text__assistive">Please note</span>
-                        What's next
-                        <p>If you have read the flexibilities above and you now consider your goods to be originating
-                    in  {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }},
-                    read more about <a href="/roo/proofs/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">obtaining and verifying proofs of origin</a>.
-                        </p>
+                                What's next
+                                <p>If you have read the flexibilities above and you now consider your goods to be originating
+                                    in  {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }},
+                                    read more about <a href="/roo/proofs/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">obtaining and verifying proofs of origin</a>.
+                                </p>
                                 <p>Alternatively, if your trade still does not meet the rules of origin,
                         <a href="/roo/trade_direction/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">start again</a>.</p>
                             </strong>

@@ -53,6 +53,11 @@
         "title": "Obtaining and verifying proof of origin",
         "intro_text": "",
         "sub_phases": {
+            "proofs": {
+                "title": "Valid proofs of origin",
+                "slug": "proofs",
+                "condition": ""
+            },
             "processes": {
                 "title": "Requirements for proving the origin for goods",
                 "slug": "origin_processes",
