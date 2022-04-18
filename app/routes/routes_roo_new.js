@@ -111,7 +111,7 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/', 'xi/roo/d
 // 01 Trade Direction
 router.get(['/roo/trade_direction/:goods_nomenclature_item_id/:country/', 'xi/roo/trade_direction/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");
-    context.set_phase("trade_direction", "trade_direction" );
+    context.set_phase("trade_direction", "trade_direction");
     req.session.data["scheme_code"] = "";
     context.scheme_code = "";
 
@@ -338,9 +338,15 @@ router.get(['/roo/sets/:goods_nomenclature_item_id/:country/', 'xi/roo/tolerance
 });
 
 // Origin processes
-router.get(['/roo/origin_processes/:goods_nomenclature_item_id/:country/', 'xi/roo/origin_processes/:goods_nomenclature_item_id/:country/'],
+router.get([
+        '/roo/origin_processes/:goods_nomenclature_item_id/:country/',
+        'xi/roo/origin_processes/:goods_nomenclature_item_id/:country/',
+        '/roo/origin_processes/:goods_nomenclature_item_id/:country/:index',
+        'xi/roo/origin_processes/:goods_nomenclature_item_id/:country/:index'
+    ],
     asyncMiddleware(async (req, res, next) => {
         var context = new Context(req, "commodity");
+        context.set_origin_index(req);
         context.set_phase("verification", "processes");
         context.get_country(req);
         context.get_commodity(req);
@@ -400,7 +406,7 @@ router.get(['/roo/met/:goods_nomenclature_item_id/:country/', 'xi/roo/met/:goods
 // Not met
 router.get(['/roo/not_met/:goods_nomenclature_item_id/:country/', 'xi/roo/not_met/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");
-    context.set_phase("", "" );
+    context.set_phase("", "");
     context.get_country(req);
     context.get_commodity(req);
     context.get_trade_direction(req);

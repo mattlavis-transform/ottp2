@@ -93,9 +93,14 @@
                     </strong>
                 </div>
                 
-                {{ govukButton({
+                {# {{ govukButton({
                     text: "Continue",
                     href: "/roo/insufficient_processing/" + context.goods_nomenclature_item_id + "/" + context.country
+                }) }} #}
+                
+                {{ govukButton({
+                    text: "Continue",
+                    href: "/roo/product_specific_rules/" + context.goods_nomenclature_item_id + "/" + context.country
                 }) }}
 
             </form>

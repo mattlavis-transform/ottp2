@@ -668,10 +668,32 @@ class Context {
             }
             else if (document_type == "origin_processes") {
                 this.origin_processes = data;
+                this.filter_origin_processes();
             }
         } catch {
             console.log("Error getting document " + document_type);
         }
+    }
+
+    filter_origin_processes() {
+        this.origin_process_titles = [];
+        this.origin_process_array = this.origin_processes.split("##");
+        this.origin_process_array.shift();
+        for (var i = 0;i < this.origin_process_array.length; i ++) {
+            var tmp = this.origin_process_array[i].split("\n")[0].trim();
+            this.origin_process_titles.push(tmp);
+            var a = 1;
+            this.origin_process_array[i] = "##" + this.origin_process_array[i];
+        };
+        var a = 1;
+    }
+
+    set_origin_index(req) {
+        this.origin_index = req.params["index"];
+        if (typeof this.origin_index === 'undefined') {
+            this.origin_index = 0;
+        }
+        var a = 1;
     }
 
     replace_article_references(data) {

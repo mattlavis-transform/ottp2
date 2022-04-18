@@ -122,16 +122,4 @@ The documents referred to in Article 19.2 may include documents relating to the 
 
 {{ top }}
 
-## Article 28 - The Principality of Andorra
-
-Products produced in the Principality of Andorra falling within Chapters 25 to 97 of HS 2012 that would have satisfied the rules of origin in this Origin Reference Document, had the territory of the Principality of Andorra been part of the free trade area established by the United Kingdom-Canada Agreement, shall be deemed as originating when used in the production of a product in the territory of a Party.
-
-{{ top }}
-
-## Article 29 - The Republic of San Marino
-
-Products produced in the Republic of San Marino that would have satisfied the rules of origin in this Origin Reference Document, had the territory of the Republic of San Marino been part of the free trade area established by the United Kingdom-Canada Agreement, shall be deemed as originating when used in the production of a product in the territory of a Party.
-
-{{ top }}
-
 {{ Articles 18 to 29 }}

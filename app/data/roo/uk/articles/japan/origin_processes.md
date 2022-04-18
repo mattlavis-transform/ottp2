@@ -1,6 +1,6 @@
 ## Article 16 - Claim for preferential tariff treatment
 
-1. The importing Party shall, on importation, grant preferential tariff treatment to a product originating in the other Party on the basis of a claim by the importer for preferential tariff treatment. The importer shall be responsible for the correctness of the claim for preferential tariff treatment and compliance with the requirements provided for in this Origin Reference Document.
+1. The importing Party shall, on importation, grant **preferential tariff treatment** to a product originating in the other Party on the basis of a claim by the importer for preferential tariff treatment. The importer shall be responsible for the correctness of the claim for preferential tariff treatment and compliance with the requirements provided for in this Origin Reference Document.
 
 2. A claim for preferential tariff treatment shall be based on:
 

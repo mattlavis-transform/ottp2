@@ -64,23 +64,13 @@
                             {% if context.rules.length > 1 %}
                                 <div class="govuk-hint">
                                     Your goods must meet one of these rules in order to qualify for originating status.
-                                    Select an option to identify if you meet the rule.
+                                    Select an option to indicate if you meet the rule.
                                 </div>
                             {% else %}
                                 <div class="govuk-hint">
                                     Your goods must meet the product-specific rules in order to qualify for originating status.
-                                    Select an option to identify if you meet the rule.
+                                    Select an option to indicate if you meet the rule.
                                 </div>
-                            {% endif %}
-                            {% if context.intro_text != "" %}
-                                <details class="govuk-details" data-module="govuk-details">
-                                    <summary class="govuk-details__summary">
-                                        <span class="govuk-details__summary-text">Introductory notes to the product-specific rules</span>
-                                    </summary>
-                                    <div class="govuk-details__text">
-                                        {{ context.intro_text | safe }}
-                                    </div>
-                                </details>
                             {% endif %}
                             <div class="govuk-radios" data-module="govuk-radios">
                                 {% set index = 0 %}
@@ -115,10 +105,24 @@
                             </div>
                         </fieldset>
                     </div>
+                    {% if context.intro_text != "" %}
+                        <p>Before selecting an option, read the <strong>introductory notes</strong> from the {{ context.scheme_title }}'s 
+                        section on product-specific rules of origin.</p>
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary">
+                                <span class="govuk-details__summary-text">Introductory notes to the product-specific rules</span>
+                            </summary>
+                            <div class="govuk-details__text">
+                                {{ context.intro_text | safe }}
+                            </div>
+                        </details>
+                    {% endif %}
                     <button class="govuk-button" data-module="govuk-button">Continue</button>
                 </form>
+                
 
             {% endif %}
+            {% include "./commodity_include.html" %}
         </div>
         <div class="govuk-grid-column-one-third">
             {% include "./aside.html" %}

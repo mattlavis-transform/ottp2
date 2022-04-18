@@ -1154,9 +1154,11 @@
                   "max": "1901209999",
                   "rules": [
                         {
-                              "rule": "CC except from headings 04.01 to 04.06, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35% of the ex-works price or 30% of the FOB of the product",
+                              "rule": "CC except from headings 04.01 to 04.06, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35% of the ex-works price (EXW) or 30% of the Free on Board (FOB) cost of the product",
                               "original": "CC except from headings 04.01 to 04.06, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35 % of the EXW or 30 % of the FOB of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         }
                   ],
@@ -1186,9 +1188,11 @@
                   "max": "1901209999",
                   "rules": [
                         {
-                              "rule": "CC, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35% of the ex-works price or 30% of the FOB of the product",
+                              "rule": "CC, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35% of the ex-works price (EXW) or 30% of the Free on Board (FOB) cost of the product",
                               "original": "CC, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35 % of the EXW or 30 % of the FOB of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         }
                   ],
@@ -1236,9 +1240,11 @@
                   "max": "1901909999",
                   "rules": [
                         {
-                              "rule": "CC except from headings 04.01 to 04.06, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35% of the ex-works price or 30% of the FOB of the product",
+                              "rule": "CC except from headings 04.01 to 04.06, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35% of the ex-works price (EXW) or 30% of the Free on Board (FOB) cost of the product",
                               "original": "CC except from headings 04.01 to 04.06, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35 % of the EXW or 30 % of the FOB of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         }
                   ],
@@ -1268,9 +1274,11 @@
                   "max": "1901909999",
                   "rules": [
                         {
-                              "rule": "CC, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35% of the ex-works price or 30% of the FOB of the product",
+                              "rule": "CC, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35% of the ex-works price (EXW) or 30% of the Free on Board (FOB) cost of the product",
                               "original": "CC, provided that the value of non-originating rice flour of subheading 1102.90 used does not exceed 35 % of the EXW or 30 % of the FOB of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         }
                   ],
@@ -1864,7 +1872,7 @@
                   "max": "2309909999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading) except from headings 04.01 to 04.06 or dairy preparations of subheading 1901.90 containing more than 10% by dry weight of milk solids, provided that the value of non-originating materials of heading 10.06 used does not exceed 35% of the ex-works price or 30% of the FOB of the product",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading) except from headings 04.01 to 04.06 or dairy preparations of subheading 1901.90 containing more than 10% by dry weight of milk solids, provided that the value of non-originating materials of heading 10.06 used does not exceed 35% of the ex-works price (EXW) or 30% of the Free on Board (FOB) cost of the product",
                               "original": "CTH except from headings 04.01 to 04.06 or dairy preparations of subheading 1901.90 containing more than 10 % by dry weight of milk solids, provided that the value of non-originating materials of heading 10.06 used does not exceed 35 % of the EXW or 30 % of the FOB of the product.",
                               "class": [
                                     "CTH",
@@ -1901,7 +1909,7 @@
                   "max": "2309909999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), provided that the value of non-originating materials of heading 10.06 used does not exceed 35% of the ex-works price or 30% of the FOB of the product",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), provided that the value of non-originating materials of heading 10.06 used does not exceed 35% of the ex-works price (EXW) or 30% of the Free on Board (FOB) cost of the product",
                               "original": "CTH, provided that the value of non-originating materials of heading 10.06 used does not exceed 35 % of the EXW or 30 % of the FOB of the product.",
                               "class": [
                                     "CTH",
@@ -2301,7 +2309,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating materials of subheading 2905.45 may be used, provided that their total value does not exceed 20% of the ex-works price or 15% of the FOB of the product",
+                              "rule": "However, non-originating materials of subheading 2905.45 may be used, provided that their total value does not exceed 20% of the ex-works price (EXW) or 15% of the Free on Board (FOB) cost of the product",
                               "original": "however, non-originating materials of subheading 2905.45 may be used, provided that their total value does not exceed 20 % of the EXW or 15 % of the FOB of the product",
                               "class": [],
                               "operator": null
@@ -2937,7 +2945,7 @@
                               "operator": "or"
                         },
                         {
-                              "rule": "However, non-originating materials of heading 31.05 may be used, provided that their total value does not exceed 20% of the ex-works price or 15% of the FOB of the product",
+                              "rule": "However, non-originating materials of heading 31.05 may be used, provided that their total value does not exceed 20% of the ex-works price (EXW) or 15% of the Free on Board (FOB) cost of the product",
                               "original": "however, non-originating materials of heading 31.05 may be used, provided that their total value does not exceed 20 % of the EXW or 15 % of the FOB of the product",
                               "class": [],
                               "operator": null
@@ -3013,7 +3021,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating materials of heading 32.06 may be used, provided that their total value does not exceed 20% of the ex-works price or 15% of the FOB of the product",
+                              "rule": "However, non-originating materials of heading 32.06 may be used, provided that their total value does not exceed 20% of the ex-works price (EXW) or 15% of the Free on Board (FOB) cost of the product",
                               "original": "however, non-originating materials of heading 32.06 may be used, provided that their total value does not exceed 20 % of the EXW or 15 % of the FOB of the product",
                               "class": [],
                               "operator": null
@@ -5553,7 +5561,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating, flocking, laminating or metalising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Coating, flocking, laminating or metalising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Coating, flocking, laminating or metalising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -5611,7 +5619,7 @@
                               "operator": "or"
                         },
                         {
-                              "rule": "Of which the denomination in all cases of a single filament or fibre is less than 9 decitex, may be used, provided that their total value does not exceed 40% of the ex-works price or 35% of the FOB of the product",
+                              "rule": "Of which the denomination in all cases of a single filament or fibre is less than 9 decitex, may be used, provided that their total value does not exceed 40% of the ex-works price (EXW) or 35% of the Free on Board (FOB) cost of the product",
                               "original": "of which the denomination in all cases of a single filament or fibre is less than 9 decitex, may be used, provided that their total value does not exceed 40 % of the EXW or 35 % of the FOB of the product",
                               "class": [],
                               "operator": null
@@ -6019,7 +6027,7 @@
                   "max": "5810999999",
                   "rules": [
                         {
-                              "rule": "Embroidering in which the value of non-originating materials of any heading, except that of the product, used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Embroidering in which the value of non-originating materials of any heading, except that of the product, used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Embroidering in which the value of non-originating materials of any heading, except that of the product, used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6315,7 +6323,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6361,7 +6369,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6475,7 +6483,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating, flocking, laminating or metalising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Coating, flocking, laminating or metalising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Coating, flocking, laminating or metalising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6523,9 +6531,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Twisting or texturing combined with knitting or with crocheting, provided that the value of non-originating non-twisted or non-textured yarns used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Twisting or texturing combined with knitting or with crocheting, provided that the value of non-originating non-twisted or non-textured yarns used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Twisting or texturing combined with knitting or with crocheting, provided that the value of non-originating non-twisted or non-textured yarns used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -6561,7 +6571,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6597,7 +6607,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6627,7 +6637,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6667,13 +6677,15 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6703,7 +6715,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6733,7 +6745,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6773,13 +6785,15 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6809,7 +6823,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6839,7 +6853,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6879,13 +6893,15 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6915,7 +6931,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6945,7 +6961,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -6985,13 +7001,15 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7021,7 +7039,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7061,13 +7079,15 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7097,7 +7117,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7137,13 +7157,15 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7173,7 +7195,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7219,7 +7241,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7249,7 +7271,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7289,9 +7311,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
@@ -7301,7 +7325,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7331,7 +7355,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7361,7 +7385,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7401,13 +7425,15 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7437,7 +7463,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7477,9 +7503,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
@@ -7489,7 +7517,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7513,13 +7541,15 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 50 % of the EXW or 45 % of the FOB of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7537,7 +7567,7 @@
                   "max": "6217999999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "CTH, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "CTH",
@@ -7562,7 +7592,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "or Making-up including cutting of fabric, provided that the value of non-originating materials used does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [
                                     "MaxNOM"
@@ -7618,9 +7648,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric (other than knitted or crocheted), provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price or 35% of the FOB of the product",
+                              "rule": "Your goods are produced from unembroidered fabric (other than knitted or crocheted), provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) or 35% of the Free on Board (FOB) cost of the product",
                               "original": "or Production from unembroidered fabric (other than knitted or crocheted), provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW or 35 % of the FOB of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -7744,7 +7776,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price or FOB of the set",
+                              "rule": "However, non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price (EXW) or Free on Board (FOB) cost of the set",
                               "original": "however, non-originating articles may be incorporated, provided that their total value does not exceed 15 % of the EXW or FOB of the set.",
                               "class": [],
                               "operator": null
@@ -8076,7 +8108,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating materials of heading 70.10 may be used, provided that their total value does not exceed 15% of the ex-works price or the FOB of the product",
+                              "rule": "However, non-originating materials of heading 70.10 may be used, provided that their total value does not exceed 15% of the ex-works price (EXW) or the Free on Board (FOB) cost of the product",
                               "original": "however, non-originating materials of heading 70.10 may be used, provided that their total value does not exceed 15 % of the EXW or the FOB of the product.",
                               "class": [],
                               "operator": null
@@ -8164,7 +8196,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating materials of heading 70.13 may be used, provided that their total value does not exceed 15% of the ex-works price or the FOB of the product",
+                              "rule": "However, non-originating materials of heading 70.13 may be used, provided that their total value does not exceed 15% of the ex-works price (EXW) or the Free on Board (FOB) cost of the product",
                               "original": "however, non-originating materials of heading 70.13 may be used, provided that their total value does not exceed 15 % of the EXW or the FOB of the product.",
                               "class": [],
                               "operator": null
@@ -9040,7 +9072,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating forged blanks of heading 72.07 may be used, provided that their value does not exceed 50% of the ex-works price or 45% of the FOB of the product",
+                              "rule": "However, non-originating forged blanks of heading 72.07 may be used, provided that their value does not exceed 50% of the ex-works price (EXW) or 45% of the Free on Board (FOB) cost of the product",
                               "original": "however, non-originating forged blanks of heading 72.07 may be used, provided that their value does not exceed 50 % of the EXW or 45 % of the FOB of the product.",
                               "class": [],
                               "operator": null
@@ -9622,7 +9654,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating tools of heading 82.05 may be incorporated into the set, provided that their total value does not exceed 15% of the ex-works price or the FOB of the set",
+                              "rule": "However, non-originating tools of heading 82.05 may be incorporated into the set, provided that their total value does not exceed 15% of the ex-works price (EXW) or the Free on Board (FOB) cost of the set",
                               "original": "however, non-originating tools of heading 82.05 may be incorporated into the set, provided that their total value does not exceed 15 % of the EXW or the FOB of the set.",
                               "class": [],
                               "operator": null
@@ -9646,7 +9678,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating tools of headings 82.02 to 82.05 may be incorporated into the set, provided that their total value does not exceed 15% of the ex-works price or the FOB of the set",
+                              "rule": "However, non-originating tools of headings 82.02 to 82.05 may be incorporated into the set, provided that their total value does not exceed 15% of the ex-works price (EXW) or the Free on Board (FOB) cost of the set",
                               "original": "however, non-originating tools of headings 82.02 to 82.05 may be incorporated into the set, provided that their total value does not exceed 15 % of the EXW or the FOB of the set.",
                               "class": [],
                               "operator": null
@@ -11380,7 +11412,7 @@
                   "max": "9605999999",
                   "rules": [
                         {
-                              "rule": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price or the FOB of the set",
+                              "rule": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price (EXW) or the Free on Board (FOB) cost of the set",
                               "original": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15 % of the EXW or the FOB of the set.",
                               "class": [],
                               "operator": null

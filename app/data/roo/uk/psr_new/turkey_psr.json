@@ -477,7 +477,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "160420",
@@ -602,7 +602,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "1704",
@@ -1441,7 +1441,7 @@
                   "max": "3104999999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20% of the ex-works price of the product",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20% of the ex-works price (EXW) of the product",
                               "original": "CTH, however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20 % of the EXW of the product",
                               "class": [
                                     "CTH",
@@ -1472,7 +1472,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "3105",
@@ -1482,7 +1482,7 @@
                   "max": "3105999999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20% of the ex-works price of the product",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20% of the ex-works price (EXW) of the product",
                               "original": "CTH, however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20 % of the EXW of the product",
                               "class": [
                                     "CTH",
@@ -1507,7 +1507,7 @@
                   "max": "3105999999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20% of the ex-works price of the product, and in which the value of all non-originating materials used does not exceed 50% of the ex-works price of the product",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20% of the ex-works price (EXW) of the product, and in which the value of all non-originating materials used does not exceed 50% of the ex-works price (EXW) of the product",
                               "original": "CTH, however, non-originating materials of the same heading as the product may be used, provided that their total value does not exceed 20 % of the EXW of the product, and in which the value of all non-originating materials used does not exceed 50% of the EXW of the product",
                               "class": [
                                     "CTH",
@@ -1592,7 +1592,7 @@
                   "max": "3302109999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating materials of subheading 3302.10 may be used, provided that their total value does not exceed 20% of the ex-works price of the product",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating materials of subheading 3302.10 may be used, provided that their total value does not exceed 20% of the ex-works price (EXW) of the product",
                               "original": "CTH, however, non-originating materials of subheading 3302.10 may be used, provided that their total value does not exceed 20 % of the EXW of the product.",
                               "class": [
                                     "CTH",
@@ -2789,7 +2789,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5003",
@@ -2873,7 +2873,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5006",
@@ -3463,7 +3463,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating, flocking, laminating, or metalizing combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price of the product",
+                              "rule": "Coating, flocking, laminating, or metalizing combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) of the product",
                               "original": "or Coating, flocking, laminating, or metalizing combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing), provided that the value of non-originating materials used does not exceed 50 % of the EXW of the product.",
                               "class": [
                                     "MaxNOM"
@@ -3487,7 +3487,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5602",
@@ -3521,7 +3521,7 @@
                               "operator": "or"
                         },
                         {
-                              "rule": "Of which the denomination in all cases of a single filament or fibre is less than 9 decitex, may be used, provided that their total value does not exceed 40% of the ex-works price of the product",
+                              "rule": "Of which the denomination in all cases of a single filament or fibre is less than 9 decitex, may be used, provided that their total value does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "of which the denomination in all cases of a single filament or fibre is less than 9 decitex, may be used, provided that their total value does not exceed 40 % of the EXW of the product",
                               "class": [],
                               "operator": null
@@ -3935,7 +3935,7 @@
                   "max": "5810999999",
                   "rules": [
                         {
-                              "rule": "Embroidering in which the value of non-originating materials of any heading, except that of the product, used does not exceed 50% of the ex-works price of the product",
+                              "rule": "Embroidering in which the value of non-originating materials of any heading, except that of the product, used does not exceed 50% of the ex-works price (EXW) of the product",
                               "original": "Embroidering in which the value of non-originating materials of any heading, except that of the product, used does not exceed 50 % of the EXW of the product.",
                               "class": [
                                     "MaxNOM"
@@ -4039,7 +4039,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5902",
@@ -4137,7 +4137,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5905",
@@ -4209,7 +4209,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5906",
@@ -4237,7 +4237,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50% of the ex-works price of the product",
+                              "rule": "Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) of the product",
                               "original": "or Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50 % of the EXW of the product.",
                               "class": [
                                     "MaxNOM"
@@ -4283,7 +4283,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50% of the ex-works price of the product",
+                              "rule": "Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) of the product",
                               "original": "or Rubberising combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50 % of the EXW of the product.",
                               "class": [
                                     "MaxNOM"
@@ -4335,7 +4335,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "5908",
@@ -4397,7 +4397,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating, flocking, laminating or metalizing combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50% of the ex-works price of the product",
+                              "rule": "Coating, flocking, laminating or metalizing combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50% of the ex-works price (EXW) of the product",
                               "original": "or Coating, flocking, laminating or metalizing combined with at least two other main preparatory or finishing operations (such as calendering, shrink-resistance processes, heat setting, permanent finishing) provided that the value of non-originating materials used does not exceed 50 % of the EXW of the product.",
                               "class": [
                                     "MaxNOM"
@@ -4445,9 +4445,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Twisting or texturing combined with knitting or with crocheting provided that the value of non-originating non-twisted or non-textured yarns used does not exceed 50% of the ex-works price of the product",
+                              "rule": "Twisting or texturing combined with knitting or with crocheting provided that the value of non-originating non-twisted or non-textured yarns used does not exceed 50% of the ex-works price (EXW) of the product",
                               "original": "or Twisting or texturing combined with knitting or with crocheting provided that the value of non-originating non-twisted or non-textured yarns used does not exceed 50 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -4467,7 +4469,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6101-6117",
@@ -4549,7 +4551,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6202",
@@ -4565,9 +4567,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -4631,7 +4635,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6204",
@@ -4647,9 +4651,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -4713,7 +4719,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6206",
@@ -4729,9 +4735,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -4795,7 +4803,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6209",
@@ -4811,9 +4819,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -4855,7 +4865,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6210",
@@ -4871,9 +4881,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -4915,7 +4927,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6211",
@@ -4931,9 +4943,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -4975,7 +4989,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6212",
@@ -5035,7 +5049,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6213-6214",
@@ -5051,9 +5065,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
@@ -5123,7 +5139,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6216",
@@ -5139,9 +5155,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -5183,7 +5201,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6217",
@@ -5199,9 +5217,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Your goods are produced from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "Production from unembroidered fabric, provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW of the product",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": null
                         },
                         {
@@ -5227,9 +5247,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Coating or laminating combined with making-up including cutting of fabric, provided that the value of non-originating uncoated or unlaminated fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -5243,7 +5265,7 @@
                   "max": "6217999999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), provided that the value of all the non-originating materials used does not exceed 40% of the ex-works price of the product",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), provided that the value of all the non-originating materials used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "CTH, provided that the value of all the non-originating materials used does not exceed 40 % of the EXW of the product.",
                               "class": [
                                     "CTH",
@@ -5284,7 +5306,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6301-6304",
@@ -5316,9 +5338,11 @@
                               "operator": null
                         },
                         {
-                              "rule": "Your goods are produced from unembroidered fabric (other than knitted or crocheted), provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price of the product",
+                              "rule": "Your goods are produced from unembroidered fabric (other than knitted or crocheted), provided that the value of non-originating unembroidered fabric used does not exceed 40% of the ex-works price (EXW) of the product",
                               "original": "or Production from unembroidered fabric (other than knitted or crocheted), provided that the value of non-originating unembroidered fabric used does not exceed 40 % of the EXW of the product.",
-                              "class": [],
+                              "class": [
+                                    "MaxNOM"
+                              ],
                               "operator": "or"
                         }
                   ],
@@ -5370,7 +5394,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "6306",
@@ -5434,7 +5458,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price of the set",
+                              "rule": "However, non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price (EXW) of the set",
                               "original": "however, non-originating articles may be incorporated, provided that their total value does not exceed 15 % of the EXW of the set.",
                               "class": [],
                               "operator": null
@@ -5738,7 +5762,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "7106",
@@ -5818,7 +5842,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "7108",
@@ -5898,7 +5922,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "7110",
@@ -6206,7 +6230,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "7307",
@@ -6224,7 +6248,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating forged blanks may be used provided that their value does not exceed 50% of the ex-works price of the product",
+                              "rule": "However, non-originating forged blanks may be used provided that their value does not exceed 50% of the ex-works price (EXW) of the product",
                               "original": "however, non-originating forged blanks may be used provided that their value does not exceed 50 % of the EXW of the product.",
                               "class": [],
                               "operator": null
@@ -6648,7 +6672,7 @@
                   "max": "8205909999",
                   "rules": [
                         {
-                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating tools of heading 82.05 may be incorporated into the set, provided that their total value does not exceed 15% of the ex-works price of the set",
+                              "rule": "All non-originating materials used in the production of the good have undergone a change in tariff classification at the 4-digit level (tariff heading), however, non-originating tools of heading 82.05 may be incorporated into the set, provided that their total value does not exceed 15% of the ex-works price (EXW) of the set",
                               "original": "CTH, however, non-originating tools of heading 82.05 may be incorporated into the set, provided that their total value does not exceed 15 % of the EXW of the set.",
                               "class": [
                                     "CTH",
@@ -6675,7 +6699,7 @@
                               "operator": null
                         },
                         {
-                              "rule": "However, non-originating tools of headings 82.02 to 82.05 may be incorporated into the set, provided that their total value does not exceed 15% of the ex-works price of the set",
+                              "rule": "However, non-originating tools of headings 82.02 to 82.05 may be incorporated into the set, provided that their total value does not exceed 15% of the ex-works price (EXW) of the set",
                               "original": "however, non-originating tools of headings 82.02 to 82.05 may be incorporated into the set, provided that their total value does not exceed 15 % of the EXW of the set.",
                               "class": [],
                               "operator": null
@@ -7385,7 +7409,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "8507",
@@ -7751,7 +7775,7 @@
                               "operator": null
                         }
                   ],
-                  "valid": true
+                  "valid": false
             },
             {
                   "heading": "8702-8704",
@@ -8133,7 +8157,7 @@
                   "max": "9605999999",
                   "rules": [
                         {
-                              "rule": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price of the set",
+                              "rule": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price (EXW) of the set",
                               "original": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15 % of the EXW of the set.",
                               "class": [],
                               "operator": null
@@ -8173,7 +8197,7 @@
                   "max": "9608509999",
                   "rules": [
                         {
-                              "rule": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price of the set",
+                              "rule": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15% of the ex-works price (EXW) of the set",
                               "original": "Each item in the set shall satisfy the rule which would apply to it if it were not included in the set, provided that non-originating articles may be incorporated, provided that their total value does not exceed 15 % of the EXW of the set.",
                               "class": [],
                               "operator": null
