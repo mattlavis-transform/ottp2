@@ -21,6 +21,7 @@ class Context {
         this.description_class = "";
         this.req = req;
         this.search_term = "";
+        this.subdivision = "";
 
         this.set_profile();
         this.get_root_url(req);
@@ -43,7 +44,6 @@ class Context {
 
     get_aside() {
         this.roo_phases = require('../data/roo/uk/roo_phases.json');
-        var a = 1;
     }
 
     get_trade_direction(req) {
@@ -177,7 +177,7 @@ class Context {
         var jp = require('jsonpath');
         var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
         data = data["schemes"];
-        
+
         this.features = null;
 
         if (this.country == "common") {
@@ -219,6 +219,7 @@ class Context {
                 this.multiple_schemes = true;
             }
         }
+        this.get_psr_file();
     }
 
     get_roo_origin() {
@@ -282,10 +283,112 @@ class Context {
         }
     }
 
+    reset_subdivision(req) {
+        req.session.data["subdivision"] = "";
+        this.subdivision = "";
+    }
+
+    get_product_specific_rules_json(req, check = "check_all") {
+        // 6217100010 on DE = Four subdivisions
+        // 5003000010 on DE = Two subdivisions
+        // 0702000007 on DE = One subdivision
+        this.show_subdivision_selector = false;
+
+        if (check == "check_all") {
+
+            this.subdivision = req.session.data["subdivision"];
+            if (typeof this.subdivision === 'undefined') {
+                this.subdivision = "";
+            }
+
+            if (this.subdivision == "") {
+                this.get_subdivisions();
+            }
+        }
+        if (this.show_subdivision_selector == false) {
+            this.get_psrs();
+        }
+    }
+
+    get_psr_file() {
+        var filename = this.scheme_code + "_psr.json"
+        var path = process.cwd() + '/app/data/roo/' + this.scope_id_roo + '/psr_new/' + filename;
+        this.psr_data = require(path);
+        var a = 1;
+    }
+
+    get_subdivisions(subdivision) {
+        const jp = require('jsonpath');
+        var query_string = '$.rule_sets[?(@.min <= "' + this.goods_nomenclature_item_id + '" && @.max >= "' + this.goods_nomenclature_item_id + '" && @.valid == true)]';
+        var results = jp.query(this.psr_data, query_string);
+        this.subdivisions = [];
+        if (results.length > 0) {
+            results.forEach(heading => {
+                if (heading.subdivision.includes("Others")) {
+                    this.subdivisions.push("Any other product");
+                } else {
+                    var tmp = heading.subdivision;
+                    tmp = tmp.replace("\n-", ", ");
+                    this.subdivisions.push(tmp);
+                    var a = 1;
+                }
+            });
+            if (this.subdivisions.length > 1) {
+                this.show_subdivision_selector = true;
+            } else {
+                this.show_subdivision_selector = false;
+            }
+        }
+    }
+
+    get_psrs() {
+        const jp = require('jsonpath');
+        if (this.subdivision != "") {
+            var query_string = '$.rule_sets[?(@.min <= "' + this.goods_nomenclature_item_id + '" && @.max >= "' + this.goods_nomenclature_item_id + '" && @.valid == true && @.subdivision == "' + this.subdivision + '")]';
+        } else {
+            var query_string = '$.rule_sets[?(@.min <= "' + this.goods_nomenclature_item_id + '" && @.max >= "' + this.goods_nomenclature_item_id + '" && @.valid == true)]';
+        }
+        var results = jp.query(this.psr_data, query_string);
+        this.rule_classes = [];
+        if (results.length > 0) {
+            var result = results[0];
+            this.rules = result.rules;
+            this.rules.forEach(rule => {
+                if (rule.class.includes("CTSH")) {
+                    rule.hint = "This rule is also known as CTSH (change of tariff subheading).<br><a href=''>Find our more about the change of tariff subheading rule</a>";
+                } else if (rule.class.includes("CTH")) {
+                    rule.hint = "This rule is also known as <a href='#'>CTH (Change of Tariff Heading)</a>.";
+                } else if (rule.class.includes("CC")) {
+                    rule.hint = "This rule is also known as CC (change of chapter).";
+                } else if (rule.class.includes("MaxNOM")) {
+                    rule.hint = "The <a href='#'>Maximum Value of Non-Originating Materials (MaxNOM)</a> rule sets a maximum percentage of materials which are not originating in the country of export and can be used within a good that qualifies as originating.";
+                } else if (rule.class.includes("RVC")) {
+                    rule.hint = "Some words about RVC";
+                } else if (rule.class.includes("WO")) {
+                    rule.hint = "See the definition of <a href='/roo/wholly_obtained_info/" + this.goods_nomenclature_item_id + "/" + this.country + "'>wholly obtained according to the " + this.scheme_title + "</a>";
+                } else if (rule.class.includes("Insufficient processing")) {
+                    rule.hint = "The product can include non-originating materials of the same heading. However, processing on these materials does need to go beyond <a href='/roo/insufficient_processing/" + this.goods_nomenclature_item_id + "/" + this.country + "'>insufficient operations</a>.";
+                } else {
+                    rule.hint = "";
+                }
+                this.rule_classes = this.rule_classes.concat(rule.class);
+            });
+        } else {
+            this.rules = [];
+        }
+        if ((this.rule_classes.length == 1) && (this.rule_classes[0] == ['WO'])) {
+            this.wholly_obtained_only_rule_applies = true;
+        } else {
+            this.wholly_obtained_only_rule_applies = false;
+        }
+        var a = 1;
+    }
+
     async get_product_specific_rules() {
         var axios_response;
         var root = "https://www.trade-tariff.service.gov.uk";
         var url = root + `/api/v2/rules_of_origin_schemes/${this.goods_nomenclature_item_id.substr(0, 6)}/${this.country}`
+
 
         this.product_specific_rules = [];
         this.has_cc = false;

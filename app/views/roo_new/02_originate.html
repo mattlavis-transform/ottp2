@@ -29,9 +29,9 @@
                     {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
                 </h1>
                 <p class="govuk-body-l">This page defines the broad rules that determine if your product originates in
-                        {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
-                        according to the {{ context.scheme_title }}.
-                    </p>
+                    {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
+                    according to the {{ context.scheme_title }}.
+                </p>
 
                 {% if context.trade_direction == "import" %}
                     <div class="govuk-inset-text panel_grey">
@@ -62,15 +62,16 @@
                     </div>
                 {% endif %}
 
+                {% if not context.wholly_obtained_only_rule_applies %}
+
                 <div class="commodity-split">
-                    {# <p>According to the {{ context.scheme_title }}, the following products will be considered as originating in Albania:</p> #}
                     <p>The following products are considered as originating in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}:</p>
                     <ul class="govuk-list govuk-list--bullet">
                         <li>
                             products <strong>wholly obtained</strong> in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }};
                         </li>
                         <li>
-                            products obtained in Albania incorporating materials which have not been wholly obtained there,
+                            products obtained in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }} incorporating materials which have not been wholly obtained there,
                             provided that these materials have undergone <strong>sufficient working or processing</strong> in
                             {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
                             to obtain originating status;
@@ -82,6 +83,16 @@
                     </ul>
                     <p>These concepts are defined throughout the next pages, so that you can determine if your product meets the rules of origin.</p>
                 </div>
+
+                {% else %}
+                    <div class="govuk-warning-text">
+                        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                        <strong class="govuk-warning-text__text">
+                            <span class="govuk-warning-text__assistive">Warning</span>
+                            The rules for this commodity determine that the goods must be wholly obtained in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}.
+                        </strong>
+                    </div>
+                {% endif %}
 
                 {# <div class="agreement_content">{{ context.originating | convert_markdown | safe }}</div> #}
 
@@ -99,7 +110,7 @@
                 {% endif %} #}
 
                 <p class="b">Next step</p>
-                <p>Click on the 'Continue' button to view the definition of '<b>wholly obtained</b>' for the {{ context.scheme_title }}.</p>
+                <p>Click on the 'Continue' button to view the definition of '<b>wholly obtained</b>' in the {{ context.scheme_title }}.</p>
                 {{ govukButton({
                     text: "Continue",
                     href: ""

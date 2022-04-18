@@ -4,7 +4,7 @@
 
 2. An exporter may take into account production carried out on a non-originating material in the other Party for the purposes of determining the originating status of a product.
 
-   1. For the purposes of paragraph 1, a material produced in the EU that would have satisfied the rules of origin had the territory of the EU  been part of the free trade area established by United Kingdom-Canada Agreement shall be deemed as originating when used in the production of a product in a Party.
+   1. For the purposes of paragraph 1, a material produced in the EU that would have satisfied the rules of origin had the territory of the EU been part of the free trade area established by United Kingdom-Canada Agreement shall be deemed as originating when used in the production of a product in a Party.
 
    2. For the purposes of determining the originating status of a product, an exporter may take into account production carried out on a non-originating material in the territory of the EU.
 
