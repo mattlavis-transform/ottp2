@@ -82,7 +82,7 @@
                                 {% for rule in context.rules %}
                                     <div class="govuk-radios__item">
                                         <input class="govuk-radios__input" id="psr_{{ index }}" name="psr" type="radio" value="met">
-                                        <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">{{ rule.rule }}</label>
+                                        <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">{{ rule.rule | safe }}</label>
                                         <div class="govuk-hint govuk-radios__hint">
                                             {{ rule.hint | safe }}
                                         </div>
@@ -93,18 +93,18 @@
                                     {# <div class="govuk-radios__divider">or</div> #}
                                     <div class="govuk-radios__item">
                                         <input class="govuk-radios__input" id="psr_{{ index }}" name="psr" type="radio" value="not met">
-                                        <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">Your goods do not meet any of these rules</label>
+                                        <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">Your goods do not meet any of these rules.</label>
                                     </div>
                                 {% elseif context.rules.length > 1 %}
                                     {# <div class="govuk-radios__divider">or</div> #}
                                     <div class="govuk-radios__item">
                                         <input class="govuk-radios__input" id="psr_{{ index }}" name="psr" type="radio" value="not met">
-                                        <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">Your goods do not meet either of these rules</label>
+                                        <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">Your goods do not meet either of these rules.</label>
                                     </div>
                                 {% else %}
                                     <div class="govuk-radios__item">
                                         <input class="govuk-radios__input" id="psr_{{ index }}" name="psr" type="radio" value="not met">
-                                        <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">Your goods do not meet the rules of origin</label>
+                                        <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">Your goods do not meet the rules of origin.</label>
                                     </div>
                                 {% endif %}
                             </div>
