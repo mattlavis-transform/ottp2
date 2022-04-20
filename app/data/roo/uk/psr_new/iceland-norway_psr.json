@@ -5695,12 +5695,12 @@
                   "chapter": 54
             },
             {
-                  "heading": "5407 and 5408",
+                  "heading": "5407-5408",
                   "subdivision": "",
                   "is_ex_code": false,
                   "prefix": "",
-                  "min": "5407and5408",
-                  "max": "5407and5408",
+                  "min": "5407000000",
+                  "max": "5408999999",
                   "rules": [
                         {
                               "rule": ".",
@@ -5712,15 +5712,15 @@
                         }
                   ],
                   "valid": true,
-                  "chapter": -1
+                  "chapter": 54
             },
             {
-                  "heading": "5407 and 5408",
+                  "heading": "5407-5408",
                   "subdivision": "",
                   "is_ex_code": false,
                   "prefix": "",
-                  "min": "5407and5408",
-                  "max": "5407and5408",
+                  "min": "5407000000",
+                  "max": "5408999999",
                   "rules": [
                         {
                               "rule": "Manufacture from single yarn.",
@@ -5732,15 +5732,15 @@
                         }
                   ],
                   "valid": true,
-                  "chapter": -1
+                  "chapter": 54
             },
             {
-                  "heading": "5407 and 5408",
+                  "heading": "5407-5408",
                   "subdivision": "",
                   "is_ex_code": false,
                   "prefix": "",
-                  "min": "5407and5408",
-                  "max": "5407and5408",
+                  "min": "5407000000",
+                  "max": "5408999999",
                   "rules": [
                         {
                               "rule": "Manufacture from : coir yarn, natural fibres, man-made staple fibres, not carded or combed or otherwise prepared for spinning, chemical materials or textile pulp, or paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
@@ -5752,7 +5752,7 @@
                         }
                   ],
                   "valid": true,
-                  "chapter": -1
+                  "chapter": 54
             },
             {
                   "heading": "5501-5507",
@@ -8657,12 +8657,12 @@
                   "chapter": 80
             },
             {
-                  "heading": "8002 and 8007",
+                  "heading": "8002",
                   "subdivision": "",
                   "is_ex_code": false,
                   "prefix": "",
-                  "min": "8002and8007",
-                  "max": "8002and8007",
+                  "min": "8002000000",
+                  "max": "8002999999",
                   "rules": [
                         {
                               "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product.",
@@ -8674,7 +8674,27 @@
                         }
                   ],
                   "valid": true,
-                  "chapter": -1
+                  "chapter": 80
+            },
+            {
+                  "heading": "8007",
+                  "subdivision": "",
+                  "is_ex_code": false,
+                  "prefix": "",
+                  "min": "8007000000",
+                  "max": "8007999999",
+                  "rules": [
+                        {
+                              "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product.",
+                              "original": "Manufacture from materials of any heading, except that of the product",
+                              "class": [],
+                              "operator": null,
+                              "specific_processes": false,
+                              "double_dash": false
+                        }
+                  ],
+                  "valid": true,
+                  "chapter": 80
             },
             {
                   "heading": "Chapter 81",
@@ -25595,56 +25615,12 @@
                   "chapter": 79
             },
             {
-                  "heading": "8002",
-                  "subdivision": "",
-                  "is_ex_code": false,
-                  "prefix": "",
-                  "min": "8002000000",
-                  "max": "8002999999",
-                  "rules": [
-                        {
-                              "rule": "Manufacture: - from materials of any heading, except that of the product, and - in which the value of all the materials used does not exceed <b>50%</b> of the ex-works price of the product.",
-                              "original": "Manufacture: \u2014 from materials of any heading, except that of the product, and \u2014 in which the value of all the materials used does not exceed 50 % of the ex-works price of the product",
-                              "class": [
-                                    "MaxNOM"
-                              ],
-                              "operator": null,
-                              "specific_processes": false,
-                              "double_dash": false
-                        }
-                  ],
-                  "valid": true,
-                  "chapter": 80
-            },
-            {
                   "heading": "8003",
                   "subdivision": "",
                   "is_ex_code": false,
                   "prefix": "",
                   "min": "8003000000",
                   "max": "8003999999",
-                  "rules": [
-                        {
-                              "rule": "Manufacture: - from materials of any heading, except that of the product, and - in which the value of all the materials used does not exceed <b>50%</b> of the ex-works price of the product.",
-                              "original": "Manufacture: \u2014 from materials of any heading, except that of the product, and \u2014 in which the value of all the materials used does not exceed 50 % of the ex-works price of the product",
-                              "class": [
-                                    "MaxNOM"
-                              ],
-                              "operator": null,
-                              "specific_processes": false,
-                              "double_dash": false
-                        }
-                  ],
-                  "valid": true,
-                  "chapter": 80
-            },
-            {
-                  "heading": "8007",
-                  "subdivision": "",
-                  "is_ex_code": false,
-                  "prefix": "",
-                  "min": "8007000000",
-                  "max": "8007999999",
                   "rules": [
                         {
                               "rule": "Manufacture: - from materials of any heading, except that of the product, and - in which the value of all the materials used does not exceed <b>50%</b> of the ex-works price of the product.",

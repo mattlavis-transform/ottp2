@@ -9862,7 +9862,7 @@
             },
             {
                   "heading": "ex 8486",
-                  "subdivision": "\u2013\u00a0Machine tools for working any material by removal of material, by laser or other light or photon beam, ultrasonic, electrodischarge, electrochemical, electron beam, ionic-beam or plasma arc processes and parts and accessories thereof",
+                  "subdivision": "\u2013\u00a0Machine tools for working any material by removal of material, by laser or other light or photon beam, ultrasonic, electrodischarge, electrochemical, electron beam, ionic-beam or plasma arc processes and parts and accessories thereof\n\u2013\u00a0machine tools (including presses) for working metal by bending, folding, straightening, flattening, and parts and accessories thereof\n\u2013\u00a0machine tools for working stone, ceramics, concrete, asbestos-cement or like mineral materials or for cold working glass and parts and accessories thereof\n\u2013\u00a0marking-out instruments which are pattern generating apparatus of a kind used for producing masks or reticles from photoresist coated substrates; parts and accessories thereof",
                   "is_ex_code": true,
                   "prefix": "",
                   "min": "8486000000",
@@ -9874,66 +9874,6 @@
                               "class": [
                                     "MaxNOM"
                               ],
-                              "operator": null,
-                              "specific_processes": false,
-                              "double_dash": false
-                        }
-                  ],
-                  "valid": true,
-                  "chapter": 84
-            },
-            {
-                  "heading": "ex 8486",
-                  "subdivision": "",
-                  "is_ex_code": true,
-                  "prefix": "",
-                  "min": "8486000000",
-                  "max": "8486999999",
-                  "rules": [
-                        {
-                              "rule": ".",
-                              "original": "",
-                              "class": [],
-                              "operator": null,
-                              "specific_processes": false,
-                              "double_dash": false
-                        }
-                  ],
-                  "valid": true,
-                  "chapter": 84
-            },
-            {
-                  "heading": "ex 8486",
-                  "subdivision": "",
-                  "is_ex_code": true,
-                  "prefix": "",
-                  "min": "8486000000",
-                  "max": "8486999999",
-                  "rules": [
-                        {
-                              "rule": ".",
-                              "original": "",
-                              "class": [],
-                              "operator": null,
-                              "specific_processes": false,
-                              "double_dash": false
-                        }
-                  ],
-                  "valid": true,
-                  "chapter": 84
-            },
-            {
-                  "heading": "ex 8486",
-                  "subdivision": "",
-                  "is_ex_code": true,
-                  "prefix": "",
-                  "min": "8486000000",
-                  "max": "8486999999",
-                  "rules": [
-                        {
-                              "rule": ".",
-                              "original": "",
-                              "class": [],
                               "operator": null,
                               "specific_processes": false,
                               "double_dash": false
