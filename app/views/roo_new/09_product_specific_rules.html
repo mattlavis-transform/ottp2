@@ -84,7 +84,7 @@
                                         <input class="govuk-radios__input" id="psr_{{ index }}" name="psr" type="radio" value="met">
                                         <label class="govuk-label govuk-radios__label" for="psr_{{ index }}">{{ rule.rule | safe }}</label>
                                         <div class="govuk-hint govuk-radios__hint">
-                                            {{ rule.hint | safe }}
+                                            {# {{ rule.hint | safe }} #}
                                         </div>
                                     </div>
                                     {% set index = index + 1 %}

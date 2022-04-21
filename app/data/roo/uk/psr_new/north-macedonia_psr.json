@@ -2129,7 +2129,7 @@
                   "max": "2901999999",
                   "rules": [
                         {
-                              "rule": "Operations of refining and/or one or more specific process(es) Or Other operations in which all the materials used are classified within a heading other than that of the product. However, materials of the same heading as the product may be used, provided that their total value does not exceed <b>50%</b> of the ex-works price of the product.",
+                              "rule": "Operations of refining and/or one or more specific process(es) or Other operations in which all the materials used are classified within a heading other than that of the product. However, materials of the same heading as the product may be used, provided that their total value does not exceed <b>50%</b> of the ex-works price of the product.",
                               "class": [
                                     "MaxNOM"
                               ],
@@ -2663,7 +2663,7 @@
                   "max": "3006999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - natural fibres - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -2696,7 +2696,7 @@
             },
             {
                   "heading": "ex 3105",
-                  "subdivision": "Mineral or chemical fertilizers containing two or three of the fertilizing elements nitrogen, phosphorous and potassium; other fertilizers; goods of this chapter, in tablets or similar forms or in packages of a gross weight not exceeding 10\u00a0kg, except for:\n\t\u2013\u00a0sodium nitrate\n\n\t\u2013\u00a0calcium cyanamide\n\n\t\u2013\u00a0potassium sulphate\n\n\t\u2013\u00a0magnesium potassium sulphate",
+                  "subdivision": "Mineral or chemical fertilizers containing two or three of the fertilizing elements nitrogen, phosphorous and potassium; other fertilizers; goods of this chapter, in tablets or similar forms or in packages of a gross weight not exceeding 10\u00a0kg, except for:\n\t\u2013\u00a0sodium nitrate\n\t\u2013\u00a0calcium cyanamide\n\t\u2013\u00a0potassium sulphate\n\t\u2013\u00a0magnesium potassium sulphate",
                   "is_ex_code": true,
                   "prefix": "",
                   "min": "3105000000",
@@ -5069,7 +5069,7 @@
                   "max": "5005999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - other natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
+                              "rule": "Manufacture from: - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - other natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5088,7 +5088,7 @@
                   "max": "5006999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - other natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
+                              "rule": "Manufacture from: - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - other natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5145,7 +5145,7 @@
                   "max": "5007999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : coir yarn, natural fibres, man-made staple fibres, not carded or combed or otherwise prepared for spinning, chemical materials or textile pulp, or paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - coir yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5164,7 +5164,7 @@
                   "max": "5110999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
+                              "rule": "Manufacture from: - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5221,7 +5221,7 @@
                   "max": "5113999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : coir yarn, natural fibres, man-made staple fibres, not carded or combed or otherwise prepared for spinning, chemical materials or textile pulp, or paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - coir yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5240,7 +5240,7 @@
                   "max": "5207999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
+                              "rule": "Manufacture from: - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5297,7 +5297,7 @@
                   "max": "5212999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : coir yarn, natural fibres, man-made staple fibres, not carded or combed or otherwise prepared for spinning, chemical materials or textile pulp, or paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - coir yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5316,7 +5316,7 @@
                   "max": "5308999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
+                              "rule": "Manufacture from: - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5373,7 +5373,7 @@
                   "max": "5311999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : coir yarn, jute yarn, natural fibres, man-made staple fibres, not carded or combed or otherwise prepared for spinning, chemical materials or textile pulp, or paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - coir yarn, - jute yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5392,7 +5392,7 @@
                   "max": "5406999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
+                              "rule": "Manufacture from: - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5449,7 +5449,7 @@
                   "max": "5408999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : coir yarn, natural fibres, man-made staple fibres, not carded or combed or otherwise prepared for spinning, chemical materials or textile pulp, or paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - coir yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5487,7 +5487,7 @@
                   "max": "5511999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
+                              "rule": "Manufacture from: - raw silk or silk waste, carded or combed or otherwise prepared for spinning, - natural fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5544,7 +5544,7 @@
                   "max": "5516999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : coir yarn, natural fibres, man-made staple fibres, not carded or combed or otherwise prepared for spinning, chemical materials or textile pulp, or paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - coir yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise prepared for spinning, - chemical materials or textile pulp, or - paper Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5582,7 +5582,7 @@
                   "max": "5602999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, or chemical materials or textile pulp However: polypropylene filament of heading <a href='/headings/5402' target='_blank'>5402</a>, polypropylene fibres of heading <a href='/headings/5503' target='_blank'>5503</a> or <a href='/headings/5506' target='_blank'>5506</a>, or polypropylene filament tow of heading <a href='/headings/5501' target='_blank'>5501</a>, of which the denomination in all cases of a single filament or fibre is less than <a href='/headings/9' target='_blank'>9</a> decitex, may be used, provided that their total value does not exceed <b>40%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - natural fibres, or - chemical materials or textile pulp However: - polypropylene filament of heading <a href='/headings/5402' target='_blank'>5402</a>, - polypropylene fibres of heading <a href='/headings/5503' target='_blank'>5503</a> or <a href='/headings/5506' target='_blank'>5506</a>, or - polypropylene filament tow of heading <a href='/headings/5501' target='_blank'>5501</a>, of which the denomination in all cases of a single filament or fibre is less than <a href='/headings/9' target='_blank'>9</a> decitex, may be used, provided that their total value does not exceed <b>40%</b> of the ex-works price of the product.",
                               "class": [
                                     "MaxNOM"
                               ],
@@ -5603,7 +5603,7 @@
                   "max": "5602999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, man-made staple fibres made from casein, or chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres, - man-made staple fibres made from casein, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5660,7 +5660,7 @@
                   "max": "5604999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - natural fibres, not carded or combed or otherwise processed for spinning, - chemical materials or textile pulp, or - paper-making materials.",
+                              "rule": "Manufacture from: - natural fibres, not carded or combed or otherwise processed for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5679,7 +5679,7 @@
                   "max": "5605999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, man-made staple fibres, not carded or combed or otherwise processed for spinning, chemical materials or textile pulp, or paper-making materials.",
+                              "rule": "Manufacture from: - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5698,7 +5698,7 @@
                   "max": "5606999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, man-made staple fibres, not carded or combed or otherwise processed for spinning, chemical materials or textile pulp, or paper-making materials.",
+                              "rule": "Manufacture from: - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, - chemical materials or textile pulp, or - paper-making materials.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5717,7 +5717,7 @@
                   "max": "5799999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - natural fibres, or - chemical materials or textile pulp However: - polypropylene filament of heading <a href='/headings/5402' target='_blank'>5402</a>, - polypropylene fibres of heading <a href='/headings/5503' target='_blank'>5503</a> or <a href='/headings/5506' target='_blank'>5506</a>, or - polypropylene filament tow of heading <a href='/headings/5501' target='_blank'>5501</a>, of which the denomination in all cases of a single filament or fibre is less than <a href='/headings/9' target='_blank'>9</a> decitex, may be used, provided that their total value does not exceed <b>40%</b> of the ex-works price of the product Jute fabric may be used as a backing.",
+                              "rule": "Manufacture from: - natural fibres, or - chemical materials or textile pulp However: - polypropylene filament of heading <a href='/headings/5402' target='_blank'>5402</a>, - polypropylene fibres of heading <a href='/headings/5503' target='_blank'>5503</a> or <a href='/headings/5506' target='_blank'>5506</a>, or - polypropylene filament tow of heading <a href='/headings/5501' target='_blank'>5501</a>, of which the denomination in all cases of a single filament or fibre is less than <a href='/headings/9' target='_blank'>9</a> decitex, may be used, provided that their total value does not exceed <b>40%</b> of the ex-works price of the product Jute fabric may be used as a backing.",
                               "class": [
                                     "MaxNOM"
                               ],
@@ -5738,7 +5738,7 @@
                   "max": "5799999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - natural fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5757,7 +5757,7 @@
                   "max": "5799999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - coir yarn or jute yarn, - synthetic or artificial filament yarn, - natural fibres, or - man-made staple fibres, not carded or combed or otherwise processed for spinning Jute fabric may be used as a backing.",
+                              "rule": "Manufacture from: - coir yarn or jute yarn, - synthetic or artificial filament yarn, - natural fibres, or - man-made staple fibres, not carded or combed or otherwise processed for spinning Jute fabric may be used as a backing.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -5795,7 +5795,7 @@
                   "max": "5899999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6006,7 +6006,7 @@
                   "max": "5905999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - coir yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture from: - coir yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp Or Printing accompanied by at least two preparatory or finishing operations (such as scouring, bleaching, mercerising, heat setting, raising, calendering, shrink resistance processing, permanent finishing, decatising, impregnating, mending and burling), provided that the value of the unprinted fabric used does not exceed 47.<b>5%</b> of the ex-works price of the product.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6044,7 +6044,7 @@
                   "max": "5906999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6215,7 +6215,7 @@
                   "max": "5911999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : - coir yarn, - the following materials: \u2013 \u2013 yarn of polytetrafluoroethylene, \u2013 \u2013 yarn, multiple, of polyamide, coated impregnated or covered with a phenolic resin, \u2013 \u2013 yarn of synthetic textile fibres of aromatic polyamides, obtained by polycondensation of m-phenylenediamine and isophthalic acid, \u2013 \u2013 monofil of polytetrafluoroethylene, \u2013 \u2013 yarn of synthetic textile fibres of poly(p-phenylene terephthalamide), \u2013 \u2013 glass fibre yarn, coated with phenol resin and gimped with acrylic yarn, \u2013 \u2013 copolyester monofilaments of a polyester and a resin of terephthalic acid and <a href='/headings/1' target='_blank'>1</a>,4-cyclohexanediethanol and isophthalic acid, \u2013 \u2013 natural fibres, \u2013 \u2013 man-made staple fibres not carded or combed or otherwise processed for spinning, or \u2013 \u2013 chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - coir yarn, - the following materials: \u2013 \u2013 yarn of polytetrafluoroethylene, \u2013 \u2013 yarn, multiple, of polyamide, coated impregnated or covered with a phenolic resin, \u2013 \u2013 yarn of synthetic textile fibres of aromatic polyamides, obtained by polycondensation of m-phenylenediamine and isophthalic acid, \u2013 \u2013 monofil of polytetrafluoroethylene, \u2013 \u2013 yarn of synthetic textile fibres of poly(p-phenylene terephthalamide), \u2013 \u2013 glass fibre yarn, coated with phenol resin and gimped with acrylic yarn, \u2013 \u2013 copolyester monofilaments of a polyester and a resin of terephthalic acid and <a href='/headings/1' target='_blank'>1</a>,4-cyclohexanediethanol and isophthalic acid, \u2013 \u2013 natural fibres, \u2013 \u2013 man-made staple fibres not carded or combed or otherwise processed for spinning, or \u2013 \u2013 chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6234,7 +6234,7 @@
                   "max": "5911999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : coir yarn, natural fibres, man-made staple fibres, not carded or combed or otherwise processed for spinning, or chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - coir yarn, - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6253,7 +6253,7 @@
                   "max": "6099999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, man-made staple fibres, not carded or combed or otherwise processed for spinning, or chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6291,7 +6291,7 @@
                   "max": "6199999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, man-made staple fibres, not carded or combed or otherwise processed for spinning, or chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6636,7 +6636,7 @@
                   "max": "6304999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, or chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6714,7 +6714,7 @@
                   "max": "6305999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, man-made staple fibres, not carded or combed or otherwise processed for spinning, or chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres, - man-made staple fibres, not carded or combed or otherwise processed for spinning, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -6752,7 +6752,7 @@
                   "max": "6306999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from : natural fibres, or chemical materials or textile pulp.",
+                              "rule": "Manufacture from: - natural fibres, or - chemical materials or textile pulp.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -7199,7 +7199,7 @@
                   "max": "7019999999",
                   "rules": [
                         {
-                              "rule": "Manufacture from: uncoloured slivers, rovings, yarn or chopped strands, or glass wool.",
+                              "rule": "Manufacture from: - uncoloured slivers, rovings, yarn or chopped strands, or - glass wool.",
                               "class": [],
                               "operator": null,
                               "specific_processes": false,
@@ -8457,6 +8457,34 @@
                   ],
                   "valid": true,
                   "chapter": 83
+            },
+            {
+                  "heading": "ex 8401",
+                  "subdivision": "Nuclear fuel elements",
+                  "is_ex_code": true,
+                  "prefix": "",
+                  "min": "8401000000",
+                  "max": "8401999999",
+                  "rules": [
+                        {
+                              "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product.",
+                              "class": [],
+                              "operator": null,
+                              "specific_processes": false,
+                              "double_dash": false
+                        },
+                        {
+                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>30%</b> of the ex-works price of the product.",
+                              "class": [
+                                    "MaxNOM"
+                              ],
+                              "operator": "or",
+                              "specific_processes": false,
+                              "double_dash": false
+                        }
+                  ],
+                  "valid": true,
+                  "chapter": 84
             },
             {
                   "heading": "8402",
@@ -11908,12 +11936,12 @@
                   "chapter": 93
             },
             {
-                  "heading": "ex 9401 and ex 9403",
-                  "subdivision": "",
+                  "heading": "ex 9401",
+                  "subdivision": "Base metal furniture, incorporating unstuffed cotton cloth of a weight of 300\u00a0g/m2\u00a0or less",
                   "is_ex_code": true,
                   "prefix": "",
-                  "min": "9401and9403",
-                  "max": "9401and9403",
+                  "min": "9401000000",
+                  "max": "9401999999",
                   "rules": [
                         {
                               "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product or Manufacture from cotton cloth already made up in a form ready for use with materials of heading <a href='/headings/9401' target='_blank'>9401</a> or <a href='/headings/9403' target='_blank'>9403</a>, provided that: - the value of the cloth does not exceed <b>25%</b> of the ex-works price of the product, and - all the other materials used are originating and are classified in a heading other than heading <a href='/headings/9401' target='_blank'>9401</a> or 9403.",
@@ -11935,7 +11963,37 @@
                         }
                   ],
                   "valid": true,
-                  "chapter": -1
+                  "chapter": 94
+            },
+            {
+                  "heading": "ex 9403",
+                  "subdivision": "Base metal furniture, incorporating unstuffed cotton cloth of a weight of 300\u00a0g/m2\u00a0or less",
+                  "is_ex_code": true,
+                  "prefix": "",
+                  "min": "9403000000",
+                  "max": "9403999999",
+                  "rules": [
+                        {
+                              "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product or Manufacture from cotton cloth already made up in a form ready for use with materials of heading <a href='/headings/9401' target='_blank'>9401</a> or <a href='/headings/9403' target='_blank'>9403</a>, provided that: - the value of the cloth does not exceed <b>25%</b> of the ex-works price of the product, and - all the other materials used are originating and are classified in a heading other than heading <a href='/headings/9401' target='_blank'>9401</a> or 9403.",
+                              "class": [
+                                    "MaxNOM"
+                              ],
+                              "operator": null,
+                              "specific_processes": false,
+                              "double_dash": false
+                        },
+                        {
+                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
+                              "class": [
+                                    "MaxNOM"
+                              ],
+                              "operator": "or",
+                              "specific_processes": false,
+                              "double_dash": false
+                        }
+                  ],
+                  "valid": true,
+                  "chapter": 94
             },
             {
                   "heading": "9405",
@@ -12020,12 +12078,12 @@
                   "chapter": 95
             },
             {
-                  "heading": "ex 9601 and ex 9602",
-                  "subdivision": "",
+                  "heading": "ex 9601",
+                  "subdivision": "Articles of animal, vegetable or mineral carving materials",
                   "is_ex_code": true,
                   "prefix": "",
-                  "min": "9601and9602",
-                  "max": "9601and9602",
+                  "min": "9601000000",
+                  "max": "9601999999",
                   "rules": [
                         {
                               "rule": "Manufacture from \u2018worked\u2019 carving materials of the same heading as the product.",
@@ -12036,7 +12094,26 @@
                         }
                   ],
                   "valid": true,
-                  "chapter": -1
+                  "chapter": 96
+            },
+            {
+                  "heading": "ex 9602",
+                  "subdivision": "Articles of animal, vegetable or mineral carving materials",
+                  "is_ex_code": true,
+                  "prefix": "",
+                  "min": "9602000000",
+                  "max": "9602999999",
+                  "rules": [
+                        {
+                              "rule": "Manufacture from \u2018worked\u2019 carving materials of the same heading as the product.",
+                              "class": [],
+                              "operator": null,
+                              "specific_processes": false,
+                              "double_dash": false
+                        }
+                  ],
+                  "valid": true,
+                  "chapter": 96
             },
             {
                   "heading": "ex 9603",
@@ -24966,8 +25043,8 @@
                   "chapter": 83
             },
             {
-                  "heading": "8401",
-                  "subdivision": "",
+                  "heading": "ex 8401",
+                  "subdivision": "Any other product",
                   "is_ex_code": false,
                   "prefix": "",
                   "min": "8401000000",
@@ -28277,24 +28354,22 @@
                   "chapter": 91
             },
             {
-                  "heading": "9401",
-                  "subdivision": "",
+                  "heading": "ex 9401",
+                  "subdivision": "Any other product",
                   "is_ex_code": false,
                   "prefix": "",
                   "min": "9401000000",
                   "max": "9401999999",
                   "rules": [
                         {
-                              "rule": "Manufacture: - from materials of any heading, except that of the product, and - in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
-                              "class": [
-                                    "MaxNOM"
-                              ],
+                              "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product.",
+                              "class": [],
                               "operator": null,
                               "specific_processes": false,
                               "double_dash": false
                         },
                         {
-                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>30%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
                               "class": [
                                     "MaxNOM"
                               ],
@@ -28315,16 +28390,14 @@
                   "max": "9402999999",
                   "rules": [
                         {
-                              "rule": "Manufacture: - from materials of any heading, except that of the product, and - in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
-                              "class": [
-                                    "MaxNOM"
-                              ],
+                              "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product.",
+                              "class": [],
                               "operator": null,
                               "specific_processes": false,
                               "double_dash": false
                         },
                         {
-                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>30%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
                               "class": [
                                     "MaxNOM"
                               ],
@@ -28337,24 +28410,22 @@
                   "chapter": 94
             },
             {
-                  "heading": "9403",
-                  "subdivision": "",
+                  "heading": "ex 9403",
+                  "subdivision": "Any other product",
                   "is_ex_code": false,
                   "prefix": "",
                   "min": "9403000000",
                   "max": "9403999999",
                   "rules": [
                         {
-                              "rule": "Manufacture: - from materials of any heading, except that of the product, and - in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
-                              "class": [
-                                    "MaxNOM"
-                              ],
+                              "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product.",
+                              "class": [],
                               "operator": null,
                               "specific_processes": false,
                               "double_dash": false
                         },
                         {
-                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>30%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
                               "class": [
                                     "MaxNOM"
                               ],
@@ -28375,16 +28446,14 @@
                   "max": "9404999999",
                   "rules": [
                         {
-                              "rule": "Manufacture: - from materials of any heading, except that of the product, and - in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
-                              "class": [
-                                    "MaxNOM"
-                              ],
+                              "rule": "Your goods are manufactured from materials of any tariff heading, except that of the product.",
+                              "class": [],
                               "operator": null,
                               "specific_processes": false,
                               "double_dash": false
                         },
                         {
-                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>30%</b> of the ex-works price of the product.",
+                              "rule": "Manufacture in which the value of all the materials used does not exceed <b>40%</b> of the ex-works price of the product.",
                               "class": [
                                     "MaxNOM"
                               ],
@@ -28511,8 +28580,8 @@
                   "chapter": 95
             },
             {
-                  "heading": "9601",
-                  "subdivision": "",
+                  "heading": "ex 9601",
+                  "subdivision": "Any other product",
                   "is_ex_code": false,
                   "prefix": "",
                   "min": "9601000000",
@@ -28530,8 +28599,8 @@
                   "chapter": 96
             },
             {
-                  "heading": "9602",
-                  "subdivision": "",
+                  "heading": "ex 9602",
+                  "subdivision": "Any other product",
                   "is_ex_code": false,
                   "prefix": "",
                   "min": "9602000000",
