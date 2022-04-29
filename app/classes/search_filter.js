@@ -27,20 +27,35 @@ class SearchFilter {
         }
     }
 
+    // sort_values() {
+    //     var i;
+    //     this.values.sort();
+    //     var value_count = this.values.length;
+    //     for (i = 0; i < value_count; i++) {
+    //         var v = this.values[i];
+    //         if (v.value.toLowerCase() == "other") {
+    //             var a = 1;
+    //             this.values = this.values.filter((n) => { return n.toLowerCase() != "other" });
+    //             this.values.push("other");
+    //             break;
+    //         }
+    //     }
+    //     var a = 1;
+    // }
+
     sort_values() {
-        var i;
-        this.values.sort();
-        var value_count = this.values.length;
-        for (i = 0; i < value_count; i++) {
-            var v = this.values[i];
-            if (v.toLowerCase() == "other") {
-                var a = 1;
-                this.values = this.values.filter((n) => { return n.toLowerCase() != "other" });
-                this.values.push("other");
-                break;
+        this.values.sort(compare_filters);
+
+        function compare_filters(a, b) {
+            if (a.count > b.count) {
+                return -1;
             }
+            if (a.count < b.count) {
+                return 1;
+            }
+            return 0;
         }
-        var a = 1;
     }
+
 }
 module.exports = SearchFilter

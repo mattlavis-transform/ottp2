@@ -13,7 +13,7 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: context.back_link
+        href: "/roo/trade_direction/" + context.goods_nomenclature_item_id + "/" + context.country
     }) }}
 {% endblock %}
 
@@ -30,9 +30,9 @@
                 </h1>
                 <p class="govuk-body-l">This page defines the broad rules that determine if your product originates in
                     {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
-                    according to the {{ context.scheme_title }}.
+                    according to the {{ context.scheme_title }} and therefore eligible for preferential tariff treatment.
                 </p>
-
+<!--
                 {% if context.trade_direction == "import" %}
                     <div class="govuk-inset-text panel_grey">
                         <p class="b">How rules of origin could affect the duty payable</p>
@@ -61,15 +61,18 @@
                         </ul>
                     </div>
                 {% endif %}
-
+//-->
                 {% if not context.wholly_obtained_only_rule_applies %}
 
                 <div class="commodity-split">
                     <p>The following products are considered as originating in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}:</p>
                     <ul class="govuk-list govuk-list--bullet">
                         <li>
-                            products <strong>wholly obtained</strong> in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }};
+                            products <strong>wholly obtained</strong> in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }}
+                            <br><br>Your goods are treated as 'wholly obtained' if they’re exclusively produced in a
+                            country covered in a trade agreement, without incorporating materials from any other country.<br><br>
                         </li>
+                        <!--
                         <li>
                             products obtained in {{ context.country_name if context.trade_direction == "import" else "the United Kingdom" }} incorporating materials which have not been wholly obtained there,
                             provided that these materials have undergone <strong>sufficient working or processing</strong> in
@@ -77,9 +80,12 @@
                             to obtain originating status;
                         </li>
                         <li>
-                            items produced using some <strong>non-originating materials</strong>, provided the product meets the rules specifically
+                            items produced using some non-originating materials, provided the product meets the rules specifically
                             associated with commodity {{ context.goods_nomenclature_item_id | format_and_trim_commodity_code | safe }}.
-                        </li>
+                        </li>//-->
+                        <li>Products that incorporate <strong>materials originating from different countries</strong> that are sufficiently worked or processed
+                            according to the rules laid out in the {{ context.scheme_title }}
+
                     </ul>
                     <p>These concepts are defined throughout the next pages, so that you can determine if your product meets the rules of origin.</p>
                 </div>
@@ -94,23 +100,8 @@
                     </div>
                 {% endif %}
 
-                {# <div class="agreement_content">{{ context.originating | convert_markdown | safe }}</div> #}
-
-                {# {% if context.features["absorption"] == true %}
-                <p>The {{ context.scheme_title }} features a principle known as <b>absorption</b>, meaning that non-originating
-                intermediate components may be classed as originating, if they have gained originating status in the trading partner.</p>
-                <details class="govuk-details" data-module="govuk-details">
-                    <summary class="govuk-details__summary">
-                        <span class="govuk-details__summary-text">How the absorption principle works</span>
-                    </summary>
-                    <div class="govuk-details__text">
-                        {% include "includes/absorption.html" %}
-                    </div>
-                </details>
-                {% endif %} #}
-
                 <p class="b">Next step</p>
-                <p>Click on the 'Continue' button to view the definition of '<b>wholly obtained</b>' in the {{ context.scheme_title }}.</p>
+                <p>Click on the 'Continue' button to view the definition of '<strong>wholly obtained</strong>' in the {{ context.scheme_title }}.</p>
                 {{ govukButton({
                     text: "Continue",
                     href: ""

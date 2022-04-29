@@ -5,7 +5,7 @@ class SearchHeading {
         this.description_full = this.description;
         this.count = 1;
 
-        this.format_description();
+        // this.format_description();
     }
 
     format_description() {

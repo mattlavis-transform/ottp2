@@ -1,6 +1,6 @@
 {% for item in corpus %}
     {% if item.leaf == false %}
-        {% if item.sid in heading.intermediate_ancestry %}
+        {% if item.sid in heading.subheading_ancestry %}
             <li class="has_children level-{{ item.number_indents }}">
                 <span class="description open without_right_margin" aria-expanded="true" role="button" id="commodity-{{ item.goods_nomenclature_item_id }}">
                     {{ item.description | highlight(context.search_term) | safe }}
@@ -14,7 +14,7 @@
                 </div>
                 {% set corpus = item.children %}
                 <ul class="govuk-list">
-                    {% include "./intermediate_include_nested.html" %}
+                    {% include "./subheading_include_nested.html" %}
                 </ul>
             </li>
         {% endif %}

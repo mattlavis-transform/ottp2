@@ -177,6 +177,7 @@ class Context {
         var jp = require('jsonpath');
         var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
         data = data["schemes"];
+        this.cumulation_options = [];
 
         this.features = null;
 
@@ -191,6 +192,7 @@ class Context {
             var query_string = "$[?(@.scheme_code == '" + this.scheme_code + "')]"
             this.matching_schemes = jp.query(data, query_string);
             this.scheme_title = this.matching_schemes[0].title;
+            this.cumulation_options = this.matching_schemes[0].cumulation;
             this.ord = this.matching_schemes[0].ord;
             this.original = this.matching_schemes[0].original;
             if (typeof this.scheme_ord === 'undefined') {
@@ -204,6 +206,7 @@ class Context {
                 this.multiple_schemes = false;
                 this.scheme_code = this.matching_schemes[0].scheme_code;
                 this.scheme_title = this.matching_schemes[0].title;
+                this.cumulation_options = this.matching_schemes[0].cumulation;
                 this.ord = this.matching_schemes[0].ord;
                 this.original = this.matching_schemes[0].original;
                 if (typeof this.scheme_ord === 'undefined') {
@@ -247,7 +250,8 @@ class Context {
     }
 
     get_rules_met(req) {
-        if (req.session.data["met_product_specific_rules"] == "yes") {
+        if (req.session.data["psr"] != "not met") {
+            // if (req.session.data["met_product_specific_rules"] == "yes") {
             this.met_product_specific_rules = true;
         } else {
             this.met_product_specific_rules = false;
@@ -679,7 +683,7 @@ class Context {
         this.origin_process_titles = [];
         this.origin_process_array = this.origin_processes.split("##");
         this.origin_process_array.shift();
-        for (var i = 0;i < this.origin_process_array.length; i ++) {
+        for (var i = 0; i < this.origin_process_array.length; i++) {
             var tmp = this.origin_process_array[i].split("\n")[0].trim();
             this.origin_process_titles.push(tmp);
             var a = 1;
@@ -733,7 +737,7 @@ class Context {
         return (data);
     }
 
-    get_cumulation_types() {
+    safe_get_cumulation_types() {
         this.get_cumulation_texts();
         this.cumulation_types = {
             "bilateral": false,
@@ -756,6 +760,41 @@ class Context {
             this.cumulation_types["count"] += 1;
         }
         var a = 1;
+    }
+
+
+
+    get_cumulation_types() {
+        this.get_cumulation_texts();
+        this.cumulation_types = {
+            "bilateral": false,
+            "diagonal": false,
+            "extended": false,
+            "regional": false,
+            "full": false,
+            "count": 0,
+            "types": []
+        }
+        if (this.cumulation_options["bilateral"]["applies"]) {
+            this.cumulation_types["bilateral"] = true;
+            this.cumulation_types["types"].push("bilateral");
+            this.cumulation_types["count"] += 1;
+        }
+        if (this.cumulation_options["extended"]["applies"]) {
+            this.cumulation_types["extended"] = true;
+            this.cumulation_types["types"].push("extended");
+            this.cumulation_types["count"] += 1;
+        }
+        if (this.cumulation_options["diagonal"]["applies"]) {
+            this.cumulation_types["diagonal"] = true;
+            this.cumulation_types["types"].push("diagonal");
+            this.cumulation_types["count"] += 1;
+        }
+        if (this.cumulation_options["full"]["applies"]) {
+            this.cumulation_types["full"] = true;
+            this.cumulation_types["types"].push("full");
+            this.cumulation_types["count"] += 1;
+        }
     }
 
     get_cumulation_texts() {
@@ -844,7 +883,7 @@ class Context {
                 this.show_supplementary_unit = false;
                 break;
 
-            case "intermediate":
+            case "subheading":
                 // Field headings
                 this.heading_classifier = "Code";
                 this.heading_description = "Classification";
@@ -994,6 +1033,7 @@ class Context {
         if (!sort_options.includes(this.sort_order)) {
             this.sort_order = "relevance";
         }
+        // this.sort_order = "alpha";
     }
 
 }

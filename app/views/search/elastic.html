@@ -80,6 +80,7 @@
 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-one-quarter">
+                
                 {% if hits.hits | length > 0 %}
                     {% include "search/elastic_filters.html" %}
                     {# <h2 class="govuk-heading-s govuk-!-margin-bottom-3">Filters</h2> #}
@@ -115,10 +116,27 @@
                         {% endfor %}
                     {% endif %} #}
                 {% endif %}
+                {% if guide %}
+                    <div class="guide_aside">
+                        <div>
+                            <span class="govuk-caption-m">Classification guide</span>
+                            <h2 class="govuk-heading-m">{{ guide.title }}</h2>
+                            <p class="govuk-body-s">{{ guide.strapline }}</p>
+                            <p class="govuk-body-s">
+                                <a href="{{ guide.url }}" target="_blank">
+                                    View classification guide for {{ guide.title | lowerFirst }} (opens in new tab)
+                                </a>
+                            </p>
+                            <div>
+                                <img src="/public/images/guides/{{ guide.image }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
             <div class="govuk-grid-column-three-quarters">
                 {% if guide %}
-                    <div class="guide">
+                    <div class="guide govuk-visually-hidden">
                         <div>
                             <img src="/public/images/guides/{{ guide.image }}" alt="">
                         </div>
@@ -136,10 +154,10 @@
                 {% endif %}
 
                 {% if record_count == 1 %}
-                    <p>Showing {{ hits.hits | length }} result for <strong>{{ context.search_term }}</strong>
+                    <p>Showing {{ hit_count }} result for <strong>{{ context.search_term }}</strong>
                     </p>
                 {% else %}
-                    <p>Showing {{ hits.hits | length }} results for <strong>{{ context.search_term }}</strong>
+                    <p>Showing {{ hit_count }} results for <strong>{{ context.search_term }}</strong>
                     </p>
                 {% endif %}
 

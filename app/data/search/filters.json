@@ -27,6 +27,10 @@
         "display": "Cereal state",
         "level": "results"
     },
+    "herb_spice_state": {
+        "display": "Herb / spice state",
+        "level": "results"
+    },
     "cheese_type": {
         "display": "Cheese type",
         "level": "results"
@@ -76,19 +80,15 @@
         "level": "results"
     },
     "fruit_vegetable_type": {
-        "display": "Vegentable type",
+        "display": "Vegetable type",
         "level": "results"
     },
-    "jam_ingredient": {
-        "display": "Jam ingredient",
+    "ingredient": {
+        "display": "Ingredient",
         "level": "results"
     },
     "jam_sugar_content": {
         "display": "Sugar content",
-        "level": "results"
-    },
-    "juice_ingredient": {
-        "display": "Ingredient",
         "level": "results"
     },
     "margarine_state": {
@@ -161,6 +161,54 @@
     },
     "computer_type": {
         "display": "Computer type",
+        "level": "results"
+    },
+    "metal_usage": {
+        "display": "Metal usage",
+        "level": "results"
+    },
+    "metal_type": {
+        "display": "Metal",
+        "level": "results"
+    },
+    "glass_form": {
+        "display": "Glass form",
+        "level": "results"
+    },
+    "glass_purpose": {
+        "display": "Glass purpose",
+        "level": "results"
+    },
+    "precious_stone": {
+        "display": "Stone",
+        "level": "results"
+    },
+    "cable_type": {
+        "display": "Cable type",
+        "level": "results"
+    },
+    "cable_material": {
+        "display": "Cable material",
+        "level": "results"
+    },
+    "material": {
+        "display": "Material",
+        "level": "results"
+    },
+    "clothing_fabrication": {
+        "display": "Clothing fabrication",
+        "level": "results"
+    },
+    "jewellery_type": {
+        "display": "Type of jewellery",
+        "level": "results"
+    },
+    "pump_type": {
+        "display": "Pump type",
+        "level": "results"
+    },
+    "art_form": {
+        "display": "Art form",
         "level": "results"
     }
 }

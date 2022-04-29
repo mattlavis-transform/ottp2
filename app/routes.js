@@ -178,20 +178,20 @@ router.get(['/headings/:headingId', '/:scope_id/headings/:headingId'], async fun
 });
 
 
-// Browse an intermediate (lower than a heading, but not an end-line)
+// Browse a subheading (lower than a heading, but not an end-line)
 // Example would be 38089490, which has 3808949010 and 3808949090 as end-line child codes
 
 router.get([
-    '/intermediate/:goods_nomenclature_item_id',
-    '/:scope_id/intermediate/:goods_nomenclature_item_id',
-    '/intermediate/:goods_nomenclature_item_id/:search_term',
-    '/:scope_id/intermediate/:goods_nomenclature_item_id/:search_term'
+    '/subheadings/:goods_nomenclature_item_id',
+    '/:scope_id/subheadings/:goods_nomenclature_item_id',
+    '/subheadings/:goods_nomenclature_item_id/:search_term',
+    '/:scope_id/subheadings/:goods_nomenclature_item_id/:search_term'
 ], function (req, res) {
     var goods_nomenclature_item_id = req.params["goods_nomenclature_item_id"];
     if (goods_nomenclature_item_id.length == 4) {
         res.redirect("/headings/" + goods_nomenclature_item_id);
     } else {
-        var context = new Context(req, "intermediate");
+        var context = new Context(req, "subheading");
         context.search_term = req.params["search_term"];
         axios.get('https://www.trade-tariff.service.gov.uk/api/v2/headings/' + goods_nomenclature_item_id.substr(0, 4))
             .then((response) => {
@@ -203,7 +203,7 @@ router.get([
                     context.value_classifier = goods_nomenclature_item_id.padEnd(10, '0');
                     context.value_description = "Test"; // h.data.attributes.formatted_description;
                     context.set_description_class()
-                    res.render('intermediate', {
+                    res.render('subheading', {
                         'context': context,
                         'heading': h,
                         'goods_nomenclature_item_id': goods_nomenclature_item_id.padEnd(10, '0')
@@ -676,7 +676,7 @@ router.get(['/country-filter'], async function (req, res) {
     res.redirect(url);
 });
 
-// Elastic test
+// Elastic search
 router.get(['/elastic/:search_term'], function (req, res) {
     var context = new Context(req);
     context.get_sort_order();
@@ -686,14 +686,11 @@ router.get(['/elastic/:search_term'], function (req, res) {
     }
 });
 
-// Elastic test
+// Elastic search (using querystring)
 router.get(['/elastic/'], function (req, res) {
-    var context = new Context(req);
-    context.get_sort_order();
-    context.search_term = req.query["search_term"];
-    if (context.search_term != "") {
-        var search = new SearchExtended(context, req, res)
-    }
+    var search_term = req.query["search_term"];
+    var url = "/elastic/" + search_term;
+    res.redirect(url);
 });
 
 // Used for testing section and chapter notes

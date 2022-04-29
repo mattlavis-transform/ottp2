@@ -20,26 +20,56 @@
                     }) }}
                 {% else %}
                     <p>
-                        Rules of origin are the criteria which determine the national source of a product. They are important as they
-                        determine if your trade is eligible for preferential tariff treatment, and may influence the rules that 
-                        apply to your import or export.
+                        Preferential tariff treatment reduces the duties you are required to pay when
+                        importing or exporting goods to or from {{ context.country_name }}.
+                    </p>
+                    <p>
+                        Rules of origin are the criteria which determine the national source of a product.
+                        They determine if your trade is eligible for preferential tariff treatment and
+                        may influence the rules that apply to your import or export.
                     </p>
 
-                    <p>In order to qualify for a lower or zero preferential tariff
-                        under the {{ roo.title }}, <strong>the product must originate</strong>
-                        in {{ roo.origin_text }} or {{ roo.partners }}.</p>
-                    <p>You do not need to apply for a preferential tariff (or comply with preferential rules of origin)
-                        if the Most-Favoured Nation (MFN) duty for your product is zero.</p>
+                    <p>In order to qualify for preferential tariff treatment under the {{ roo.title }}, the product
+                        must originate in <strong>{{ roo.origin_text }}</strong> or <strong>{{ roo.partners }}</strong>.
+                    </p>
 
                     <div class="govuk-inset-text">
-                        <p>Use this tool to determine whether your trade fulfils the rules of origin
-                            and can therefore be considered as originating.</p>
+                        <h3 class="govuk-heading-s">How rules of origin could affect the duty payable</h3>
+                        <ul class="xcommodity-split govuk-list govuk-list--bullet">
+                            <li class="commodity-split">
+                                The <!--Most-Favoured Nation //-->basic third country duty for importing commodity {{ commodity.goods_nomenclature_item_id | format_commodity_code2 | safe }}
+                                into the UK is <strong>{{ commodity.third_country_duty }}</strong>.
+                            </li>
+                            <li>
+                                The preferential duty for importing or exporting this commodity is {% if commodity.show_also %}also{% endif %}
+                                <strong class="nw_simple">{{ commodity.preferential_tariff_duty | trim_string }}</strong>.
+                            </li>
+                            <li>
+                                Find out more about 
+                                <a target="_blank" href="https://www.check-duties-customs-exporting-goods.service.gov.uk/summary?d=DE&ds=gtp&pc=0102291010">
+                                export duties and procedures for this commodity (opens in new browser window)</a>.
+                            </li>
+                        </ul>
 
-                        {{ govukButton({
+                    </div>
+                    {% if commodity.third_country_duty == "0.00 %" %}
+                        <div class="govuk-warning-text">
+                            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                            <strong class="govuk-warning-text__text">
+                                <span class="govuk-warning-text__assistive">Warning</span>
+                                    You do not need to apply for a preferential tariff or comply with preferential rules of origin
+                                    if the Most-Favoured Nation (MFN) duty for your product is zero.</strong>
+                        </div>
+                    {% endif %}
+                    <h3 class="govuk-heading-s">Work out if your goods meet the rules of origin</h3>
+
+                    <p>Use this tool to determine whether your trade fulfils the rules of origin
+                            and can therefore be considered as <strong>originating</strong>.</p>
+
+                    {{ govukButton({
                             text: "Check rules of origin",
                             href: "/roo/trade_direction/" + commodity.data.attributes.goods_nomenclature_item_id + "/" + context.country
                         }) }}
-                    </div>
                 {% endif %}
 
                 <!-- Start product-specific rules //-->
@@ -48,7 +78,8 @@
                         <h2 class="govuk-heading-m" id="psr">
                         Product-specific rules for commodity {{ commodity.data.attributes.goods_nomenclature_item_id }}
                         </h2>
-                        <p>If your product has been produced using any non-originating materials, the product has to fulfil the following product-specific rule to be considered originating in the EU or {{ roo.partners }}.</p>
+                        <p>If your product has been produced using any non-originating materials, the product has to fulfil
+                            the following product-specific rule to be considered originating in the EU or {{ roo.partners }}.</p>
                         <p>If there are alternative rules, your product needs to comply with only one of them.</p>
                         {{ roo["product_specific_rules"] | safe }}
 

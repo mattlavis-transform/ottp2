@@ -44,7 +44,7 @@
                                         //-->
                                     {# {% if hit._source.chapter %}{{ hit._source.chapter }} - {% endif %} #}
                                     {% if hit._source.heading %}{{ hit._source.heading }} - {% endif %}
-                                    <b>{{ hit._source.description | safe }}</b><br>
+                                    <strong>{{ hit._source.description | safe }}</strong><br>
                                     
                                     <!-- Filter tags //-->
                                     {% if hit._source.filter_animal_product_state %}
@@ -54,10 +54,6 @@
                                     {% if hit._source.filter_animal_type %}
                                         <span class="tag"><a href="">{{ hit._source.filter_animal_type }}</a></span>
                                     {% endif %}
-
-                                    {# <p>
-                                        <b>{{ hit._source.friendly_name }}</b>
-                                    </p> #}
                                 </td>
                             </tr>
                         {% endif %}

@@ -14,6 +14,7 @@ const LegalAct = require("./legal_act");
 const DutyExpression = require("./duty_expression");
 const Certificate = require("./certificate");
 const { forEach } = require('lodash');
+const { threadId } = require('worker_threads');
 
 class Commodity {
     constructor(sid = null, goods_nomenclature_item_id = null, productline_suffix = null, description = null, number_indents = null, leaf = null, parent_sid = null, indent_class = null) {
@@ -360,6 +361,8 @@ class Commodity {
         this.assign_additional_codes();
 
         this.assign_measure_components(req);
+        this.get_third_country_duty();
+        this.get_preferential_duty();
         this.assign_measure_conditions();
         if (origin != "basic") {
             this.remove_irrelevant_measures(measure_types);
@@ -389,21 +392,39 @@ class Commodity {
             this.calculate_vat();
             this.calculate_mfn();
             this.calculate_quotas();
-            //this.calculate_preferences();
         }
-        this.get_quota_balances();
         this.assign_preference_codes();
     }
 
-    get_quota_balances() {
-        this.quota_balances = {}
-        axios.get('https://www.trade-tariff.service.gov.uk/api/v2/quotas/search?order_number=058003&include=quota_balance_events')
-            .then((response) => {
-                console.log("Getting quota balances");
-                var data = response.data;
-                // this.exchange_rate = parseFloat(data["rates"]["GBP"]);
+    get_third_country_duty() {
+        this.third_country_duty = "";
+        this.measures.forEach(m => {
+            if ((m.measure_type_id == "103") || (m.measure_type_id == "103")) {
+                this.third_country_duty = m.combined_duty.trim();
                 var a = 1;
-            });
+            }
+        });
+    }
+
+    get_preferential_duty() {
+        this.show_also = false;
+        this.preferential_tariff_duty = "";
+        this.preferential_quota_duty = "";
+        this.measures.forEach(m => {
+            if ((m.measure_type_id == "142") || (m.measure_type_id == "145")) {
+                this.preferential_tariff_duty = m.combined_duty.trim();
+                var a = 1;
+            }
+            if ((m.measure_type_id == "143") || (m.measure_type_id == "146")) {
+                this.preferential_quota_duty = m.combined_duty.trim();
+                var a = 1;
+            }
+        });
+
+        if ((this.third_country_duty == "0.00 %") && (this.preferential_tariff_duty == "0.00 %")) {
+            this.show_also = true;
+        }
+
     }
 
     get_export_measure_ids() {
@@ -1055,7 +1076,7 @@ class Commodity {
 
     // Categorise the measures
     categorise_measures(override_block = false) {
-        console.log("Categorising measures");
+        // console.log("Categorising measures");
         delete require.cache['./display_block_options.json'];
 
         const fs = require('fs');

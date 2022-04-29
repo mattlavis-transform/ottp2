@@ -8,12 +8,14 @@
                     "multi_match": {
                         "query": "search_term",
                         "fields": [
-                            "xdescription_alternative^15",
-                            "description^15",
-                            "search_references^10",
+                            "chapter^8",
+                            "search_references^6",
                             "heading^4",
-                            "chapter^2",
-                            "goods_nomenclature_item_id"
+                            "description.exact^2",
+                            "description",
+                            "goods_nomenclature_item_id",
+                            "xfriendly_name^1",
+                            "xdescription_alternative^15"
                         ],
                         "analyzer": "complex_synonyms",
                         "type": "best_fields"

@@ -13,7 +13,7 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: context.back_link
+        href: "/roo/neutral/" + context.goods_nomenclature_item_id + "/" + context.country
     }) }}
 {% endblock %}
 
@@ -38,7 +38,9 @@
                     },
                     hint: {
                         html: "Base your answer on the definition of 
-                            <a href='/roo/wholly_obtained_info/0208907000/VN'>wholly obtained</a> on the previous screen."
+                            <a href='/roo/wholly_obtained_info/" + context.goods_nomenclature_item_id + "/" + context.goods_nomenclature_item_id + "'>wholly obtained</a> 
+                            and the definition of <a href='/roo/wholly_obtained_info/" + context.goods_nomenclature_item_id + "/" + context.country + "'>components that you need to take into account</a>
+                            on the previous screens."
                     },
                     items: [
                         {

@@ -368,6 +368,13 @@
 }
 
 .agreement_content {
-    padding: 0.5em;
-    background-color: #fff3f3;
+    padding            : 0px;
+    // padding: 0.5em;
+    // background-color: #fff3f3;
+}
+
+.cumulation_images {
+    img {
+        max-width:450px
+    }
 }

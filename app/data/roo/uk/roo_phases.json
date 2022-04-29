@@ -31,19 +31,19 @@
                 "slug": "neutral",
                 "condition": "wholly_obtained"
             },
+            "insufficient_processing": {
+                "title": "Minimal operations: Have non-originating parts been sufficiently processed?",
+                "slug": "insufficient_processing",
+                "condition": "wholly_obtained"
+            },
             "cumulation": {
-                "title": "Including parts or components from other countries",
+                "title": "Cumulation: Including parts or components from other countries",
                 "slug": "cumulation",
                 "condition": "wholly_obtained"
             },
             "product_specific_rules": {
                 "title": "Does your product meet the product-specific rules?",
                 "slug": "product_specific_rules",
-                "condition": "wholly_obtained"
-            },
-            "insufficient_processing": {
-                "title": "Have non-originating parts been sufficiently processed?",
-                "slug": "insufficient_processing",
                 "condition": "wholly_obtained"
             }
         }

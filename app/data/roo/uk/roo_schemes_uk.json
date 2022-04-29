@@ -24,7 +24,24 @@
                     "detail": "importers-knowledge.md"
                 }
             ],
-            "rule_offset": 10000000,
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": "A product originating in the UK will be considered as originating in the EU if that product is used as a material in the production of another product in that other party, and vice versa.\n\nProduction carried out in one party on a non-originating material may also be taken into account for the purpose of determining whether a product is originating in the other."
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK / EU Trade and Co-operation Agreement",
             "ord": "Origin Reference Document implementing the Trade and Cooperation Agreement between the European Union and the European Atomic Energy Community, of the one part, and the United Kingdom of Great Britain and Northern Ireland, of the other part, signed on 30 December 2020 (“the European Union Origin Reference Document”) Version 1.1, dated 28 December 2021",
             "original": "2021.12.23_EU_ORD_.docx",
@@ -120,7 +137,24 @@
                     "detail": "importers-knowledge.md"
                 }
             ],
-            "rule_offset": 13000000,
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Japan Comprehensive Economic Partnership Agreement",
             "ord": "Origin Reference Document implementing the Agreement between the United Kingdom of Great Britain and Northern Ireland and Japan for a Comprehensive Economic Partnership, signed on 23 October 2020 (“the Japan Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211203_ORD_Japan_V1.1.odt",
@@ -254,14 +288,32 @@
                     "detail": "origin-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Albania Partnership, Trade and Cooperation Agreement",
             "ord": "Origin Reference Document implementing the Partnership, Trade and Cooperation Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Albania, signed on 5th February 2021 (“the Albania Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211228_ORD_Albania_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -306,6 +358,24 @@
                     "detail": "statement-on-origin.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "country_code": "CA",
             "title": "UK-Canada Trade Continuity Agreement",
             "ord": "The Canada Origin Reference Document Version 1.1 dated 28th December 2021",
@@ -313,7 +383,7 @@
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
+                "article 3": "cumulation",
                 "article 4": "wholly obtained",
                 "article 5": "sufficient working",
                 "article 6": "tolerances",
@@ -358,7 +428,24 @@
                     "detail": "origin-declaration.md"
                 }
             ],
-            "rule_offset": 11000000,
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-South Korea Trade Agreement",
             "ord": "Origin Reference Document implementing the Free Trade Agreement between the United Kingdom of Great Britain and Northern Ireland, of the one part, and the Republic of  Korea, of the other part, signed on 22 August 2019 (“the Korea Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211208_ORD_Korea__HS_UPDATE_.odt",
@@ -420,16 +507,34 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "Comprehensive Economic Partnership Agreement UK Kenya",
             "ord": "The Kenya Origin Reference Document Version 1.1, dated 28th December 2021",
             "original": "221205_ORD_Kenya_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "duty-free", 
-                "article 4": "cumulation", 
-                "article 5": "cumulation", 
-                "article 6": "cumulation", 
+                "article 3": "duty-free",
+                "article 4": "cumulation",
+                "article 5": "cumulation",
+                "article 6": "cumulation",
                 "article 7": "wholly obtained",
                 "article 8": "sufficient working",
                 "article 9": "insufficient working",
@@ -481,15 +586,33 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "ESA-UK Economic Partnership Agreement (EPA)",
             "ord": "Origin Reference Document implementing the Agreement establishing an Economic Partnership Agreement between the Eastern and Southern African States, on the one part, and the United Kingdom of Great Britain and Northern Ireland, on the other part, signed by the Republic of Mauritius, the Republic of the Seychelles and the Republic of Zimbabwe on 31st January 2019 (“the Eastern and Southern African States Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211223_ORD_ESA_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
-                "article 5": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
+                "article 5": "cumulation",
                 "article 6": "wholly obtained",
                 "article 7": "sufficient working",
                 "article 8": "insufficient working",
@@ -542,14 +665,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Central America Association Agreement",
             "ord": "The Origin Reference Document implementing the Agreement between the United Kingdom and Central America signed on 18 July 2019 (“the Central America Origin Reference Document”)",
             "original": "212128_ORD_Central_America_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 3a": "cumulation", 
+                "article 3": "cumulation",
+                "article 3a": "cumulation",
                 "article 4": "wholly obtained",
                 "article 5": "sufficient working",
                 "article 6": "insufficient working",
@@ -606,15 +747,33 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Andean Countries Trade Agreement",
             "ord": "The Andean Countries Origin Reference Document Version 1.1, Dated 28th December 2021",
             "original": "211223_ORD_Andean__V1.1_.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 3a": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 3a": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -668,6 +827,24 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Cameroon Economic Partnership Agreement",
             "ord": "The Cameroon Origin Reference Document Version 1.3, dated 28th December 2021",
             "original": "211223_Cameroon_ORD__HS_UPDATE__.odt",
@@ -724,15 +901,33 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "CARIFORUM-UK Economic Partnership Agreement",
             "ord": "The CARIFORUM Origin Reference Document Version 1.2, dated 28th December 2021",
             "original": "211223_ORD_CARIFORUM_V1.2.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
-                "article 5": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
+                "article 5": "cumulation",
                 "article 6": "wholly obtained",
                 "article 7": "sufficient working",
                 "article 8": "insufficient working",
@@ -796,14 +991,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Chile Association Agreement",
             "ord": "Origin Reference Document implementing the Agreement establishing an Association between the United Kingdom of Great Britain and Northern Ireland and the Republic of Chile signed on 30 January 2019 (“the Chile Origin Reference Document”)",
             "original": "212123_ORD_Chile__HS_UPDATE_.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 3a": "cumulation", 
+                "article 3": "cumulation",
+                "article 3a": "cumulation",
                 "article 4": "wholly obtained",
                 "article 5": "sufficient working",
                 "article 6": "insufficient working",
@@ -854,6 +1067,24 @@
                     "detail": "eur1.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Côte d’Ivoire Stepping Stone Economic Partnership Agreement",
             "ord": "Origin Reference Document implementing the Stepping Stone Economic Partnership Agreement between the Republic of Côte d'Ivoire and the United Kingdom of Great Britain and Northern Ireland, signed on 15 October 2020 (“the Côte d'Ivoire Origin Reference Document”)",
             "original": "211223_ORD_Cote_d_Ivoire_-__HS_UPDATE_.odt",
@@ -914,14 +1145,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Egypt Association Agreement",
             "ord": "Origin Reference Document implementing the Agreement establishing an Association between the United Kingdom of Great Britain and Northern Ireland and the Arab Republic of Egypt, signed on 5th December 2020 (“the Egypt Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "20211223_ORD_Egypt_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -972,14 +1221,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Faroe Islands Free Trade Agreement (FTA)",
             "ord": "Origin Reference Document implementing the Free Trade Agreement between the United Kingdom of Great Britain and Northern Ireland and the Kingdom of Denmark in respect of the Faroe Islands, signed on 31st January 2019 (“the Faroe Islands Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "20121223_ORD_Faroe_Islands_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1030,14 +1297,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Georgia Strategic Partnership and Cooperation Agreement",
             "ord": "The Origin Reference Document implementing the Agreement establishing a Strategic Partnership and Cooperation Agreement between the United Kingdom of Great Britain and Northern Ireland and Georgia signed on 21st October 2019 (“the Georgia Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "20121223_ORD_Georgia_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1088,6 +1373,24 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Ghana Interim Trade Partnership Agreement",
             "ord": "Origin Reference Document implementing the Interim Trade Partnership Agreement between the Republic of Ghana, of the one part, and the United Kingdom of Great Britain and Northern Ireland, of the other part, signed on 2nd March 2021 ('the Ghana Origin Reference Document') Version 1.1, dated 28th December 2021",
             "original": "211223_ORD_Ghana_-_HS.odt",
@@ -1146,13 +1449,31 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "Agreement on Trade in Goods between Iceland, Norway and the UK",
             "ord": "Origin Reference Document implementing the Agreement between the United Kingdom of Great Britain and Northern Ireland, Iceland and the Kingdom of Norway on Trade in Goods, dated 8th December 2020 (“the Iceland Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211202_Iceland_ORD_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
+                "article 3": "cumulation",
                 "article 4": "wholly obtained",
                 "article 5": "sufficient working",
                 "article 6": "insufficient working",
@@ -1204,14 +1525,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Israel Trade and Partnership Agreement",
             "ord": "Origin Reference Document implementing the Trade and Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland and the Government of the State of Israel, signed on 18th February 2019 (“the Israel Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "20211202_ORD_Israel_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1262,14 +1601,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Kosovo Partnership, Trade and Cooperation Agreement",
             "ord": "Origin Reference Document implementing the Partnership, Trade and Cooperation Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Kosovo, signed on 3rd December 2019 (“the Kosovo Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211203_ORD_Kosovo_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1307,6 +1664,24 @@
         {
             "scheme_code": "jordan",
             "proofs": [],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Kosovo Partnership, Trade and Cooperation Agreement",
             "ord": "Origin Reference Document implementing the Agreement Establishing an Association between the United Kingdom of Great Britain and Northern Ireland and the Hashemite Kingdom of Jordan, signed on 5 November 2019 (“the Jordan Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "20211202_ORD_Jordan__HS_UPDATE_.odt",
@@ -1365,14 +1740,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Lebanon Association Agreement",
             "ord": "Origin Reference Document implementing the Agreement establishing an association between the United Kingdom of Great Britain and Northern Ireland and The Republic of Lebanon signed on 19th September 2019 (“the Lebanon Origin Reference Document”) Version 2.1, dated 28th December 2021",
             "original": "211208_ORD_Lebanon__HS_UPDATE_.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1423,14 +1816,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Mexico Trade Continuity Agreement",
             "ord": "The Mexico Origin Reference Document Version 1.1, dated 28th December 2021",
             "original": "211203_Mexico_ORD_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 3a": "cumulation", 
+                "article 3": "cumulation",
+                "article 3a": "cumulation",
                 "article 4": "wholly obtained",
                 "article 5": "sufficient working",
                 "article 6": "insufficient working",
@@ -1481,6 +1892,24 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Switzerland-Liechtenstein Trade Agreement",
             "ord": "Origin Reference Document implementing the Trade Agreement between the United Kingdom of Great Britain and Northern Ireland and the Swiss Confederation signed on 11 February 2019 (“the Switzerland Origin Reference Document”) Version 1.2, dated 28th December 2021",
             "original": "211203_Switzerland_ORD_V1.2__Applying_the_Liechtenstein_Agreement_by_extension_.odt",
@@ -1541,14 +1970,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Moldova Strategic Partnership, Trade and Cooperation Agreement",
             "ord": "Origin Reference Document implementing the Strategic Partnership, Trade and Cooperation Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Moldova, signed on 24th December 2020 (“the Moldova Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211203_ORD_Moldova_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1599,14 +2046,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Morocco Association Agreement",
             "ord": "Origin Reference Document implementing the Agreement establishing an association between the United Kingdom of Great Britain and Northern Ireland and the Kingdom of Morocco, signed on 26th October 2019 (“the Morocco Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211203_ORD_Morocco_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1657,14 +2122,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-North Macedonia Partnership, Trade and Cooperation Agreement",
             "ord": "Origin Reference Document implementing the Partnership, Trade and Cooperation Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of North Macedonia, signed on 3 December 2020 (“the North Macedonia Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211203_ORD_North_Macedonia_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1715,14 +2198,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Pacific Economic Partnership Agreement (EPA)",
             "ord": "The Pacific States Origin Reference Document Version 2.2, dated 28th December 2021",
             "original": "211206_Pacific_States_ORD_V2.2.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1776,14 +2277,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Palestinian Authority Political, Trade and Partnership Agreement",
             "ord": "Origin Reference Document implementing the Interim Political, Trade and Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland, of the one part, and Palestine Liberation Organization (“PLO”) for the benefit of the Palestinian Authority of the West Bank and the Gaza Strip (“the Palestinian Authority”), of the other part, signed on 18th February 2019 (“the Palestine Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211204_ORD_Palestine__HS_UPDATE_.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1835,7 +2354,24 @@
                     "detail": "approved-exporter.md"
                 }
             ],
-            "rule_offset": 14000000,
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Singapore Trade Agreement",
             "ord": "Origin Reference Document implementing the Free Trade Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Singapore, signed on 10th December 2020 (“the Singapore Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211204_ORD_Singapore_V1.1.odt",
@@ -1894,14 +2430,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": " UK-Serbia Partnership, Trade and Cooperation Agreement ",
             "ord": "Origin Reference Document implementing the Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Serbia signed on 16th April 2021 ('the Serbia Origin Reference Document') Version 1.1, dated 28th December 2021",
             "original": "211204_Serbia_ORD_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -1952,16 +2506,34 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "SACUM-UK Economic Partnership Agreement (EPA)",
             "ord": "Origin Reference Document implementing the Economic Partnership Agreement between the Southern African Customs Union Member States and Mozambique, of the one part, and the United Kingdom of Great Britain and Northern Ireland, of the other part, signed on 9 October 2019 (“the Southern African Customs Union and Mozambique Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211204_ORD_SACUM__HS_UPDATE_.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "duty-free", 
-                "article 4": "cumulation", 
-                "article 5": "cumulation", 
-                "article 6": "cumulation", 
+                "article 3": "duty-free",
+                "article 4": "cumulation",
+                "article 5": "cumulation",
+                "article 6": "cumulation",
                 "article 7": "wholly obtained",
                 "article 8": "sufficient working",
                 "article 9": "insufficient working",
@@ -2017,14 +2589,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Tunisia Association Agreement",
             "ord": "Origin Reference Document implementing the Agreement Establishing an Association between the United Kingdom of Great Britain and Northern Ireland and the Republic of Tunisia, signed on 4th October 2019 (“the Tunisia Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "21205_ORD_Tunisia_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -2070,14 +2660,31 @@
                     "detail": "origin-declaration.md"
                 }
             ],
-            "rule_offset": 12000000,
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Turkey Trade Agreement",
             "ord": "Origin Reference Document implementing the Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Turkey signed on 29th December 2020 ('the Turkey Origin Reference Document') Version 1.2, dated 28th December 2021",
             "original": "211224_ORD_Turkey__HS_UPDATE_.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
+                "article 3": "cumulation",
                 "article 4": "wholly obtained",
                 "article 5": "tolerances",
                 "article 6": "insufficient working",
@@ -2130,14 +2737,32 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Ukraine Political, Free Trade and Strategic Partnership Agreement",
             "ord": "Origin Reference Document implementing the Political, Free Trade and Strategic Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland, of the one part, and Ukraine, of the other part, signed on 8 October 2020 ('the Ukraine Origin Reference Document') Version 1.1, dated 28th December 2021",
             "original": "2211223_ORD_Ukraine_V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
-                "article 4": "cumulation", 
+                "article 3": "cumulation",
+                "article 4": "cumulation",
                 "article 5": "wholly obtained",
                 "article 6": "sufficient working",
                 "article 7": "insufficient working",
@@ -2188,13 +2813,31 @@
                     "detail": "origin-declaration.md"
                 }
             ],
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "UK-Vietnam Free Trade Agreement",
             "ord": "Origin Reference Document implementing the Free Trade Agreement between the United Kingdom of Great Britain and Northern Ireland and the Socialist Republic of Viet Nam, signed on 29th December 2020 (“the Viet Nam Origin Reference Document”) Version 1.1, dated 28th December 2021",
             "original": "211223_ORD_Vietnam__V1.1.odt",
             "articles": {
                 "article 1": "definitions",
                 "article 2": "general requirements",
-                "article 3": "cumulation", 
+                "article 3": "cumulation",
                 "article 4": "wholly obtained",
                 "article 5": "sufficient working",
                 "article 6": "insufficient working",
@@ -2247,7 +2890,24 @@
                     "detail": "invoice-declaration.md"
                 }
             ],
-            "rule_offset": 15000000,
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "Arrangement for import duty on trade in goods from certain British Overseas Territories",
             "ord": "Arrangement for import duty on trade in goods from certain British Overseas Territories",
             "original": "Ref-Doc-2020.11.09-Overseas-Territories-arrangement.odt",
@@ -2261,7 +2921,7 @@
                 "article 7": "cumulation",
                 "article 8": "cumulation",
                 "article 9": "cumulation",
-                "article 10": "cumulation", 
+                "article 10": "cumulation",
                 "article 11": "unit of qualification",
                 "article 12": "accessories",
                 "article 13": "sets",
@@ -2317,7 +2977,24 @@
                     "detail": "origin-declaration.md"
                 }
             ],
-            "rule_offset": 16000000,
+            "cumulation": {
+                "bilateral": {
+                    "applies": true,
+                    "copy": ""
+                },
+                "extended": {
+                    "applies": false,
+                    "countries": []
+                },
+                "diagonal": {
+                    "applies": false,
+                    "countries": []
+                },
+                "full": {
+                    "applies": false,
+                    "countries": []
+                }
+            },
             "title": "Generalised Scheme of Preferences (GSP)",
             "ord": "",
             "original": "",

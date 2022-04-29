@@ -7,7 +7,7 @@ class Heading {
     constructor(json, goods_nomenclature_item_id = null) {
         var t, c, m, de, f, measure_class, indent_class;
 
-        this.intermediate = goods_nomenclature_item_id;
+        this.subheading = goods_nomenclature_item_id;
 
         this.json = json;
         this.commodities = [];
@@ -20,7 +20,7 @@ class Heading {
         this.section_note = "";
         this.section_id = "";
         this.section_title = "";
-        this.intermediate_ancestry = [];
+        this.subheading_ancestry = [];
 
         // Get the basic data from the API, prior to organising into an atomic object for the nunjucks
         this.included.forEach(obj => {
@@ -124,8 +124,8 @@ class Heading {
         });
 
         this.get_hierarchy();
-        if (this.intermediate != null) {
-            this.get_intermediate_hierarchy();
+        if (this.subheading != null) {
+            this.get_subheading_hierarchy();
         }
 
         return (this);
@@ -147,10 +147,10 @@ class Heading {
         }
     }
 
-    get_intermediate_hierarchy() {
-        var intermediate;
+    get_subheading_hierarchy() {
+        var subheading;
         var running_indents, start_indents;
-        this.intermediate_ancestry = [];
+        this.subheading_ancestry = [];
         var found = false;
         var found_index;
         var commodity_count = this.commodities.length;
@@ -159,8 +159,8 @@ class Heading {
         for (var i = commodity_count - 1; i >= 0; i--) {
             var commodity = this.commodities[i];
             if (!found) {
-                if (commodity.goods_nomenclature_item_id == this.intermediate.padEnd(10, "0")) {
-                    this.intermediate_ancestry.push(commodity.sid);
+                if (commodity.goods_nomenclature_item_id == this.subheading.padEnd(10, "0")) {
+                    this.subheading_ancestry.push(commodity.sid);
                     running_indents = commodity.number_indents;
                     start_indents = commodity.number_indents;
                     found = true;
@@ -169,7 +169,7 @@ class Heading {
             } else {
                 if (commodity.number_indents < running_indents) {
                     running_indents = commodity.number_indents;
-                    this.intermediate_ancestry.push(commodity.sid);
+                    this.subheading_ancestry.push(commodity.sid);
                 }
             }
         }
@@ -180,7 +180,7 @@ class Heading {
 
             if (commodity.number_indents >= start_indents) {
                 running_indents = commodity.number_indents;
-                this.intermediate_ancestry.push(commodity.sid);
+                this.subheading_ancestry.push(commodity.sid);
             }
             if (commodity.number_indents < start_indents) {
                 break;

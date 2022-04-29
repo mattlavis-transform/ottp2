@@ -20,7 +20,7 @@
                 <p class="govuk-body">{{ measure_type.hint | safe }}</p>
             {% endif %}
             
-            <p class="govuk-body">This measure type is used for <b>{{ measure_type.trade_direction }}</b> and has an ID of <b>{{ measure_type.id }}</b>.</p>
+            <p class="govuk-body">This measure type is used for <strong>{{ measure_type.trade_direction }}</strong> and has an ID of <strong>{{ measure_type.id }}</strong>.</p>
 
             {% if measure_type.preference_code != "" %}
                 <h2 class="govuk-heading-s">Preference codes</h2>
@@ -28,7 +28,7 @@
                 CDS in Data Element 4/17 and in CHIEF in Box 36.</div>
 
                 <h3 class="govuk-heading-s">Preference code to use for {{ measure_type.description | lower }} measures</h3>
-                <p class="govuk-body">Use the preference code <b>{{ measure_type.preference_code[0]["preference_code"] }}</b>: {{ measure_type.preference_code[0]["description"] }}</p>
+                <p class="govuk-body">Use the preference code <strong>{{ measure_type.preference_code[0]["preference_code"] }}</strong>: {{ measure_type.preference_code[0]["description"] }}</p>
 
                 <p class="govuk-body">
                     <a href="https://www.gov.uk/government/publications/preference-codes-for-data-element-417-of-the-customs-declaration-service">See all preference codes (opens in new tab)</a>

@@ -13,7 +13,7 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: context.back_link
+        href: "/roo/wholly_obtained_info/" + context.goods_nomenclature_item_id + "/" + context.country
     }) }}
 {% endblock %}
 
@@ -52,7 +52,7 @@
                             <span class="govuk-details__summary-text">Example of neutral elements</span>
                         </summary>
                         <div class="govuk-details__text roo_container">
-                            <ol class="govuk-list govuk-list--number">
+                            <ul class="govuk-list govuk-list--bullet">
                                 <li>A part is manufactured in a plant in country A.</li>
                                 <li>It is to be exported to country B under A-B FTA.</li>
                                 <li>The rule of origin for this part requires non-originating materials not to exceed 40% of the final value of the part.</li>
@@ -82,7 +82,8 @@
             <p>Click on the 'Continue' button to indicate if your goods are wholly obtained, based on the rules of the {{ context.scheme_title }}.</p>
             {{ govukButton({
                 text: "Continue",
-                href: "/roo/cumulation/" + context.goods_nomenclature_item_id + "/" + context.country
+                href: "/roo/wholly_obtained/" + context.goods_nomenclature_item_id + "/" + context.country,
+                xhref: "/roo/cumulation/" + context.goods_nomenclature_item_id + "/" + context.country
             }) }}
         </div>
         <div class="govuk-grid-column-one-third">

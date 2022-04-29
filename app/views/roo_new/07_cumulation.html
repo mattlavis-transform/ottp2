@@ -13,7 +13,7 @@
     }) }}
     {{ govukBackLink({
         text: "Back",
-        href: context.back_link
+        href: "/roo/not_wholly_obtained/" + context.goods_nomenclature_item_id + "/" + context.country
     }) }}
 {% endblock %}
 
@@ -24,65 +24,68 @@
                 <input type="hidden" name="phase" id="phase" value="processing" >
                 {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
                 <span class="govuk-caption-xl commodity-split">Are your goods originating?</span>
-                <h1 class="govuk-heading-l">Including parts or components from other countries</h1>
-                <p class="govuk-body-l">Not all of the parts that make up your goods
-                    come from {{ context.country_name }}.</p>
+                <h1 class="govuk-heading-xl">Including parts or components from other countries</h1>
 
-                <p class="govuk-body-l">In order to qualify for preferential treatment, you 
+                <p class="govuk-body-l">
+                    In order to qualify for preferential treatment, you 
                     may be able to include parts that come from other countries. This depends on the 
                     <strong>cumulation rules</strong> of the trade agreement, which are described below.
                 </p>
 
-                <div class="govuk-inset-text">
+                <div class="xgovuk-inset-text">
                     <p>
                         <strong>Cumulation</strong> may allow for the origin of materials or processing undertaken in country A
                         to be added to the materials and processing undertaken within country B, so long as they are further
-                        processed or added to products originating in country B.</p>
+                        processed or added to products originating in country B.
+                    </p>
+                    <p>This allows those factors that contributed to the origin of country A materials
+                        to be considered as though undertaken in B.
+                    </p>
                 </div>
 
                 <h2 class="govuk-heading-m">Cumulation in the {{ context.scheme_title }}</h2>
                 {% if context.cumulation_types["count"] > 0 %}
                     <div class="govuk-inset-text">
-                        <p>The {{ context.scheme_title }} features {{ context.cumulation_types["count"] }}
-                            {{ "type" if context.cumulation_types["count"] == 1 else "types" }}
-                             of cumulation. These are described below.</p>
+                        {% if context.cumulation_types["count"] > 1 %}
+                            <p>The {{ context.scheme_title }} features {{ context.cumulation_types["count"] }}
+                                {{ "type" if context.cumulation_types["count"] == 1 else "types" }}
+                                of cumulation. These are described below.
+                            </p>
+                        {% else %}
+                            <p>The {{ context.scheme_title }} features {{ context.cumulation_types["types"][0] }} cumulation.</p>
+                            {# <p>{{ context.cumulation_options["bilateral"]["copy"] | convert_markdown | safe }} #}
+                        {% endif %}
+                    </div>
+                    <div class="cumulation_images">
 
                         {% if context.cumulation_types["bilateral"] == true %}
-                            <details class="govuk-details" data-module="govuk-details">
-                                <summary class="govuk-details__summary">
-                                    <span class="govuk-details__summary-text">Bilateral cumulation</span>
-                                </summary>
-                                <div class="govuk-details__text">
-                                    {{ context.cumulation_texts["bilateral"] | convert_markdown | safe }}
-                                </div>
-                            </details>
+                            <p class="b">Bilateral cumulation</p>
+                            {{ context.cumulation_texts["bilateral"] | convert_markdown | safe }}
+                            <div class="govuk-inset-text">
+                                {{ context.cumulation_options["bilateral"]["copy"] | convert_markdown | safe }}
+                            </div>
                         {% endif %}
 
                         {% if context.cumulation_types["diagonal"] == true %}
-                            <details class="govuk-details" data-module="govuk-details">
-                                <summary class="govuk-details__summary">
-                                    <span class="govuk-details__summary-text">Diagonal cumulation</span>
-                                </summary>
-                                <div class="govuk-details__text">
-                                    {{ context.cumulation_texts["diagonal"] | convert_markdown | safe }}
-                                </div>
-                            </details>
+                            <p class="b">Diagonal cumulation</p>
+                            {{ context.cumulation_texts["diagonal"] | convert_markdown | safe }}
                         {% endif %}
 
                         {% if context.cumulation_types["extended"] == true %}
-                            <details class="govuk-details" data-module="govuk-details">
-                                <summary class="govuk-details__summary">
-                                    <span class="govuk-details__summary-text">Extended (or third-party) cumulation</span>
-                                </summary>
-                                <div class="govuk-details__text">
-                                    {{ context.cumulation_texts["extended"] | convert_markdown | safe }}
-                                </div>
-                            </details>
+                            <p class="b">Extended cumulation</p>
+                            {{ context.cumulation_texts["extended"] | convert_markdown | safe }}
                         {% endif %}
                     </div>
                 {% endif %}
 
-                <div class="agreement_content">{{ context.cumulation | convert_markdown | safe }}</div>
+                <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">Read more about cumulation in to the {{ context.scheme_title }}</span>
+                    </summary>
+                    <div class="govuk-details__text">
+                        {{ context.cumulation | convert_markdown | safe }}
+                    </div>
+                </details>
 
                 <div class="govuk-warning-text">
                     <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -92,15 +95,16 @@
                         meet the product-specific rules.
                     </strong>
                 </div>
-                
-                {# {{ govukButton({
-                    text: "Continue",
-                    href: "/roo/insufficient_processing/" + context.goods_nomenclature_item_id + "/" + context.country
-                }) }} #}
-                
+
+                <p class="b">Next step</p>
+                <p>
+                    Click on the 'Continue' button to view the definition of '<strong>minimal operations</strong>' in the {{ context.scheme_title }}.
+                    Any non-originating parts must be <strong>sufficiently processed</strong> to count as originating.
+                </p>
+
                 {{ govukButton({
                     text: "Continue",
-                    href: "/roo/product_specific_rules/" + context.goods_nomenclature_item_id + "/" + context.country
+                    href: "/roo/insufficient_processing/" + context.goods_nomenclature_item_id + "/" + context.country
                 }) }}
 
             </form>

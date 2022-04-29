@@ -31,16 +31,19 @@ tr.featured td span.desc::after {
 }
 
 .tag {
-    display         : inline-block;
-    background-color: #f0f0f0;
-    border-radius   : 4px;
-    border          : 1px #ddd solid;
-    font-size       : 12px;
-    padding         : 2px 5px;
-    margin-right    : 0.25em;
-    margin-bottom   : 5px;
-    width           : auto;
-    clear: both;
+    display                : inline-block;
+    background-color       : #f0f0f0;
+    border-radius          : 4px;
+    border                 : 1px #ddd solid;
+    font-size              : 12px;
+    padding                : 2px 5px;
+    margin-right           : 0.25em;
+    margin-bottom          : 5px;
+    width                  : auto;
+    clear                  : both;
+    font-family            : "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     a {
         color          : #000;
@@ -50,6 +53,10 @@ tr.featured td span.desc::after {
     a:hover {
         text-decoration: underline;
     }
+}
+
+.tag.red {
+    background-color: #ffcccc;
 }
 
 .tag:hover {
@@ -102,6 +109,17 @@ tr.featured td span.desc::after {
     img {
         width        : 100%;
         border-radius: 5px;
+    }
+}
+
+.guide_aside {
+    background-color: #EBF0F7;
+    padding         : 0.5em 0.5em 0.5em 0.5em;
+
+    img {
+        width        : 100%;
+        border-radius: 5px;
+        display      : none;
     }
 }
 
@@ -200,6 +218,20 @@ tr.featured td span.desc::after {
 }
 
 .x {
-    font-weight: bold;
+    font-weight  : bold;
     padding-right: 0.25em;
+}
+
+.red {
+    color: #c00;
+}
+
+.tag.blue {
+    color: #33c;
+}
+
+.last-twig {
+    color      : #333;
+    font-weight: 600;
+    ;
 }

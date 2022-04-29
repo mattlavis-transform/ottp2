@@ -59,21 +59,6 @@ module.exports = function (env) {
         return (s);
     }
 
-    filters.highlight_safe = function (s, term) {
-        var pluralize = require('pluralize')
-        term = term.toLowerCase();
-        var terms = term.split(" ");
-
-        terms.forEach(term => {
-            // var regex = new RegExp("(" + term + ")", "gi");
-            // s = s.replace(regex, "<span class='hi'>$1</span>");
-            var regex = new RegExp("(" + pluralize(term, 1) + ")", "gi");
-            s = s.replace(regex, "<span class='hi'>$1</span>");
-        });
-
-        return (s);
-    }
-
     filters.remove_extension = function (s) {
         var my_array = s.split(".");
         s = my_array[0];
@@ -275,7 +260,7 @@ module.exports = function (env) {
         if (typeof str !== 'undefined') {
             if ((entity.class == "chapter")) {
                 s = str.substr(0, 2);
-            } else if ((entity.class == "intermediate") || (entity.class == "heading")) {
+            } else if ((entity.class == "subheading") || (entity.class == "heading")) {
                 if (str.slice(-6) == "000000") {
                     s = "<span>" + str.substr(0, 4) + "</span>";
                 } else if (str.slice(-4) == "0000") {
@@ -319,28 +304,32 @@ module.exports = function (env) {
     }
 
     filters.convert_markdown = function (str, hide_bullets) {
-        if (typeof str !== 'undefined') {
-            md = new MarkdownIt();
-            str = str.replace(/\* ([0-9]{1,2})\\. /g, '$1. ');
-            str = str.replace(/  \* \(([a-z]{1,2})\)/g, '\n\n    $1. ');
+        try {
+            if (typeof str !== 'undefined') {
+                md = new MarkdownIt();
+                str = str.replace(/\* ([0-9]{1,2})\\. /g, '$1. ');
+                str = str.replace(/  \* \(([a-z]{1,2})\)/g, '\n\n    $1. ');
 
-            var markdown_text = md.render(str);
-            markdown_text = markdown_text.replace(/&lt;/g, "<");
-            markdown_text = markdown_text.replace(/&gt;/g, ">");
-            markdown_text = markdown_text.replace(/<h1>/g, "<h1 class='govuk-heading-l'>");
-            markdown_text = markdown_text.replace(/<h2>/g, "<h2 class='govuk-heading-m'>");
-            markdown_text = markdown_text.replace(/<h3>/g, "<h3 class='govuk-heading-s'>");
-            markdown_text = markdown_text.replace(/{{ top }}/g, "<a href='#top'>Back to top</a>");
+                var markdown_text = md.render(str);
+                markdown_text = markdown_text.replace(/&lt;/g, "<");
+                markdown_text = markdown_text.replace(/&gt;/g, ">");
+                markdown_text = markdown_text.replace(/<h1>/g, "<h1 class='govuk-heading-l'>");
+                markdown_text = markdown_text.replace(/<h2>/g, "<h2 class='govuk-heading-m'>");
+                markdown_text = markdown_text.replace(/<h3>/g, "<h3 class='govuk-heading-s'>");
+                markdown_text = markdown_text.replace(/{{ top }}/g, "<a href='#top'>Back to top</a>");
 
-            if (hide_bullets) {
-                markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list'>")
+                if (hide_bullets) {
+                    markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list'>")
+                } else {
+                    markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list govuk-list--bullet'>")
+                }
+                markdown_text = markdown_text.replace(/<ol>/g, "<ol class='govuk-list govuk-list--number'>")
+                return markdown_text;
             } else {
-                markdown_text = markdown_text.replace(/<ul>/g, "<ul class='govuk-list govuk-list--bullet'>")
+                return "";
             }
-            markdown_text = markdown_text.replace(/<ol>/g, "<ol class='govuk-list govuk-list--number'>")
-            return markdown_text;
-        } else {
-            return "";
+        } catch {
+            var a = 1;
         }
     }
 
@@ -409,13 +398,6 @@ module.exports = function (env) {
         return (s);
     }
 
-    filters.highlight_search_term = function (s, search_term) {
-        // s = s.replace(search_term, "<span class='hi'>" + search_term + "</span>");
-        var re = "/(" + search_term + ")/ig";
-        s = s.replace(re, "<span class='hi'>$1</span>");
-        // console.log(search_term, s);
-        return (s);
-    }
 
     filters.cleanse = function (s) {
         s = s.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()'"]/g, "");
@@ -425,31 +407,41 @@ module.exports = function (env) {
     filters.highlight = function (s, term) {
         const pluralize = require('pluralize');
 
+        if (s.includes("phosphorus and potassium;")) {
+            var a = 1;
+        }
+
         if (typeof term !== 'undefined') {
             var all_terms = [];
             var out = "";
             term = term.toLowerCase();
             var terms = term.split(" ");
+            // var terms = term.split(/[\s,;]+/);
 
             terms.forEach(term => {
                 all_terms.push(pluralize(term, 1));
                 all_terms.push(pluralize(term, 2));
             });
 
-            var lexemes = s.split(" ");
-            lexemes.forEach(lexeme => {
-                if (all_terms.includes(lexeme.toLowerCase())) {
-                    out += "<span class='hi'>" + lexeme + "</span> ";
-                } else {
-                    out += lexeme + " ";
-                }
+            all_terms.forEach(term => {
+                var replace = "(\\b)(" + term + ")(\\b)";
+                var re = new RegExp(replace, "gmi");
+
+                s = s.replace(re, "$1<span class='hi'>$2</span>$3");
             });
+            out = s;
         } else {
             out = s;
         }
 
         return (out);
     }
+
+    filters.trim_string = function (s) {
+        s = s.trim();
+        return (s);
+    }
+
 
     /* ------------------------------------------------------------------
       keep the following line to return your filters to the app

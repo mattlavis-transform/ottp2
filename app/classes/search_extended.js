@@ -4,8 +4,10 @@ const Guide = require('./guide');
 const SearchHeading = require('./search_heading');
 const importFresh = require('import-fresh');
 const { result } = require('lodash');
+const tc = require("text-case");
 
 class SearchExtended {
+    
     constructor(context, req, res) {
         this.context = context;
         this.format_search_term();
@@ -34,7 +36,7 @@ class SearchExtended {
         this.guide_minimum_threshold = 1;
 
         this.get_filters(req);
-        // console.log(JSON.stringify(this.query.query));
+        console.log(JSON.stringify(this.query));
 
         var url = 'http://localhost:9200/commodities/_search';
         axios.get(url, {
@@ -48,9 +50,11 @@ class SearchExtended {
                 this.get_guides(this.results.hits);
                 this.get_headings();
                 this.process_suggestions(response.data.suggest["did-you-mean"], context.search_term);
-                this.deduplicate();
-                this.process();
+                this.remove_excluded_results();
+                this.process_filters();
+                this.add_headings_to_filters();
 
+                // this.sort_order = "alpha";
                 if (this.sort_order == "alpha") {
                     this.sort_alpha();
                 }
@@ -58,6 +62,7 @@ class SearchExtended {
                 res.render('search/elastic', {
                     'context': this.context,
                     'hits': this.results,
+                    'hit_count': this.hit_count,
                     'chapters': this.chapter_array,
                     'search_headings': this.search_headings,
                     'suggestions': this.suggestions,
@@ -71,6 +76,18 @@ class SearchExtended {
                     'conjunction': this.conjunction
                 });
             });
+    }
+
+    add_headings_to_filters() {
+        return;
+        var heading_filter = new SearchFilter("filter_heading");
+        this.search_headings.forEach(heading => {
+            heading_filter.add_value(heading.id + ": " + heading.description);
+        });
+        this.filters_with_counts.unshift(heading_filter);
+        var a = this.filters_with_counts;
+        var b = this.search_headings;
+        var c = 1;
     }
 
     get_url(req) {
@@ -185,6 +202,7 @@ class SearchExtended {
     }
 
     get_guides_by_chapter(hits) {
+
         // console.log("Getting guides by chapter");
         this.chapters = {}
         // Check all the hits and form a unique
@@ -203,7 +221,7 @@ class SearchExtended {
         this.chapter_array = [];
         for (var [key, value] of Object.entries(this.chapters)) {
             var a = 1;
-            var obj = [key, value["count"], value["description"]];
+            var obj = [key, value["count"], tc.sentenceCase(value["description"])];
             this.chapter_array.push(obj);
         }
         var a = 1;
@@ -319,7 +337,7 @@ class SearchExtended {
 
     }
 
-    process() {
+    process_filters() {
         this.filters_with_counts = [];
         this.results.hits.forEach(result => {
             for (var [key, value] of Object.entries(result._source)) {
@@ -348,16 +366,23 @@ class SearchExtended {
         });
 
         this.tally_filter_values();
-        var a = 1;
     }
 
     tally_filter_values() {
+        var percentage_threshold = 10;
         this.filters_with_counts.forEach(filter => {
+            filter.display = true;
             filter.value_count = 0;
             filter.values.forEach(value => {
                 filter.value_count += value.count;
             });
-            // filter.sort_values();
+            if ((filter.value_count / this.hit_count) * 100 < percentage_threshold) {
+                filter.display = false;
+            }
+            if (filter.values.length < 2) {
+                filter.display = false;
+            }
+            filter.sort_values();
         });
 
         this.filters_with_counts.sort(compare_value_counts);
@@ -374,6 +399,7 @@ class SearchExtended {
     }
 
     deduplicate() {
+        // No longer used - can't remember what it does
         this.found_commodities = [];
         this.results.hits.forEach(result => {
             result.display = true;
@@ -388,7 +414,37 @@ class SearchExtended {
                     result.display = true;
                 }
             }
-            var a = 1;
+        });
+    }
+
+    remove_excluded_results() {
+        this.hit_count = this.results.hits.length;
+        this.found_commodities = [];
+        this.results.hits.forEach(result => {
+            result.display = true;
+            var exclusion_word_position = 9999999;
+            var exclusion_words = [
+                "neither",
+                "other than",
+                "excluding",
+                "except",
+                " not "
+            ]
+            exclusion_words.forEach(exclusion_word => {
+                var pos = result._source.description.indexOf(exclusion_word);
+                if (pos > -1) {
+                    exclusion_word_position = pos;
+                    var a = 1;
+                }
+            });
+            if (exclusion_word_position < 9999999) {
+                var pos = result._source.description.indexOf(this.context.search_term);
+                if (pos > exclusion_word_position) {
+                    result.display = false;
+                    this.hit_count -= 1;
+                }
+            }
+            // result.display = true;
         });
     }
 
