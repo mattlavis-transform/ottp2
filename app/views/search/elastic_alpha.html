@@ -1,61 +1,59 @@
-            <table class="govuk-table">
-                {# <thead class="govuk-table__head">
-                    <tr class="govuk-table__row">
-                        <th scope="col" class="govuk-table__header">Code</th>
-                        <th scope="col" class="govuk-table__header">Description</th>
-                    </tr>
-                </thead> #}
-                {% set latest_chapter = "" %}
-                {% set latest_heading = "" %}
-                <tbody class="govuk-table__body">
-                    {% for hit in hits.hits %}
-                        {% if hit.display == true %}
-                            {% if hit._source.chapter != latest_chapter %}
-                                <tr class="govuk-table__row">
-                                    <td class="govuk-table__cell commodity-split">Chapter {{ hit._source.goods_nomenclature_item_id | substring(0, 2) | safe }}</td>
-                                    <td>{{ hit._source.hierarchy[hit._source.hierarchy | length - 1].description | safe }}</td>
-                                </tr>
-                            {% endif %}
-                            {% set latest_chapter = hit._source.hierarchy[0] %}
-                            
-                            <tr class="govuk-table__row {{ row_class }}">
-                                <td class="govuk-table__cell commodity-split">
-                                    {% if hit._source.class | lower == "commodity" %}
-                                        {% set link = "/commodities/" + hit._source.goods_nomenclature_item_id %}
-                                    {% else %}
-                                        {% set link = "/headings/" + hit._source.goods_nomenclature_item_id | substring(0, 4) %}
-                                    {% endif %}
+<h2 class="govuk-heading-s">Sorting alphabetically</h2>
+<div class="alpha">
+    {% set latest_chapter = "" %}
+    {% set latest_heading = "" %}
+    {% set tiers_previous = [] %}
+    {% for hit in hits.hits %}
+        {% if hit.display == true %}
+            {# Always show the chapter, provided it has changed from the previous chapter #}
+            {# {{ hit._source | dump }} #}
+            {% set tiers = hit._source.hierarchy | reverse %}
+            {% set tiers = (tiers.push(
+                {
+                    "goods_nomenclature_item_id": hit._source.goods_nomenclature_item_id,
+                    "productline_suffix": hit._source.productline_suffix,
+                    "class": hit._source.class,
+                    "description": hit._source.description
+                }
+            ), tiers) %}
 
-                                    <a href="{{ link }}">
-                                        {{ hit._source.goods_nomenclature_item_id | format_commodity_code2 | safe }}
-                                        {# {{ hit._source.goods_nomenclature_item_id | format_commodity_code2 | safe }} #}
-                                    </a>
-                                </td>
-                                <td class="govuk-table__cell">
-                                    <!--
-                                        {% if hit._source.ancestor_7 %}{{ hit._source.ancestor_7 }} - {% endif %}
-                                        {% if hit._source.ancestor_6 %}{{ hit._source.ancestor_6 }} - {% endif %}
-                                        {% if hit._source.ancestor_5 %}{{ hit._source.ancestor_5 }} - {% endif %}
-                                        {% if hit._source.ancestor_4 %}{{ hit._source.ancestor_4 }} - {% endif %}
-                                        {% if hit._source.ancestor_3 %}{{ hit._source.ancestor_3 }} - {% endif %}
-                                        {% if hit._source.ancestor_2 %}{{ hit._source.ancestor_2 }} - {% endif %}
-                                        {% if hit._source.ancestor_1 %}{{ hit._source.ancestor_1 }} - {% endif %}
-                                        {% if hit._source.ancestor_0 %}{{ hit._source.ancestor_0 }} - {% endif %}
-                                        //-->
-                                    {# {% if hit._source.chapter %}{{ hit._source.chapter }} - {% endif %} #}
-                                    {% if hit._source.heading %}{{ hit._source.heading }} - {% endif %}
-                                    <strong>{{ hit._source.description | safe }}</strong><br>
-                                    
-                                    <!-- Filter tags //-->
-                                    {% if hit._source.filter_animal_product_state %}
-                                        <span class="tag"><a href="">{{ hit._source.filter_animal_product_state }}</a></span>
-                                    {% endif %}
+            {{ tiers | dump }}
 
-                                    {% if hit._source.filter_animal_type %}
-                                        <span class="tag"><a href="">{{ hit._source.filter_animal_type }}</a></span>
-                                    {% endif %}
-                                </td>
-                            </tr>
-                        {% endif %}
-                    {% endfor %}
-                </table>
+            {# <p>{{ hit._source.goods_nomenclature_item_id }}</p>
+            <p style="font-size:10px">{{ hit._source.hierarchy | dump }}</p>
+
+
+            {% if hit._source.chapter_id != latest_chapter %}
+                <p>
+                    <span class="b">
+                    Chapter {{ hit._source.chapter_id | safe }}
+                    </span><br>
+                    {{ hit._source.hierarchy[hit._source.hierarchy | length - 1].description | safe }}
+                </p>
+            {% endif %}
+
+            {% if hit._source.heading_id != latest_heading %}
+                {% if hit._source.class == "heading" %}
+                    <p class="heading">
+                        <span class="b">
+                            Heading {{ hit._source.heading_id | safe }}
+                        </span><br>
+                        {{ hit._source.description | safe }}
+                    </p>
+                {% endif %}
+            {% endif %} #}
+
+            {% set latest_chapter = hit._source.chapter_id %}
+            {% set latest_heading = hit._source.heading_id %}
+            <hr>
+
+        {% endif %}
+    {% endfor %}
+
+    {% for hit in hits.hits %}
+        {% if hit.display == true %}
+            <p>{{ hit._source.class }}
+                {{ hit._source.goods_nomenclature_item_id }}</p>
+        {% endif %}
+    {% endfor %}
+</div>
