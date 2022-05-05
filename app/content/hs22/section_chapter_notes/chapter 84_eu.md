@@ -16,7 +16,7 @@
     
     h. hand-operated mechanical floor sweepers, not motorised (heading 9603).
 
-2. Subject to the operation of note 3 to Section XVI and subject to note 9 to this chapter, a machine or appliance which answers to a description in one or more of the headings 8401 to 8424, or heading 8486 and at the same time to a description in one or other of the headings 8425 to 8480 is to be classified under the appropriate heading of the former group or under heading 8486, as the case may be, and not the latter group.
+2. Subject to the operation of note 3 to Section XVI and subject to note 9 to this chapter, a machine or appliance which answers to a description in one or more of the headings 8401 to 8424, or heading 8486 and at the same time to a description in one or more of the headings 8425 to 8480 is to be classified under the appropriate heading of the former group or under heading 8486, as the case may be, and not the latter group.
 
     A) Heading 8419 does not, however, cover:
     
@@ -78,7 +78,7 @@
     
     However keyboards, X-Y coordinate input devices and disk storage units which satisfy the conditions of paragraphs (C)(2) and (C)(3) above, are in all cases to be classified as units of heading 8471.
     
-    (D) Heading 8471 does not cover the following when presented separately, even if they meet all of the conditions set forth in note 5(C) above:
+    (D) Heading 8471 does not cover the following when presented separately, even if they meet all of the conditions set forth in note 6(C) above:
     
     (1) printers, copying machines, facsimile machines, whether or not combined;
     
@@ -101,9 +101,14 @@
 
     Subject to note 2 to this chapter and note 3 to Section XVI, a machine the principal purpose of which is not described in any heading or for which no one purpose is the principal purpose is, unless the context otherwise requires, to be classified in heading 8479. Heading 8479 also covers machines for making rope or cable (for example, stranding, twisting or cabling machines) from metal wire, textile yarn or any other material or from a combination of such materials.
 
-9. For the purposes of heading 8470, the term 'pocket-size' applies only to machines the dimensions of which do not exceed 170 mm x 100 mm x 45 mm.
+9. For the purposes of heading 8470, the term ‘pocket-size’ applies only to machines the dimensions of which do not exceed 170 mm x 100 mm x 45 mm.
+    
+10.	For the purposes of heading 8485, the expression ‘additive manufacturing’ (also referred to as 3D printing) means the formation of physical objects, based on a digital model, by the successive addition and layering, and consolidation and solidification, of material (for example, metal, plastics or ceramics). 
 
-10. (A) Notes 8(a) and 8(b) to Chapter 85 also apply with respect to the expressions 'semiconductor devices' and 'electronic integrated circuits', respectively, as used in this note and in heading 8486. However, for the purposes of this note and of heading 8486, the expression 'semiconductor devices' also covers photosensitive semiconductor devices and light emitting diodes.
+    Subject to Note 1 to Section XVI and Note 1 to Chapter 84, machines    answering to the description in heading 8485 are to be classified in that heading   and in no other heading of the classification. 
+
+
+11.  (A) Notes 12(a) and 12(b) to Chapter 85 also apply with respect to the expressions 'semiconductor devices' and 'electronic integrated circuits', respectively, as used in this note and in heading 8486. However, for the purposes of this note and of heading 8486, the expression 'semiconductor devices' also covers photosensitive semiconductor devices and light emitting diodes (LEDs).
 
     (B) For the purposes of this note and of heading 8486, the expression 'manufacture of flat panel displays' covers the fabrication of substrates into a flat panel. It does not cover the manufacture of glass or the assembly of printed circuit boards or other electronic components onto the flat panel. The expression 'flat panel display' does not cover cathode-ray tube technology.
     
@@ -121,7 +126,7 @@
 
 1. For the purposes of subheading 8465 20, the term “machining centres” applies only to machine-tools for working wood, cork, bone, hard rubber, hard plastics or similar hard materials, which can carry out different types of machining operations by automatic tool change from a magazine or the like in conformity with a machining programme.
 
-2. For the purposes of subheading 8471 49, the term ‘systems’ means automatic data-processing machines whose units satisfy the conditions laid down in note 5(C) to Chapter 84 and which comprise at least a central processing unit, one input unit (for example, a keyboard or a scanner), and one output unit (for example, a visual display unit or a printer).
+2. For the purposes of subheading 8471 49, the term ‘systems’ means automatic data-processing machines whose units satisfy the conditions laid down in note 6(C) to Chapter 84 and which comprise at least a central processing unit, one input unit (for example, a keyboard or a scanner), and one output unit (for example, a visual display unit or a printer).
 
 3. For the purposes of subheading 8481 20, the expression “valves for oleohydraulic or pneumatic transmissions” means valves which are used specifically in the transmission of “fluid power” in a hydraulic or pneumatic system, where the energy source is supplied in the form of pressurised fluids (liquid or gas).
 

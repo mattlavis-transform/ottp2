@@ -5,4 +5,5 @@
     a. metaldehyde, hexamethylenetetramine and similar substances, put up in forms (for example, tablets, sticks or similar forms) for use as fuels; fuels with a basis of alcohol, and similar prepared fuels, in solid or semi-solid form;
     
     b. liquid or liquefied-gas fuels in containers of a kind used for filling or refilling cigarette or similar lighters and of a capacity not exceeding 300 cm3; and
+
     c. resin torches, firelighters and the like.

@@ -225,6 +225,7 @@ router.get([
     var countries = global.get_countries(req.session.data["country"]);
     var date = global.get_date(req);
     context.get_country(req);
+    context.get_feature_flags()
 
     // Get any RoO information that we can
     roo_mvp = new RooMvp(req, context);

@@ -12,7 +12,7 @@
     
     f. optical fibres, optically worked optical elements, hypodermic syringes, artificial eyes, thermometers, barometers, hydrometers or other articles of Chapter 90;
     
-    g. lamps or lighting fittings, illuminated signs, illuminated nameplates or the like, having a permanently fixed light source, or parts thereof of heading 9405;
+    g. luminaires and lighting fittings, illuminated signs, illuminated nameplates or the like, having a permanently fixed light source, or parts thereof of heading 9405;
     
     h. toys, games, sports requisites, Christmas tree ornaments or other articles of Chapter 95 (excluding glass eyes without mechanisms for dolls or for other articles of Chapter 95); or
     

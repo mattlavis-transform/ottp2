@@ -24,7 +24,7 @@
     
     h. articles of Chapter 91 (for example, clocks and clock cases);
     
-    ij articles of Chapter 94 (for example, furniture, lamps and lighting fittings, prefabricated buildings);
+    ij articles of Chapter 94 (for example, furniture, luminaires and lighting fittings, prefabricated buildings);
     
     k. articles of Chapter 95 (for example, toys, games and sports requisites);
     

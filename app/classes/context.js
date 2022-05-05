@@ -1034,7 +1034,26 @@ class Context {
             this.sort_order = "relevance";
         }
         // this.sort_order = "alpha";ar 
+    }
+
+    get_feature_flags() {
+        this.flag_show_new_quota_dialog = this.get_feature_flag("FLAG_SHOW_NEW_QUOTA_DIALOG");
         var a = 1;
+    }
+
+    get_feature_flag(flag) {
+        var ret;
+        try {
+            var tmp = process.env[flag];
+            if (typeof tmp === 'undefined') {
+                ret = 0;
+            } else {
+                ret = parseInt(tmp);
+            }
+        } catch {
+            ret = 0;
+        }
+        return (ret)
     }
 
 }

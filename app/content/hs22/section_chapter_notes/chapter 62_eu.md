@@ -80,7 +80,7 @@
     All the components of an ensemble must be presented together for retail sale as a single unit. Individual wrapping or separate labelling of each component of such a single unit does not influence its classification
 as an ensemble.
 
-2. Headings 6209 and 6216 cover gloves, mittens and mitts, impregnated, coated or covered with plastics or rubber, even if they are:
+2. Headings 6209 and 6216 include gloves, mittens and mitts, impregnated, coated or covered with plastics or rubber, even if they are:
 
     - made up from textile fabrics (other than knitted or crocheted) impregnated, coated or covered with plastics or rubber of headings 5903 or 5906, or
     

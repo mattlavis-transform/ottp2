@@ -2,7 +2,7 @@
 
     - (a) vegetables, fruit or nuts, prepared or preserved by the processes specified in Chapter 7, 8 or 11;
     - (b) vegetable fats and oils (Chapter 15);
-    - (c) food preparations containing more than 20% by weight of sausage, meat, meat offal, blood, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16);
+    - (c) food preparations containing more than 20% by weight of sausage, meat, meat offal, blood, insects, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16);
     - (d) bakers' wares and other products of heading 1905; or
     - (e) homogenised composite food preparations of heading 2104.
 

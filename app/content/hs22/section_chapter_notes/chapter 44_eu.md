@@ -26,7 +26,7 @@
     
     n. parts of firearms (heading 9305);
     
-    o. articles of Chapter 94 (for example, furniture, lamps and lighting fittings, prefabricated buildings);
+    o. articles of Chapter 94 (for example, furniture, luminaires  and lighting fittings, prefabricated buildings);
     
     p. articles of Chapter 95 (for example, toys, games, sports requisites);
     

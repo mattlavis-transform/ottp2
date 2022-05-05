@@ -70,7 +70,8 @@
     
     - bolting cloth;
     
-    - straining cloth of a kind used in oil-presses or the like, of textile material or of human hair;
+    - filtering or straining cloth of a kind used in oil-presses or the like, of textile material or of human hair;
+
     - flat woven textile fabrics with multiple warp or weft, whether or not felted, impregnated or coated, of a kind used in machinery or for other technical purposes;
     
     - textile fabrics reinforced with metal, of a kind used for technical purposes;

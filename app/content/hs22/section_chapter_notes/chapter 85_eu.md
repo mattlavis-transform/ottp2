@@ -50,7 +50,33 @@
 
 12. For the purpose of headings 8541 and 8542:
 
-    a. 'Diodes, transistors and similar semiconductor devices' are semiconductor devices the operation of which depends on variations in resistivity on the application of an electric field.
+    a.
+    
+    - (i). ‘Semiconductor devices’ are semiconductor devices the operation of which depends on variations in resistivity on the application of an electric field or semiconductor based transducers.
+
+        Semiconductor devices may also include assembly of plural elements, whether or not equipped with active and passive device ancillary functions. 
+
+        “Semiconductor-based transducers” are, for the purposes of this definition, semiconductor-based sensors, semiconductor-based actuators, semiconductor-based resonators and semiconductor-based oscillators, which are types of discrete semiconductor-based devices, which perform an intrinsic function, which are able to convert any kind of physical or chemical phenomena or an action into an electrical signal or an electrical signal into any type of physical phenomenon or an action. 
+
+        All the elements in semiconductor-based transducers are indivisibly combined, and may also include necessary materials indivisibly attached, that enable their construction or function. 
+
+        The following expressions mean :
+
+        - (1) “Semiconductor-based” means built or manufactured on a semiconductor substrate or made of semiconductor materials, manufactured by semiconductor technology, in which the semiconductor substrate or material plays a critical and unreplaceable role of transducer function and performance, and the operation of which is based on semiconductor properties including physical, electrical, chemical and optical properties 
+
+        - (2) “Physical or chemical phenomena” relate to phenomena, such as pressure, acoustic waves, acceleration, vibration, movement, orientation, strain, magnetic field strength, electric field strength, light, radioactivity, humidity, flow, chemicals concentration, etc. 
+
+        - (3) “Semiconductor-based sensor” is a type of semiconductor device, which consists of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of detecting physical or chemical quantities and converting these into electric signals caused by resulting variations in electric properties or displacement of a mechanical structure. 
+
+        - (4) “Semiconductor-based actuator” is a type of semiconductor device, which consists of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of converting electric signals into physical movement. 
+        
+        - (5) Semiconductor-based resonator” is a type of semiconductor device, which consists of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of generating a mechanical or electrical oscillation of a predefined frequency that depends on the physical geometry of these structures in response to an external input 
+
+        - (6) “Semiconductor-based oscillator” is a type of semiconductor device, which consists of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of generating a mechanical or electrical oscillation of a predefined frequency that depends on the physical geometry of these structures.
+
+        (ii) “Light-emitting diodes (LED)” are semiconductor devices based on semiconductor materials which convert electrical energy into visible, infra-red or ultra-violet rays, whether or not electrically connected among each other and whether or not combined with protective diodes. Light-emitting diodes (LED) of heading 8541 do not incorporate elements for the purposes of providing power supply or power control; 
+
+    
     
     b. 'Electronic integrated circuits' are:
     
@@ -68,7 +94,7 @@
     
     (2) ‘Silicon based’ means built on a silicon substrate, or made of silicon materials, or manufactured onto integrated circuit die.
     
-    (3) (a) ‘Silicon based sensors’ consist of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of detecting physical or chemical quantities and transducing these into electric signals, caused by resulting variations in electric properties or displacement of a mechanical structure. ‘Physical or chemical quantities’ relates to real world phenomena, such as pressure, acoustic waves, acceleration, vibration, movement, orientation, strain, magnetic field strength, electric field strength, light, radioactivity, humidity, flow, chemicals concentration, etc.
+    (3) (a) ‘Silicon based sensors’ consist of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of detecting physical or chemical phenomena and transducing these into electric signals, caused by resulting variations in electric properties or displacement of a mechanical structure. ‘Physical or chemical phenomena’ relates to phenomena, such as pressure, acoustic waves, acceleration, vibration, movement, orientation, strain, magnetic field strength, electric field strength, light, radioactivity, humidity, flow, chemicals concentration, etc.
     
     (b)'Silicon based actuators” consist of microelectronic and mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of converting electrical signals into physical movement.
     
