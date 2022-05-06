@@ -8,7 +8,7 @@ c. flavoured tea (heading 0902);
 
 d. spices or other products of headings 0904 to 0910;
 
-e. food preparations, other than the products described in heading 2103 or 2104, containing more than 20% by weight of sausage, meat, meat offal, blood, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16);
+e. food preparations, other than the products described in heading 2103 or 2104, containing more than 20% by weight of sausage, meat, meat offal, blood, insects, fish or crustaceans, molluscs or other aquatic invertebrates, or any combination thereof (Chapter 16);
 
 f. products of heading 2404
 

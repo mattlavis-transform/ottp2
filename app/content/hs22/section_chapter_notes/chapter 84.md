@@ -28,7 +28,7 @@
 
         - iv. machinery for the heat treatment of textile yarns, fabrics or made-up textile articles (heading 8451); or
 
-        - v. machinery or plant, designed for a mechanical operation, in which a change of temperature, even if necessary, is subsidiary.
+        - v. machinery, plant or laboratory equipment, designed for a mechanical operation, in which a change of temperature, even if necessary, is subsidiary.
 
     - (B) Heading 8422 does not cover:
 
@@ -38,9 +38,9 @@
 
     - (C) Heading 8424 does not cover:
 
-        - a. ink-jet printing machines (heading 8443); or
+      - i. ink-jet printing machines (heading 8443); or
 
-        - b. water-jet cutting machines (heading 8456).
+      - ii. water-jet cutting machines (heading 8456).
 
 
 3. A machine tool for working any material which answers to a description in heading 8456 and at the same time to a description in heading 8457, 8458, 8459, 8460, 8461, 8464 or 8465 is to be classified in heading 8456.
@@ -53,7 +53,7 @@
     
     c. by the automatic transfer of the workpiece to different unit heads (multi-station transfer machines).
 
-5. For the purposes of heading 8462, a “slitting line” for flat products is a processing line com-posed of an uncoiler, a coil flattener, a slitter and a recoiler. A “cut-to-length line” for flat prod-ucts is a processing line composed of an uncoiler, a coil flattener, and a shear.
+5. the purposes of heading 8462, a “slitting line” for flat products is a processing line composed of an uncoiler, a coil flattener, a slitter and a recoiler. A “cut-to-length line” for flat products is a processing line composed of an uncoiler, a coil flattener, and a shear.
 
 6. (A) For the purposes of heading 8471, the expression 'automatic data-processing machines' means machines, capable of
 

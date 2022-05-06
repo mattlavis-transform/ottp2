@@ -135,3 +135,4 @@
 
     The apparatus is designed to convert video signals from SDI format to HDMI format. The RJ-45 interface serves to connect the apparatus to the Ethernet only for software updates and to get electric power needed for those updates, it does not enable the transmission of video signals. 
 
+For the classification of the articles defined in this note, headings 8541 and 8542 shall take precedence over any other heading in the classification, except in the case of heading 8523, which might cover them by reference to, in particular, their function.

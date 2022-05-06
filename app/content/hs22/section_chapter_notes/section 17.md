@@ -46,7 +46,7 @@
     
     Hovertrain track fixtures and fittings are to be classified as railway track fixtures and fittings, and signalling, safety or traffic control equipment for hovertrain transport systems as signalling, safety or traffic control equipment for railways.
 
-## Additional chapter notes
+## Additional section notes
 
 1. Subject to the provisions of additional chapter note 3 to Chapter 89, tools and articles necessary for the maintenance or repair of vehicles, aircraft or vessels are to be classified with those vehicles, aircraft or vessels if presented with them. Other accessories presented with vehicles, aircraft or vessels are also to be classified therewith, if they form part of the normal equipment of the vehicles, aircraft or vessels and are normally sold with them.
 

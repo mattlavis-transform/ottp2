@@ -10,6 +10,8 @@
 
 ### Subheading Note
 
+Subheading 8708 22 covers:
+
 - a. front windscreens (windshields), rear windows and other windows, framed; and 
 
 - b. front windscreens (windshields), rear windows and other windows, whether or not framed, incorporating heating devices or other electrical or electronic devices, when suitable for use solely or principally with the motor vehicles of headings 8701 to 8705.

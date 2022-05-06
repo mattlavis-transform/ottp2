@@ -38,7 +38,7 @@
 
     t. arms or other articles of Chapter 93;
 
-    u. electric garlands of all kinds (heading 9405);
+    u. lighting strings of all kinds (heading 9405);
 
     v. monopods, bipods, tripods and similar articles (heading 9620);
 
@@ -56,7 +56,7 @@
 
 6. For the purposes of heading 9508 : 
 
-    - a. the expression “amusement park rides” means a device or combination of devices or equip-ment that carry, convey, or direct a person or persons over or through a fixed or restricted course, including watercourses, or within a defined area for the primary purposes of amuse-ment or entertainment. Such rides may be combined within an amusement park, theme park, water park or fairground. These amusement park rides do not include equipment of a kind commonly installed in residences or playgrounds; 
+    - a. the expression “amusement park rides” means a device or combination of devices or equipment that carry, convey, or direct a person or persons over or through a fixed or restricted course, including watercourses, or within a defined area for the primary purposes of amusement or entertainment. Such rides may be combined within an amusement park, theme park, water park or fairground. These amusement park rides do not include equipment of a kind commonly installed in residences or playgrounds; 
 
     - b. the expression “water park amusements” means a device or combination of devices or equipment that are characterized by a defined area involving water, with no purposes built path. Water park amusements only include equipment designed specifically for water parks; and 
 

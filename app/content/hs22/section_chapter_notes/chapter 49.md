@@ -15,11 +15,11 @@
 4. Heading 4901 also covers:
 
     a. a collection of printed reproductions of, for example, works of art or drawings, with a relative text, put up with numbered pages in a form suitable for binding into one or more volumes;
-    
+
     b. a pictorial supplement accompanying, and subsidiary to, a bound volume; and
-    
+
     c. printed parts of books or booklets, in the form of assembled or separate sheets or signatures, constituting the whole or a part of a complete work and designed for binding.
-    
+
     However, printed pictures or illustrations not bearing a text, whether in the form of signatures or separate sheets, fall in heading 4911.
 
 5. Subject to Note 3 to this Chapter, heading 4901 does not cover publications which are essentially devoted to advertising (for example, brochures, pamphlets, leaflets, trade catalogues, yearbooks published by trade associations, tourist propaganda). Such publications are to be classified in heading 4911.

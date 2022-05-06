@@ -69,7 +69,7 @@
 
     **a. Waste and scrap**
     
-    Metal waste and scrap from the manufacture or mechanical working of metals, and metal goods definitely not usable as such because of breakage, cutting-up, wear or other reasons.
+    All metal waste and scrap, and metal goods definitely not usable as such because of breakage, cutting-up, wear or other reasons.
     
     **b. Powders**
     
@@ -79,7 +79,7 @@
  
     **(a) Bars and rods**
 
-    Rolled, extruded, drawn or forged products, not in coils, which have a uniform solid cross-section along their whole length in the shape of circles, ovals, rectangles (including squares), equilateral triangles or regular convex polygons (including “flattened circles” and “modified rectangles”, of which two opposite sides are convex arcs, the other two sides being straight, of equal length and parallel). Products with a rectangular (including square), triangular or polygo-nal cross-section may have corners rounded along their whole length. The thickness of such products which have a rectangular (including “modified rectangular”) cross-section exceeds one-tenth of the width. The expression also covers cast or sintered products, of the same forms and dimensions, which have been subsequently worked after production (otherwise than by simple trimming or de-scaling), provided that they have not thereby assumed the character of articles or products of other headings. 
+    Rolled, extruded, drawn or forged products, not in coils, which have a uniform solid cross-section along their whole length in the shape of circles, ovals, rectangles (including squares), equilateral triangles or regular convex polygons (including “flattened circles” and “modified rectangles”, of which two opposite sides are convex arcs, the other two sides being straight, of equal length and parallel). Products with a rectangular (including square), tariangular or polygonal cross-section may have corners rounded along their whole length. The thickness of such products which have a rectangular (including “modified rectangular”) cross-section exceeds one-tenth of the width. The expression also covers cast or sintered products, of the same forms and dimensions, which have been subsequently worked after production (otherwise than by simple trimming or de-scaling), provided that they have not thereby assumed the character of articles or products of other headings. 
 
     Wire-bars and billets of Chapter 74 with their ends tapered or otherwise worked simply to facilitate their entry into machines for converting them into, for example, drawing stock (wire-rod) or tubes, are however to be taken to be unwrought copper of heading 7403. This provision applies mutatis mutandis to the products of Chapter 81.
 

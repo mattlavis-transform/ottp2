@@ -26,8 +26,6 @@
     
     - they must be presented in bulk or in bales, sacks or similar packings.
 
-4. Subheading 6304 20 covers articles made from warp knit fabrics, impregnated or coated with alphacypermethrin (ISO), chlorfenapyr (ISO), deltamethrin (INN, ISO), lambda-cyhalothrin (ISO), permethrin (ISO) or pirimiphos-methyl (ISO).
-
 ### Subheading note
 
 1. Subheading 6304 20 covers articles made from warp knit fabrics, impregnated or coated with alphacypermethrin (ISO), chlorfenapyr (ISO), deltamethrin (INN, ISO), lambda-cyhalothrin (ISO), permethrin (ISO) or pirimiphos-methyl (ISO).

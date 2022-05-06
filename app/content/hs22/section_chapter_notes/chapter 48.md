@@ -80,7 +80,7 @@
 
 7. Except where the terms of the headings otherwise require, paper, paperboard, cellulose wadding and webs of cellulose fibres answering to a description in two or more of the headings 4801 to 4811 are to be classified under that one of such headings which occurs last in numerical order in the classification.
 
-8. Headings 4801 and 4803 to 4809 apply only to paper, paperboard, cellulose wadding and webs of cellulose fibres:
+8. Headings 4803 to 4809 apply only to paper, paperboard, cellulose wadding and webs of cellulose fibres:
 
    - a. in strips or rolls of a width exceeding 36 cm; or
 

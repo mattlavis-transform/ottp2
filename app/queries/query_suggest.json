@@ -18,7 +18,9 @@
                             "xdescription_alternative^15"
                         ],
                         "analyzer": "complex_synonyms",
-                        "type": "best_fields"
+                        "type": "best_fields",
+                        "fuzziness": "AUTO",
+                        "prefix_length": 2
                     }
                 }
             ]

@@ -1,6 +1,6 @@
 1. This chapter does not cover:
 
-    - a. edible mixtures or preparations of animal, vegetable or mirobial fats or oils of a kind used as mould-release preparations (heading 1517);
+    - a. edible mixtures or preparations of animal, vegetable or microbial fats or oils of a kind used as mould-release preparations (heading 1517);
     
     - b. separate chemically defined compounds; or
     
@@ -10,7 +10,7 @@
 
     Products containing abrasive powders remain classified in heading 3401 only if in the form of bars, cakes or moulded pieces or shapes. In other forms, they are to be classified in heading 3405 as 'scouring powders and similar preparations'.
 
-3. For the purposes of heading 3402 'organic surface-active agents' are products which, when mixed with water at a concentration of 0-2.25% at 20°C and left to stand for one hour at the same temperature:
+3. For the purposes of heading 3402 'organic surface-active agents' are products which, when mixed with water at a concentration of 0.5% at 20°C and left to stand for one hour at the same temperature:
 
     - a. give a transparent or translucent liquid or stable emulsion without separation of insoluble matter; and
     
