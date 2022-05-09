@@ -7,7 +7,7 @@ const { result } = require('lodash');
 const tc = require("text-case");
 
 class SearchExtended {
-    
+
     constructor(context, req, res) {
         this.context = context;
         this.format_search_term();
@@ -16,20 +16,37 @@ class SearchExtended {
 
         this.query = importFresh('../queries/query_suggest.json');
 
-        if (this.context.search_term_split.length == 1) {
-            this.query.query.bool.must[0].multi_match.query = this.context.search_term;
-        } else {
-            this.query.query.bool.must[0].multi_match.query = this.context.search_term_split[0];
-            for (var i = 0; i < this.context.search_term_split.length - 1; i++) {
-                var tmp = JSON.stringify(this.query.query.bool.must[0]);
-                var tmp2 = JSON.parse(tmp);
-                tmp2.multi_match.query = this.context.search_term_split[i + 1];
-                this.query.query.bool.must.push(tmp2);
-                // this.query.query.bool.must[i + 1].multi_match.query = this.context.search_term_split[i + 1];
+        /* Check to see if this is a number
+            - if so, then we search with fuzzy switched off
+            - else, fuzzy is AUTO
+        */
+
+        let isnum = /^\d+$/.test(context.search_term);
+        if (isnum) {
+            context.search_term = context.search_term.padEnd(10, "0");
+            delete this.query.query.bool.must[0].multi_match.fuzziness;
+            this.query.query.bool.must[0].multi_match.fields = ["goods_nomenclature_item_id"];
+            this.query.query.bool.must[0].multi_match.type = "phrase_prefix";
+
+        }
+
+        var split_terms = true;
+        if (split_terms) {
+            if (this.context.search_term_split.length == 1) {
+                this.query.query.bool.must[0].multi_match.query = this.context.search_term;
+            } else {
+                this.query.query.bool.must[0].multi_match.query = this.context.search_term_split[0];
+                for (var i = 0; i < this.context.search_term_split.length - 1; i++) {
+                    var tmp = JSON.stringify(this.query.query.bool.must[0]);
+                    var tmp2 = JSON.parse(tmp);
+                    tmp2.multi_match.query = this.context.search_term_split[i + 1];
+                    this.query.query.bool.must.push(tmp2);
+                }
             }
+        } else {
+            this.query.query.bool.must[0].multi_match.query = this.context.search_term;
         }
         var t = JSON.stringify(this.query.query.bool.must);
-        // console.log(t);
 
         this.query.suggest.text = this.context.search_term;
         this.guide = null;
@@ -52,7 +69,6 @@ class SearchExtended {
                 this.process_suggestions(response.data.suggest["did-you-mean"], context.search_term);
                 this.remove_excluded_results();
                 this.process_filters();
-                this.add_headings_to_filters();
 
                 // this.sort_order = "alpha";
                 if (this.sort_order == "alpha") {
@@ -78,18 +94,6 @@ class SearchExtended {
             });
     }
 
-    add_headings_to_filters() {
-        return;
-        var heading_filter = new SearchFilter("filter_heading");
-        this.search_headings.forEach(heading => {
-            heading_filter.add_value(heading.id + ": " + heading.description);
-        });
-        this.filters_with_counts.unshift(heading_filter);
-        var a = this.filters_with_counts;
-        var b = this.search_headings;
-        var c = 1;
-    }
-
     get_url(req) {
         this.url = req.originalUrl;
         if (this.url.includes("?")) {
@@ -103,6 +107,7 @@ class SearchExtended {
         var sw = require('stopword');
 
         var temp = this.context.search_term.toLowerCase().replace(/\+/g, " ");
+        temp = temp.replace("-", " ");
         temp = temp.split(" ");
         temp = sw.removeStopwords(temp);
         this.context.search_term = temp.join(" ");
@@ -122,7 +127,6 @@ class SearchExtended {
 
     get_headings(req) {
         this.search_headings = [];
-        // console.log("Getting headings");
         this.results.hits.forEach(hit => {
             hit = hit._source;
             var new_heading = new SearchHeading(hit);
@@ -280,7 +284,6 @@ class SearchExtended {
         this.filter_dict = [];
 
         if (typeof this.filter_list !== 'undefined') {
-            var a = 1;
             for (var [key, value] of Object.entries(this.filter_list)) {
                 var filter_field;
 
@@ -319,7 +322,6 @@ class SearchExtended {
                 }
             });
         });
-        var a = 1;
     }
 
     sort_alpha() {
@@ -369,23 +371,26 @@ class SearchExtended {
     }
 
     tally_filter_values() {
-        var percentage_threshold = 10;
+        var filter_display_percentage_threshold = process.env["filter_display_percentage_threshold"];
+        var filter_value_count_threshold = process.env["filter_value_count_threshold"];
+
         this.filters_with_counts.forEach(filter => {
             filter.display = true;
             filter.value_count = 0;
             filter.values.forEach(value => {
                 filter.value_count += value.count;
             });
-            if ((filter.value_count / this.hit_count) * 100 < percentage_threshold) {
+            if ((filter.value_count / this.hit_count) * 100 < filter_display_percentage_threshold) {
                 filter.display = false;
             }
-            if (filter.values.length < 2) {
+            if (filter.values.length < filter_value_count_threshold) {
                 filter.display = false;
             }
             filter.sort_values();
         });
 
         this.filters_with_counts.sort(compare_value_counts);
+        var a = 1;
 
         function compare_value_counts(a, b) {
             if (a.value_count > b.value_count) {

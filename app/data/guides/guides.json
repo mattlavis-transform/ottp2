@@ -350,6 +350,19 @@
 			"chapters": [
 				"44"
 			]
+		},
+		{
+			"id": 23,
+			"title": "Fish",
+			"image": "fish.png",
+			"url": "https://www.gov.uk/guidance/import-or-export-live-fish-and-shellfish",
+			"strapline": "Importing or moving live fish and shellfish",
+			"terms": [
+				"fish"
+			],
+			"chapters": [
+				"03"
+			]
 		}
 	]
 }

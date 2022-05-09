@@ -3,22 +3,24 @@
 
         {% set text = hit._source.goods_nomenclature_item_id %}
 
+        {% set link = "https://www.trade-tariff.service.gov.uk" %}
+
         {% if hit._source.class | lower == "commodity" %}
             {% set prefix = "View commodity " %}
             {% set class = "Commodity" %}
-            {% set link = "/commodities/" + hit._source.goods_nomenclature_item_id %}
+            {% set link = link + "/commodities/" + hit._source.goods_nomenclature_item_id %}
         {% elif hit._source.class | lower == "heading" %}
             {% set prefix = "View heading " %}
             {% set class = "Heading" %}
-            {% set link = "/headings/" + hit._source.goods_nomenclature_item_id | substring(0, 4) %}
+            {% set link = link + "/headings/" + hit._source.goods_nomenclature_item_id | substring(0, 4) %}
         {% elif hit._source.class | lower == "subheading" %}
             {% set prefix = "View subheading " %}
             {% set class = "Subheading" %}
-            {% set link = "/subheadings/" + hit._source.goods_nomenclature_item_id + "_" + hit._source.productline_suffix %}
+            {% set link = link + "/subheadings/" + hit._source.goods_nomenclature_item_id + "-" + hit._source.productline_suffix %}
         {% else %}
             {% set prefix = "View chapter " %}
             {% set class = "Chapter" %}
-            {% set link = "/chapters/" + hit._source.goods_nomenclature_item_id | substring(0, 2) %}
+            {% set link = link + "/chapters/" + hit._source.goods_nomenclature_item_id | substring(0, 2) %}
         {% endif %}
 
         <p class="govuk-!-margin-top-2 govuk-!-margin-bottom-1 b">
@@ -64,7 +66,7 @@
             {% endif %}
 
             <span class="last-twig">
-                {{ hit._source.description | highlight(context.search_term) | safe }}
+                {{ hit._source.description_alternative | highlight(context.search_term) | safe }}
             </span>
             {# {% if hit._source.friendly_name != "" %}
                 <br>
@@ -99,7 +101,7 @@
         {% endif %}
 
         <p class="govuk-!-margin-top-2 govuk-!-margin-bottom-1">
-            <a href="{{ link }}">
+            <a href="{{ link }}" target="_blank">
                 {{ prefix }}{{ text | format_commodity_code3(hit._source) | safe }}
             </a>
         </p>

@@ -210,5 +210,17 @@
     "art_form": {
         "display": "Art form",
         "level": "results"
+    },
+    "weight": {
+        "display": "Weight",
+        "level": "results"
+    },
+    "bovine_age_gender": {
+        "display": "Age / gender",
+        "level": "results"
+    },
+    "length": {
+        "display": "Length",
+        "level": "results"
     }
 }

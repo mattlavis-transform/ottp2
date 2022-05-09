@@ -27,22 +27,6 @@ class SearchFilter {
         }
     }
 
-    // sort_values() {
-    //     var i;
-    //     this.values.sort();
-    //     var value_count = this.values.length;
-    //     for (i = 0; i < value_count; i++) {
-    //         var v = this.values[i];
-    //         if (v.value.toLowerCase() == "other") {
-    //             var a = 1;
-    //             this.values = this.values.filter((n) => { return n.toLowerCase() != "other" });
-    //             this.values.push("other");
-    //             break;
-    //         }
-    //     }
-    //     var a = 1;
-    // }
-
     sort_values() {
         this.values.sort(compare_filters);
 
