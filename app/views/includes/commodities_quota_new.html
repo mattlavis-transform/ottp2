@@ -1,20 +1,30 @@
 <div id="quota_{{ measure.order_number_id }}" class="modal modal_commodity">
-    <h2 class="govuk-heading govuk-heading-m govuk-!-margin-top-4">New Quota {{ measure.order_number_id }}</h1>
+    <h2 class="govuk-heading govuk-heading-m govuk-!-margin-top-4">Quota order number {{ measure.order_number_id }}</h1>
     {# <p>The table below shows the current state of quota {{ measure.order_number_id }}.</p> #}
-
     <table class="govuk-table govuk-table--m">
         <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">Quota order number</th>
+            <!--<tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header" style="width:30% !important">Quota order number</th>
                 <td class="govuk-table__cell">{{ measure.order_number_id }}</th>
-            </tr>
+            </tr>//-->
             <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">Current balance</th>
-                <td class="govuk-table__cell">1234 kilograms</th>
+                <th scope="col" class="govuk-table__header" style="width:28% !important">Balance (as of 20 Apr 22)</th>
+                <td class="govuk-table__cell">
+                    18,317,400.293 Kilogram (kg)&nbsp;&nbsp;&nbsp;
+                    <a href="">View balance for 10 May 2022</a>
+                </th>
             </tr>
             <tr class="govuk-table__row">
                 <th scope="col" class="govuk-table__header">Opening balance</th>
-                <td class="govuk-table__cell">1234 kilograms</th>
+                <td class="govuk-table__cell">20,078,000.000 Kilogram (kg)</th>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">
+                    Pending balance
+                </th>
+                <td class="govuk-table__cell">117,422,140.229 Kilogram (kg) remains available from the previous quota period. This will be transferred
+                    to the current quota period c. 20 working days after the end of the previous quota period.
+                </th>
             </tr>
             <tr class="govuk-table__row">
                 <th scope="col" class="govuk-table__header">Status</th>
@@ -29,17 +39,21 @@
                 <td class="govuk-table__cell">1 May 2021</th>
             </tr>
             <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Suspension / blocking periods</th>
+                <td class="govuk-table__cell">n/a</th>
+            </tr>
+            <!--<tr class="govuk-table__row">
                 <th scope="col" class="govuk-table__header">Suspension period</th>
                 <td class="govuk-table__cell">n/a</th>
             </tr>
             <tr class="govuk-table__row">
                 <th scope="col" class="govuk-table__header">Blocking period</th>
                 <td class="govuk-table__cell">n/a</th>
-            </tr>
+            </tr>//-->
         </tbody>
     </table>
 
-    <details class="govuk-details" data-module="govuk-details">
+    <!-- <details class="govuk-details" data-module="govuk-details">
         <summary class="govuk-details__summary">
             <span class="govuk-details__summary-text">View recent quota balance updates</span>
         </summary>
@@ -83,7 +97,7 @@
             </table>
 
         </div>
-    </details>
+    </details>//-->
 
     <p>In an effort to facilitate UK importers HMRC endeavours to keep quotas 'OPEN' where possible, therefore the
         information displayed above may differ slightly from the current UK position. If you require further

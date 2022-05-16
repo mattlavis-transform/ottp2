@@ -103,8 +103,15 @@
                                         {% endif %}
                                     </span>
                                     {% if measure.order_number_id %}
-                                        <span class="table-line">Order no: <a href="#quota_{{ measure.order_number_id }}" rel="modal:open">{{ measure.order_number_id }}</a>
-                                        </span>
+                                        {% if context.flag_show_quota_popup %}
+                                            <span class="table-line">
+                                                Order no: <a href="#quota_{{ measure.order_number_id }}" rel="modal:open">{{ measure.order_number_id }}</a>
+                                            </span>
+                                        {% else %}
+                                            <span class="table-line">
+                                                Order no: <a href="/quotas/{{ measure.order_number_id }}" >{{ measure.order_number_id }}</a>
+                                            </span>
+                                        {% endif %}
                                     {% endif %}
                                     {% if measure.additional_code %}
                                         <span class="table-line">Additional code: <strong>{{ measure.additional_code.code }}</strong>

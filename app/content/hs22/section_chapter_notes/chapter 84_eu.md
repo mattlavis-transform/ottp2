@@ -108,7 +108,7 @@
     Subject to Note 1 to Section XVI and Note 1 to Chapter 84, machines    answering to the description in heading 8485 are to be classified in that heading   and in no other heading of the classification. 
 
 
-11.  (A) Notes 12(a) and 12(b) to Chapter 85 also apply with respect to the expressions 'semiconductor devices' and 'electronic integrated circuits', respectively, as used in this note and in heading 8486. However, for the purposes of this note and of heading 8486, the expression 'semiconductor devices' also covers photosensitive semiconductor devices and light emitting diodes (LEDs).
+11. (A) Notes 12(a) and 12(b) to Chapter 85 also apply with respect to the expressions 'semiconductor devices' and 'electronic integrated circuits', respectively, as used in this note and in heading 8486. However, for the purposes of this note and of heading 8486, the expression 'semiconductor devices' also covers photosensitive semiconductor devices and light emitting diodes (LEDs).
 
     (B) For the purposes of this note and of heading 8486, the expression 'manufacture of flat panel displays' covers the fabrication of substrates into a flat panel. It does not cover the manufacture of glass or the assembly of printed circuit boards or other electronic components onto the flat panel. The expression 'flat panel display' does not cover cathode-ray tube technology.
     

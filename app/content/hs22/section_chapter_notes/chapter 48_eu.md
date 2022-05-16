@@ -80,7 +80,7 @@
 
 7. Except where the terms of the headings otherwise require, paper, paperboard, cellulose wadding and webs of cellulose fibres answering to a description in two or more of the headings 4801 to 4811 are to be classified under that one of such headings which occurs last in numerical order in the classification.
 
-8. Headings 4801 and 4803 to 4809 apply only to paper, paperboard, cellulose wadding and webs of cellulose fibres:
+8. Headings 4803 to 4809 apply only to paper, paperboard, cellulose wadding and webs of cellulose fibres:
 
    - a. in strips or rolls of a width exceeding 36 cm; or
 
@@ -204,9 +204,9 @@
     </tbody>
     </table>
 
-3. For the purposes of subheading 4805 11, 'semi-chemical fluting paper' means paper, in rolls, of which not less than 65% by weight of the total fibre content consists of unbleached hardwood fibres obtained by a combination of mechanical and chemical pulping processes, and having acmT 30 (Corrugated Medium Test with 30 minutes of conditioning) crush resistance exceeding 1.8 newtons/g/m2 at 50% relative humidity, at 23°C.
+3. For the purposes of subheading 4805 11, 'semi-chemical fluting paper' means paper, in rolls, of which not less than 65% by weight of the total fibre content consists of unbleached hardwood fibres obtained by a combination of mechanical and chemical pulping processes, and having a CMT 30 (Corrugated Medium Test with 30 minutes of conditioning) crush resistance exceeding 1.8 newtons/g/m2 at 50% relative humidity, at 23°C.
 
-4. Subheading 4805 12 covers paper, in rolls, made mainly of straw pulp obtained by a combination of mechanical and chemical pulping processes, weighing 130g/m2 or more, and having acmT 30 (Corrugated Medium Test with 30 minutes of conditioning) crush resistance exceeding 1.4 newtons/g/m2 at 50% relative humidity, at 23°C.
+4. Subheading 4805 12 covers paper, in rolls, made mainly of straw pulp obtained by a combination of mechanical and chemical pulping processes, weighing 130g/m2 or more, and having a CMT 30 (Corrugated Medium Test with 30 minutes of conditioning) crush resistance exceeding 1.4 newtons/g/m2 at 50% relative humidity, at 23°C.
 
 5. Subheadings 4805 24 and 4805 25 cover paper and paperboard made wholly or mainly of pulp of recovered (waste and scrap) paper or paperboard. Testliner may also have a surface layer of dyed paper or of paper made of bleached or unbleached non-recovered pulp. These products have a Mullen burst index of not less than 2 kPa.m2/g.
 

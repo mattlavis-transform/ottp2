@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block pageTitle %}
-  Trade Tariff: look up commodity codes, duty and VAT rates
+  ** Search Prototype ** Trade Tariff: look up commodity codes, duty and VAT rates
 {% endblock %}
 
 {% block content %}
@@ -160,10 +160,10 @@
                 {% endif %}
 
                 {% if record_count == 1 %}
-                    <p>Showing {{ hit_count }} result for <strong>{{ context.search_term }}</strong>
+                    <p>Showing top {{ hit_count }} result for <strong>{{ context.search_term }}</strong>
                     </p>
                 {% else %}
-                    <p>Showing {{ hit_count }} results for <strong>{{ context.search_term }}</strong>
+                    <p>Showing top {{ hit_count }} results for <strong>{{ context.search_term }}</strong>
                     </p>
                 {% endif %}
 

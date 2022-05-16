@@ -1038,6 +1038,7 @@ class Context {
 
     get_feature_flags() {
         this.flag_show_new_quota_dialog = this.get_feature_flag("FLAG_SHOW_NEW_QUOTA_DIALOG");
+        this.flag_show_quota_popup = this.get_feature_flag("FLAG_SHOW_QUOTA_POPUP");
         var a = 1;
     }
 

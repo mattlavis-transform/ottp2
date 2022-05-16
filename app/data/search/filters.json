@@ -3,8 +3,8 @@
         "display": "Animal state",
         "level": "results"
     },
-    "animal_purpose": {
-        "display": "Animal purpose",
+    "purpose": {
+        "display": "Purpose",
         "level": "results"
     },
     "animal_type": {
@@ -221,6 +221,30 @@
     },
     "length": {
         "display": "Length",
+        "level": "results"
+    },
+    "mounting": {
+        "display": "Mounting",
+        "level": "results"
+    },
+    "product_age": {
+        "display": "Age",
+        "level": "results"
+    },
+    "height": {
+        "display": "Height",
+        "level": "results"
+    },
+    "new_used": {
+        "display": "Condition",
+        "level": "results"
+    },
+    "car_type": {
+        "display": "Car type",
+        "level": "results"
+    },
+    "car_capacity": {
+        "display": "Car capacity",
         "level": "results"
     }
 }

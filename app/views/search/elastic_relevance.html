@@ -2,6 +2,7 @@
     {% if hit.display == true %}
 
         {% set text = hit._source.goods_nomenclature_item_id %}
+        {% set admin_root = "https://tariff-admin-production.london.cloudapps.digital/search_references/" %}
 
         {% set link = "https://www.trade-tariff.service.gov.uk" %}
 
@@ -9,21 +10,29 @@
             {% set prefix = "View commodity " %}
             {% set class = "Commodity" %}
             {% set link = link + "/commodities/" + hit._source.goods_nomenclature_item_id %}
+            {% set admin_link = admin_root + "commodities/" + hit._source.goods_nomenclature_item_id + "-" + hit._source.productline_suffix + "/search_references" %}
+
         {% elif hit._source.class | lower == "heading" %}
             {% set prefix = "View heading " %}
             {% set class = "Heading" %}
             {% set link = link + "/headings/" + hit._source.goods_nomenclature_item_id | substring(0, 4) %}
+            {% set admin_link = admin_root + "headings/" + hit._source.goods_nomenclature_item_id | substring(0, 4) + "/search_references" %}
+
         {% elif hit._source.class | lower == "subheading" %}
             {% set prefix = "View subheading " %}
             {% set class = "Subheading" %}
             {% set link = link + "/subheadings/" + hit._source.goods_nomenclature_item_id + "-" + hit._source.productline_suffix %}
+            {% set admin_link = admin_root + "commodities/" + hit._source.goods_nomenclature_item_id + "-" + hit._source.productline_suffix + "/search_references" %}
+
         {% else %}
             {% set prefix = "View chapter " %}
             {% set class = "Chapter" %}
             {% set link = link + "/chapters/" + hit._source.goods_nomenclature_item_id | substring(0, 2) %}
+            {% set admin_link = admin_root + "chapters/" + hit._source.goods_nomenclature_item_id | substring(0, 2) + "/search_references" %}
+
         {% endif %}
 
-        <p class="govuk-!-margin-top-2 govuk-!-margin-bottom-1 b">
+        <p class="govuk-!-margin-top-2 govuk-!-margin-bottom-1 b commodity-split">
             {{ class }}
             {{ text | format_commodity_code3(hit._source) | safe }}
         </p>
@@ -32,46 +41,19 @@
         {% set divider = "<span class=\"arrow\">—</span>" %}
 
         <p class="desc govuk-!-margin-top-2 govuk-!-margin-bottom-1">
-            {% if hit._source.ancestor_7 %}
-                {{ hit._source.ancestor_7 | highlight(context.search_term) | safe }}
+            {% for h in hit._source.hierarchy %}
+                {{ h.description | highlight(context.search_term) | safe }}
                 {{ divider | safe }}
-            {% endif %}
-            {% if hit._source.ancestor_6 %}
-                {{ hit._source.ancestor_6 | highlight(context.search_term) | safe }}
-                {{ divider | safe }}
-            {% endif %}
-            {% if hit._source.ancestor_5 %}
-                {{ hit._source.ancestor_5 | highlight(context.search_term) | safe }}
-                {{ divider | safe }}
-            {% endif %}
-            {% if hit._source.ancestor_4 %}
-                {{ hit._source.ancestor_4 | highlight(context.search_term) | safe }}
-                {{ divider | safe }}
-            {% endif %}
-            {% if hit._source.ancestor_3 %}
-                {{ hit._source.ancestor_3 | highlight(context.search_term) | safe }}
-                {{ divider | safe }}
-            {% endif %}
-            {% if hit._source.ancestor_2 %}
-                {{ hit._source.ancestor_2 | highlight(context.search_term) | safe }}
-                {{ divider | safe }}
-            {% endif %}
-            {% if hit._source.ancestor_1 %}
-                {{ hit._source.ancestor_1 | highlight(context.search_term) | safe }}
-                {{ divider | safe }}
-            {% endif %}
-            {% if hit._source.ancestor_0 %}
-                {{ hit._source.ancestor_0 | highlight(context.search_term) | safe }}
-                {{ divider | safe }}
-            {% endif %}
+            {% endfor %}
 
             <span class="last-twig">
-                {{ hit._source.description_alternative | highlight(context.search_term) | safe }}
+                {{ hit._source.description | highlight(context.search_term) | safe }}
             </span>
             {# {% if hit._source.friendly_name != "" %}
                 <br>
                 <span class="tag red">{{ hit._source.friendly_name }}</span>
             {% endif %} #}
+            {# {{ hit._source.hierarchy | dump }} #}
         </p>
 
         <i class="score">{{ hit._score }}</i>
@@ -105,6 +87,7 @@
                 {{ prefix }}{{ text | format_commodity_code3(hit._source) | safe }}
             </a>
         </p>
+        <p class="govuk-!-margin-top-1 govuk-!-margin-bottom-0"><a href="{{ admin_link }}" target="_blank">Edit references</a></p>
         <hr>
     {% endif %}
 {% endfor %}

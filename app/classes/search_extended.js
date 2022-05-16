@@ -14,41 +14,55 @@ class SearchExtended {
         this.get_url(req);
         this.sort_order = context.sort_order;
 
-        this.query = importFresh('../queries/query_suggest.json');
+        var query_folder = "../queries/";
+        var query_template = "query_suggest_dis_max.json";
+        var query_template = "query_suggest_bool.json";
+        this.query = importFresh(query_folder + query_template);
 
         /* Check to see if this is a number
             - if so, then we search with fuzzy switched off
             - else, fuzzy is AUTO
         */
-
         let isnum = /^\d+$/.test(context.search_term);
         if (isnum) {
             context.search_term = context.search_term.padEnd(10, "0");
-            delete this.query.query.bool.must[0].multi_match.fuzziness;
-            this.query.query.bool.must[0].multi_match.fields = ["goods_nomenclature_item_id"];
-            this.query.query.bool.must[0].multi_match.type = "phrase_prefix";
-
-        }
-
-        var split_terms = true;
-        if (split_terms) {
-            if (this.context.search_term_split.length == 1) {
-                this.query.query.bool.must[0].multi_match.query = this.context.search_term;
-            } else {
-                this.query.query.bool.must[0].multi_match.query = this.context.search_term_split[0];
-                for (var i = 0; i < this.context.search_term_split.length - 1; i++) {
-                    var tmp = JSON.stringify(this.query.query.bool.must[0]);
-                    var tmp2 = JSON.parse(tmp);
-                    tmp2.multi_match.query = this.context.search_term_split[i + 1];
-                    this.query.query.bool.must.push(tmp2);
-                }
+            if (query_template == "query_suggest_bool.json") {
+                delete this.query.query.bool.must[0].multi_match.fuzziness;
+                this.query.query.bool.must[0].multi_match.fields = ["goods_nomenclature_item_id"];
+                this.query.query.bool.must[0].multi_match.type = "phrase_prefix";
+            } else if (query_template == "query_suggest_dis_max.json") {
+                delete this.query.query.bool.must[0].multi_match.fuzziness;
+                this.query.query.bool.must[0].multi_match.fields = ["goods_nomenclature_item_id"];
+                this.query.query.bool.must[0].multi_match.type = "phrase_prefix";
             }
-        } else {
-            this.query.query.bool.must[0].multi_match.query = this.context.search_term;
         }
-        var t = JSON.stringify(this.query.query.bool.must);
 
-        this.query.suggest.text = this.context.search_term;
+        if (query_template == "query_suggest_bool.json") {
+            var split_terms = false;
+            if (split_terms) {
+                if (this.context.search_term_split.length == 1) {
+                    this.query.query.bool.must[0].multi_match.query = this.context.search_term;
+                } else {
+                    this.query.query.bool.must[0].multi_match.query = this.context.search_term_split[0];
+                    for (var i = 0; i < this.context.search_term_split.length - 1; i++) {
+                        var tmp = JSON.stringify(this.query.query.bool.must[0]);
+                        var tmp2 = JSON.parse(tmp);
+                        tmp2.multi_match.query = this.context.search_term_split[i + 1];
+                        this.query.query.bool.must.push(tmp2);
+                    }
+                }
+            } else {
+                this.query.query.bool.must[0].multi_match.query = this.context.search_term;
+                this.query.query.bool.should.match["description.shingles"] = this.context.search_term;
+            }
+            this.query.suggest.text = this.context.search_term;
+        } else if (query_template == "query_suggest_dis_max.json") {
+            var a = 1;
+            this.query.query.dis_max.queries[0].multi_match.query = this.context.search_term;
+            this.query.query.dis_max.queries[1].multi_match.query = this.context.search_term;
+        }
+        var a = 1;
+
         this.guide = null;
         this.guide_minimum_threshold = 1;
 
@@ -66,7 +80,9 @@ class SearchExtended {
                 this.results = response.data.hits;
                 this.get_guides(this.results.hits);
                 this.get_headings();
-                this.process_suggestions(response.data.suggest["did-you-mean"], context.search_term);
+                if (1 > 2) {
+                    this.process_suggestions(response.data.suggest["did-you-mean"], context.search_term);
+                }
                 this.remove_excluded_results();
                 this.process_filters();
 
@@ -114,21 +130,24 @@ class SearchExtended {
         this.context.search_term_split = this.context.search_term.split(" ");
     }
 
-    set_tokeniser(req) {
-        var item_count = this.context.search_term.split(" ").length;
+    // set_tokeniser(req) {
+    //     var item_count = this.context.search_term.split(" ").length;
 
-        if (item_count > 1) {
-            this.query.query.bool.must[0].multi_match.analyzer = "english";
-            var min_match = Math.max(2, item_count - 1);
-            var min_match = item_count;
-            this.query.query.bool.must[0].multi_match["minimum_should_match"] = min_match;
-        }
-    }
+    //     if (item_count > 1) {
+    //         this.query.query.bool.must[0].multi_match.analyzer = "english";
+    //         var min_match = Math.max(2, item_count - 1);
+    //         var min_match = item_count;
+    //         this.query.query.bool.must[0].multi_match["minimum_should_match"] = min_match;
+    //     }
+    // }
 
     get_headings(req) {
         this.search_headings = [];
         this.results.hits.forEach(hit => {
             hit = hit._source;
+            if (hit.goods_nomenclature_item_id.includes("8434")) {
+                var a = 1;
+            }
             var new_heading = new SearchHeading(hit);
             var found = false;
             if (new_heading.id.substr(2, 2) != "00") {
@@ -225,8 +244,11 @@ class SearchExtended {
         this.chapter_array = [];
         for (var [key, value] of Object.entries(this.chapters)) {
             var a = 1;
-            var obj = [key, value["count"], tc.sentenceCase(value["description"])];
-            this.chapter_array.push(obj);
+            var description = value["description"];
+            if ((description !== undefined) && (description != null)) {
+                var obj = [key, value["count"], tc.sentenceCase(value["description"])];
+                this.chapter_array.push(obj);
+            }
         }
         var a = 1;
 
@@ -265,6 +287,7 @@ class SearchExtended {
                 }
             });
         });
+        var a = 1;
     }
 
     get_guides_by_keyword() {
@@ -307,8 +330,16 @@ class SearchExtended {
                 item.value = value;
                 this.filter_dict.push(item);
 
-                this.query.query.bool.must.push(filter);
+                // Using the filter clause is meant to be a lot quicker
+                var real_filter_clause = {
+                    "match": {
+                        "filter_garment_type": "t-shirt"
+                    }
+                }
 
+                // this.query.query.bool.must.push(filter);
+                this.query.query.bool.filter.push(real_filter_clause);
+                var a = 1;
             }
         }
     }
@@ -368,6 +399,7 @@ class SearchExtended {
         });
 
         this.tally_filter_values();
+        var a = 1;  
     }
 
     tally_filter_values() {
@@ -408,7 +440,6 @@ class SearchExtended {
         this.found_commodities = [];
         this.results.hits.forEach(result => {
             result.display = true;
-            // if (this.found_commodities.includes(result._source.productline_suffix == "80")) {
             if (result._source.productline_suffix != "80") {
                 result.display = true;
             } else {

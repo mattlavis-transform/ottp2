@@ -86,7 +86,7 @@ as an ensemble.
     
     - made up from unimpregnated, uncoated or uncovered textile fabrics (other than knitted or crocheted) and subsequently impregnated, coated or covered with plastics or rubber.
     
-    Where textile fabrics (other than knitted or crocheted) serve only as reinforcement, gloves, mittens or mitts impregnated, coated or covered with cellular plastics or cellular rubber belong in Chapters 39 or 40, even if they are made up from unimpregnated, uncoated or uncovered textile fabrics (other than knitted or crocheted) and subsequently impregnated, coated or covered with cellular plastics or cellular rubber (Note 2(a)(5) and note 4, last paragraph to Chapter 59).
+    Where textile fabrics (other than knitted or crocheted) serve only as reinforcement, gloves, mittens or mitts impregnated, coated or covered with cellular plastics or cellular rubber belong in Chapters 39 or 40, even if they are made up from unimpregnated, uncoated or uncovered textile fabrics (other than knitted or crocheted) and subsequently impregnated, coated or covered with cellular plastics or cellular rubber (Note 2(a)(5) and note 5, last paragraph to Chapter 59).
 
 3. Code 6212 10 90 includes knitted brassières (so-called mastectomy bras), which typically comprise adjustable broad padded shoulder straps, centrally positioned over the breasts, with shaped cups and elastication at the back part of the base. The articles are closed by means of an adjustable ‘hook and eye fastening’.
 

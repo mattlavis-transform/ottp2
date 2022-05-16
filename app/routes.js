@@ -316,31 +316,31 @@ router.get([
         // UK
         const axiosrequest1 = axios.get(url);
         // try {
-            await axios.all([axiosrequest1]).then(axios.spread(function (response) {
-                c = new Commodity();
-                c.country = context.country;
-                c.pass_request(req);
-                c.get_data(response.data);
-                c.get_measure_data(req, "basic");
+        await axios.all([axiosrequest1]).then(axios.spread(function (response) {
+            c = new Commodity();
+            c.country = context.country;
+            c.pass_request(req);
+            c.get_data(response.data);
+            c.get_measure_data(req, "basic");
 
-                context.value_classifier = c.data.attributes.goods_nomenclature_item_id;
-                context.value_description = c.description;
-                context.set_description_class()
+            context.value_classifier = c.data.attributes.goods_nomenclature_item_id;
+            context.value_description = c.description;
+            context.set_description_class()
 
-                c.sort_measures();
+            c.sort_measures();
 
-                context.show_chief = true;
-                context.show_cds = true;
+            context.show_chief = true;
+            context.show_cds = true;
 
-                res.render('commodities', {
-                    'context': context,
-                    'date': date,
-                    'countries': countries,
-                    'roo': roo_mvp,
-                    'toggle_message': toggle_message,
-                    'commodity': c
-                });
-            }));
+            res.render('commodities', {
+                'context': context,
+                'date': date,
+                'countries': countries,
+                'roo': roo_mvp,
+                'toggle_message': toggle_message,
+                'commodity': c
+            });
+        }));
         // }
         // catch (error) {
         //     var url = "/commodity_history/" + req.params["goods_nomenclature_item_id"];
@@ -377,6 +377,31 @@ router.get(['/geographical_area/:id/', '/:scope_id/geographical_area/:id/',], fu
                 'context': context,
                 'referer': referer,
                 'geographical_area': g
+            });
+        });
+});
+
+
+
+// Get a quota
+router.get(['/quotas/:quota_order_number_id/', '/:scope_id/quotas/:quota_order_number_id/',], function (req, res) {
+    var context = new Context(req);
+    context.quota_order_number_id = req.params["quota_order_number_id"];
+    var referer = req.headers.referer;
+    if (referer == null) {
+        referer = "/";
+    }
+    var url = 'https://www.trade-tariff.service.gov.uk/api/v2/quotas/search?order_number={quota_order_number_id}&include=quota_balance_events';
+    url = url.replace("{quota_order_number_id", context.quota_order_number_id);
+    if ((context.scope_id == "ni") || (context.scope_id == "xi")) {
+        url = url.replace("/api", "/xi/api");
+    }
+    axios.get(url)
+        .then((response) => {
+            // g = global.get_geography(id, response.data);
+            res.render('quota', {
+                'context': context,
+                'referer': referer
             });
         });
 });
@@ -680,11 +705,31 @@ router.get(['/country-filter'], async function (req, res) {
 // Elastic search
 router.get(['/elastic/:search_term'], function (req, res) {
     var context = new Context(req);
-    context.get_sort_order();
     context.search_term = req.params["search_term"];
-    if (context.search_term != "") {
-        var search = new SearchExtended(context, req, res)
+    var generic_terms = [
+        "gift",
+        "gifts"
+    ]
+
+    if (generic_terms.includes(context.search_term)) {
+        var url = "/elastic-generic/" + context.search_term;
+        res.redirect(url);
+    } else {
+        context.get_sort_order();
+        context.search_term = req.params["search_term"];
+        if (context.search_term != "") {
+            var search = new SearchExtended(context, req, res)
+        }
     }
+});
+
+// Elastic search
+router.get(['/elastic-generic/:search_term'], function (req, res) {
+    var context = new Context(req);
+    context.search_term = req.params["search_term"];
+    res.render('elastic_generic', {
+        'context': context
+    });
 });
 
 // Elastic search (using querystring)

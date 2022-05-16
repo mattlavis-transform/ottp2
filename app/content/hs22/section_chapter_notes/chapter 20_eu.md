@@ -56,8 +56,8 @@
 
 3. The products of subheadings 2008 20 to 2008 80, 2008 93, 2008 97 and 2008 99 are to be considered as containing added sugar when the ‘sugar content’ thereof exceeds by weight the percentages given hereunder, according to the kind of fruit or edible part of plant concerned:
 
-- pineapples and grapes: 13 %,
-- other fruits, including mixtures of fruit, and other edible parts of plants: 9 %.
+   - pineapples and grapes: 13 %,
+   - other fruits, including mixtures of fruit, and other edible parts of plants: 9 %.
 
 4. For the purposes of subheadings 2008 30 11 to 2008 30 39, 2008 40 11 to 2008 40 39, 2008 50 11 to 2008 50 59, 2008 60 11 to 2008 60 39, 2008 70 11 to 2008 70 59, 2008 80 11 to 2008 80 39, 2008 93 11 to 2008 93 29, 2008 97 12 to 2008 97 38 and 2008 99 11 to 2008 99 40, the following expressions have the meanings
 hereby assigned to them:
