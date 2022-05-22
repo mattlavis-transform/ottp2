@@ -50,7 +50,7 @@
                                 </p>
                             {% endif %}
 
-                            {% if suggestions | length > 0 %}
+                            {# {% if suggestions | length > 0 %}
                                 <p>Did you mean:
                                     {% for suggestion in suggestions %}
                                         <span class="tag">
@@ -58,7 +58,7 @@
                                         </span>
                                     {% endfor %}
                                 </p>
-                            {% endif %}
+                            {% endif %} #}
                             <p>
                                 <strong>Alternatively, please search again and consider:</strong>
                             </p>
@@ -86,41 +86,9 @@
 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-one-quarter">
-                
                 {% if hits.hits | length > 0 %}
                     {% include "search/elastic_filters.html" %}
-                    {# <h2 class="govuk-heading-s govuk-!-margin-bottom-3">Filters</h2> #}
-                    {# <div class="taglist">
-                        {% if applied_filters | length %}
-                            <p>Filters applied:</p>
-                            {% for applied_filter in applied_filters %}
-                                {% if applied_filter.field == "chapter" %}
-                                    {% set field = "Chapter " %}
-                                {% elseif applied_filter.field == "heading" %}
-                                    {% set field = "Heading " %}
-                                {% else %}
-                                    {% set field = "" %}
-                                {% endif %}
-                                <span class="tag">
-                                    <a title="Remove filter {{ applied_filter.value }}" href="" class="x">[ X ]</a>{{ field }}{{ applied_filter.value | capitalise }}
-                                </span>
-                            {% endfor %}
 
-                        {% endif %}
-                    </div> #}
-                    {# {% if filters %}
-                        {% for filter in filters %}
-                            <div class="filter_name">{{ filter.name }}
-                                <ul class="govuk-list govuk-list--disc govuk-list-s">
-                                    {% for value in filter.values %}
-                                        <li>
-                                            <a href="{{ url }}{{ conjunction }}filter[{{ filter.key }}]={{ value.value }}">{{ value.value | capitalise}}</a> ({{ value.count }})
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        {% endfor %}
-                    {% endif %} #}
                 {% endif %}
                 {% if guide %}
                     <div class="guide_aside">
@@ -139,6 +107,7 @@
                         </div>
                     </div>
                 {% endif %}
+                {% include "search/elastic_history_link.html" %}
             </div>
             <div class="govuk-grid-column-three-quarters">
                 {% if guide %}
@@ -186,11 +155,10 @@
                     {% endif %}
                 </div>
 
-                {% include "search/elastic_chapters.html" %}
-                {% include "search/elastic_headings.html" %}
-
                 {% if hits.hits | length > 0 %}
                     {% if context.sort_order == "relevance" %}
+                        {% include "search/elastic_chapters.html" %}
+                        {% include "search/elastic_headings.html" %}
                         {% include "search/elastic_relevance.html" %}
                     {% else %}
                         {% include "search/elastic_alpha.html" %}

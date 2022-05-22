@@ -3,7 +3,7 @@ const SearchFilter = require('./search_filter');
 const Guide = require('./guide');
 const SearchHeading = require('./search_heading');
 const importFresh = require('import-fresh');
-const { result } = require('lodash');
+const { result, xor } = require('lodash');
 const tc = require("text-case");
 
 class SearchExtended {
@@ -53,7 +53,7 @@ class SearchExtended {
                 }
             } else {
                 this.query.query.bool.must[0].multi_match.query = this.context.search_term;
-                this.query.query.bool.should.match["description.shingles"] = this.context.search_term;
+                // this.query.query.bool.should.match["description.shingles"] = this.context.search_term;
             }
             this.query.suggest.text = this.context.search_term;
         } else if (query_template == "query_suggest_dis_max.json") {
@@ -61,7 +61,18 @@ class SearchExtended {
             this.query.query.dis_max.queries[0].multi_match.query = this.context.search_term;
             this.query.query.dis_max.queries[1].multi_match.query = this.context.search_term;
         }
-        var a = 1;
+        // this.sort_order = "relevance";
+        if (this.sort_order == "alpha") {
+            var sort_alpha_phrase = {
+                "goods_nomenclature_item_id.raw": {
+                    "order": "asc"
+                },
+                "productline_suffix.raw": {
+                    "order": "asc"
+                }
+            }
+            this.query.sort = sort_alpha_phrase;
+        }
 
         this.guide = null;
         this.guide_minimum_threshold = 1;
@@ -78,6 +89,9 @@ class SearchExtended {
         })
             .then((response) => {
                 this.results = response.data.hits;
+                if (this.sort_order == "alpha") {
+                    this.sort_alpha();
+                }
                 this.get_guides(this.results.hits);
                 this.get_headings();
                 if (1 > 2) {
@@ -85,11 +99,6 @@ class SearchExtended {
                 }
                 this.remove_excluded_results();
                 this.process_filters();
-
-                // this.sort_order = "alpha";
-                if (this.sort_order == "alpha") {
-                    this.sort_alpha();
-                }
 
                 res.render('search/elastic', {
                     'context': this.context,
@@ -332,13 +341,12 @@ class SearchExtended {
 
                 // Using the filter clause is meant to be a lot quicker
                 var real_filter_clause = {
-                    "match": {
-                        "filter_garment_type": "t-shirt"
-                    }
+                    "match": {}
                 }
+                real_filter_clause["match"][key] = filter_value;
 
-                // this.query.query.bool.must.push(filter);
-                this.query.query.bool.filter.push(real_filter_clause);
+                this.query.query.bool.must.push(filter);
+                // this.query.query.bool.filter.push(real_filter_clause);
                 var a = 1;
             }
         }
@@ -356,6 +364,8 @@ class SearchExtended {
     }
 
     sort_alpha() {
+        this.resolve_hierarchy_for_alpha();
+        return;
         this.results.hits.sort(compare_alpha);
 
         function compare_alpha(a, b) {
@@ -368,6 +378,31 @@ class SearchExtended {
             return 0;
         }
 
+    }
+
+    resolve_hierarchy_for_alpha() {
+        var prior_hierarchy = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+        var hierarchy_length = prior_hierarchy.length;
+        this.results.hits.forEach(hit => {
+            var prototype = {
+                "sid": hit._source.sid,
+                "goods_nomenclature_item_id": hit._source.goods_nomenclature_item_id,
+                "productline_suffix": hit._source.productline_suffix,
+                "description": hit._source.description,
+                "class": hit._source.class
+            }
+            hit._source.hierarchy.push(prototype);
+            hit.display_hierarchy = [];
+            var index = -1
+            hit._source.hierarchy.forEach(hierarchy_element => {
+                hierarchy_element["indent"] = index + 1;
+                index += 1;
+                if (hierarchy_element.sid != prior_hierarchy[index]) {
+                    hit.display_hierarchy.push(hierarchy_element);
+                }
+                prior_hierarchy[index] = hierarchy_element.sid;
+            });
+        });
     }
 
     process_filters() {
@@ -399,7 +434,7 @@ class SearchExtended {
         });
 
         this.tally_filter_values();
-        var a = 1;  
+        var a = 1;
     }
 
     tally_filter_values() {

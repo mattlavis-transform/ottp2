@@ -331,6 +331,7 @@ router.get([
 
             context.show_chief = true;
             context.show_cds = true;
+            context.add_to_commodity_history(c.goods_nomenclature_item_id, c.description, req, res);
 
             res.render('commodities', {
                 'context': context,
@@ -706,6 +707,7 @@ router.get(['/country-filter'], async function (req, res) {
 router.get(['/elastic/:search_term'], function (req, res) {
     var context = new Context(req);
     context.search_term = req.params["search_term"];
+    context.add_to_search_history(req, res);
     var generic_terms = [
         "gift",
         "gifts"
@@ -723,6 +725,32 @@ router.get(['/elastic/:search_term'], function (req, res) {
     }
 });
 
+// Elastic history
+router.get(['/elastic_history'], function (req, res) {
+    var context = new Context(req);
+    context.get_history(req);
+    res.render('search/elastic_history', {
+        'context': context
+    });
+});
+
+// Delete search history
+router.get(['/search_history/:search_term/delete'], function (req, res) {
+    var context = new Context(req);
+    context.search_term = req.params["search_term"];
+    context.delete_search_history(req, res);
+    res.redirect('/elastic_history');
+});
+
+
+// Delete commodity code history
+router.get(['/commodity_history/:id/delete'], function (req, res) {
+    var context = new Context(req);
+    var id = req.params["id"];
+    context.delete_commodity_history(req, res, id);
+    res.redirect('/elastic_history');
+});
+
 // Elastic search
 router.get(['/elastic-generic/:search_term'], function (req, res) {
     var context = new Context(req);
@@ -737,6 +765,15 @@ router.get(['/elastic/'], function (req, res) {
     var search_term = req.query["search_term"];
     var url = "/elastic/" + search_term;
     res.redirect(url);
+});
+
+// Filter
+router.get(['/filter_info/:info'], function (req, res) {
+    var context = new Context(req);
+    context.info_file = req.params["info"];
+    res.render('search/filter_info', {
+        'context': context
+    });
 });
 
 // Used for testing section and chapter notes

@@ -1,250 +1,312 @@
 {
     "animal_product_state": {
         "display": "Animal state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "purpose": {
         "display": "Purpose",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "animal_type": {
         "display": "Animal type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "bone_state": {
         "display": "Bone state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "bread_type": {
         "display": "Bread type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "brix_value": {
         "display": "Brix value",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "cereal_state": {
         "display": "Cereal state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "herb_spice_state": {
         "display": "Herb / spice state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "cheese_type": {
         "display": "Cheese type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "cocoa_state": {
         "display": "Cocoa state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "coffee_state": {
         "display": "Coffe state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "dairy_form": {
         "display": "Dairy form",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "egg_purpose": {
         "display": "Egg purpose",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "egg_shell_state": {
         "display": "Egg shell state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "fat_content": {
         "display": "Fat content",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "fish_classification": {
         "display": "Fish classification",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "fish_preparation": {
         "display": "Fish preparation",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "flour_source": {
         "display": "Flour source",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "fruit_spirit": {
         "display": "Fruit spirit",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "fruit_vegetable_state": {
         "display": "Fruit and veg state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "fruit_vegetable_type": {
         "display": "Vegetable type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "ingredient": {
         "display": "Ingredient",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "jam_sugar_content": {
         "display": "Sugar content",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "margarine_state": {
         "display": "Margarine state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "milk_preparation": {
         "display": "Milk preparation",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "nut_state": {
         "display": "Nut state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "oil_fat_source": {
         "display": "Oil fat source",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "pasta_state": {
         "display": "Pasta state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "plant_state": {
         "display": "Plant state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "sheep_type": {
         "display": "Sheep type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "sugar_state": {
         "display": "Sugar state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "yeast_state": {
         "display": "Yeast state",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "beverage_type": {
         "display": "Beverage type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "wine_type": {
         "display": "Wine type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "alcohol_volume": {
         "display": "Alcohol volume",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "wine_origin": {
         "display": "Wine origin",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "tobacco_type": {
         "display": "Tobacco type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "clothing_gender": {
         "display": "Clothing gender",
-        "level": "results"
+        "level": "results",
+        "info": "clothing_gender"
     },
     "garment_type": {
         "display": "Garment type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "garment_material": {
         "display": "Garment material",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "computer_type": {
         "display": "Computer type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "metal_usage": {
         "display": "Metal usage",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "metal_type": {
         "display": "Metal",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "glass_form": {
         "display": "Glass form",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "glass_purpose": {
         "display": "Glass purpose",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "precious_stone": {
         "display": "Stone",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "cable_type": {
         "display": "Cable type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "cable_material": {
         "display": "Cable material",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "material": {
         "display": "Material",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "clothing_fabrication": {
         "display": "Clothing fabrication",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "jewellery_type": {
         "display": "Type of jewellery",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "pump_type": {
         "display": "Pump type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "art_form": {
         "display": "Art form",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "weight": {
         "display": "Weight",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "bovine_age_gender": {
         "display": "Age / gender",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "length": {
         "display": "Length",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "mounting": {
         "display": "Mounting",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "product_age": {
         "display": "Age",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "height": {
         "display": "Height",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "new_used": {
         "display": "Condition",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "car_type": {
         "display": "Car type",
-        "level": "results"
+        "level": "results",
+        "info": null
     },
     "car_capacity": {
         "display": "Car capacity",
-        "level": "results"
+        "level": "results",
+        "info": null
     }
 }

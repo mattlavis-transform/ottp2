@@ -2,11 +2,11 @@
 
 2. Sub-Chapter I does not cover:
 
-    a. goods of Chapters 56 to 62; or
+    a. goods of Chapters [56](/chapters/56) to 62; or
     
-    b. worn clothing or other worn articles of heading 6309.
+    b. worn clothing or other worn articles of heading [6309](/headings/6309).
 
-3. Heading 6309 applies only to the following goods:
+3. Heading [6309](/headings/6309) applies only to the following goods:
 
     a. articles of textile materials:
     
@@ -16,7 +16,7 @@
     
     - bedlinen, table linen, toilet linen and kitchen linen;
     
-    - furnishing articles, other than carpets of headings 5701 to 5705 and tapestries of heading 5805;
+    - furnishing articles, other than carpets of heading [5701](/headings/5701) to [5705](/headings/5705) and tapestries of heading [5805](/headings/5805);
     
     b. footwear and headgear of any material other than asbestos.
     
@@ -28,4 +28,4 @@
 
 ### Subheading note
 
-1. Subheading 6304 20 covers articles made from warp knit fabrics, impregnated or coated with alphacypermethrin (ISO), chlorfenapyr (ISO), deltamethrin (INN, ISO), lambda-cyhalothrin (ISO), permethrin (ISO) or pirimiphos-methyl (ISO).
+1. Subheading [6304 20](/subheadings/6304200000-80) covers articles made from warp knit fabrics, impregnated or coated with alphacypermethrin (ISO), chlorfenapyr (ISO), deltamethrin (INN, ISO), lambda-cyhalothrin (ISO), permethrin (ISO) or pirimiphos-methyl (ISO).

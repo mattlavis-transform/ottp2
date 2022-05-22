@@ -36,6 +36,13 @@
                                 </li>
                             {% endfor %}
                         </ul>
+                        {% if filter.info %}
+                            <div class="filter_info">
+                                <div>
+                                    <a href="/filter_info/{{ filter.info }}">Find out about {{ filter.name | lower }}</a>
+                                </div>
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             {% endif %}
@@ -53,10 +60,10 @@
             <div class="filter_options" id="sort_order">
                 <ul class="govuk-list govuk-list--disc govuk-list-s">
                     <li>
-                        <a href="relevance">Relevance</a>
+                        <a href="{{ context.relevance_url }}">Relevance</a>
                     </li>
                     <li>
-                        <a href="alpha">Commodity code</a>
+                        <a href="{{ context.alpha_url }}">Commodity code</a>
                     </li>
                 </ul>
             </div>

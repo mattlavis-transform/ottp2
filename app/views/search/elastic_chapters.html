@@ -9,6 +9,7 @@
             <div class="search_headings tabular {{ xheading_style }}">
                 {% for chapter in chapters %}
                     {% if count <= 12999 %}
+                        {# {% set link = "/elastic/" + context.search_term + "?filter[chapter_id]=" + chapter[0] %} #}
                         {% set link = "/elastic/" + context.search_term + "?filter[chapter]=" + chapter[0] %}
                         <div>
                             <p>

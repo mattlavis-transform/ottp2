@@ -7,6 +7,7 @@ class SearchFilter {
         this.key = key;
         this.name = instance.display;
         this.level = instance.level;
+        this.info = instance.info;
         this.values = [];
         if (value != null) {
             this.add_value(value);
