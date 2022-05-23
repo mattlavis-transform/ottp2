@@ -10,6 +10,7 @@
         {
             "scheme_code": "eu",
             "country_code": "eu",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "Statement on origin",
@@ -123,6 +124,7 @@
         {
             "scheme_code": "japan",
             "country_code": "JP",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "Statement on origin",
@@ -274,6 +276,7 @@
         },
         {
             "scheme_code": "albania",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -350,6 +353,7 @@
         },
         {
             "scheme_code": "canada",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "Statement on origin",
@@ -420,6 +424,7 @@
         {
             "scheme_code": "south-korea",
             "country_code": "KR",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "Origin declaration",
@@ -493,6 +498,7 @@
         },
         {
             "scheme_code": "kenya",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -572,6 +578,7 @@
         },
         {
             "scheme_code": "esa",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -651,6 +658,7 @@
         },
         {
             "scheme_code": "central-america",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -733,6 +741,7 @@
         },
         {
             "scheme_code": "andean",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -813,6 +822,7 @@
         },
         {
             "scheme_code": "cameroon",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -887,6 +897,7 @@
         },
         {
             "scheme_code": "cariforum",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -977,6 +988,7 @@
         },
         {
             "scheme_code": "chile",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1053,6 +1065,7 @@
         },
         {
             "scheme_code": "cotedivoire",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "Origin declaration",
@@ -1131,6 +1144,7 @@
         },
         {
             "scheme_code": "egypt",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1207,6 +1221,7 @@
         },
         {
             "scheme_code": "faroe-islands",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1283,6 +1298,7 @@
         },
         {
             "scheme_code": "georgia",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1359,6 +1375,7 @@
         },
         {
             "scheme_code": "ghana",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1435,6 +1452,7 @@
         },
         {
             "scheme_code": "iceland-norway",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1511,6 +1529,7 @@
         },
         {
             "scheme_code": "israel",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1587,6 +1606,7 @@
         },
         {
             "scheme_code": "kosovo",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1663,6 +1683,7 @@
         },
         {
             "scheme_code": "jordan",
+            "caveat": "",
             "proofs": [],
             "cumulation": {
                 "bilateral": {
@@ -1726,6 +1747,7 @@
         },
         {
             "scheme_code": "lebanon",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1802,6 +1824,7 @@
         },
         {
             "scheme_code": "mexico",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1878,6 +1901,7 @@
         },
         {
             "scheme_code": "switzerland-liechtenstein",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -1956,6 +1980,7 @@
         },
         {
             "scheme_code": "moldova",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2032,6 +2057,7 @@
         },
         {
             "scheme_code": "morocco",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2108,6 +2134,7 @@
         },
         {
             "scheme_code": "north-macedonia",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2184,6 +2211,7 @@
         },
         {
             "scheme_code": "pacific",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2263,6 +2291,7 @@
         },
         {
             "scheme_code": "palestinian-authority",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2340,6 +2369,7 @@
         {
             "scheme_code": "singapore",
             "country_code": "SG",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "Origin declaration",
@@ -2416,6 +2446,7 @@
         },
         {
             "scheme_code": "serbia",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2492,6 +2523,7 @@
         },
         {
             "scheme_code": "sacum",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2575,6 +2607,7 @@
         },
         {
             "scheme_code": "tunisia",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2652,6 +2685,7 @@
         {
             "scheme_code": "turkey",
             "country_code": "TR",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "Origin declaration",
@@ -2723,6 +2757,7 @@
         },
         {
             "scheme_code": "ukraine",
+            "caveat": "For the purposes of the prototype, data from the Albania Trade Agremeent is being used.",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2799,6 +2834,7 @@
         },
         {
             "scheme_code": "vietnam",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2876,6 +2912,7 @@
         {
             "scheme_code": "oct",
             "country_code": "OCT",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "EUR1 or EUR.MED movement certificate",
@@ -2963,6 +3000,7 @@
         },
         {
             "scheme_code": "gsp",
+            "caveat": "",
             "proofs": [
                 {
                     "summary": "Generalised Scheme of Preferences form A",

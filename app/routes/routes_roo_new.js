@@ -43,7 +43,7 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/'], function
         // If there are possibly multiple schemes, such as Kenya, Ghana, Viet Nam or Moldova,
         // then we redirect to the page to select the appropriate scheme
         // otherwise we go to to 'general originating requirements' page
-        if (context.multiple_schemes) {
+        if ((context.multiple_schemes) && (context.scheme_code == "")) {
             var url = "/roo/scheme_select/" + context.goods_nomenclature_item_id + "/" + context.country + "/";
         } else {
             var url = "/roo/origination/" + context.goods_nomenclature_item_id + "/" + context.country

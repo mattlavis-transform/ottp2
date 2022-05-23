@@ -268,6 +268,7 @@ class Context {
             this.matching_schemes = jp.query(data, query_string);
             this.scheme_title = this.matching_schemes[0].title;
             this.cumulation_options = this.matching_schemes[0].cumulation;
+            this.caveat = this.matching_schemes[0].caveat;
             this.ord = this.matching_schemes[0].ord;
             this.original = this.matching_schemes[0].original;
             if (typeof this.scheme_ord === 'undefined') {
@@ -282,6 +283,7 @@ class Context {
                 this.scheme_code = this.matching_schemes[0].scheme_code;
                 this.scheme_title = this.matching_schemes[0].title;
                 this.cumulation_options = this.matching_schemes[0].cumulation;
+                this.caveat = this.matching_schemes[0].caveat;
                 this.ord = this.matching_schemes[0].ord;
                 this.original = this.matching_schemes[0].original;
                 if (typeof this.scheme_ord === 'undefined') {

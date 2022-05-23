@@ -25,6 +25,7 @@
             {% if context.gsp == false %}
                 <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                     <input type="hidden" name="phase" id="phase" value="{{ phase }}" >
+                    
                     {# <span class="govuk-caption-xl">Trading commodity {{ context.goods_nomenclature_item_id }} with {{ context.country_name }}</span> #}
                     <span class="govuk-caption-xl">Details of your trade</span>
 
@@ -55,6 +56,7 @@
                         href: ""
                     }) }}
                 </form>
+                {% include "roo_new/caveat.html" %}
             {% else %}
                 <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                     <input type="hidden" name="phase" id="phase" value="trade_direction" >
