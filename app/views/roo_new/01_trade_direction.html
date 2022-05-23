@@ -61,22 +61,34 @@
                     <input type="hidden" name="trade_direction" id="trade_direction" value="import" >
                     <span class="govuk-caption-xl">Trading commodity {{ context.goods_nomenclature_item_id }} with {{ context.country_name }}</span>
                     <h1 class="govuk-heading-l">Importing goods into the United Kingdom from countries which belong to the GSP scheme</h1>
-                    <p class="govuk-body-l">As {{ context.country_name }} is a member of the Generalized System of Preferences (GSP) scheme, the rules of
-                    origin apply only to the import of goods from the overseas country.
-                </p>
-                    <p>If you would like to export goods to {{ context.country_name }}, then MFN duties will apply.</p>
+                    <p class="govuk-body-l">{{ context.country_name }} is a member of the unilateral
+                        <a href="https://www.gov.uk/government/publications/trading-with-developing-nations" target="_blank">Generalized System of Preferences (GSP)</a> scheme.
+                        The rules of origin apply only to the import of goods from the overseas country.
+                    </p>
+                    <h2 class="govuk-heading-m">Importing goods from {{ context.country_name }}</h2>
                     <p>Click on the 'Continue' button to determine if the rules of origin apply to your import from {{ context.country_name }}.</p>
 
                     {{ govukButton({
                         text: "Continue",
                         href: ""
                     }) }}
+
+                    <h2 class="govuk-heading-m">Exporting goods to {{ context.country_name }}</h2>
+                    <p>If you would like to export goods to {{ context.country_name }}, then MFN duties will apply.</p>
+
+                    <p>For Most-Favoured Nation (MFN) duties, anti-dumping, anti-subsidies or safeguard measures, origin marking, non-preferential rules of origin apply.</p>
+                    <p>
+                        <a href="https://www.gov.uk/government/publications/reference-document-for-the-customs-origin-of-chargeable-goods-eu-exit-regulations-2020">Find out about the product-specific rules, to determine the origin of imports outside of a preferential agreement.</a>
+                    </p>
+
                 </form>
             {% endif %}
         </div>
-        <div class="govuk-grid-column-one-third">
-            {% include "./aside.html" %}
-        </div>
+        {% if context.gsp == false %}
+            <div class="govuk-grid-column-one-third">
+                {% include "./aside.html" %}
+            </div>
+        {% endif %}
     </div>
 
 {% endblock %}

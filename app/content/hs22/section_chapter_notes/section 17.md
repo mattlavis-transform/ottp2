@@ -10,7 +10,8 @@
     
     d. articles of heading [8306](/headings/8306);
     
-    e. machines or apparatus of heading [8401](/headings/8401) to [8479](/headings/8479), or parts thereof; articles of heading [8481](/headings/8481) or [8482](/headings/8482) or, provided they constitute integral parts of engines or motors, articles of heading [8483](/headings/8483);
+    e. machines or apparatus of heading [8401](/headings/8401) to [8479](/headings/8479), or parts thereof, other
+than the radiators for the articles of this Section; articles of heading [8481](/headings/8481) or [8482](/headings/8482) or, provided they constitute integral parts of engines or motors, articles of heading [8483](/headings/8483);
     
     f. electrical machinery or equipment (Chapter [85](/chapters/85));
     
@@ -20,7 +21,7 @@
     
     ij. arms (Chapter [93](/chapters/93));
     
-    k. lamps or lighting fittings of heading [9405](/headings/9405);
+    k. luminaires or lighting fittings of heading [9405](/headings/9405);
     
     l. brushes of a kind used as parts of vehicles (heading [9603](/headings/9603)).
 

@@ -1,6 +1,6 @@
 1. (A) The products specified in the headings of this chapter are to be classified in those headings only if grains are present, whether or not in the ear or on the stalk.
 
-    (B) The chapter does not cover grains which have been hulled or otherwise worked. However, rice, husked, milled, polished, glazed, parboiled or broken remains classified in heading [1006](/headings/1006).. Similarly, quinoa from which the pericarp has been wholly or partly removed in order to separate the saponin, but which has not undergone any other processes, remains classified in heading [1008](/headings/1008).
+    (B) The chapter does not cover grains which have been hulled or otherwise worked. However, rice, husked, milled, polished, glazed, parboiled or broken remains classified in heading [1006](/headings/1006). Similarly, quinoa from which the pericarp has been wholly or partly removed in order to separate the saponin, but which has not undergone any other processes, remains classified in heading [1008](/headings/1008).
     
     Similarly, quinoa from which the pericarp has been wholly or partly removed in order to separate the saponin, but which has not undergone any other processes, remains classified in heading [1008](/headings/1008).
 
@@ -30,8 +30,8 @@
 
    - (h) ‘broken rice’ (subheading [1006 40](/subheadings/1006400000-80)): grain fragments, the length of which does not exceed three-quarters of the average length of the whole grain.
 
-1. The duty-rate applicable to mixtures of this chapter is as follows:
+2. The duty-rate applicable to mixtures of this chapter is as follows:
 
-- (a) in mixtures where one of the components represents at least 90 % by weight, the rate applicable to that component applies;
- 
-- (b) in other mixtures, the rate applicable is that of the component which results in the highest amount of import duty.
+   - (a) in mixtures where one of the components represents at least 90 % by weight, the rate applicable to that component applies;
+    
+   - (b) in other mixtures, the rate applicable is that of the component which results in the highest amount of import duty.

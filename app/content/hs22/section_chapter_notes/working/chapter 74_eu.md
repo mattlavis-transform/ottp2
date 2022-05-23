@@ -6,7 +6,7 @@ Metal containing at least 99.85% by weight of copper; or
 
 Metal containing at least 97.5% by weight of copper, provided that the content by weight of any other element does not exceed the limit specified in the following table:
 
-**Other elements
+**Other elements**
 
 <table>
 <thead>

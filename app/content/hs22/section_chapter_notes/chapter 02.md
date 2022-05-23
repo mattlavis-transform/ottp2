@@ -2,7 +2,7 @@
 
    a) products of the kinds described in headings [0201](/headings/0201) to [0208](/headings/0208) or [0210](/headings/0210), unfit or unsuitable for human consumption;
 
-   b) edible, non-living insects (heading [0410](/headings/0410))
+   b) edible, non-living insects (heading [0410](/headings/0410));
 
    c) guts, bladders or stomachs of animals (heading [0504](/headings/0504)) or animal blood (heading [0511](/headings/0511) or [3002](/headings/3002)); or
 

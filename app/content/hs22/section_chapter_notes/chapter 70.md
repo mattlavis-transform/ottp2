@@ -8,10 +8,11 @@
 
     - d. front windscreens (windshields), rear windows and other windows, framed, for vehicles of Chapter [86](/chapters/86) to Chapter [88](/chapters/88);
 
-    - e. front windscreens (windshields), rear windows and other windows, whether or not framed, incorporating heating devices or other electrical or electronic devices, for vehicles of Chapter [86](/chapters/86) to Chapter [88](/chapters/88);”. 
-    f. optical fibres, optically worked optical elements, hypodermic syringes, artificial eyes, thermometers, barometers, hydrometers or other articles of Chapter [90](/chapters/90);
+    - e. front windscreens (windshields), rear windows and other windows, whether or not framed, incorporating heating devices or other electrical or electronic devices, for vehicles of Chapter [86](/chapters/86) to Chapter [88](/chapters/88);
+    
+    - f. optical fibres, optically worked optical elements, hypodermic syringes, artificial eyes, thermometers, barometers, hydrometers or other articles of Chapter [90](/chapters/90);
 
-    - g. Luminaires and lighting fittings, illuminated signs, illuminated nameplates or the like, having a permanently fixed light source, or parts thereof of heading [9405](/headings/9405);
+    - g. luminaires and lighting fittings, illuminated signs, illuminated nameplates or the like, having a permanently fixed light source, or parts thereof of heading [9405](/headings/9405);
 
     - h. toys, games, sports requisites, Christmas tree ornaments or other articles of Chapter [95](/chapters/95) (excluding glass eyes without mechanisms for dolls or for other articles of Chapter [95](/chapters/95)); or
 

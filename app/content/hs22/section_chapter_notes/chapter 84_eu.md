@@ -16,7 +16,7 @@
     
     h. hand-operated mechanical floor sweepers, not motorised (heading [9603](/headings/9603)).
 
-2. Subject to the operation of note 3 to Section XVI and subject to note 9 to this chapter, a machine or appliance which answers to a description in one or more of the heading [8401](/headings/8401) to [8424](/headings/8424), or heading [8486](/headings/8486) and at the same time to a description in one or more of the heading [8425](/headings/8425) to [8480](/headings/8480) is to be classified under the appropriate heading of the former group or under heading [8486](/headings/8486), as the case may be, and not the latter group.
+2. Subject to the operation of note 3 to Section XVI and subject to note 11 to this chapter, a machine or appliance which answers to a description in one or more of the heading [8401](/headings/8401) to [8424](/headings/8424), or heading [8486](/headings/8486) and at the same time to a description in one or more of the heading [8425](/headings/8425) to [8480](/headings/8480) is to be classified under the appropriate heading of the former group or under heading [8486](/headings/8486), as the case may be, and not the latter group.
 
     A) Heading [8419](/headings/8419) does not, however, cover:
     

@@ -97,9 +97,7 @@
     (3) (a) ‘Silicon based sensors’ consist of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of detecting physical or chemical phenomena and transducing these into electric signals, caused by resulting variations in electric properties or displacement of a mechanical structure. ‘Physical or chemical phenomena’ relates to phenomena, such as pressure, acoustic waves, acceleration, vibration, movement, orientation, strain, magnetic field strength, electric field strength, light, radioactivity, humidity, flow, chemicals concentration, etc.
     
     (b)'Silicon based actuators” consist of microelectronic and mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of converting electrical signals into physical movement.
-    
-    For the classification of the articles defined in this note, heading [8541](/headings/8541) and [8542](/headings/8542) shall take precedence over any other heading in the classification, except in the case of heading [8523](/headings/8523), which might cover them by reference to, in particular, their function.
-    
+        
     (c) ‘Silicon based resonators’ are components that consist of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and have the function of generating a mechanical or electrical oscillation of a predefined frequency that depends on the physical geometry of these structures in response to an external input.
     
     (d) ‘Silicon based oscillators’ are active components that consist of microelectronic or mechanical structures that are created in the mass or on the surface of a semiconductor and that have the function of generating a mechanical or electrical oscillation of a predefined frequency that depends on the physical geometry of these structures.
@@ -128,6 +126,6 @@
 
 1. Subheadings [8519 20 10](/subheadings/8519201000-80) and [8519 30 00](/subheadings/8519300000-80) are to be taken not to apply to sound reproducing apparatus with laser reading system.
 
-2. For the purposes of subheadings [8528 71 15](/subheadings/8528711500-80) and [8528 71 91](/subheadings/8528719100-80) only, the term 'modem' covers devices or equipment that modulate and demodulate incoming and outgoing signals, such as V.90-modems or cable modems, and other devices that use like technologies for gaining access to the internet, such as VLAN, ISDN and ethernet. The extent of access to the internet may be limited by the service provider.
+2. For the purposes of subheadings [8528 71 15](/subheadings/8528711500-80) and [8528 71 91](/subheadings/8528719100-80) only, the term 'modem' covers devices or equipment that modulate and demodulate incoming and outgoing signals, such as V.90-modems or cable modems, and other devices that use like technologies for gaining access to the internet, such as WLAN, ISDN and ethernet. The extent of access to the internet may be limited by the service provider.
 
     Apparatus of these subheadings must enable a two-way communication process or the two-way flow of information for the purposes of providing interactive information exchange.

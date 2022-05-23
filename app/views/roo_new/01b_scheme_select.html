@@ -23,17 +23,19 @@
 
             <form action="/roo/data_handler/{{ context.goods_nomenclature_item_id }}/{{ context.country }}">
                 <input type="hidden" name="phase" id="phase" value="scheme_select" >
-                <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span>
+                {# <span class="govuk-caption-xl commodity-split">{{ context.rules_of_origin_title | safe }}</span> #}
+                <span class="govuk-caption-xl commodity-split">Details of your trade</span>
                 <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset">
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                            Select agreement for trading with {{ context.country_name }}
+                                Select agreement for trading with {{ context.country_name }}
                             </h1>
                         </legend>
                         <div class="govuk-hint">
-                        You may be able to take advantage of 
-                        preferential imports duties for trade with {{ context.country_name }} via more than one trade agreement.<br><br>Select the trade agreement.</div>
+                            You may be able to take advantage of 
+                            preferential imports duties for trade with {{ context.country_name }} via more than one trade agreement.<br><br>Select the trade agreement.
+                        </div>
                         <div class="govuk-radios" data-module="govuk-radios">
                             {% for scheme in context.matching_schemes %}
                                 <div class="govuk-radios__item">

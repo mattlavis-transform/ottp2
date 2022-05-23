@@ -189,13 +189,13 @@
     
     g. knitted or crocheted to shape, whether presented as separate items or in the form of a number of items in the length.
 
-8. For the purposes of Chapters [50](/chapters/50) to 60:
+8. For the purposes of Chapters [50](/chapters/50) to [60](/chapters/60):
 
-    a. Chapters [50](/chapters/50) to 55 and [60](/chapters/60) and, except where the context otherwise requires, Chapters [56](/chapters/56) to 59 do not apply to goods made up within the meaning of note 7 above; and
+    a. Chapters [50](/chapters/50) to [55](/chapters/55) and [60](/chapters/60) and, except where the context otherwise requires, Chapters [56](/chapters/56) to [59](/chapters/59) do not apply to goods made up within the meaning of note 7 above; and
     
-    b. Chapters [50](/chapters/50) to 55 and [60](/chapters/60) do not apply to goods of Chapters [56](/chapters/56) to 59.
+    b. Chapters [50](/chapters/50) to [55](/chapters/55) and [60](/chapters/60) do not apply to goods of Chapters [56](/chapters/56) to [569](/chapters/59).
 
-9. The woven fabrics of Chapters [50](/chapters/50) to 55 include fabrics consisting of layers of parallel textile yarns superimposed on each other at acute or right angles. These layers are bonded at the intersections of the yarns by an adhesive or by thermal bonding.
+9. The woven fabrics of Chapters [50](/chapters/50) to [55](/chapters/55) include fabrics consisting of layers of parallel textile yarns superimposed on each other at acute or right angles. These layers are bonded at the intersections of the yarns by an adhesive or by thermal bonding.
 
 10. Elastic products consisting of textile materials combined with rubber threads are classified in this section.
 
@@ -215,8 +215,9 @@
 
     a. 'Unbleached yarn`: yarn which:
     
-    (1) has the natural colour of its constituent fibres and has not been bleached, dyed (whether or not in the mass) or printed; or
-    (2) is of indeterminate colour (grey yarn), manufactured from garnetted stock.
+    - (1) has the natural colour of its constituent fibres and has not been bleached, dyed (whether or not in the mass) or printed; or
+    
+     - (2) is of indeterminate colour (grey yarn), manufactured from garnetted stock.
     
     Such yarn may have been treated with a colourless dressing or fugitive dye (which disappears after simple washing with soap) and, in the case of man-made fibres, treated in the mass with delustring agents (for example, titanium dioxide).
     
@@ -278,10 +279,10 @@
     
     The definitions at (d) to (h) above apply, mutatis mutandis, to knitted or crocheted fabrics.
     
-    ij. 'Plain weave_:
+    ij. 'Plain weave':
     a fabric construction in which each yarn of the weft passes alternately over and under successive yarns of the warp and each yarn of the warp passes alternately over and under successive yarns of the weft.
 
-2. (A) Products of Chapters [56](/chapters/56) to 63 containing two or more textile materials are to be regarded as consisting wholly of that textile material which would be selected under note 2 to this section for the classification of a product of Chapters [50](/chapters/50) to 55 or of heading [5809](/headings/5809) consisting of the same textile materials.
+2. (A) Products of Chapters [56](/chapters/56) to [63](/chapters/63) containing two or more textile materials are to be regarded as consisting wholly of that textile material which would be selected under note 2 to this section for the classification of a product of Chapters [50](/chapters/50) to [55](/chapters/55) or of heading [5809](/headings/5809) consisting of the same textile materials.
 
     (B) For the application of this rule:
     

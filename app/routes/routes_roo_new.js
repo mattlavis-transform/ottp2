@@ -65,8 +65,9 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/'], function
         }
 
     } else if (context.phase == "scheme_select") {
-        // From selecting a scheme, take the user to the origination screen (always)
-        url = "/roo/origination/" + context.goods_nomenclature_item_id + "/" + context.country;
+        // From selecting a scheme, take the user to the trade direction screen (always)
+        context.scheme_code = req.session.data["scheme_code"];
+        url = "/roo/trade_direction/" + context.goods_nomenclature_item_id + "/" + context.country;
 
     } else if (context.phase == "insufficient_processing") {
         context.get_insufficient_processing(req);
@@ -112,21 +113,24 @@ router.get(['/roo/data_handler/:goods_nomenclature_item_id/:country/'], function
 router.get(['/roo/trade_direction/:goods_nomenclature_item_id/:country/'], function (req, res) {
     var context = new Context(req, "commodity");
     context.set_phase("trade_direction", "trade_direction");
-    req.session.data["scheme_code"] = "";
-    context.scheme_code = "";
+    // context.scheme_code = req.session.data["scheme_code"];
+    // req.session.data["scheme_code"] = "";
+    // context.scheme_code = "";
 
     context.get_scope();
     context.get_country(req);
     context.get_commodity(req);
     context.get_roo_origin(req);
     context.get_scheme_code(req);
-    context.get_product_specific_rules_json(req, "check_wo_only");
 
-    // if ((context.multiple_schemes) && (context.scheme_code == '')) {
-    if (context.multiple_schemes) {
+    if (typeof context.scheme_code === 'undefined') {
+        context.scheme_code = "";
+    }
+    if ((context.multiple_schemes) && (context.scheme_code == "")) {
         var url = "/roo/scheme_select/" + context.goods_nomenclature_item_id + "/" + context.country + "/";
         res.redirect(url);
     } else {
+        context.get_product_specific_rules_json(req, "check_wo_only");
         res.render('roo_new/01_trade_direction', {
             'context': context
         });
@@ -143,7 +147,7 @@ router.get(['/roo/scheme_select/:goods_nomenclature_item_id/:country/'], functio
     context.get_scope();
     context.get_roo_origin(req);
     context.get_scheme_code(req);
-    context.get_product_specific_rules_json(req, "check_wo_only");
+    // context.get_product_specific_rules_json(req, "check_wo_only");
 
     res.render('roo_new/01b_scheme_select', {
         'context': context

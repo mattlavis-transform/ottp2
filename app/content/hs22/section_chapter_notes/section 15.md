@@ -35,9 +35,9 @@
     
     c. articles of heading [8301](/headings/8301), [8302](/headings/8302), [8308](/headings/8308), [8310](/headings/8310) and frames and mirrors, of base metal, of heading [8306](/headings/8306). 
     
-    In Chapters [73](/chapters/73) to 76 and [78](/chapters/78) to 82 (but not in heading [7315](/headings/7315)), references to parts of goods do not include references to parts of general use as defined above.
+    In Chapters [73](/chapters/73) to [76](/chapters/76) and [78](/chapters/78) to [82](/chapters/82) (but not in heading [7315](/headings/7315)), references to parts of goods do not include references to parts of general use as defined above.
     
-    Subject to the preceding paragraph and to note 1 to Chapter [83](/chapters/83), the articles of Chapter [82](/chapters/82) or [83](/chapters/83) are excluded from Chapters [72](/chapters/72) to 76 and [78](/chapters/78) to 81.
+    Subject to the preceding paragraph and to note 1 to Chapter [83](/chapters/83), the articles of Chapter [82](/chapters/82) or [83](/chapters/83) are excluded from Chapters [72](/chapters/72) to 76 and [78](/chapters/78) to [81](/chapters/81).
 
 3. Throughout the classification, the expression 'base metals' means: iron and steel, copper, nickel, aluminium, lead, zinc, tin, tungsten (wolfram), molybdenum, tantalum, magnesium, cobalt, bismuth, cadmium, titanium, zirconium, antimony, manganese, beryllium, chromium, germanium, vanadium, gallium, hafnium, indium, niobium (columbium), rhenium and thallium.
 
@@ -75,7 +75,7 @@
     
     Products of which 90% or more by weight passes through a sieve having a mesh aperture of 1mm.
 
-9. For the purposes of Chapters [74](/chapters/74) to 76 and [78](/chapters/78) to 81, the following expressions have the meanings hereby assigned to them :
+9. For the purposes of Chapters [74](/chapters/74) to [76](/chapters/76) and [78](/chapters/78) to [81](/chapters/81), the following expressions have the meanings hereby assigned to them :
  
     **(a) Bars and rods**
 

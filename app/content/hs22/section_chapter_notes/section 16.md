@@ -4,7 +4,7 @@
     
     b. articles of leather or of composition leather (heading [4205](/headings/4205)) or of furskin (heading [4303](/headings/4303)), of a kind used in machinery or mechanical appliances or for other technical uses;
     
-    c. bobbins, spools, cops, cones, cores, reels or similar supports, of any material (for example, Chapter [39](/chapters/39), 40, 44 or [48](/chapters/48) or Section XV);
+    c. bobbins, spools, cops, cones, cores, reels or similar supports, of any material (for example, Chapter [39](/chapters/39), [40](/chapters/40), [44](/chapters/44) or [48](/chapters/48) or Section XV);
     
     d. perforated cards for jacquard or similar machines (for example, Chapter [39](/chapters/39) or [48](/chapters/48) or Section XV);
     

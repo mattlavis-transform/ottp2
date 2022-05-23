@@ -6,7 +6,7 @@
     
     Metal containing by weight at least 99% of aluminium, provided that the content by weight of any other element does not exceed the limit specified in the following table:
     
-    **Other elements
+    **Other elements**
     
     <table>
     <tbody>

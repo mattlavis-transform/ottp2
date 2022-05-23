@@ -249,7 +249,8 @@ class Context {
 
     get_scheme_code(req) {
         var jp = require('jsonpath');
-        var data = require('../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json');
+        var schemes_json_filename = '../data/roo/' + this.scope_id_roo + '/roo_schemes_' + this.scope_id_roo + '.json';
+        var data = require(schemes_json_filename);
         data = data["schemes"];
         this.cumulation_options = [];
 
@@ -296,7 +297,9 @@ class Context {
                 this.multiple_schemes = true;
             }
         }
-        this.get_psr_file();
+        if (this.multiple_schemes == false) {
+            this.get_psr_file();
+        }
     }
 
     get_roo_origin() {
@@ -420,6 +423,9 @@ class Context {
     }
 
     get_psrs() {
+        if (typeof this.psr_data === 'undefined') {
+            return;
+        }
         const jp = require('jsonpath');
         if (this.subdivision != "") {
             var query_string = '$.rule_sets[?(@.min <= "' + this.goods_nomenclature_item_id + '" && @.max >= "' + this.goods_nomenclature_item_id + '" && @.valid == true && @.subdivision == "' + this.subdivision + '")]';
@@ -898,22 +904,29 @@ class Context {
         } else {
             this.country_name = "All countries";
         }
-        this.check_gsp();
+        this.check_gsp(req);
     }
 
-    check_gsp() {
-        var gsp_countries = [
-            "AF", "AO", "BD", "BF", "BI", "BJ", "BT", "CD", "CF", "DJ", "ER", "ET", "GM", "GN",
-            "GW", "HT", "KH", "KI", "KM", "LA", "LR", "LS", "MG", "ML", "MM", "MR", "MW", "MZ",
-            "NE", "NP", "RW", "SB", "SD", "SL", "SN", "SO", "SS", "ST", "TD", "TG", "TL", "TV",
-            "TZ", "UG", "VU", "YE", "ZM", "CG", "CK", "DZ", "FM", "GH", "ID", "IN", "JO", "KE",
-            "NG", "NU", "SY", "TJ", "VN", "WS", "BO", "CV", "KG", "LK", "MN", "PH", "PK", "UZ"
-        ]
-
-        if (gsp_countries.includes(this.country)) {
-            this.gsp = true;
-        } else {
+    check_gsp(req) {
+        this.scheme_code = req.session.data["scheme_code"];
+        if (typeof this.scheme_code === 'undefined') {
+            this.scheme_code = "";
+        }
+        if ((this.scheme_code != "gsp") && (this.scheme_code != "")) {
             this.gsp = false;
+        } else {
+            var gsp_countries = [
+                "AF", "AO", "BD", "BF", "BI", "BJ", "BT", "CD", "CF", "DJ", "ER", "ET", "GM", "GN",
+                "GW", "HT", "KH", "KI", "KM", "LA", "LR", "LS", "MG", "ML", "MM", "MR", "MW", "MZ",
+                "NE", "NP", "RW", "SB", "SD", "SL", "SN", "SO", "SS", "ST", "TD", "TG", "TL", "TV",
+                "TZ", "UG", "VU", "YE", "ZM", "CG", "CK", "DZ", "FM", "GH", "ID", "IN", "JO", "KE",
+                "NG", "NU", "SY", "TJ", "VN", "WS", "BO", "CV", "KG", "LK", "MN", "PH", "PK", "UZ"
+            ]
+            if (gsp_countries.includes(this.country)) {
+                this.gsp = true;
+            } else {
+                this.gsp = false;
+            }
         }
     }
 
