@@ -31,15 +31,17 @@
 
    (g) ‘separated hindquarters’, for the purposes of subheadings [0201 20 50](/subheadings/0201205000-80) and [0202 20 50](/subheadings/0202205000-80): the rear part of a half-carcase, comprising all the bones and the thigh and sirloin, including the fillet, with a minimum of three whole or cut ribs, with or without the shank and with or without the thin flank;
 
-   (h) 1. ‘crop’ and ‘chuck and blade’ cuts, for the purposes of subheading [0202 30 50](/subheadings/0202305000-80): the dorsal part of the forequarter, including the upper part of the shoulder, obtained from a forequarter with a minimum of four ribs and a maximum of 10 ribs by a cut along a straight line through the point where the first rib joins the first sternal segment to the point of reflection of the diaphragm on the tenth rib;
+   (h)   
 
-2. ‘brisket’ cut, for the purposes of subheading [0202 30 50](/subheadings/0202305000-80): the lower part of the forequarter, comprising the brisket navel end and the brisket point end.
+      1. ‘crop’ and ‘chuck and blade’ cuts, for the purposes of subheading [0202 30 50](/subheadings/0202305000-80): the dorsal part of the forequarter, including the upper part of the shoulder, obtained from a forequarter with a minimum of four ribs and a maximum of 10 ribs by a cut along a straight line through the point where the first rib joins the first sternal segment to the point of reflection of the diaphragm on the tenth rib;
+
+      2. ‘brisket’ cut, for the purposes of subheading [0202 30 50](/subheadings/0202305000-80): the lower part of the forequarter, comprising the brisket navel end and the brisket point end.
 
    B. Products covered by additional chapter notes 1(A)(a) to (g) to this chapter may be presented with or without the vertebral column.
 
    C. In determining the number of whole or cut ribs referred to in additional chapter note 1(A), only those attached to the vertebral column are to be taken into consideration. If the vertebral column has been removed, only the whole or cut ribs which otherwise would have been directly attached to the vertebral column are to be taken into consideration.
 
-   2. A. The following expressions have the meanings hereby assigned to them:
+2. A. The following expressions have the meanings hereby assigned to them:
 
       (a) ‘carcases or half-carcases’, for the purposes of subheadings [0203 11 10](/subheadings/0203111000-80) and [0203 21 10](/subheadings/0203211000-80): slaughtered pigs, in the form of carcases of domestic swine which have been bled and eviscerated and from which the bristles and hooves have been removed. Half-carcases are derived from whole carcases by division through each cervical, dorsal, lumbar and sacral vertebra, through or along the sternum and through the ischio-pubic symphysis. These carcases or half-carcases may be with or without head, with or without the chaps, feet, flare fat, kidneys, tail or diaphragm. Half-carcases may be with or without spinal cord, brain or tongue. Carcases and half-carcases of sows may be with or without udders (mammary glands);
 
@@ -61,19 +63,19 @@
 
       (k) ‘middles’, for the purposes of subheading [0210 19 20](/subheadings/0210192000-80): the bacon side without the ham and the fore-end, whether or not boned. The subheading also includes cuts of middles containing tissue of loin and belly in natural proportion to the entire middles.
 
-   B. The parts of the cuts defined in paragraph 2(A)(f) fall in the same subheadings, only if they contain rind and subcutaneous fat. If the cuts falling in subheadings [0210 11 11](/subheadings/0210111100-80), [0210 11 19](/subheadings/0210111900-80), [0210 11 31](/subheadings/0210113100-80), [0210 11 39](/subheadings/0210113900-80), [0210 19 30](/subheadings/0210193000-80) and [0210 19 60](/subheadings/0210196000-80) are derived from a bacon side from which the bones indicated under paragraph 2(A)(g) have already been removed, the lines of cutting must follow those defined under paragraph 2(A)(b), (c) and (d) accordingly; in any case, these cuts or parts thereof must contain bones.
+      B. The parts of the cuts defined in paragraph 2(A)(f) fall in the same subheadings, only if they contain rind and subcutaneous fat. If the cuts falling in subheadings [0210 11 11](/subheadings/0210111100-80), [0210 11 19](/subheadings/0210111900-80), [0210 11 31](/subheadings/0210113100-80), [0210 11 39](/subheadings/0210113900-80), [0210 19 30](/subheadings/0210193000-80) and [0210 19 60](/subheadings/0210196000-80) are derived from a bacon side from which the bones indicated under paragraph 2(A)(g) have already been removed, the lines of cutting must follow those defined under paragraph 2(A)(b), (c) and (d) accordingly; in any case, these cuts or parts thereof must contain bones.
 
-   C. Subheadings [0206 49 00](/subheadings/0206490000-80) and [0210 99 49](/subheadings/0210994900-80), include, in particular, heads or halves of heads of domestic swine, with or without the brains, cheeks or tongues, and parts thereof. The head is separated from the rest of the half-carcase as follows:
+      C. Subheadings [0206 49 00](/subheadings/0206490000-80) and [0210 99 49](/subheadings/0210994900-80), include, in particular, heads or halves of heads of domestic swine, with or without the brains, cheeks or tongues, and parts thereof. The head is separated from the rest of the half-carcase as follows:
 
       - by a straight cut parallel to the cranium; or
 
       - by a cut parallel to the cranium up to the level of the eyes and then inclined to the front of the head, thereby causing the chaps to remain attached to the half-carcase. The cheeks, snouts and ears as well as the meat attached to the head, particularly to the rear part, are considered parts of heads. 
 
-   However, the cuts of boneless meat of the fore-end, presented alone (jowls, chaps, or chaps and jowls together), fall in subheading [0203 19 55](/subheadings/0203195500-80), [0203 29 55](/subheadings/0203295500-80), [0210 19 50](/subheadings/0210195000-80) or [0210 19 81](/subheadings/0210198100-80), as the case may be.
+      However, the cuts of boneless meat of the fore-end, presented alone (jowls, chaps, or chaps and jowls together), fall in subheading [0203 19 55](/subheadings/0203195500-80), [0203 29 55](/subheadings/0203295500-80), [0210 19 50](/subheadings/0210195000-80) or [0210 19 81](/subheadings/0210198100-80), as the case may be.
 
-   D. For the purposes of subheadings [0209 10 11](/subheadings/0209101100-80) and [0209 10 19](/subheadings/0209101900-80), ‘subcutaneous pig fat’ has the meaning of the fatty tissue which accumulates under the rind of the pig and adheres to it, irrespective of the part of the pig from which it comes; in any case, the weight of the fatty tissue must exceed the weight of the rind. These subheadings also include subcutaneous pig fat from which the rind has been removed.
+      D. For the purposes of subheadings [0209 10 11](/subheadings/0209101100-80) and [0209 10 19](/subheadings/0209101900-80), ‘subcutaneous pig fat’ has the meaning of the fatty tissue which accumulates under the rind of the pig and adheres to it, irrespective of the part of the pig from which it comes; in any case, the weight of the fatty tissue must exceed the weight of the rind. These subheadings also include subcutaneous pig fat from which the rind has been removed.
 
-   E. For the purposes of subheadings [0210 11 31](/subheadings/0210113100-80), [0210 11 39](/subheadings/0210113900-80), [0210 12 19](/subheadings/0210121900-80) and [0210 19 60](/subheadings/0210196000-80) to [0210 19 89](/subheadings/0210198900-80), products in which the water/protein ratio in the meat (nitrogen content × 6.25) is 2.8 or less is considered as ‘dried or smoked’. The nitrogen content is determined in accordance with ISO method 937-1978. 
+      E. For the purposes of subheadings [0210 11 31](/subheadings/0210113100-80), [0210 11 39](/subheadings/0210113900-80), [0210 12 19](/subheadings/0210121900-80) and [0210 19 60](/subheadings/0210196000-80) to [0210 19 89](/subheadings/0210198900-80), products in which the water/protein ratio in the meat (nitrogen content × 6.25) is 2.8 or less is considered as ‘dried or smoked’. The nitrogen content is determined in accordance with ISO method 937-1978. 
 
 3. A. For the purposes of heading [0204](/headings/0204), the following expressions have the meanings hereby assigned to them:
 
@@ -115,7 +117,9 @@
 
    (ij) ‘duck or goose paletots’, for the purposes of subheadings [0207 44 71](/subheadings/0207447100-80), [0207 45 71](/subheadings/0207457100-80), [0207 54 71](/subheadings/0207547100-80) and [0207 55 71](/subheadings/0207557100-80): ducks or geese, plucked and completely drawn, without heads or feet, with carcase bones (breastbone, ribs, backbone and sacrum) removed, but with the femurs, tibias and humeri.
 
-5. (a) Uncooked seasoned meats fall in Chapter [16](/chapters/16). ‘Seasoned meat’ is uncooked meat that has been seasoned, either in depth or over the whole surface of the product, with seasoning either visible to the naked eye or clearly distinguishable by taste.
+5.   
+
+   (a) Uncooked seasoned meats fall in Chapter [16](/chapters/16). ‘Seasoned meat’ is uncooked meat that has been seasoned, either in depth or over the whole surface of the product, with seasoning either visible to the naked eye or clearly distinguishable by taste.
 
    (b) Products falling in heading [0210](/headings/0210) to which seasoning has been added during the process of preparation remain classified therein, provided that the addition of seasoning has not changed their character.
 

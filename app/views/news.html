@@ -19,6 +19,7 @@
 {% endblock %}
 
 {% block content %}
+    {% include "includes/language_selector.html" %}
     <span class="govuk-caption-xl">
         {{ context.title }}
         {% include "includes/scope_switcher_panel.html" %}

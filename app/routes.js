@@ -4,6 +4,7 @@ const router = express.Router()
 const api_helper = require('./API_helper');
 const { response } = require('express');
 const Heading = require('./classes/heading.js');
+const Subheading = require('./classes/subheading.js');
 const Commodity = require('./classes/commodity.js');
 const Roo = require('./classes/roo.js');
 const RooMvp = require('./classes/roo_mvp.js');
@@ -18,6 +19,7 @@ const Search = require('./classes/search');
 const { xor } = require('lodash');
 const Story = require('./classes/story');
 const SearchExtended = require('./classes/search_extended');
+const SearchApi = require('./classes/search_api');
 const SectionChapterNotesCollection = require('./classes/section_chapter_notes_collection');
 const CommodityHistory = require('./classes/commodity_history');
 
@@ -182,18 +184,17 @@ router.get(['/headings/:headingId', '/:scope_id/headings/:headingId'], async fun
 // Example would be 38089490, which has 3808949010 and 3808949090 as end-line child codes
 
 router.get([
-    '/subheadings/:goods_nomenclature_item_id',
-    '/:scope_id/subheadings/:goods_nomenclature_item_id',
-    '/subheadings/:goods_nomenclature_item_id/:search_term',
-    '/:scope_id/subheadings/:goods_nomenclature_item_id/:search_term'
+    '/subheadings/:goods_nomenclature_item_id-:productline_suffix',
+    '/:scope_id/subheadings/:goods_nomenclature_item_id-:productline_suffix'
 ], function (req, res) {
     var goods_nomenclature_item_id = req.params["goods_nomenclature_item_id"];
+    var productline_suffix = req.params["productline_suffix"];
     if (goods_nomenclature_item_id.length == 4) {
         res.redirect("/headings/" + goods_nomenclature_item_id);
     } else {
         var context = new Context(req, "subheading");
-        context.search_term = req.params["search_term"];
-        axios.get('https://www.trade-tariff.service.gov.uk/api/v2/headings/' + goods_nomenclature_item_id.substr(0, 4))
+        var url = "https://www.trade-tariff.service.gov.uk/api/v2/subheadings/" + goods_nomenclature_item_id + "-" + productline_suffix;
+        axios.get(url)
             .then((response) => {
                 h = new Heading(response.data, goods_nomenclature_item_id);
                 if (h.data.attributes.declarable) {
@@ -705,11 +706,32 @@ router.get(['/country-filter'], async function (req, res) {
     res.redirect(url);
 });
 
+/* ############################################################################ */
+/* ###################               START SEARCH             ################# */
+/* ############################################################################ */
+
+
+// Elastic search (using querystring) - this is just a dummy redirect
+router.get(['/elastic/'], function (req, res) {
+    var search_term = req.query["search_term"];
+    var url = "/elastic/" + search_term;
+    res.redirect(url);
+});
+
+// Elastic search (using querystring) - this is just a dummy redirect
+router.get(['/elasticq/'], function (req, res) {
+    var search_term = req.query["search_term"];
+    var url = "/elasticq/" + search_term;
+    res.redirect(url);
+});
+
 // Elastic search
 router.get(['/elastic/:search_term'], function (req, res) {
+    // OLD ignore
     var context = new Context(req);
     context.search_term = req.params["search_term"];
     context.add_to_search_history(req, res);
+    context.show_questions = false
     var generic_terms = [
         "gift",
         "gifts"
@@ -727,6 +749,29 @@ router.get(['/elastic/:search_term'], function (req, res) {
     }
 });
 
+// Elastic questions
+router.get(['/elasticq/:search_term'], function (req, res) {
+    var context = new Context(req);
+    context.search_term = req.params["search_term"];
+    context.add_to_search_history(req, res);
+    var generic_terms = [
+        "gift",
+        "gifts"
+    ]
+
+    if (generic_terms.includes(context.search_term)) {
+        var url = "/elastic-generic/" + context.search_term;
+        res.redirect(url);
+    } else {
+        context.get_sort_order();
+        context.show_questions = true
+        context.search_term = req.params["search_term"];
+        if (context.search_term != "") {
+            var search = new SearchApi(context, req, res)
+        }
+    }
+});
+
 // Elastic history
 router.get(['/elastic_history'], function (req, res) {
     var context = new Context(req);
@@ -735,6 +780,8 @@ router.get(['/elastic_history'], function (req, res) {
         'context': context
     });
 });
+
+
 
 // Delete search history
 router.get(['/search_history/:search_term/delete'], function (req, res) {
@@ -762,13 +809,6 @@ router.get(['/elastic-generic/:search_term'], function (req, res) {
     });
 });
 
-// Elastic search (using querystring)
-router.get(['/elastic/'], function (req, res) {
-    var search_term = req.query["search_term"];
-    var url = "/elastic/" + search_term;
-    res.redirect(url);
-});
-
 // Filter
 router.get(['/filter_info/:info'], function (req, res) {
     var context = new Context(req);
@@ -777,6 +817,10 @@ router.get(['/filter_info/:info'], function (req, res) {
         'context': context
     });
 });
+
+/* ############################################################################ */
+/* ###################               END SEARCH               ################# */
+/* ############################################################################ */
 
 // Used for testing section and chapter notes
 router.get(['/notes'], function (req, res) {
@@ -802,5 +846,55 @@ router.get(['/commodity_history/:commodity_code'], function (req, res) {
     commodity_code = req.params["commodity_code"].padEnd(10, '0');
     var commodity_history = new CommodityHistory(context, req, res, commodity_code)
 });
+
+// Comm code history
+router.get(['/set-language/:language'], function (req, res) {
+    var language = req.params["language"];
+    res.cookie('language', language, { maxAge: 1000 * 3600 * 24 * 30, httpOnly: false });
+    var url = req.headers.referer;
+    res.redirect(url);
+});
+
+
+// reference builder
+router.get(['/refs'], function (req, res) {
+    var context = new Context(req);
+    res.render('refs', {
+        'context': context
+    });
+});
+
+// reference builder
+router.get(['/refs2'], function (req, res) {
+    var url;
+    var root = "https://tariff-admin-production.london.cloudapps.digital/search_references/";
+    var root_web = "https://www.trade-tariff.service.gov.uk/";
+    var goods_nomenclature_item_id = req.session.data["goods_nomenclature_item_id"].trim();
+    var productline_suffix = req.session.data["productline_suffix"].trim();
+    if (productline_suffix == "") {
+        productline_suffix = "80";
+    }
+    var resource = req.session.data["resource"].trim();
+    if (resource == "admin") {
+        if (goods_nomenclature_item_id.length == 4) {
+            url = root + "headings/" + goods_nomenclature_item_id.substr(0, 4) + "/search_references";
+        } else {
+            goods_nomenclature_item_id = goods_nomenclature_item_id.padEnd(10, '0');
+            url = root + "commodities/" + goods_nomenclature_item_id + "-" + productline_suffix + "/search_references";
+        }
+    } else {
+        if (goods_nomenclature_item_id.length == 4) {
+            url = root_web + "headings/" + goods_nomenclature_item_id;
+        } else {
+            goods_nomenclature_item_id = goods_nomenclature_item_id.padEnd(10, '0');
+            url = root_web + "subheadings/" + goods_nomenclature_item_id + "-" + productline_suffix;
+        }
+        }
+    
+    var context = new Context(req);
+    res.redirect(url);
+});
+
+
 
 module.exports = router

@@ -4,17 +4,17 @@
 
     a. textile fabrics, impregnated, coated, covered or laminated with plastics, whatever the weight per square metre and whatever the nature of the plastic material (compact or cellular), other than:
     
-    - (1) fabrics in which the impregnation, coating or covering cannot be seen with the naked eye (usually, Chapter [50](/chapters/50) to Chapter [55](/chapters/55), Chapter [58](/chapters/58) or Chapter [60](/chapters/60)); for the purpose of this provision, no account should be taken of any resulting change of colour;
+    (1) fabrics in which the impregnation, coating or covering cannot be seen with the naked eye (usually, Chapter [50](/chapters/50) to Chapter [55](/chapters/55), Chapter [58](/chapters/58) or Chapter [60](/chapters/60)); for the purpose of this provision, no account should be taken of any resulting change of colour;
     
-    - (2) products which cannot, without fracturing, be bent manually around a cylinder of a diameter of 7 mm, at a temperature between 15 and 30°C (usually, Chapter [39](/chapters/39));
+    (2) products which cannot, without fracturing, be bent manually around a cylinder of a diameter of 7 mm, at a temperature between 15 and 30°C (usually, Chapter [39](/chapters/39));
     
-    - (3) products in which the textile fabric is either completely embedded in plastics or entirely coated or covered on both sides with such material, provided that such coating or covering can be seen with the naked eye with no account being taken of any resulting change of colour (Chapter [39](/chapters/39));
+    (3) products in which the textile fabric is either completely embedded in plastics or entirely coated or covered on both sides with such material, provided that such coating or covering can be seen with the naked eye with no account being taken of any resulting change of colour (Chapter [39](/chapters/39));
     
-    - (4) fabrics partially coated or partially covered with plastics and bearing designs resulting from these treatments (usually, Chapters [50](/chapters/50) to 55, 58 or [60](/chapters/60));
+    (4) fabrics partially coated or partially covered with plastics and bearing designs resulting from these treatments (usually, Chapters [50](/chapters/50) to 55, 58 or [60](/chapters/60));
     
-    - (5) plates, sheets or strip of cellular plastics, combined with textile fabric, where the textile fabric is present merely for reinforcing purposes (Chapter [39](/chapters/39)); or
+    (5) plates, sheets or strip of cellular plastics, combined with textile fabric, where the textile fabric is present merely for reinforcing purposes (Chapter [39](/chapters/39)); or
     
-    - (6) textile products of heading [5811](/headings/5811);
+    (6) textile products of heading [5811](/headings/5811);
     
     b. fabrics made from yarn, strip or the like, impregnated, coated, covered or sheathed with plastics, of heading [5604](/headings/5604).
 

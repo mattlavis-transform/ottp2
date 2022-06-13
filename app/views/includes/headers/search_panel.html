@@ -7,7 +7,7 @@
         <div class="govuk-grid-column-full">
 
           {% if context.host == "local" %}
-            {% set dest = "/elastic" %}
+            {% set dest = "/elasticq" %}
           {% else %}
             {% set dest = "/search_handler" %}
           {% endif %}

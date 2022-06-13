@@ -18,7 +18,8 @@
 {% endblock %}
 
 {% block content %}
-    <div class="govuk-grid-row">
+        {% include "includes/language_selector.html" %}
+<div class="govuk-grid-row">
         <div class="govuk-grid-column-three-quarters">
             <span class="govuk-caption-xl">
                 {{ context.title }}

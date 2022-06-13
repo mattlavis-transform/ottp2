@@ -22,7 +22,7 @@
     
     - 'total alcoholic strength by mass': the sum of the actual and potential alcoholic strengths by mass,
     
-    % mas': the symbol for alcoholic strength by mass.
+    - '% mas': the symbol for alcoholic strength by mass.
 
 4. For the purposes of subheadings [2309 10 11](/subheadings/2309101100-80) to [2309 10 70](/subheadings/2309107000-80) and [2309 90 31](/subheadings/2309903100-80) to [2309 90 70](/subheadings/2309907000-80), the expression ‘milk products’ means the products of headings 04.01, 04.02, 04.04, 04.05 and [04](/chapters/04).06 and of subheadings [0403 20 11](/subheadings/0403201100-80) to [0403 20 39](/subheadings/0403203900-80), [0403 90 11](/subheadings/0403901100-80) to [0403 90 69](/subheadings/0403906900-80), [1702 11 00](/subheadings/1702110000-80), [1702 19 00](/subheadings/1702190000-80) and [2106 90 51](/subheadings/2106905100-80).
 

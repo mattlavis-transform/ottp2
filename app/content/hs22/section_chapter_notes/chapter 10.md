@@ -1,8 +1,10 @@
-1. (A) The products specified in the headings of this chapter are to be classified in those headings only if grains are present, whether or not in the ear or on the stalk.
+1.   
 
-    (B) The chapter does not cover grains which have been hulled or otherwise worked. However, rice, husked, milled, polished, glazed, parboiled or broken remains classified in heading [1006](/headings/1006). Similarly, quinoa from which the pericarp has been wholly or partly removed in order to separate the saponin, but which has not undergone any other processes, remains classified in heading [1008](/headings/1008).
-    
-    Similarly, quinoa from which the pericarp has been wholly or partly removed in order to separate the saponin, but which has not undergone any other processes, remains classified in heading [1008](/headings/1008).
+   (A) The products specified in the headings of this chapter are to be classified in those headings only if grains are present, whether or not in the ear or on the stalk.
+
+   (B) The chapter does not cover grains which have been hulled or otherwise worked. However, rice, husked, milled, polished, glazed, parboiled or broken remains classified in heading [1006](/headings/1006). Similarly, quinoa from which the pericarp has been wholly or partly removed in order to separate the saponin, but which has not undergone any other processes, remains classified in heading [1008](/headings/1008).
+
+   Similarly, quinoa from which the pericarp has been wholly or partly removed in order to separate the saponin, but which has not undergone any other processes, remains classified in heading [1008](/headings/1008).
 
 2. Heading [1005](/headings/1005) does not cover sweetcorn (Chapter [7](/chapters/07)).
 
@@ -34,4 +36,5 @@
 provided that:
 
    - the goods comply with the Cereal Seeds Regulations 1974 or
+
    - it is established that the goods are actually intended for sowing

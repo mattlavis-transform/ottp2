@@ -20,6 +20,7 @@
 {% endblock %}
 
 {% block content %}
+    {% include "includes/language_selector.html" %}
 
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
@@ -28,7 +29,7 @@
                 {% include "includes/scope_switcher_panel.html" %}
             </span>
             <h1 class="govuk-heading-l">
-                Section {{ section.data.id | roman }} - {{ section.data.attributes.title }}
+                {{ context.get_content("browse.section") | safe }} {{ section.data.id | roman }} - {{ section.data.attributes.title }}
             </h1>
 
             {# Count the chapters #}
@@ -45,8 +46,8 @@
                 </caption>
                 <thead>
                     <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Chapter</th>
-                        <th class="govuk-table__header">Description</th>
+                        <th class="govuk-table__header">{{ context.get_content("browse.chapter") | safe }}</th>
+                        <th class="govuk-table__header">{{ context.get_content("browse.description") | safe }}</th>
                     </tr>
                 </thead>
                 <tbody class="govuk-table__body">

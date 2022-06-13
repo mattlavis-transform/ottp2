@@ -19,6 +19,7 @@
 {% endblock %}
 
 {% block content %}
+    {% include "includes/language_selector.html" %}
   {% if error %}
     {% set error_class = " govuk-form-group--error" %}
   {% else %}

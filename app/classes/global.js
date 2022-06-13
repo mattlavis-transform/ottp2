@@ -51,12 +51,16 @@ global.get_date = function (req, save = false) {
 
 global.format_and_trim_commodity_code = function (str, end_line = false) {
     var s = "";
-    end_line = true;
+    // end_line = true;
     if (typeof str !== 'undefined') {
         if (end_line) {
             s += "<span>" + str.substr(0, 4) + "</span>";
             s += "<span>" + str.substr(4, 4) + "</span>";
             s += "<span>" + str.substr(8, 2) + "</span>";
+        } else if (str.length == 2) {
+            s += "<span>" + str.substr(0, 2) + "</span>";
+        } else if (str.length == 4) {
+            s += "<span>" + str.substr(0, 4) + "</span>";
         } else {
             s += "<span>" + str.substr(0, 4) + "</span>";
             // 6-digit codes
@@ -73,6 +77,7 @@ global.format_and_trim_commodity_code = function (str, end_line = false) {
                 s += "<span>" + str.substr(8, 2) + "</span>";
             }
         }
+        // s+= String(str.length);
 
         return s;
     } else {

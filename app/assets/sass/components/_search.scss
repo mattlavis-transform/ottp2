@@ -98,11 +98,13 @@ tr.featured td span.desc::after {
 }
 
 .history_list {
-    display              : grid;
+    display: grid;
 }
+
 .history_list_search {
     grid-template-columns: 90% 10%;
 }
+
 .history_list_commodities {
     grid-template-columns: 70% 20% 10%;
 }
@@ -283,6 +285,19 @@ $initial-indent: 0;
         padding         : 5px;
     }
 
+
+
+    @for $i from 1 through 13 {
+        .search_item_#{$i} .desc {
+            padding-left       : #{$initial-indent + ($i * $indent)}px;
+            background-image   : url('/public/images/dashes_#{$i}.png');
+            background-repeat  : no-repeat;
+            background-position: 2px 11px;
+        }
+    }
+}
+
+.search_headings {
     .commodity-split {
         font-family: 'Azeret Mono', 'Courier New', Courier, monospace;
 
@@ -307,15 +322,6 @@ $initial-indent: 0;
         }
 
     }
-
-    @for $i from 1 through 13 {
-        .search_item_#{$i} .desc {
-            padding-left       : #{$initial-indent + ($i * $indent)}px;
-            background-image   : url('/public/images/dashes_#{$i}.png');
-            background-repeat  : no-repeat;
-            background-position: 2px 11px;
-        }
-    }
 }
 
 span.delete a {
@@ -325,4 +331,20 @@ span.delete a {
 
 span.delete a:hover {
     text-decoration: underline;
+}
+
+.w20 {
+    width: 20%
+}
+
+.w80 {
+    width: 80%
+}
+
+.small {
+    font-size: 12px;
+
+    a {
+        color: #000;
+    }
 }

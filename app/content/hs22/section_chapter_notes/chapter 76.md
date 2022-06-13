@@ -7,38 +7,15 @@
     Metal containing by weight at least 99% of aluminium, provided that the content by weight of any other element does not exceed the limit specified in the following table:
     
     **Other elements**
+
+| Element                                                    | Limiting content % by weight                                                                                                                             |
+|------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fe + Si (iron plus silicon)                                | 1                                                                                                                                                        |
+| Other elements each                                        | 0.1                                                                                                                                                      |
+| (Other elements are, for example, Cr, Cu, Mg, Mn, Ni, Zn.) | (Copper is permitted in a proportion greater than 0.1 % but not more than 0.2 %, provided that neither the chromium nor manganese content exceeds 0.05%) |
+
     
-    <table>
-    <tbody>
-    <tr>
-    <td>
-    <p><strong>Element</strong></p>
-    </td>
-    <td>
-    <p><strong>Limiting content % by weight</strong></p>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <p>Fe + Si (iron plus silicon)</p>
-    </td>
-    <td>
-    <p>1</p>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <p>Other elements each</p>
-    <p>(Other elements are, for example, Cr, Cu, Mg, Mn, Ni, Zn.)</p>
-    </td>
-    <td>
-    <p>0.1</p>
-    <p>&nbsp;</p>
-    <p>(Copper is permitted in a proportion greater than 0.1 % but not more than 0.2 %, provided that neither the chromium nor manganese content exceeds 0.05%)</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+
     
     b. Aluminium alloys:
     
@@ -48,7 +25,7 @@
     
     (2) the total content by weight of such other elements exceeds 1%.
 
-2. Notwithstanding the provisions of note 9(c) to Section XV, for the purposes of subheading [7616 91](/subheadings/7616910000-80) the term ‘wire’ applies only to products, whether or not in coils, of any cross-sectional shape, of which no cross sectional dimension exceeds 6 mm.
+1. Notwithstanding the provisions of note 9(c) to Section XV, for the purposes of subheading [7616 91](/subheadings/7616910000-80) the term ‘wire’ applies only to products, whether or not in coils, of any cross-sectional shape, of which no cross sectional dimension exceeds 6 mm.
 
 ### Additional chapter notes
 

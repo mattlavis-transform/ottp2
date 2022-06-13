@@ -8,36 +8,11 @@ Metal containing by weight at least 99% of tin, provided that the content by wei
 
 **Other elements**
 
-<table>
-<tbody>
-<tr>
-<th colspan="2">Element</th>
-<th>Limiting content % by weight</th>
-</tr>
-<tr>
-<td>
-<p>Bi</p>
-</td>
-<td>
-<p>Bismuth</p>
-</td>
-<td>
-<p>0,1</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Cu</p>
-</td>
-<td>
-<p>Copper</p>
-</td>
-<td>
-<p>0,4</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Element | Element name | Limiting content % by weight |
+|---------|--------------|------------------------------|
+| Bi      | Bismuth      | 0.1                          |
+| Cu      | Copper       | 0.4                          |
+
 
 b. Tin alloys:
 

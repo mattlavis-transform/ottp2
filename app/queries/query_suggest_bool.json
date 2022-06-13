@@ -16,21 +16,21 @@
                         "prefix_length": 2,
                         "tie_breaker": 0.3,
                         "fields": [
-                            "search_references^12",
-                            "xchapter^10",
-                            "xheading^8",
-                            "description.exact^6",
-                            "description_indexed^6",
+                            "search_references^1",
+                            "chapter^1",
+                            "heading^1",
+                            "description.exact^100",
+                            "description_indexed^1",
                             "goods_nomenclature_item_id",
-                            "xancestor_2",
-                            "xancestor_3",
-                            "xancestor_4",
-                            "xancestor_5",
-                            "xancestor_6",
-                            "xancestor_7^2",
-                            "xancestor_8^3",
-                            "xancestor_9^4",
-                            "xancestor_10^5",
+                            "ancestor_2",
+                            "ancestor_3",
+                            "ancestor_4",
+                            "ancestor_5",
+                            "ancestor_6",
+                            "ancestor_7^2",
+                            "ancestor_8^3",
+                            "ancestor_9^4",
+                            "ancestor_10^5",
                             "filter*"
                         ]
                     }
@@ -40,38 +40,13 @@
                 {
                     "match": {
                         "class": {
-                            "query": "heading",
+                            "query": "xheading",
                             "boost": 300
                         }
                     }
                 }
             ],
             "filter": []
-        }
-    },
-    "suggest": {
-        "text": "search_term",
-        "did-you-mean": {
-            "phrase": {
-                "field": "description",
-                "real_word_error_likelihood": 0.95,
-                "max_errors": 1,
-                "confidence": 0,
-                "size": 5,
-                "collate": {
-                    "query": {
-                        "inline": {
-                            "match": {
-                                "": ""
-                            }
-                        }
-                    },
-                    "params": {
-                        "field_name": "description"
-                    },
-                    "prune": true
-                }
-            }
         }
     }
 }

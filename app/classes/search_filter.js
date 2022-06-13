@@ -5,7 +5,7 @@ class SearchFilter {
         var filter_data = require('../data/search/filters.json');
         var instance = filter_data[key.replace("filter_", "")];
         this.key = key;
-        this.name = instance.display;
+        this.display_name = instance.display_name;
         this.level = instance.level;
         this.info = instance.info;
         this.values = [];

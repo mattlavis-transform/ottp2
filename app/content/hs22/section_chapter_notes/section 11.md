@@ -143,34 +143,10 @@
 
 6. For the purposes of this section, the expression 'high-tenacity yarn' means yarn having a tenacity, expressed in cN/tex (centinewtons per tex), greater than the following:
 
-    <table>
-    <tbody>
-    <tr>
-    <td>
-    <p>single yarn of nylon or other polyamides, or of polyesters:</p>
-    </td>
-    <td>
-    <p>60&nbsp;cN/tex,</p>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <p>multiple (folded) or cabled yarn of nylon or other polyamides, or of polyesters:</p>
-    </td>
-    <td>
-    <p>53&nbsp;cN/tex,</p>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <p>single, multiple (folded) or cabled yarn of viscose rayon:</p>
-    </td>
-    <td>
-    <p>27&nbsp;cN/tex.</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+    | single yarn of nylon or other polyamides, or of polyesters:                      | 60 cN/tex, |
+    |----------------------------------------------------------------------------------|------------|
+    | multiple (folded) or cabled yarn of nylon or other polyamides, or of polyesters: | 53 cN/tex, |
+    | single, multiple (folded) or cabled yarn of viscose rayon:                       | 27 cN/tex. |
 
 
 7. For the purposes of this section, the expression 'made up' means:
@@ -195,7 +171,7 @@
     
     b. Chapters [50](/chapters/50) to [55](/chapters/55) and [60](/chapters/60) do not apply to goods of Chapters [56](/chapters/56) to [569](/chapters/59).
 
-9. The woven fabrics of Chapters [50](/chapters/50) to [55](/chapters/55) include fabrics consisting of layers of parallel textile yarns superimposed on each other at acute or right angles. These layers are bonded at the intersections of the yarns by an adhesive or by thermal bonding.
+9.  The woven fabrics of Chapters [50](/chapters/50) to [55](/chapters/55) include fabrics consisting of layers of parallel textile yarns superimposed on each other at acute or right angles. These layers are bonded at the intersections of the yarns by an adhesive or by thermal bonding.
 
 10. Elastic products consisting of textile materials combined with rubber threads are classified in this section.
 

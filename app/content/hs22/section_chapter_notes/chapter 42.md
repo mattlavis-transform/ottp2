@@ -34,6 +34,7 @@
     
     (B) Articles of heading [4202](/headings/4202) and [4203](/headings/4203) which have parts of precious metal or metal clad with precious metal, of natural or cultured pearls, of precious or semi-precious stones (natural, synthetic or reconstructed) remain classified in those headings, even if such parts constitute more than minor fittings or minor ornamentation, provided that these parts do not give the articles their essential character. If, on the other hand, the parts give the articles their essential character, the articles are to be classified in Chapter [71](/chapters/71).
 
+
 4. For the purposes of heading [4203](/headings/4203), the expression 'articles of apparel and clothing accessories' applies, inter alia, to gloves, mittens and mitts (including those for sport or for protection), aprons and other protective clothing, braces, belts, bandoliers and wrist straps, but excluding watch straps (heading [9113](/headings/9113)).
 
 ### Additional chapter note

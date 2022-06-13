@@ -55,7 +55,7 @@ class SearchExtended {
                 this.query.query.bool.must[0].multi_match.query = this.context.search_term;
                 // this.query.query.bool.should.match["description.shingles"] = this.context.search_term;
             }
-            this.query.suggest.text = this.context.search_term;
+            // this.query.suggest.text = this.context.search_term;
         } else if (query_template == "query_suggest_dis_max.json") {
             var a = 1;
             this.query.query.dis_max.queries[0].multi_match.query = this.context.search_term;
@@ -515,7 +515,7 @@ class SearchExtended {
                     this.hit_count -= 1;
                 }
             }
-            // result.display = true;
+            result.display = true;
         });
     }
 

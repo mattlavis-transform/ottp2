@@ -6,13 +6,14 @@
 {% endblock %}
 
 {% block content %}
+    {% include "includes/language_selector.html" %}
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
             <span class="govuk-caption-xl">{{ context.title }}
                 {% include "includes/scope_switcher_panel.html" %}
             </span>
             <h1 class="govuk-heading-l">
-                Browse the tariff
+                {{ context.get_content("browse.browse_tariff") | safe }}
             </h1>
         </div>
     </div>

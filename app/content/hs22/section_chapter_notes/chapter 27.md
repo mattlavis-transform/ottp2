@@ -52,32 +52,32 @@
             
         - exceeding that shown in line I but not exceeding that shown in line II when 25% or more by volume distils at 300°C by the ISO 3405 method (equivalent to the ASTM D 86 method) or, if less than 25% by volume distils at 300°C, when the pour point is higher than 10°C below zero by the ISO 3016 method. These provisions apply only to oils having a diluted colour C of less than 2.
 
-    **Diluted colour C / Viscosity V concordance table**
+        **Diluted colour C / Viscosity V concordance table**
 
 
-    | Colour (C) |  | 0 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5 | 5.5 | 6 | 6.5 | 7 | 7.5 and above |
-    | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
-    | Viscosity (V) | I | 4 | 4 | 4 | 5.4 | 9 | 15.1 | 25.3 | 42.4 | 71.1 | 119 | 200 | 335 | 562 | 943 | 1580 | 2650 |
-    |  | II | 7 | 7 | 7 | 7 | 9 | 15.1 | 25.3 | 42.4 | 71.1 | 119 | 200 | 335 | 562 | 943 | 1580 | 2650 |
+        | Colour (C) |  | 0 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5 | 5.5 | 6 | 6.5 | 7 | 7.5 and above |
+        | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+        | Viscosity (V) | I | 4 | 4 | 4 | 5.4 | 9 | 15.1 | 25.3 | 42.4 | 71.1 | 119 | 200 | 335 | 562 | 943 | 1580 | 2650 |
+        |  | II | 7 | 7 | 7 | 7 | 9 | 15.1 | 25.3 | 42.4 | 71.1 | 119 | 200 | 335 | 562 | 943 | 1580 | 2650 |
 
-    The term 'viscosity V' means the 'kinematic viscosity' at 50°C expressed in 10-6 m<sup>2</sup> s-1 by the EN ISO 3104 method.
+        The term 'viscosity V' means the 'kinematic viscosity' at 50°C expressed in 10-6 m<sup>2</sup> s-1 by the EN ISO 3104 method.
+        
+        The term ‘diluted colour C’ means the colour of a product, as determined by the ISO 2049 method (equivalent to the ASTM D 1 500 method), after one part of the product has been made up to 100 parts by volume with xylene, toluene or another suitable solvent. The colour must be determined immediately after dilution.
+        
+        The term “bio-components” means animal or vegetable fats, animal or vegetable oils, or mono-alkyl esters of fatty acids (FAMAE).
+        
+        Subheading [2710 19 51](/subheadings/2710195100-80) to [2710 19 68](/subheadings/2710196800-80) and [2710 20 31](/subheadings/2710203100-80) to [2710 20 39](/subheadings/2710203900-80) cover only fuel oils of natural colour.
+        These subheadings do not cover heavy oils defined in paragraph (d) above for which it is not possible to determine:
+        
+        - the distillation percentage at 250°C by the EN ISO 3104 method (zero shall be deemed to be a percentage);
+        
+        - the kinematic viscosity at 50°C by the EN ISO 3104 method;
+        
+        - or the diluted colour C by the ASTM D 1500 method.
+        
+        Such products fall in subheadings [2710 19 71](/subheadings/2710197100-80) to [2710 19 99](/subheadings/2710199900-80).
     
-    The term ‘diluted colour C’ means the colour of a product, as determined by the ISO 2049 method (equivalent to the ASTM D 1 500 method), after one part of the product has been made up to 100 parts by volume with xylene, toluene or another suitable solvent. The colour must be determined immediately after dilution.
-    
-    The term “bio-components” means animal or vegetable fats, animal or vegetable oils, or mono-alkyl esters of fatty acids (FAMAE).
-    
-    Subheading [2710 19 51](/subheadings/2710195100-80) to [2710 19 68](/subheadings/2710196800-80) and [2710 20 31](/subheadings/2710203100-80) to [2710 20 39](/subheadings/2710203900-80) cover only fuel oils of natural colour.
-    These subheadings do not cover heavy oils defined in paragraph (d) above for which it is not possible to determine:
-    
-    - the distillation percentage at 250°C by the EN ISO 3104 method (zero shall be deemed to be a percentage);
-    
-    - the kinematic viscosity at 50°C by the EN ISO 3104 method;
-    
-    - or the diluted colour C by the ASTM D 1500 method.
-    
-    Such products fall in subheadings [2710 19 71](/subheadings/2710197100-80) to [2710 19 99](/subheadings/2710199900-80).
-    
-    (g) 'containing biodiesel' means that the products of subheading [2710 20](/subheadings/2710200000-80) have a minimum content of biodiesel, i.e. mono-alkyl esters of fatty acids (FAMAE) of a kind used as a fuel, of 0.5% by volume (determination by the EN 14078 method).
+    - g. 'containing biodiesel' means that the products of subheading [2710 20](/subheadings/2710200000-80) have a minimum content of biodiesel, i.e. mono-alkyl esters of fatty acids (FAMAE) of a kind used as a fuel, of 0.5% by volume (determination by the EN 14078 method).
 
 3. For the purposes of heading [2712](/headings/2712) the expression 'crude petroleum jelly' (subheading [2712 10 10](/subheadings/2712101000-80)) is to be taken to apply to petroleum jelly of a natural colour higher than 4.5 by the ASTM D 1500 method.
 

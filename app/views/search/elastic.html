@@ -19,6 +19,7 @@
 {% endblock %}
 
 {% block content %}
+    {% include "includes/language_selector.html" %}
 
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
@@ -157,7 +158,7 @@
 
                 {% if hits.hits | length > 0 %}
                     {% if context.sort_order == "relevance" %}
-                        {% include "search/elastic_chapters.html" %}
+                        {# {% include "search/elastic_chapters.html" %} #}
                         {% include "search/elastic_headings.html" %}
                         {% include "search/elastic_relevance.html" %}
                     {% else %}

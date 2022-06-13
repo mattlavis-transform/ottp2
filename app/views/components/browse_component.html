@@ -1,14 +1,11 @@
-<p class="xgovuk-!-margin-top-6">The UK goods classification contains 21 sections, listed below.
-Choose the section that best matches your goods to see the <abbr title="Harmonised System">HS</abbr> chapters that are contained in the section.</p>
-
+<p class="xgovuk-!-margin-top-6">{{ context.get_content("browse.intro") | safe }}</p>
 {# {% include "../components/date_form_component.html" %} #}
-
 <table class="govuk-table">
     <thead class="govuk-table__head">
         <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header">Section</th>
-            <th scope="col" class="govuk-table__header">Section title</th>
-            <th scope="col" class="govuk-table__header">Chapters</th>
+            <th scope="col" class="govuk-table__header">{{ context.get_content("browse.section") | safe }}</th>
+            <th scope="col" class="govuk-table__header">{{ context.get_content("browse.section_title") | safe }}</th>
+            <th scope="col" class="govuk-table__header">{{ context.get_content("browse.chapters") | safe }}</th>
         </tr>
     </thead>
     <tbody class="govuk-table__body">

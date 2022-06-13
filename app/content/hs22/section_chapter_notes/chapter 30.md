@@ -20,19 +20,21 @@
 
 3. For the purposes of heading [3003](/headings/3003) and [3004](/headings/3004) and of note 4(d) to this chapter, the following are to be treated:
 
-    - (a) as unmixed products:
+   - (a) as unmixed products:
     
-        - (1) unmixed products dissolved in water;
-        - (2) all goods of Chapter [28](/chapters/28) or [29](/chapters/29); and
-        - (3) simple vegetable extracts of heading [1302](/headings/1302), merely standardised or dissolved in any solvent;
+     - (1) unmixed products dissolved in water;
+
+     - (2) all goods of Chapter [28](/chapters/28) or [29](/chapters/29); and
+
+     - (3) simple vegetable extracts of heading [1302](/headings/1302), merely standardised or dissolved in any solvent;
     
-    - (b) as products which have been mixed:
+   - (b) as products which have been mixed:
     
-        - (1) colloidal solutions and suspensions (other than colloidal sulphur);
-        
-        - (2) vegetable extracts obtained by the treatment of mixtures of vegetable materials; and
-        
-        - (3) salts and concentrates obtained by evaporating natural mineral waters.
+     - (1) colloidal solutions and suspensions (other than colloidal sulphur);
+
+     - (2) vegetable extracts obtained by the treatment of mixtures of vegetable materials; and
+
+     - (3) salts and concentrates obtained by evaporating natural mineral waters.
 
 4. Heading [3006](/headings/3006) applies only to the following, which are to be classified in that heading and in no other heading of the classification:
 

@@ -4,9 +4,9 @@
 
 3. Dried fruit or dried nuts of this chapter may be partially rehydrated, or treated for the following purposes:
 
-   - a. for additional preservation or stabilisation (for example, by moderate heat treatment, sulphuring, the addition of sorbic acid or potassium sorbate),
+   - (a) for additional preservation or stabilisation (for example, by moderate heat treatment, sulphuring, the addition of sorbic acid or potassium sorbate),
 
-   - b. to improve or maintain their appearance (for example, by the addition of vegetable oil or small quantities of glucose syrup), provided that they retain the character of dried fruit or dried nuts.
+   - (b) to improve or maintain their appearance (for example, by the addition of vegetable oil or small quantities of glucose syrup), provided that they retain the character of dried fruit or dried nuts.
 
 4. Heading [0812](/headings/0812) applies to fruit and nuts which have been treated solely to ensure their provisional preservation during transport or storage prior to use (for example, by sulphur dioxide gas, in brine, in sulphur water or in other preservative solutions), provided they remain unsuitable for immediate consumption in that state. 
 

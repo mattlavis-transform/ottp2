@@ -2,15 +2,15 @@
 
     - a. separate chemically defined elements or compounds with the exception of the following:
 
-      - (1) artificial graphite (heading [3801](/headings/3801));
+      (1) artificial graphite (heading [3801](/headings/3801));
 
-      - (2) insecticides, rodenticides, fungicides, herbicides, anti-sprouting products and plant-growth regulators, disinfectants and similar products, put up as described in heading [3808](/headings/3808);
+      (2) insecticides, rodenticides, fungicides, herbicides, anti-sprouting products and plant-growth regulators, disinfectants and similar products, put up as described in heading [3808](/headings/3808);
 
-      - (3) products put up as charges for fire-extinguishers or put up in fire-extinguishing grenades (heading [3813](/headings/3813));
+      (3) products put up as charges for fire-extinguishers or put up in fire-extinguishing grenades (heading [3813](/headings/3813));
 
-      - (4) certified reference materials specified in note 2 below;
+      (4) certified reference materials specified in note 2 below;
 
-      - (5) products specified in note 3(a) or 3(c) below;
+      (5) products specified in note 3(a) or 3(c) below;
     
     - b. mixtures of chemicals with foodstuffs or other substances with nutritive value, of a kind used in the preparation of human foodstuffs (generally, heading [2106](/headings/2106)).
 

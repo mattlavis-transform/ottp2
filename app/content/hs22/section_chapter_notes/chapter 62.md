@@ -14,11 +14,12 @@
     
     - one garment designed to cover the lower part of the body and consisting of trousers, breeches or shorts (other than swimwear), a skirt or a divided skirt, having neither braces nor bibs.
     
-    All of the components of a 'suit' must be of the same fabric construction, colour and composition; they must also be of the same style and of corresponding or compatible size. However, these components may have piping (a strip of fabric sewn into the seam) in a different fabric.
-    
-    If several separate components to cover the lower part of the body are presented together (for example, two pairs of trousers or trousers and shorts, or a skirt or divided skirt and trousers), the constituent lower part shall be one pair of trousers or, in the case of women's or girls' suits, the skirt or divided skirt, the other garments being considered separately.
+        All of the components of a 'suit' must be of the same fabric construction, colour and composition; they must also be of the same style and of corresponding or compatible size. However, these components may have piping (a strip of fabric sewn into the seam) in a different fabric.
+        
+        If several separate components to cover the lower part of the body are presented together (for example, two pairs of trousers or trousers and shorts, or a skirt or divided skirt and trousers), the constituent lower part shall be one pair of trousers or, in the case of women's or girls' suits, the skirt or divided skirt, the other garments being considered separately.
     
     The term 'suit' includes the following sets of garments, whether or not they fulfil all the above conditions:
+
     - morning dress, comprising a plain jacket (cutaway) with rounded tails hanging well down at the back and striped trousers;
     
     - evening dress (tailcoat), generally made of black fabric, the jacket of which is relatively short at the front, does not close and has narrow skirts cut in at the hips and hanging down behind;

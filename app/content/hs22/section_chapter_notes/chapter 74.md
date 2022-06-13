@@ -8,65 +8,22 @@ Metal containing at least 97.5% by weight of copper, provided that the content b
 
 **Other elements**
 
-<table>
-<thead>
-<tr>
-<th>Element</th>
-<th>Limiting content % by weight</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ag Silver</td>
-<td>0.25</td>
-</tr>
-<tr>
-<td>As Arsenic</td>
-<td>0.5</td>
-</tr>
-<tr>
-<td>Cd Cadmium</td>
-<td>1.3</td>
-</tr>
-<tr>
-<td>Cr Chromium</td>
-<td>1.4</td>
-</tr>
-<tr>
-<td>Mg Magnesium</td>
-<td>0.8</td>
-</tr>
-<tr>
-<td>Pb Lead</td>
-<td>1.5</td>
-</tr>
-<tr>
-<td>S Sulphur</td>
-<td>0.7</td>
-</tr>
-<tr>
-<td>Sn Tin</td>
-<td>0.8</td>
-</tr>
-<tr>
-<td>Te Tellurium</td>
-<td>0.8</td>
-</tr>
-<tr>
-<td>Zn Zinc</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Zr Zirconium</td>
-<td>0.3</td>
-</tr>
-<tr>
-<td>Other elements, each</td>
-<td>0.3</td>
-</tr>
-</tbody>
+| Element              | Limiting content % by weight |
+|----------------------|------------------------------|
+| Ag Silver            | 0.25                         |
+| As Arsenic           | 0.5                          |
+| Cd Cadmium           | 1.3                          |
+| Cr Chromium          | 1.4                          |
+| Mg Magnesium         | 0.8                          |
+| Pb Lead              | 1.5                          |
+| S Sulphur            | 0.7                          |
+| Sn Tin               | 0.8                          |
+| Te Tellurium         | 0.8                          |
+| Zn Zinc              | 1                            |
+| Zr Zirconium         | 0.3                          |
+| Other elements, each | 0.3                          |
 
-</table>
+
 Other elements are, for example, Al, Be, Co, Fe, Mn, Ni, Si
 
 

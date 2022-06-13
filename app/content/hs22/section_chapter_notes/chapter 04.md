@@ -38,8 +38,8 @@
 
 1. The duty rate applicable to mixtures falling in heading [0401](/headings/0401) to [0406](/headings/0406) shall be as follows:
 
-   * (a) in mixtures where one of the components represents at least 90 % by weight, the rate applicable to that component applies;
-   * (b) in other mixtures, the rate applicable shall be that of the component which results in the highest amount of import duty.
+   - (a) in mixtures where one of the components represents at least 90 % by weight, the rate applicable to that component applies;
+   - (b) in other mixtures, the rate applicable shall be that of the component which results in the highest amount of import duty.
 
 2. For the purposes of subheadings [0408 11](/subheadings/0408110000-80) and [0408 19](/subheadings/0408190000-80), the following applies:
 
@@ -59,14 +59,14 @@
 
 5. The term “unfit for human consumption” as regards codes [0408 11 20](/subheadings/0408112000-80), [0408 19 20](/subheadings/0408192000-80), [0408 91 20](/subheadings/0408912000-80) and [0408 99 20](/subheadings/0408992000-80) applies when:
 
- - the goods are homogeneously mixed with one of the denaturants shown in column 1 of the table below in the quantities indicated in column 2 and
- 
- - separation of the goods and the denaturant is not economically viable.
+   - the goods are homogeneously mixed with one of the denaturants shown in column 1 of the table below in the quantities indicated in column 2 and
 
-|  Denaturant   |   Minimum quantity to be used (in g) per 100 kg of denatured product
-|  ------------------------  | ---------------------------------------------------------------------------  |
-(1)   |   (2)
-Spirit of turpentine  |  500
-Essence of lavender  |  100
-Oil of rosemary  |  150
-Birch oil  |  100
+   - separation of the goods and the denaturant is not economically viable.
+
+    |  Denaturant   |   Minimum quantity to be used (in g) per 100 kg of denatured product
+    |  ------------------------  | ---------------------------------------------------------------------------  |
+    (1)   |   (2)
+    Spirit of turpentine  |  500
+    Essence of lavender  |  100
+    Oil of rosemary  |  150
+    Birch oil  |  100

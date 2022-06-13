@@ -32,8 +32,44 @@ class Context {
         this.get_preferences();
         this.get_location();
         this.get_simulation_date();
+        this.get_language(req);
+        this.get_master_content();
 
         this.show_rosa_version = true;
+    }
+
+    get_master_content() {
+        this.content = require('../content/language.json');
+        var a = 1;
+        // var jp = require('jsonpath');
+        // var query_string = '$.data[?(@.code == "' + this.code + '")]'
+        // var result = jp.query(data, query_string);
+        // if (result.length > 0) {
+        //     this.overlay = result[0].overlay;
+        //     this.hint = result[0].hint;
+        // }
+        // var a = 1;
+    }
+
+    get_content(node) {
+        var tmp;
+        var nodes = node.split(".");
+        tmp = this.content;
+        nodes.forEach(node => {
+            tmp = tmp[node];
+        })
+        var ret = tmp[this.language];
+        return (ret);
+    }
+
+    get_language(req) {
+        var tmp = req.cookies["language"];
+        if ((typeof tmp === 'undefined') || (tmp == "")) {
+            this.language = "en";
+        } else {
+            this.language = tmp;
+        }
+        // this.language = "cy";
     }
 
     add_to_search_history(req, res) {
@@ -1047,12 +1083,24 @@ class Context {
     }
 
     get_banner() {
-        if (this.scope_id == "xi") {
-            this.service_name = "The " + config.xiSubServiceName;
-            this.home_banner = 'If you&apos;re bringing goods into Northern Ireland from outside the UK and the EU, your import may be subject to EU import duty rates <a href="https://www.gov.uk/guidance/check-if-you-can-declare-goods-you-bring-into-northern-ireland-not-at-risk-of-moving-to-the-eu-from-1-january-2021" class="govuk-link">if your goods are ‘at risk’ of onward movement to the EU</a>. If they are not at risk of onward movement to the EU, use the <a href="/sections">' + config.ukSubServiceName + '</a>.'
+        if (this.language == "en") {
+            if (this.scope_id == "xi") {
+                this.service_name = "The " + config.xiSubServiceName;
+                this.home_banner = 'If you&apos;re bringing goods into Northern Ireland from outside the UK and the EU, your import may be subject to EU import duty rates <a href="https://www.gov.uk/guidance/check-if-you-can-declare-goods-you-bring-into-northern-ireland-not-at-risk-of-moving-to-the-eu-from-1-january-2021" class="govuk-link">if your goods are ‘at risk’ of onward movement to the EU</a>. If they are not at risk of onward movement to the EU, use the <a href="/sections">' + config.ukSubServiceName + '</a>.'
+            } else {
+                this.service_name = "The " + config.ukSubServiceName;
+                this.home_banner = 'If you&apos;re bringing goods into Northern Ireland from outside the UK and the EU, you will pay the UK duty rate <a href="https://www.gov.uk/guidance/check-if-you-can-declare-goods-you-bring-into-northern-ireland-not-at-risk-of-moving-to-the-eu-from-1-january-2021">if your goods are not &apos;at risk&apos; of onward movement to the EU</a>. If they are at risk of onward movement to the EU, use the <a href="/xi/find-commodity">' + config.xiSubServiceName + '</a>.'
+            }
+    
         } else {
-            this.service_name = "The " + config.ukSubServiceName;
-            this.home_banner = 'If you&apos;re bringing goods into Northern Ireland from outside the UK and the EU, you will pay the UK duty rate <a href="https://www.gov.uk/guidance/check-if-you-can-declare-goods-you-bring-into-northern-ireland-not-at-risk-of-moving-to-the-eu-from-1-january-2021">if your goods are not &apos;at risk&apos; of onward movement to the EU</a>. If they are at risk of onward movement to the EU, use the <a href="/xi/find-commodity">' + config.xiSubServiceName + '</a>.'
+            if (this.scope_id == "xi") {
+                this.service_name = "The " + config.xiSubServiceName;
+                this.home_banner = 'Os ydych chi\'n dod â nwyddau i Ogledd Iwerddon o\'r tu allan i\'r DU a\'r UE, efallai y bydd eich mewnforion yn destun cyfraddau tollau mewnforio yr UE <a href="https://www.gov.uk/guidance/check-if-you- can-datgan-nwyddau-chi-dod-i-gogledd-werddon-ddim-mewn-risg-o-symud-i-eu-eu-o-1-Ionawr-2021" class="govuk-link">os yw eich mae nwyddau \'mewn perygl\' o symud ymlaen i\'r UE</a>. Os nad ydynt mewn perygl o symud ymlaen i’r UE, defnyddiwch y <a href="/sections">xxx</a></a>.'
+            } else {
+                this.service_name = "The " + config.ukSubServiceName;
+                this.home_banner = 'If you&apos;re bringing goods into Northern Ireland from outside the UK and the EU, you will pay the UK duty rate <a href="https://www.gov.uk/guidance/check-if-you-can-declare-goods-you-bring-into-northern-ireland-not-at-risk-of-moving-to-the-eu-from-1-january-2021">if your goods are not &apos;at risk&apos; of onward movement to the EU</a>. If they are at risk of onward movement to the EU, use the <a href="/xi/find-commodity">' + config.xiSubServiceName + '</a>.'
+            }
+    
         }
     }
 
@@ -1109,7 +1157,7 @@ class Context {
     }
 
     get_sort_order() {
-        var sort_default = "alpha";
+        var sort_default = "relevance";
         var sort_options = [
             "relevance",
             "alpha"

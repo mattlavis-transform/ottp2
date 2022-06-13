@@ -70,7 +70,8 @@
 			"image": "general.png",
 			"url": "https://www.gov.uk/government/collections/classification-of-goods",
 			"strapline": "",
-			"terms": []
+			"terms": [],
+			"chapters": []
 		},
 		{
 			"id": 5,
@@ -156,7 +157,7 @@
 		},
 		{
 			"id": 10,
-			"title": "Iron and Steel",
+			"title": "Iron and steel",
 			"image": "ironsteel.png",
 			"url": "https://www.gov.uk/guidance/classifying-iron-and-steel",
 			"strapline": "Get help to classify various items of iron and steel, primarily those classified under chapter 72.",

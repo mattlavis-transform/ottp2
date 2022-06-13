@@ -1,0 +1,38 @@
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+        <article class="search-results govuk-!-padding-top-1">
+            <p class="govuk-body-l">There are no results matching your query.</p>
+
+            {% if context.search_term_split | length > 1 %}
+                <p>Try searching for the individual terms in your query:
+                                    <ul class="govuk-list govuk-list--bullet">
+                        {% for suggestion in context.search_term_split %}
+                            <li>
+                                <a href="/elastic/{{ suggestion }}">Search for {{ suggestion }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </p>
+            {% endif %}
+            <p>
+                <strong>Alternatively, please search again and consider:</strong>
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>Searching what the item is used for or made from</li>
+                <li>Broadening your search criteria</li>
+                <li>Checking your spelling</li>
+                <li>Browsing the <a href="/a-z-index/a">A-Z of Classified Goods</a>
+                </li>
+            </ul>
+
+            <h2 class="govuk-heading-m">General Interpretative Rules</h2>
+            <p>
+                                The classification of goods is defined by the General Interpretative Rules.
+                                These help to classify goods, according to six key rules, which are defined below.
+                            </p>
+            {% include "includes/general_interpretative_rules.html" %}
+
+        </article>
+
+    </div>
+</div>

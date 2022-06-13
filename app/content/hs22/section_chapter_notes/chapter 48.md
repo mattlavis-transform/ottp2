@@ -115,94 +115,28 @@
 
 1. For the purposes of subheading [4804](/headings/4804).11 and [4804](/headings/4804).19, 'kraftliner' means machine-finished or machineglazed paper and paperboard, of which not less than 80% by weight of the total fibre content consists of wood fibres obtained by the chemical sulphate or soda processes, in rolls, weighing more than 115g/ m<sup>2</sup> and having a minimum Mullen bursting strength as indicated in the following table or the linearly interpolated or extrapolated equivalent for any other weight.
 
-    <table>
-    <thead>
-    <tr>
-    <th>Weight (g/m<sup>2</sup>)</th>
-    <th>Minimum Mullen bursting strength (kPa)</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>115</td>
-    <td>393</td>
-    </tr>
-    <tr>
-    <td>125</td>
-    <td>417</td>
-    </tr>
-    <tr>
-    <td>200</td>
-    <td>637</td>
-    </tr>
-    <tr>
-    <td>300</td>
-    <td>824</td>
-    </tr>
-    <tr>
-    <td>400</td>
-    <td>961</td>
-    </tr>
-    </tbody>
-    </table>
+    | Weight (g/m2) | Minimum Mullen bursting strength (kPa) |
+    |---------------|----------------------------------------|
+    | 115           | 393                                    |
+    | 125           | 417                                    |
+    | 200           | 637                                    |
+    | 300           | 824                                    |
+    | 400           | 961                                    |
 
 2. For the purposes of subheading [4804](/headings/4804).21 and [4804](/headings/4804).29, ‘sack kraft paper’ means machine-finished paper, of which not less than 80% by weight of the total fibre content consists of fibres obtained by the chemical sulphate or soda processes, in rolls, weighing not less than 60 g/m<sup>2</sup> but not more than 115 g/m<sup>2</sup> and meeting one of the following sets of specifications:
 
     (a) having a Mullen burst index of not less than 3.7kPa.m<sup>2</sup>/g and a stretch factor of more than 4.5% in the cross direction and of more than 2% in the machine direction;
     
     (b) having minima for tear and tensile as indicated in the following table or the linearly interpolated equivalent for any other weight:
-    
-    
-    <table>
-    <thead>
-    <tr><th colspan="3">Minimum tear</th><th colspan="2">Minimum tensile</th></tr>
-    <tr><th colspan="3">(mN)</th><th colspan="2">(kN/m)</th></tr>
-    <tr>
-    <td>Weight (g/m<sup>2</sup>)</td>
-    <td>Machine direction</td>
-    <td>Machine direction plus cross direction</td>
-    <td>Cross direction</td>
-    <td>Machine direction plus cross direction</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>60</td>
-    <td>700</td>
-    <td>1,510</td>
-    <td>1.9</td>
-    <td>6</td>
-    </tr>
-    <tr>
-    <td>70</td>
-    <td>830</td>
-    <td>1,790</td>
-    <td>2.3</td>
-    <td>7.2</td>
-    </tr>
-    <tr>
-    <td>80</td>
-    <td>965</td>
-    <td>2,070</td>
-    <td>2.8</td>
-    <td>8.3</td>
-    </tr>
-    <tr>
-    <td>100</td>
-    <td>1,230</td>
-    <td>2,635</td>
-    <td>3.7</td>
-    <td>10.6</td>
-    </tr>
-    <tr>
-    <td>115</td>
-    <td>1,425</td>
-    <td>3,060</td>
-    <td>4.4</td>
-    <td>12.3</td>
-    </tr>
-    </tbody>
-    </table>
+
+    | Minimum tear (mN)                                                              | Minimum tensile (kN/m)                                          |
+    |-------------------|-------------------|----------------------------------------|------------------------|----------------------------------------|
+    | Weight (g/m2)     | Machine direction | Machine direction plus cross direction | Cross direction        | Machine direction plus cross direction |
+    | 60                | 700               | 1,510                                  | 1.9                    | 6                                      |
+    | 70                | 830               | 1,790                                  | 2.3                    | 7.2                                    |
+    | 80                | 965               | 2,070                                  | 2.8                    | 8.3                                    |
+    | 100               | 1,230             | 2,635                                  | 3.7                    | 10.6                                   |
+    | 115               | 1,425             | 3,060                                  | 4.4                    | 12.3                                   |
 
 3. For the purposes of subheading [4805 11](/subheadings/4805110000-80), 'semi-chemical fluting paper' means paper, in rolls, of which not less than 65% by weight of the total fibre content consists of unbleached hardwood fibres obtained by a combination of mechanical and chemical pulping processes, and having acmT 30 (Corrugated Medium Test with 30 minutes of conditioning) crush resistance exceeding 1.8 newtons/g/m<sup>2</sup> at 50% relative humidity, at 23°C.
 

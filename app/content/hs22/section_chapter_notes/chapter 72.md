@@ -5,9 +5,13 @@
     Iron-carbon alloys not usefully malleable, containing more than 2% by weight of carbon and which may contain by weight one or more other elements within the following limits:
     
     - not more than 10% of chromium
+
     - not more than 6% of manganese
+
     - not more than 3% of phosphorus
+
     - not more than 8% of silicon
+
     - a total of not more than 10% of other elements.
     
     b. spiegeleisen
@@ -20,9 +24,13 @@
     generally not usefully malleable, containing by weight 4% or more of the element iron and one or more of the following:
     
     - more than 10% of chromium
+
     - more than 30% of manganese
+
     - more than 3% of phosphorus
+
     - more than 8% of silicon
+
     - a total of more than 10% of other elements, excluding carbon, subject to a maximum content of 10% in the case of copper.
     
     d. steel
@@ -38,20 +46,35 @@
     Steels not complying with the definition of stainless steel and containing by weight one or more of the following elements in the proportion shown:
     
     - 0.3% or more of aluminium
+
     - 0.0008% or more of boron
+
     - 0.3% or more of chromium
+
     - 0.3% or more of cobalt
+
     - 0.4% or more of copper
+
     - 0.4% or more of lead
+
     - 1.65% or more of manganese
+
     - 0.08% or more of molybdenum
+
     - 0.3% or more of nickel
+
     - 0.06% or more of niobium
+
     - 0.6% or more of silicon
+
     - 0.05% or more of titanium
+
     - 0.3% or more of tungsten (wolfram)
+
     - 0.1% or more of vanadium
+
     - 0.05% or more of zirconium
+
     - 0.1% or more of other elements (except sulphur, phosphorus, carbon and nitrogen), taken separately.
     
     g. remelting scrap ingots of iron or steel
@@ -71,6 +94,7 @@
     Rolled products of solid rectangular (other than square) cross-section, which do not conform to the definition at (ij) above in the form of:
     
     - coils of successively superimposed layers, or
+
     - straight lengths, which if of a thickness less than 4.75mm are of a width measuring at least 10 times the thickness or if of a thickness of 4.75mm or more are of a width which exceeds 150mm and measures at least twice the thickness.
     
     Flat-rolled products include those with patterns in relief derived directly from rolling (for example, grooves, ribs, chequers, tears, buttons, lozenges) and those which have been perforated, corrugated or polished, provided that they do not thereby assume the character of articles or products of other headings.
@@ -88,6 +112,7 @@
     These products may:
     
     - have indentations, ribs, grooves or other deformations produced during the rolling process (reinforcing bars and rods);
+
     - be twisted after rolling.
     
     n. angles, shapes and sections
@@ -117,8 +142,11 @@
     Pig iron containing, by weight, one or more of the following elements in the specified proportions:
     
     - more than 0.2% of chromium
+
     - more than 0.3% of copper
+
     - more than 0.3% of nickel
+
     - more than 0.1% of any of the following elements: aluminium, molybdenum, titanium, tungsten (wolfram), vanadium.
     
     b. non-alloy free-cutting steel
@@ -126,9 +154,13 @@
     Non-alloy steel containing, by weight, one or more of the following elements in the specified proportions:
     
     - 0.08% or more of sulphur
+
     - 0.1% or more of lead
+
     - more than 0.05% of selenium
+
     - more than 0.01% of tellurium
+
     - more than 0.05% of bismuth.
     
     c. silicon-electrical steel
@@ -144,7 +176,9 @@
     Alloy steels containing by weight:
     
     - not more than 0.7% of carbon,
+
     - 0.5% or more but not more than 1.9% of manganese, and
+
     - 0.6% or more but not more than 2.3% of silicon, but no other element in a proportion that would give the steel the characteristics of another alloy steel.
 
 2. For the classification of ferro-alloys in the subheadings of heading [7202](/headings/7202) the following rule should be observed:

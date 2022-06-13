@@ -7,8 +7,11 @@
     Heading [1209](/headings/1209) does not, however, apply to the following even if for sowing:
 
     - a) leguminous vegetables or sweetcorn (Chapter [7](/chapters/07));
+
     - b) spices or other products of Chapter [9](/chapters/09);
+
     - c) cereals (Chapter [10](/chapters/10)); or
+
     - d) products of heading [1201](/headings/1201) to [1207](/headings/1207) or [1211](/headings/1211).
 
 4. Heading [1211](/headings/1211) applies inter alia to the following plants or parts thereof: basil, borage, ginseng, hyssop, liquorice, all species of mint, rosemary, rue, sage and wormwood.

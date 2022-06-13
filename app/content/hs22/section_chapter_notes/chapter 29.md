@@ -51,9 +51,9 @@
     (C) Subject to Note 1 to Section VI and Note 2 to Chapter [28](/chapters/28):
     
     1. inorganic salts of organic compounds such as acid-, phenol- or enol-function compounds or organic bases, of sub-chapters I to X or heading [2942](/headings/2942) are to be classified in the heading appropriate to the organic compound;
-    
+       
     2. salts formed between organic compounds of sub-chapters I to X or heading [2942](/headings/2942) are to be classified in the heading appropriate to the base or to the acid (including phenol-or enol-function compounds) from which they are formed, whichever occurs last in numerical order in the chapter; and
-    
+       
     3. co-ordination compounds, other than products classifiable in sub-chapter XI or heading [2941](/headings/2941), are to be classified in the heading which occurs last in numerical order in Chapter [29](/chapters/29), among those appropriate to the fragments formed by 'cleaving' of all metal bonds, other than metal-carbon bonds.
     
     (D) metal alcoholates are to be classified in the same heading as the corresponding alcohols except in the case of ethanol (heading [2905](/headings/2905));
