@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Trade Tariff: Calculate duty - enter date
+  Help on using the tariff - UK Integrated Online Tariff 
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
+    {{ govukBreadcrumbs({
         items: [
             {
             text: "Home",
@@ -13,7 +13,7 @@
             },
             {
             text: "Help",
-            href: ""
+            href: "/help"
             }
         ]
         }) }}
@@ -21,424 +21,221 @@
 
 {% block content %}
     {% include "includes/language_selector.html" %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters">
-      <span class="govuk-caption-xl">Online Trade Tariff</span>
-      <h1 class="govuk-heading-l">Help on using the tariff</h1>
-      <p class="govuk-body-l">If you would like to leave feedback on this service or request additional help with your trade, then use the following links.</p>
-      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-        <div class="govuk-accordion__section govuk-accordion__section--expanded">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" aria-expanded="true" id="accordion-default-heading-1" open="">
-                Get help or leave feedback
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-            {# <h2 class="govuk-heading-m">Using this service and getting help</h2> #}
-            <ul class="govuk-list xgovuk-list--bullet govuk-list--spaced">
-              <li>
-                <a href="/feedback">Leave feedback on this service</a><br>
-                Use this link if you would like to leave feedback or suggestions for improvements to this service.</li>
-
-              <li>
-                <a href="https://www.gov.uk/guidance/using-the-trade-tariff-tool-to-find-a-commodity-code">Using the Online Trade Tariff to find a commodity code</a><br>
-          Guidance on the use of this service.</li>
-
-              <li>
-                <a href="https://www.gov.uk/guidance/finding-commodity-codes-for-imports-or-exports">Finding commodity codes for imports or exports</a><br>
-                Find a commodity code to classify your goods and look up duty rates, reliefs and quotas.</li>
-
-              <li>
-                <a href="https://www.gov.uk/guidance/apply-for-an-advance-tariff-ruling">Apply for an Advance Tariff Ruling</a><br>
-                Find out how to get a legally binding decision on the commodity code to use when importing into or exporting from Great Britain.</li>
-
-              <li>
-                <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries">Contact HMRC</a><br>
-                For general HMRC enquiries.</li>
-
-            </ul>
-            {% set show_webchat = false %}
-            {% if show_webchat %}
-              <div class="govuk-inset-text panel-grey">
-                  Alternatively, if you would like to talk to HMRC about classifying your goods using WebChat between 09:00 and 17:00 Monday to Friday, then please click on the icon in the bottom right of the screen.
-              </div>
-            {% endif %}
-          </div>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <span class="govuk-caption-xl">Online Trade Tariff</span>
+            <h1 class="govuk-heading-l">Help on using the tariff</h1>
+            <p class="govuk-body-l">If you would like to leave feedback on this service or request additional help with your trade, then use the following links.</p>
         </div>
-        <div class="govuk-accordion__section govuk-accordion__section--expanded">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" aria-expanded="true" id="accordion-default-heading-2" open="">
-                Classification guidance
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-            <h3 class="govuk-heading-s">UK Goods classification 2021 to 2022 correlation table</h3>
-            <ul class="govuk-list xgovuk-list--bullet">
-              <li>
-                From 1 January 2022, the UK will introduce its 2022 Integrated Tariff. This will incorporate the WCO's changes to the Harmonised System Nomenclature.
-                View the <a href="/help/cn2021-cn2022">correlation of commodity codes, at 8-digit level, from the 2021 Tariff to that of 2022</a>.</li>
-            </ul>
-
-            <h3 class="govuk-heading-s">General classification guidance</h3>
-            <ul class="govuk-list xgovuk-list--bullet">
-              <li>
-                <a href="https://www.gov.uk/guidance/ask-hmrc-for-advice-on-classifying-your-goods">Get advice on classifying your goods</a><br>
-                Find out how to contact HMRC to help you get a commodity code and what information you’ll need to send us.</li>
-            </ul>
-
-            <h3 class="govuk-heading-s">Product-specific classification guidance</h3>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-aircraft-parts-and-accessories">Aircraft parts</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-audio-and-video-equipment">Audio and video equipment for import and export</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-ceramics">Ceramics</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/government/collections/classification-of-goods">Classification of goods</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-computers-and-software">Computers and software</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-edible-fruits-nuts-and-peel">Edible fruits, nuts and peel</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-edible-vegetables-roots-and-tubers">Edible vegetables, roots and tubers</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-electric-lamps">Electric lamps</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-footwear">Footwear</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-herbal-medicines-supplements-tonics">Herbal medicines, tonics and supplements</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-iron-and-steel">Iron and Steel</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-leather">Leather</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-monitors-for-import-and-export">Monitors</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-organic-chemicals">Organic chemicals</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-pharmaceutical-products">Pharmaceutical products</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-placebos-and-comparators">Placebos and comparators</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-plastics">Plastics</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-rice">Rice</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-textile-apparel">Textiles and textile articles</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-tobacco">Tobacco and manufactured tobacco substitutes</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-toys-games-and-sports-equipment">Toys, games and sports equipment</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-vehicles">Vehicles, parts and accessories</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/guidance/classifying-wood">Wood</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="govuk-accordion__section govuk-accordion__section--expanded">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" aria-expanded="true" id="accordion-default-heading-3" open="">
-                CDS guidance, code and procedures
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-            {# <h2 class="govuk-heading-m">CDS guidance, code and procedures</h2> #}
-            <ul class="govuk-list govuk-list--bullet">
-              <li>
-                <a href="https://www.gov.uk/government/collections/uk-trade-tariff-volume-3-for-cds--2#imports:-guidance-on-completing-an-import-declaration-for-the-customs-declaration-service">UK Trade Tariff: volume 3 for CDS</a><br>
-          Find the guidance, codes and procedures to use when importing or exporting goods when using the Customs Declaration Service (CDS).<br><br></li>
-              <li>
-                <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-the-northern-ireland-protocol">Customs Declaration Completion Requirements for The Northern Ireland Protocol</a><br><br></li>
-              <li>
-                <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-great-britain">Customs Declaration Completion Requirements for Great Britain</a><br><br>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="govuk-accordion__section govuk-accordion__section--expanded">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" aria-expanded="true" id="accordion-default-heading-4" open="">
-                CHIEF guidance, code and procedures
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-            {# <h2 class="govuk-heading-m">CHIEF guidance, code and procedures</h2> #}
-            <ul class="govuk-list govuk-list--bullet">
-              <li>
-                <a href="https://www.gov.uk/government/collections/uk-trade-tariff-volume-3-for-chief">UK Trade Tariff: volume 3 for CHIEF</a><br>
-          Forms, codes and procedures to use when importing or exporting goods. How to input data onto the Customs Handling of Import and Export Freight (CHIEF) system.<br><br></li>
-              <li>
-                <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-great-britain">Customs Declaration Completion Requirements for Great Britain</a><br><br></li>
-            </ul>
-          </div>
-        </div>
-
-        {# <div class="govuk-accordion__section govuk-accordion__section--expanded">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" aria-expanded="true" id="accordion-default-heading-5" open="">
-                Rules of origin - glossary of terms
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-            {% for gt in roo.glossary_terms %}
-              <div id="{{ gt.term }}">
-                {{ gt.description | safe }}
-            {% endfor %}
-
-          </div>
-        </div> #}
-      </div>
-    </div>
-  </div>
-
-  <div class="govuk-grid-row full-tabs" style="display:none">
-    <div class="govuk-grid-column-full">
-      <div class="govuk-tabs" data-module="govuk-tabs">
-        <h2 class="govuk-tabs__title">Contents</h2>
-
-        <ul class="govuk-tabs__list">
-          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-            <a class="govuk-tabs__tab" href="#getting_help">Getting help</a>
-          </li>
-          <li class="govuk-tabs__list-item govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#classification_guides">Classification</a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#cds_guidance">CDS guidance</a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#chief_guidance">CHIEF guidance</a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#roo">Rules of origin</a>
-          </li>
-        </ul>
-
-        <div class="govuk-tabs__panel" id="getting_help">
-          <h2 class="govuk-heading-m">Using this service and getting help</h2>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>
-              <a href="/feedback">Leave feedback on this service</a><br>
-                Use this link if you would like to leave feedback or suggestions for improvements to this service.<br><br></li>
-
-            <li>
-              <a href="https://www.gov.uk/guidance/using-the-trade-tariff-tool-to-find-a-commodity-code">Using the Online Trade Tariff to find a commodity code</a><br>
-          Guidance on the use of this service.<br><br></li>
-
-            <li>
-              <a href="https://www.gov.uk/guidance/finding-commodity-codes-for-imports-or-exports">Finding commodity codes for imports or exports</a><br>
-                Find a commodity code to classify your goods and look up duty rates, reliefs and quotas.<br><br></li>
-
-            <li>
-              <a href="https://www.gov.uk/guidance/ask-hmrc-for-advice-on-classifying-your-goods">Get advice on classifying your goods</a><br>
-                Find out how to contact HMRC to help you get a commodity code and what information you’ll need to send us.<br><br>
-
-            <li>
-              <a href="https://www.gov.uk/guidance/apply-for-an-advance-tariff-ruling">Apply for an Advance Tariff Ruling</a><br>
-                Find out how to get a legally binding decision on the commodity code to use when importing into or exporting from Great Britain.<br><br></li>
-
-            <li>
-              <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries">Contact HMRC</a><br>
-                For general HMRC enquiries.<br><br></li>
-
-          </ul>
-          {% set show_webchat = false %}
-          {% if show_webchat %}
-            <div class="govuk-inset-text panel-grey">
-                  Alternatively, if you would like to talk to HMRC about classifying your goods using WebChat between 09:00 and 17:00 Monday to Friday, then please click on the icon in the bottom right of the screen.
-      </div>
-          {% endif %}
-
-        </div>
-
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="cds_guidance">
-          <h2 class="govuk-heading-m">CDS guidance, code and procedures</h2>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>
-              <a href="https://www.gov.uk/government/collections/uk-trade-tariff-volume-3-for-cds--2#imports:-guidance-on-completing-an-import-declaration-for-the-customs-declaration-service">UK Trade Tariff: volume 3 for CDS</a><br>
-          Find the guidance, codes and procedures to use when importing or exporting goods when using the Customs Declaration Service (CDS).<br><br></li>
-            <li>
-              <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-the-northern-ireland-protocol">Customs Declaration Completion Requirements for The Northern Ireland Protocol</a><br><br></li>
-            <li>
-              <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-great-britain">Customs Declaration Completion Requirements for Great Britain</a><br><br>
-            </li>
-          </ul>
-        </div>
-
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="classification_guides">
-          <h2 class="govuk-heading-m">Classification guides</h2>
-
-          <ul class="govuk-list govuk-list--bullet">
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-aircraft-parts-and-accessories">Aircraft parts</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-audio-and-video-equipment">Audio and video equipment for import and export</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-ceramics">Ceramics</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/government/collections/classification-of-goods">Classification of goods</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-computers-and-software">Computers and software</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-edible-fruits-nuts-and-peel">Edible fruits, nuts and peel</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-edible-vegetables-roots-and-tubers">Edible vegetables, roots and tubers</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-electric-lamps">Electric lamps</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-footwear">Footwear</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-herbal-medicines-supplements-tonics">Herbal medicines, tonics and supplements</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-iron-and-steel">Iron and Steel</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-leather">Leather</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-monitors-for-import-and-export">Monitors</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-organic-chemicals">Organic chemicals</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-pharmaceutical-products">Pharmaceutical products</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-placebos-and-comparators">Placebos and comparators</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-plastics">Plastics</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-rice">Rice</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-textile-apparel">Textiles and textile articles</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-tobacco">Tobacco and manufactured tobacco substitutes</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-toys-games-and-sports-equipment">Toys, games and sports equipment</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-vehicles">Vehicles, parts and accessories</a>
-            </li>
-            <li>
-              <a href="https://www.gov.uk/guidance/classifying-wood">Wood</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="chief_guidance">
-          <h2 class="govuk-heading-m">CHIEF guidance, code and procedures</h2>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>
-              <a href="https://www.gov.uk/government/collections/uk-trade-tariff-volume-3-for-chief">UK Trade Tariff: volume 3 for CHIEF</a><br>
-          Forms, codes and procedures to use when importing or exporting goods. How to input data onto the Customs Handling of Import and Export Freight (CHIEF) system.<br><br></li>
-            <li>
-              <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-great-britain">Customs Declaration Completion Requirements for Great Britain</a><br><br></li>
-          </ul>
-        </div>
-
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="roo">
-          <div class="govuk-grid-row" id="top">
-            <div class="govuk-grid-column-full">
-              <span class="govuk-caption-xl">Rules of origin</span>
-              <h1 class="govuk-heading-l">Glossary of key terms</h1>
-              <p class="govuk-body-l">This is a glossary for terms related to Rules of Origin.</p>
-            </div>
-          </div>
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-full">
-
-              {# <nav class="gem-c-contents-list  gem-c-contents-list--no-underline " aria-label="Contents" role="navigation">
-                <h2 class="gem-c-contents-list__title">Contents</h2>
-                <ol class="gem-c-contents-list__list">
-                  {% for gt in roo.glossary_terms %}
-                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
-                      <a class="gem-c-contents-list__link govuk-link " href="#{{ gt.term }}">{{ gt.term }}</a>
-                    </li>
-                  {% endfor %}
-                </ol>
-              </nav>
-
-              {% for gt in roo.glossary_terms %}
-                <div id="{{ gt.term }}">
-                  {{ gt.description | safe }}
-                  <p>
-                    <a href="#top">Back to top</a>
-                  </p>
-                </div>
-              {% endfor %} #}
-
-            </div>
-            <div class="govuk-grid-column-one-third">
-              {# {% include "./related-items.html" %} #}
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
 
-  </div>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <h2 class="gem-c-contents-list__title">Contents</h2>
+            <ol class="gem-c-contents-list__list govuk-!-margin-bottom-6">
+                <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#leave-feedback">Leave feedback</a>
+                </li>
+                <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#how-to-use">How to use the Online Trade Tariff</a>
+                </li>
+                <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#getting-help">Getting help from HMRC if you need to find a commodity code</a>
+                </li>
+                <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#difficult-to-classify">Goods that are difficult to classify</a>
+                </li>
+                <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#consignment">Goods that cannot be imported in a single consignment</a>
+                </li>
+                <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#sets">Items packaged as a set</a>
+                </li>
+                <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#made-of">Checking what your goods are made of</a>
+                </li>
+            </ol>
+
+
+
+            <h2 class="govuk-heading-s" id="leave-feedback">Leave feedback</h2>
+            <p>
+                <a href="/help/feedback">Leave feedback or suggestions for improvements to this service.</a>
+            </p>
+
+
+
+            <h2 class="govuk-heading-s" id="how-to-use">How to use the Online Trade Tariff</h2>
+            <p>
+                <a href="/help/how-to-use">Watch our video to help you use the Online Trade Tariff</a>
+            </p>
+
+
+
+            <h2 class="govuk-heading-s" id="getting-help">Getting help from HMRC if you need to find a commodity code</h2>
+            <p>If you <a href="/help/help-find-commodity">cannot find the right commodity code for your goods</a>,
+                you can contact HMRC for advice or for a decision on your goods.</p>
+
+
+
+            <h2 class="govuk-heading-s" id="difficult-to-classify">Goods that are difficult to classify</h2>
+            <p>Some goods are more difficult to classify than others. You can read more on how to classify these goods correctly:</p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-aircraft-parts-and-accessories">aircraft parts</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-audio-and-video-equipment">audio and video equipment for import and export</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-ceramics">ceramics</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/government/collections/classification-of-goods">classification of goods</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-computers-and-software">computers and software</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-edible-fruits-nuts-and-peel">edible fruits, nuts and peel</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-edible-vegetables-roots-and-tubers">edible vegetables, roots and tubers</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-electric-lamps">electric lamps</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-footwear">footwear</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-herbal-medicines-supplements-tonics">herbal medicines, tonics and supplements</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-iron-and-steel">iron and steel</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-leather">leather</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-monitors-for-import-and-export">monitors</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-organic-chemicals">organic chemicals</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-pharmaceutical-products">pharmaceutical products</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-placebos-and-comparators">placebos and comparators</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-plastics">plastics</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-rice">rice</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-textile-apparel">textiles and textile articles</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-tobacco">tobacco and manufactured tobacco substitutes</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-toys-games-and-sports-equipment">toys, games and sports equipment</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-vehicles">vehicles, parts and accessories</a>
+                </li>
+                <li>
+                    <a href="https://www.gov.uk/guidance/classifying-wood">wood</a>
+                </li>
+            </ul>
+
+
+
+            <h2 class="govuk-heading-s" id="consignment">Goods that cannot be imported in a single consignment</h2>
+            <p>If you have goods (like large machinery) that cannot be transported in a single consignment, you may need to split them up.</p>
+            <p>
+                <a href="https://www.gov.uk/guidance/split-consignments-tariff-classification-and-import-procedures" class="govuk-link">Find out if your goods qualify for import in split consignments</a> and what you need to do to import goods in this way.</p>
+
+
+
+            <h2 class="govuk-heading-s" id="sets">Items packaged as a set</h2>
+            <p>If your items are packaged in a set to sell and be used together, you should classify them using the most significant item in that set.</p>
+            <p>If you cannot work out which item is the most significant, use the commodity code that has the largest numerical value.</p>
+            <p>You must classify the items separately if they’re either:</p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>not packaged as a set for retail sale</li>
+                <li>not to be used together</li>
+            </ul>
+
+
+
+            <h2 class="govuk-heading-s" id="made-of">Checking what your goods are made of</h2>
+            <p>For certain types of goods, you may need precise details of what your goods are made up of. For these you may want to get advice from an independent laboratory.</p>
+
+            <p>You can find a list of analysts in the <a rel="external" href="https://www.rsc.org/membership-and-community/directory-of-consultants/" class="govuk-link">directory of consultants for the Royal Society of Chemistry</a>.</p>
+
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <div class="gem-c-related-navigation">
+
+                <h2 class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">UK 2022 Integrated Tariff</h2>
+
+                <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-40a88cdf" data-module="gem-toggle" data-gem-toggle-module-started="true">
+
+                    <p class="govuk-body-s">On 1 January 2022, the UK introduced its 2022 Integrated Tariff, which incorporates the WCO's changes to the Harmonised System Nomenclature.</p>
+                    <ul class="gem-c-related-navigation__link-list" data-module="gem-track-click" data-gem-track-click-module-started="true">
+                        <li class="gem-c-related-navigation__link">
+                            <a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar  govuk-link gem-c-related-navigation__section-link--other" href="/guidance/classifying-electrical-equipment-for-import-and-export">View the correlation of commodity codes, at 8-digit level, from the 2021 Tariff to that of 2022</a>.
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">CDS guidance, codes and procedures</h2>
+
+                <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-40a88cdf" data-module="gem-toggle" data-gem-toggle-module-started="true">
+
+                    <ul class="gem-c-related-navigation__link-list" data-module="gem-track-click" data-gem-track-click-module-started="true">
+                        <li class="gem-c-related-navigation__link">
+                            <a href="https://www.gov.uk/government/collections/uk-trade-tariff-volume-3-for-cds--2#imports:-guidance-on-completing-an-import-declaration-for-the-customs-declaration-service">UK Trade Tariff: volume 3 for CDS</a><!--<br>
+                      Find the guidance, codes and procedures to use when importing or exporting goods when using the Customs Declaration Service (CDS).//--></li>
+                        <li class="gem-c-related-navigation__link">
+                            <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-great-britain">Customs Declaration Completion Requirements for Great Britain</a>
+                        </li>
+                        <li class="gem-c-related-navigation__link">
+                            <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-the-northern-ireland-protocol">Customs Declaration Completion Requirements for The Northern Ireland Protocol</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">CHIEF guidance, codes and procedures</h2>
+
+                <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-40a88cdf" data-module="gem-toggle" data-gem-toggle-module-started="true">
+
+                    <ul class="gem-c-related-navigation__link-list" data-module="gem-track-click" data-gem-track-click-module-started="true">
+                        <li class="gem-c-related-navigation__link">
+                            <a href="https://www.gov.uk/government/collections/uk-trade-tariff-volume-3-for-chief">UK Trade Tariff: volume 3 for CHIEF</a>
+                            <!--<br>
+                      Forms, codes and procedures to use when importing or exporting goods. How to input data onto the Customs Handling of Import and Export Freight (CHIEF) system.<br><br>//--></li>
+                        <li class="gem-c-related-navigation__link">
+                            <a href="https://www.gov.uk/government/publications/customs-declaration-completion-requirements-for-great-britain">Customs Declaration Completion Requirements for Great Britain</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
 
 </div>
 {% set show_webchat = false %}
 {% if show_webchat %}
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/20005740.js"></script>
-  <!-- End of HubSpot Embed Code -->
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/20005740.js"></script>
+    <!-- End of HubSpot Embed Code -->
 {% endif %}
 {% endblock %}
 </html>

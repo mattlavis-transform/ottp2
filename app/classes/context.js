@@ -1121,7 +1121,8 @@ class Context {
                 this.back_url = "https://chieg-next.herokuapp.com/manage-this-trade/calculate-the-tax-and-duty-on-your-goods";
             }
         } else {
-            this.feedback_url = "https://www.trade-tariff.service.gov.uk/feedback";
+            // this.feedback_url = "https://www.trade-tariff.service.gov.uk/feedback";
+            this.feedback_url = "/help/feedback";
             if ((this.scope_id == "ni") || (this.scope_id == "xi")) {
                 this.title = "The " + config.xiSubServiceName;
                 this.bannerTitle = "Are your goods at risk of onward movement to the EU?";

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+    <head>
+        <meta charset="utf-8">
+        <title>Help and contact – GOV.UK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="theme-color" content="#0b0c0c">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/contact/hmrc-frontend/assets/govuk/images/favicon.ico" type="image/x-icon">
+        <link rel="mask-icon" href="/contact/hmrc-frontend/assets/govuk/images/govuk-mask-icon.svg" color="#0b0c0c">
+        <link rel="apple-touch-icon" sizes="180x180" href="/contact/hmrc-frontend/assets/govuk/images/govuk-apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="/contact/hmrc-frontend/assets/govuk/images/govuk-apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/contact/hmrc-frontend/assets/govuk/images/govuk-apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" href="/contact/hmrc-frontend/assets/govuk/images/govuk-apple-touch-icon.png">
+        <!--[if !IE]>-->
+        <script
+      nonce="M/KvZFcYTzubi3LpSsrAgA==" 
+    src="/tracking-consent/tracking.js"
+    id="tracking-consent-script-tag"
+    data-gtm-container="b"
+    data-language="en"
+  ></script>
+        <!--<![endif]-->
+        <!--[if lte IE 8]>
+<script src="/contact/hmrc-frontend/assets/vendor/html5shiv.min.js"></script>
+<link href="/contact/hmrc-frontend/assets/hmrc-frontend-ie8-5.2.0.min.css" media="all" rel="stylesheet" type="text/css" />
+<![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link href="/contact/hmrc-frontend/assets/hmrc-frontend-5.2.0.min.css" media="all" rel="stylesheet" type="text/css" nonce="M/KvZFcYTzubi3LpSsrAgA=="/>
+        <!--<![endif]-->
+        <meta property="og:image" content="/contact/hmrc-frontend/assets/govuk/images/govuk-opengraph-image.png">
+    </head>
+    <body class="govuk-template__body ">
+        <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+        <header role="banner">
+
+        </header>
+        <div class="govuk-width-container ">
+            <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h1 class="govuk-heading-xl">Help and contact</h1>
+                        <p class="govuk-body">If you have a specific tax query 
+                        <a class="govuk-link " target="_blank" rel="noopener noreferrer" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact">contact HMRC (opens in a new tab)</a>.</p>
+                        <p class="govuk-body">If you need help using your tax account please fill in this form.</p>
+                        <h2 class="govuk-heading-l">How can we help you?</h2>
+                        <p class="govuk-body">Do not include any personal or financial information. For example, your National Insurance or credit card numbers.</p>
+                        <!-- Starts here //-->
+                        <form method="POST" novalidate action="/contact/contact-hmrc?service=STW-GS&amp;referrerUrl=https%3A%2F%2Fcheck-how-to-import-export-goods.service.gov.uk%2Ftype-of-trade" id="contact-hmrc-form">
+                            <input type="hidden" name="csrfToken" value="0acacca7ce0c7885fa9881337c640aedd47a7d63-1655295060893-00d1edcf194a28f4df1e14ed"/>
+                            <input type="hidden" name="service" value="STW-GS">
+                            <input type="hidden" name="referrer" value="https://check-how-to-import-export-goods.service.gov.uk/type-of-trade">
+                            <input type="hidden" name="userAction" value="">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-name">
+                                    Full name
+                                </label>
+                                <input class="govuk-input govuk-!-width-two-thirds" id="contact-name" name="contact-name" type="text"  spellcheck="false" autocomplete="name">
+                            </div>
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-email">
+                                    Email address
+                                </label>
+                                <input class="govuk-input govuk-!-width-two-thirds" id="contact-email" name="contact-email" type="email"  spellcheck="false" autocomplete="email">
+                            </div>
+                            <div class="hmrc-character-count" data-module="hmrc-character-count" data-language="en" data-maxlength="2000">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="contact-comments">
+                                        Your comments
+                                    </label>
+                                    <textarea class="govuk-textarea hmrc-js-character-count" id="contact-comments" name="contact-comments" rows="5" aria-describedby="contact-comments-info"></textarea>
+                                </div>
+                                <div id="contact-comments-info" class="govuk-hint hmrc-character-count__message">
+                                    You can enter up to 2000 characters
+                                </div>
+                            </div>
+                            <button  type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">Send</button>
+                        </form>
+                        <!-- Ends here //-->
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="/contact/hmrc-frontend/assets/hmrc-frontend-5.2.0.min.js" nonce="M/KvZFcYTzubi3LpSsrAgA=="></script>
+    </body>
+</html>

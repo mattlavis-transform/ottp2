@@ -553,7 +553,6 @@ router.get(['/help/undefined'], function (req, res) {
 });
 
 router.get(['/help'], function (req, res) {
-    //const now = new Date('2021/05/06 14:14:05');
     const now = new Date();
     var show_webchat = isWorkingHour(now);
     var context = new Context(req);
@@ -583,6 +582,19 @@ router.get(['/help/cn2021-cn2022'], function (req, res) {
 router.get(['/help/how-to-use'], function (req, res) {
     var context = new Context(req);
     res.render('help/how-to-use', {
+        'context': context
+    });
+});
+
+router.get(['/help/help-find-commodity'], function (req, res) {
+    var context = new Context(req);
+    res.render('help/help-find-commodity', {
+        'context': context
+    });
+});
+router.get(['/help/feedback'], function (req, res) {
+    var context = new Context(req);
+    res.render('help/feedback', {
         'context': context
     });
 });

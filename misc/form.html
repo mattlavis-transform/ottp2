@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- STARTS HERE -->
+        <form action="/contact/govuk/problem_reports" id="something-is-wrong">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-errors" tabindex="-1" hidden></div>
+                    <input type="hidden" name="url" value="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">
+
+                    <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+                    <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+                    <div class="govuk-visually-hidden" aria-hidden="true">
+                        <label for="giraffe">This field is for robots only. Please leave blank</label>
+                        <input id="giraffe" name="giraffe" type="text" pattern=".{0}" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="gem-c-textarea govuk-form-group govuk-!-margin-bottom-6">
+
+                        <label for="textarea-ec875d59" class="gem-c-label govuk-label">What were you doing?</label>
+
+                        <textarea name="what_doing" class="govuk-textarea" id="textarea-ec875d59" rows="3" spellcheck="true" aria-describedby="feedback_explanation"></textarea>
+
+                    </div>
+
+                    <div class="gem-c-textarea govuk-form-group govuk-!-margin-bottom-6">
+
+                        <label for="textarea-0f85ba29" class="gem-c-label govuk-label">What went wrong?</label>
+
+                        <textarea name="what_wrong" class="govuk-textarea" id="textarea-0f85ba29" rows="3" spellcheck="true"></textarea>
+
+                    </div>
+
+                    <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+                </div>
+            </div>
+        </form>
+
+        <!-- ENDS HERE -->
+
+    </body>
+</html>
